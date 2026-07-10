@@ -1,0 +1,241 @@
+/* Shared building blocks for interior pages */
+
+/* Two-column split */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+.split > * {
+  min-width: 0;
+}
+.splitWide {
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+}
+.mediaCard {
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--sh-lg);
+}
+.mediaCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+@media (max-width: 900px) {
+  .split,
+  .splitWide {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* Prose */
+.prose {
+  max-width: 70ch;
+}
+.prose h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.9rem;
+}
+.prose h2:first-child {
+  margin-top: 0;
+}
+.prose h3 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.6rem;
+  color: var(--navy);
+}
+.prose p {
+  margin-bottom: 1.1rem;
+}
+.prose ul {
+  margin: 0 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.prose ul li {
+  position: relative;
+  padding-left: 1.6rem;
+}
+.prose ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--blue);
+}
+.prose a {
+  color: var(--blue-dark);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Feature grid (icon cards) */
+.feature {
+  padding: clamp(1.5rem, 3vw, 2rem);
+}
+.featureIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  color: var(--blue-dark);
+  background: var(--bg-soft-2);
+  margin-bottom: 1.1rem;
+}
+.feature:hover .featureIcon {
+  background: var(--grad-blue);
+  color: #fff;
+}
+.feature h3 {
+  margin-bottom: 0.55rem;
+}
+.feature p {
+  font-size: 0.97rem;
+}
+
+/* Numbered process steps */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1rem, 2.4vw, 1.75rem);
+  counter-reset: step;
+}
+.steps > * {
+  min-width: 0;
+}
+.step {
+  position: relative;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: 2rem 1.5rem 1.6rem;
+  box-shadow: var(--sh-sm);
+}
+.stepNum {
+  position: absolute;
+  top: -22px;
+  left: 1.5rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: #fff;
+  background: var(--grad-blue);
+  box-shadow: var(--sh-blue);
+}
+.step h3 {
+  margin: 0.85rem 0 0.5rem;
+  font-size: 1.15rem;
+}
+.step p {
+  font-size: 0.95rem;
+}
+@media (max-width: 940px) {
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1.25rem;
+  }
+}
+@media (max-width: 500px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Region label for locations */
+.region {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: clamp(2.25rem, 4vw, 3rem) 0 1.5rem;
+}
+.region:first-of-type {
+  margin-top: 0;
+}
+.regionName {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--navy);
+  white-space: nowrap;
+}
+.regionCount {
+  font-size: 0.85rem;
+  color: var(--muted);
+  background: var(--bg-soft-2);
+  padding: 0.25rem 0.7rem;
+  border-radius: var(--r-full);
+}
+.regionLine {
+  flex: 1;
+  height: 1px;
+  background: var(--line-strong);
+}
+
+/* Info list (contact) */
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.infoItem {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.infoIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: var(--grad-blue);
+  flex: none;
+  box-shadow: var(--sh-blue);
+}
+.infoItem h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.15rem;
+}
+.infoItem a,
+.infoItem p {
+  color: var(--slate);
+}
+.infoItem a:hover {
+  color: var(--blue);
+}
+
+/* Simple CTA row inside content */
+.ctaMini {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: clamp(1.75rem, 4vw, 2.75rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.ctaMini h3 {
+  font-size: clamp(1.3rem, 2.2vw, 1.7rem);
+}
+.ctaMini p {
+  margin-top: 0.35rem;
+  max-width: 52ch;
+}

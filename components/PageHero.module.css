@@ -1,0 +1,53 @@
+.hero {
+  position: relative;
+  background: var(--grad-navy);
+  color: rgba(255, 255, 255, 0.82);
+  overflow: hidden;
+  padding-top: clamp(3rem, 6vw, 4.5rem);
+  padding-bottom: clamp(3.25rem, 6vw, 5rem);
+}
+.blob {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(48, 188, 255, 0.4), transparent 70%);
+  filter: blur(70px);
+  top: -200px;
+  right: -100px;
+  pointer-events: none;
+}
+.inner {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+}
+.crumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1.35rem;
+}
+.crumbs a:hover {
+  color: #fff;
+}
+.sep {
+  transform: rotate(-90deg);
+  opacity: 0.6;
+}
+.crumbs span {
+  color: var(--blue-bright);
+  font-weight: 500;
+}
+.title {
+  color: #fff;
+  margin-top: 1rem;
+}
+.subtitle {
+  margin-top: 1.15rem;
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 62ch;
+}

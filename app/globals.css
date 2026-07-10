@@ -1,0 +1,431 @@
+/* =========================================================================
+   Quadrant Health Group — Design System
+   Palette, type scale, spacing, layout primitives, and components.
+   ========================================================================= */
+
+:root {
+  /* Brand */
+  --blue: #0396d0;
+  --blue-bright: #30bcff;
+  --blue-dark: #0274be;
+  --cyan: #19c6e5;
+  --navy: #14376f;
+  --navy-600: #253d79;
+  --navy-800: #0f2b56;
+  --navy-900: #0a1f42;
+  --green: #2fae43;
+
+  /* Neutrals */
+  --ink: #142744;         /* headings on light */
+  --slate: #4f5f76;       /* body text */
+  --muted: #7c8aa0;       /* secondary text */
+  --line: #e6ecf4;        /* hairline borders */
+  --line-strong: #d3ddea;
+  --bg: #ffffff;
+  --bg-soft: #f4f8fc;     /* section tint */
+  --bg-soft-2: #eef4fb;
+  --white: #ffffff;
+
+  /* Gradients */
+  --grad-blue: linear-gradient(135deg, #30bcff 0%, #0396d0 52%, #0274be 100%);
+  --grad-navy: linear-gradient(155deg, #17407e 0%, #0f2b56 55%, #0a1f42 100%);
+
+  /* Radius */
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 24px;
+  --r-xl: 32px;
+  --r-full: 999px;
+
+  /* Shadows */
+  --sh-sm: 0 1px 2px rgba(16, 40, 80, 0.06), 0 2px 8px rgba(16, 40, 80, 0.05);
+  --sh-md: 0 6px 20px rgba(16, 40, 80, 0.08), 0 2px 6px rgba(16, 40, 80, 0.04);
+  --sh-lg: 0 18px 48px rgba(15, 43, 86, 0.14), 0 4px 12px rgba(15, 43, 86, 0.06);
+  --sh-blue: 0 10px 26px rgba(3, 150, 208, 0.32);
+
+  /* Layout */
+  --container: 1200px;
+  --container-wide: 1320px;
+  --gutter: clamp(1.15rem, 4vw, 2.5rem);
+  --section-y: clamp(4rem, 8vw, 7rem);
+
+  --font-display: var(--font-montserrat), "Segoe UI", system-ui, sans-serif;
+  --font-body: var(--font-roboto), system-ui, -apple-system, sans-serif;
+}
+
+/* ---------- Reset ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+  /* clip (not hidden) also contains off-canvas fixed elements without
+     breaking position: sticky on the header */
+  overflow-x: clip;
+}
+body {
+  font-family: var(--font-body);
+  color: var(--slate);
+  background: var(--bg);
+  line-height: 1.65;
+  font-size: 1.0625rem;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+:focus-visible {
+  outline: 3px solid rgba(3, 150, 208, 0.5);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---------- Typography ---------- */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-display);
+  color: var(--ink);
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+h1 {
+  font-size: clamp(2.35rem, 5.2vw, 4rem);
+  letter-spacing: -0.025em;
+}
+h2 {
+  font-size: clamp(1.85rem, 3.6vw, 2.85rem);
+  letter-spacing: -0.02em;
+}
+h3 {
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+}
+h4 {
+  font-size: 1.15rem;
+}
+p {
+  text-wrap: pretty;
+}
+strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* ---------- Layout primitives ---------- */
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+.container-wide {
+  max-width: var(--container-wide);
+}
+.section {
+  padding-block: var(--section-y);
+}
+.section-tight {
+  padding-block: clamp(3rem, 6vw, 5rem);
+}
+.bg-soft {
+  background: var(--bg-soft);
+}
+.bg-navy {
+  background: var(--grad-navy);
+  color: rgba(255, 255, 255, 0.82);
+}
+.bg-navy h1,
+.bg-navy h2,
+.bg-navy h3,
+.bg-navy h4 {
+  color: #fff;
+}
+
+/* ---------- Section heading ---------- */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+.eyebrow::before {
+  content: "";
+  width: 26px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--blue);
+}
+.bg-navy .eyebrow {
+  color: var(--blue-bright);
+}
+.bg-navy .eyebrow::before {
+  background: var(--blue-bright);
+}
+.section-head {
+  max-width: 720px;
+}
+.section-head.center {
+  margin-inline: auto;
+  text-align: center;
+}
+.section-head p {
+  margin-top: 1rem;
+  font-size: 1.075rem;
+}
+.lead {
+  font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+  color: var(--slate);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  --btn-bg: var(--grad-blue);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0.95rem 1.6rem;
+  border-radius: var(--r-full);
+  background: var(--btn-bg);
+  color: #fff;
+  box-shadow: var(--sh-blue);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease,
+    color 0.18s ease;
+  white-space: nowrap;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(3, 150, 208, 0.42);
+}
+.btn:active {
+  transform: translateY(0);
+}
+.btn svg {
+  flex: none;
+}
+.btn-lg {
+  padding: 1.1rem 2rem;
+  font-size: 1.05rem;
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--navy);
+  box-shadow: inset 0 0 0 1.5px var(--line-strong);
+}
+.btn-ghost:hover {
+  box-shadow: inset 0 0 0 1.5px var(--blue);
+  color: var(--blue);
+}
+.btn-white {
+  background: #fff;
+  color: var(--navy);
+  box-shadow: 0 10px 26px rgba(4, 20, 44, 0.28);
+}
+.btn-white:hover {
+  color: var(--blue-dark);
+}
+.btn-outline-white {
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.5);
+}
+.btn-outline-white:hover {
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: inset 0 0 0 1.5px #fff;
+}
+.btn-block {
+  width: 100%;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+/* Text link with arrow */
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--blue-dark);
+  transition: gap 0.18s ease, color 0.18s ease;
+}
+.link-arrow svg {
+  transition: transform 0.18s ease;
+}
+.link-arrow:hover {
+  color: var(--blue);
+}
+.link-arrow:hover svg {
+  transform: translateX(4px);
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  box-shadow: var(--sh-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--sh-lg);
+  border-color: transparent;
+}
+
+/* Grid helpers */
+.grid {
+  display: grid;
+  gap: clamp(1.1rem, 2.4vw, 1.75rem);
+}
+.grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid > * {
+  min-width: 0;
+}
+@media (max-width: 960px) {
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 620px) {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Chips / pills */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.95rem;
+  border-radius: var(--r-full);
+  background: var(--bg-soft-2);
+  color: var(--navy);
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: 1px solid var(--line);
+}
+.tag {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 0.28rem 0.6rem;
+  border-radius: var(--r-full);
+  background: rgba(3, 150, 208, 0.1);
+  color: var(--blue-dark);
+}
+
+/* Utility */
+.text-center {
+  text-align: center;
+}
+.mt-1 {
+  margin-top: 0.5rem;
+}
+.mt-2 {
+  margin-top: 1rem;
+}
+.mt-3 {
+  margin-top: 1.5rem;
+}
+.mt-4 {
+  margin-top: 2rem;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Reveal-on-scroll (progressive enhancement).
+   Hidden state is gated behind `.js` on <html>, added synchronously before
+   paint — so if JavaScript never runs, all content stays fully visible. */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+.js .reveal.in {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .btn:hover,
+  .card-hover:hover {
+    transform: none;
+  }
+}

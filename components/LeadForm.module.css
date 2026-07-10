@@ -1,0 +1,106 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.asCard {
+  background: #fff;
+  border-radius: var(--r-lg);
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  box-shadow: var(--sh-lg);
+  border: 1px solid var(--line);
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
+}
+@media (max-width: 520px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.field > span {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--navy);
+}
+.field em {
+  font-weight: 400;
+  font-style: normal;
+  color: var(--muted);
+}
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  background: var(--bg-soft);
+  border: 1.5px solid var(--line);
+  border-radius: 12px;
+  padding: 0.8rem 0.95rem;
+  font-size: 1rem;
+  color: var(--ink);
+  transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+.field textarea {
+  resize: vertical;
+  min-height: 84px;
+}
+.field input::placeholder,
+.field textarea::placeholder {
+  color: var(--muted);
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(3, 150, 208, 0.12);
+}
+.disclaimer {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+  text-align: center;
+}
+.disclaimer svg {
+  color: var(--green);
+  flex: none;
+}
+
+/* Success state */
+.success {
+  text-align: center;
+  align-items: center;
+  gap: 0.6rem;
+  padding-block: clamp(2.5rem, 5vw, 3.5rem);
+}
+.success h3 {
+  color: var(--navy);
+}
+.success p {
+  max-width: 42ch;
+  margin-inline: auto;
+}
+.successIcon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: var(--green);
+  box-shadow: 0 10px 24px rgba(47, 174, 67, 0.35);
+  margin-bottom: 0.35rem;
+}
