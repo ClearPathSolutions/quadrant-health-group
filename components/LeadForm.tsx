@@ -10,18 +10,47 @@ export default function LeadForm({
 }: {
   variant?: "card" | "plain";
 }) {
-  const [status, setStatus] = useState<"idle" | "sending" | "done">("idle");
+  const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">(
+    "idle"
+  );
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    const form = e.currentTarget;
+    const fd = new FormData(form);
+
+    const firstName = String(fd.get("firstName") || "").trim();
+    const lastName = String(fd.get("lastName") || "").trim();
+    const payload = {
+      name: `${firstName} ${lastName}`.trim(),
+      phone: String(fd.get("phone") || "").trim(),
+      email: String(fd.get("email") || "").trim(),
+      who: String(fd.get("who") || ""),
+      message: String(fd.get("message") || "").trim(),
+      company: String(fd.get("company") || ""), // honeypot
+      page_url: typeof window !== "undefined" ? window.location.href : "",
+      referrer: typeof document !== "undefined" ? document.referrer : "",
+    };
+
     setStatus("sending");
-    // Front-end demo: in production, POST to /api/lead or a form provider.
-    setTimeout(() => setStatus("done"), 700);
+    try {
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const json = await res.json().catch(() => ({}));
+      setStatus(res.ok && json.ok ? "done" : "error");
+    } catch {
+      setStatus("error");
+    }
   }
 
   if (status === "done") {
     return (
-      <div className={`${styles.form} ${variant === "card" ? styles.asCard : ""} ${styles.success}`}>
+      <div
+        className={`${styles.form} ${variant === "card" ? styles.asCard : ""} ${styles.success}`}
+      >
         <div className={styles.successIcon}>
           <Icon name="check" size={34} />
         </div>
@@ -42,6 +71,7 @@ export default function LeadForm({
     <form
       className={`${styles.form} ${variant === "card" ? styles.asCard : ""}`}
       onSubmit={onSubmit}
+      noValidate
     >
       <div className={styles.row}>
         <label className={styles.field}>
@@ -88,7 +118,29 @@ export default function LeadForm({
         />
       </label>
 
-      <button type="submit" className="btn btn-lg btn-block" disabled={status === "sending"}>
+      {/* Honeypot — hidden from humans, catches bots */}
+      <input
+        type="text"
+        name="company"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className={styles.honeypot}
+      />
+
+      {status === "error" && (
+        <p className={styles.errorMsg} role="alert">
+          <Icon name="phone" size={15} />
+          Something went wrong sending your message. Please call us directly at{" "}
+          <a href={site.phoneHref}>{site.phone}</a> — we&apos;re here 24/7.
+        </p>
+      )}
+
+      <button
+        type="submit"
+        className="btn btn-lg btn-block"
+        disabled={status === "sending"}
+      >
         {status === "sending" ? "Sending…" : "Send — Get Confidential Help"}
         {status !== "sending" && <Icon name="arrow-right" size={18} />}
       </button>

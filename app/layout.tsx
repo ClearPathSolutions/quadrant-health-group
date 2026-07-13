@@ -1,10 +1,15 @@
 import type { Metadata, Viewport } from "next";
 import { Montserrat, Roboto } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { site } from "@/lib/site";
+
+const CLARION_SITE_KEY =
+  process.env.NEXT_PUBLIC_CLARION_SITE_KEY ||
+  "cpx_-vOkPf-M2Zq1tmLgDgXOFblwF1FOh4sC";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -83,6 +88,13 @@ export default function RootLayout({
         <main id="main">{children}</main>
         <Footer />
         <Reveal />
+        {/* Clarion live-chat widget */}
+        <Script
+          src="https://www.clarionlabs.ai/widget.v1.js"
+          strategy="afterInteractive"
+          data-site-key={CLARION_SITE_KEY}
+          data-api="https://api.clarionlabs.ai"
+        />
       </body>
     </html>
   );

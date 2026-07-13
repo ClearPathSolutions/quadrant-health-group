@@ -64,6 +64,35 @@
   background: #fff;
   box-shadow: 0 0 0 4px rgba(3, 150, 208, 0.12);
 }
+.honeypot {
+  position: absolute !important;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+.errorMsg {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  font-size: 0.92rem;
+  color: #b4232a;
+  background: #fdecec;
+  border: 1px solid #f6c9c9;
+  border-radius: 12px;
+  padding: 0.7rem 0.9rem;
+}
+.errorMsg svg {
+  color: #b4232a;
+  flex: none;
+}
+.errorMsg a {
+  color: #b4232a;
+  font-weight: 700;
+  text-decoration: underline;
+}
 .disclaimer {
   display: flex;
   align-items: center;

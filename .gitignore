@@ -19,8 +19,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-.env*.local
+# local env files & secrets (never commit tokens)
+.env
+.env.*
+!.env.example
 
 # vercel
 .vercel
@@ -32,3 +34,7 @@ next-env.d.ts
 # scrape working dir + screenshots (source assets already copied into /public)
 /_scrape
 /_shots
+
+# ignore all env files EXCEPT the public example (keep this rule last so it wins)
+.env*
+!.env.example
