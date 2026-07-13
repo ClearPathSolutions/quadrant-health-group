@@ -91,12 +91,17 @@ export default function RootLayout({
         <main id="main">{children}</main>
         <Footer />
         <Reveal />
-        {/* Clarion live-chat widget */}
+        {/* Clarion live-chat widget — themed to the Quadrant brand blue
+            (widget default is teal #0d9488). */}
         <Script
           src="https://www.clarionlabs.ai/widget.v1.js"
           strategy="afterInteractive"
           data-site-key={CLARION_SITE_KEY}
           data-api="https://api.clarionlabs.ai"
+          data-color="#0396d0"
+          data-position="bottom-right"
+          data-title="Quadrant Health Group"
+          data-header-text="We're here 24/7 — how can we help?"
         />
       </body>
     </html>
