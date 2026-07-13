@@ -74,6 +74,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${montserrat.variable} ${roboto.variable}`}>
       <body>
+        {/* CallTrackingMetrics — loads in <head> site-wide for dynamic number
+            insertion; must load early so on-page phone numbers get swapped. */}
+        <Script src="//264810.tctm.co/t.js" strategy="beforeInteractive" />
         {/* Enable scroll-reveal only when JS is available — runs before paint
             so content is never hidden for no-JS users or before hydration. */}
         <script
