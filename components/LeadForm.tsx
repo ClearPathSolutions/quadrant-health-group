@@ -7,8 +7,11 @@ import styles from "./LeadForm.module.css";
 
 export default function LeadForm({
   variant = "card",
+  formName = "website_lead",
 }: {
   variant?: "card" | "plain";
+  /** Label reported to Clarion Form Capture (data-clarion-form). */
+  formName?: string;
 }) {
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">(
     "idle"
@@ -71,6 +74,7 @@ export default function LeadForm({
     <form
       className={`${styles.form} ${variant === "card" ? styles.asCard : ""}`}
       onSubmit={onSubmit}
+      data-clarion-form={formName}
       noValidate
     >
       <div className={styles.row}>

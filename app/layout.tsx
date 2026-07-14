@@ -103,6 +103,15 @@ export default function RootLayout({
           data-title="Quadrant Health Group"
           data-header-text="We're here 24/7 — how can we help?"
         />
+        {/* Clarion Form Capture — mirrors submissions of any form tagged with
+            data-clarion-form into Clarion's "Form Submissions". The custom
+            /api/lead endpoint stays as a server-side backup. */}
+        <Script
+          src="https://www.clarionlabs.ai/forms-capture.v1.js"
+          strategy="afterInteractive"
+          data-site-key={CLARION_SITE_KEY}
+          data-api="https://api.clarionlabs.ai"
+        />
       </body>
     </html>
   );

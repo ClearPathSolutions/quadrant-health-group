@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import Icon from "@/components/Icon";
+import ClarionBlog from "@/components/ClarionBlog";
 import { posts, formatDate, readingTime } from "@/lib/content";
 import s from "./blog.module.css";
 
@@ -88,6 +89,9 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+
+      {/* Clarion-managed posts (hidden until Clarion has content) */}
+      <ClarionBlog heading="More from the Quadrant Health team" />
     </>
   );
 }

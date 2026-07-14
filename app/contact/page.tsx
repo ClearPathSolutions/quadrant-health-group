@@ -84,7 +84,7 @@ export default function ContactPage() {
               <h3 style={{ fontSize: "1.35rem" }}>Send us a message</h3>
               <p className="mt-1">We&apos;ll get back to you promptly and confidentially.</p>
             </div>
-            <LeadForm />
+            <LeadForm formName="contact" />
           </div>
         </div>
       </section>

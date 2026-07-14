@@ -158,7 +158,7 @@ export default function LocationDetail({ params }: { params: { slug: string } })
             <p>Fill out the form and our admissions team will reach out — confidentially, with no obligation.</p>
           </div>
           <div className="mt-4">
-            <LeadForm />
+            <LeadForm formName="location_inquiry" />
           </div>
         </div>
       </section>

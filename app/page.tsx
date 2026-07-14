@@ -346,7 +346,7 @@ export default function HomePage() {
             </a>
           </div>
           <div className={s.formSide}>
-            <LeadForm />
+            <LeadForm formName="homepage_lead" />
           </div>
         </div>
       </section>

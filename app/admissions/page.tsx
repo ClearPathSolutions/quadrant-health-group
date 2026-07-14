@@ -155,7 +155,7 @@ export default function AdmissionsPage() {
             </a>
           </div>
           <div className={s.formSide}>
-            <LeadForm />
+            <LeadForm formName="insurance_verification" />
           </div>
         </div>
       </section>
