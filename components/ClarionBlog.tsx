@@ -20,7 +20,11 @@ export default function ClarionBlog({ heading }: { heading: string }) {
   useEffect(() => {
     const el = mount.current;
     if (!el) return;
-    const check = () => setHasContent(el.childElementCount > 0);
+    // Only reveal once REAL post content renders (a link or article element).
+    // The embed injects a short placeholder/error node when its feed can't
+    // load — that must NOT reveal the section.
+    const check = () =>
+      setHasContent(!!el.querySelector("a[href], article, [class*='post'], [class*='card']"));
     check();
     const obs = new MutationObserver(check);
     obs.observe(el, { childList: true, subtree: true });
