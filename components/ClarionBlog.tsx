@@ -40,11 +40,13 @@ export default function ClarionBlog({ heading }: { heading: string }) {
         </div>
         <div ref={mount} data-clarion-blog />
       </div>
+      {/* data-api points at our same-origin proxy (app/api/clarion-blog) to
+          bypass Clarion's missing CORS headers on the public blog feed. */}
       <Script
         src="https://www.clarionlabs.ai/blog-embed.v1.js"
         strategy="afterInteractive"
         data-site-key={CLARION_SITE_KEY}
-        data-api="https://api.clarionlabs.ai"
+        data-api="/api/clarion-blog"
       />
     </section>
   );
