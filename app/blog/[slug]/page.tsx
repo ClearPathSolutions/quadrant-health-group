@@ -3,16 +3,25 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Icon from "@/components/Icon";
-import { getPost, posts, formatDate, readingTime } from "@/lib/content";
+import { getPost, posts, getAllPosts, formatDate, readingTime, readingTimeFromHtml } from "@/lib/content";
+import { getClarionPost, getClarionPosts } from "@/lib/clarion";
 import { site } from "@/lib/site";
 import a from "../article.module.css";
 
-export function generateStaticParams() {
-  return posts.map((p) => ({ slug: p.slug }));
+// Pre-render every native post at build time, plus any Clarion posts known at
+// build time. New Clarion posts published later still work: dynamicParams
+// defaults to true, so an unknown slug falls through to the runtime fetch below.
+export async function generateStaticParams() {
+  const clarion = await getClarionPosts();
+  return [...posts, ...clarion].map((p) => ({ slug: p.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const post = getPost(params.slug);
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const post = getPost(params.slug) || (await getClarionPost(params.slug));
   if (!post) return {};
   return {
     title: post.title,
@@ -26,11 +35,16 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function PostPage({ params }: { params: { slug: string } }) {
-  const post = getPost(params.slug);
+export default async function PostPage({ params }: { params: { slug: string } }) {
+  const clarionPost = getPost(params.slug)
+    ? null
+    : await getClarionPost(params.slug);
+  const post = getPost(params.slug) || clarionPost;
   if (!post) notFound();
 
-  const related = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
+  const related = (await getAllPosts())
+    .filter((p) => p.slug !== post.slug)
+    .slice(0, 3);
 
   return (
     <>
@@ -45,7 +59,12 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             <div className={a.meta}>
               <span>{formatDate(post.date)}</span>
               <span>·</span>
-              <span>{readingTime(post.sections)} min read</span>
+              <span>
+                {clarionPost
+                  ? readingTimeFromHtml(clarionPost.bodyHtml)
+                  : readingTime(post.sections)}{" "}
+                min read
+              </span>
             </div>
             <h1 className={a.title}>{post.title}</h1>
             {post.excerpt && <p className={a.lede}>{post.excerpt}</p>}
@@ -69,22 +88,30 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
         <div className="container">
           <div className={a.body}>
-            {post.sections.map((sec, i) => (
-              <section key={i} className={a.block}>
-                {sec.heading && sec.heading !== post.title && <h2>{sec.heading}</h2>}
-                {sec.body.split("\n").filter(Boolean).map((para, j) =>
-                  para.trim().startsWith("- ") ? (
-                    <ul key={j}>
-                      {para.split("\n").map((li, k) => (
-                        <li key={k}>{li.replace(/^-\s*/, "")}</li>
-                      ))}
-                    </ul>
-                  ) : (
-                    <p key={j}>{para}</p>
-                  )
-                )}
-              </section>
-            ))}
+            {clarionPost ? (
+              // Clarion posts arrive as sanitized HTML from Clarion's API.
+              <section
+                className={a.block}
+                dangerouslySetInnerHTML={{ __html: clarionPost.bodyHtml }}
+              />
+            ) : (
+              post.sections.map((sec, i) => (
+                <section key={i} className={a.block}>
+                  {sec.heading && sec.heading !== post.title && <h2>{sec.heading}</h2>}
+                  {sec.body.split("\n").filter(Boolean).map((para, j) =>
+                    para.trim().startsWith("- ") ? (
+                      <ul key={j}>
+                        {para.split("\n").map((li, k) => (
+                          <li key={k}>{li.replace(/^-\s*/, "")}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p key={j}>{para}</p>
+                    )
+                  )}
+                </section>
+              ))
+            )}
 
             <aside className={a.cta}>
               <div>

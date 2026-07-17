@@ -3,8 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import Icon from "@/components/Icon";
-import ClarionBlog from "@/components/ClarionBlog";
-import { posts, formatDate, readingTime } from "@/lib/content";
+import { getAllPosts, formatDate, readingTime } from "@/lib/content";
 import s from "./blog.module.css";
 
 export const metadata: Metadata = {
@@ -13,7 +12,8 @@ export const metadata: Metadata = {
     "Insights and guidance on addiction, mental health, treatment options, and recovery from the clinical team at Quadrant Health Group.",
 };
 
-export default function BlogPage() {
+export default async function BlogPage() {
+  const posts = await getAllPosts();
   const [feature, ...rest] = posts;
   return (
     <>
@@ -89,9 +89,6 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-
-      {/* Clarion-managed posts (hidden until Clarion has content) */}
-      <ClarionBlog heading="More from the Quadrant Health team" />
     </>
   );
 }

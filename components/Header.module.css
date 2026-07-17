@@ -117,14 +117,18 @@
 /* Dropdown */
 .dropdown {
   position: absolute;
-  top: calc(100% + 8px);
+  /* Anchor flush to the trigger (top: 100%) and create the visual gap with
+     padding-top instead of a physical offset. The padding is part of the
+     dropdown's own hover box, so moving the cursor from the trigger down into
+     the menu never crosses a dead zone that would drop :hover and hide it. */
+  top: 100%;
   left: 50%;
   transform: translateX(-50%) translateY(8px);
   min-width: 290px;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.18s ease, transform 0.18s ease;
-  padding-top: 6px;
+  padding-top: 14px;
 }
 .navItem:hover .dropdown,
 .navItem:focus-within .dropdown {

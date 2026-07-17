@@ -23,6 +23,9 @@ export type Post = {
   excerpt: string;
   image: string | null;
   sections: Section[];
+  // "native" = built from the scraped JSON; "clarion" = managed in Clarion and
+  // fetched at request time. Absent on the raw JSON, defaulted where read.
+  source?: "native" | "clarion";
 };
 
 export type TreatmentCategory = "addiction" | "level" | "modality";
@@ -56,6 +59,23 @@ export const treatments = treatmentsData as Treatment[];
 export const locationDetails = locationDetailsData as Record<string, LocationDetail>;
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);
+
+// Native posts sort newest-first by ISO date (defensive — the JSON is usually
+// already ordered). Used as the base for the merged feed.
+const sortByDateDesc = <T extends { date: string }>(list: T[]) =>
+  [...list].sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+
+/**
+ * All posts — native + Clarion-managed — merged and sorted newest-first, so
+ * whichever source has the most recent post takes the top/feature spot.
+ * Async + server-only because it fetches the Clarion feed at request time.
+ */
+export async function getAllPosts(): Promise<Post[]> {
+  const { getClarionPosts } = await import("./clarion");
+  const native = posts.map((p) => ({ ...p, source: "native" as const }));
+  const clarion = await getClarionPosts();
+  return sortByDateDesc([...native, ...clarion]);
+}
 export const getTeamMember = (slug: string) => team.find((t) => t.slug === slug);
 export const getTreatment = (slug: string) => treatments.find((t) => t.slug === slug);
 export const getLocationDetail = (slug: string): LocationDetail | undefined =>
@@ -85,5 +105,12 @@ export function formatDate(iso: string): string {
 // Rough read-time estimate from section word counts.
 export function readingTime(sections: Section[]): number {
   const words = sections.reduce((n, s) => n + s.body.split(/\s+/).length, 0);
+  return Math.max(2, Math.round(words / 200));
+}
+
+// Read-time estimate for HTML bodies (Clarion posts) — strip tags, count words.
+export function readingTimeFromHtml(html: string): number {
+  const text = html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  const words = text ? text.split(" ").length : 0;
   return Math.max(2, Math.round(words / 200));
 }
