@@ -38,6 +38,9 @@ export default async function BlogPage() {
                     className={s.img}
                     sizes="(max-width: 900px) 100vw, 55vw"
                     priority
+                    // Clarion cover images are remote (any host); skip Next's
+                    // optimizer so they aren't blocked by remotePatterns.
+                    unoptimized={feature.source === "clarion"}
                   />
                 )}
               </div>
@@ -69,6 +72,7 @@ export default async function BlogPage() {
                       height={400}
                       className={s.img}
                       sizes="(max-width: 620px) 100vw, (max-width: 960px) 50vw, 33vw"
+                      unoptimized={p.source === "clarion"}
                     />
                   )}
                 </div>

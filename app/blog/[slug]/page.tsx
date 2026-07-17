@@ -81,6 +81,8 @@ export default async function PostPage({ params }: { params: { slug: string } })
                 height={700}
                 priority
                 sizes="(max-width: 900px) 100vw, 900px"
+                // Clarion covers are remote; skip the optimizer (no host allowlist).
+                unoptimized={post.source === "clarion"}
               />
             </div>
           </div>
@@ -136,7 +138,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
                 <Link key={p.slug} href={`/blog/${p.slug}`} className={`card card-hover ${a.relCard}`}>
                   {p.image && (
                     <div className={a.relMedia}>
-                      <Image src={p.image} alt={p.title} width={600} height={400} sizes="(max-width: 620px) 100vw, 33vw" />
+                      <Image src={p.image} alt={p.title} width={600} height={400} sizes="(max-width: 620px) 100vw, 33vw" unoptimized={p.source === "clarion"} />
                     </div>
                   )}
                   <div className={a.relBody}>
