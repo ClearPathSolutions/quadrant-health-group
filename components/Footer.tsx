@@ -9,9 +9,9 @@ const columns = [
     title: "Get Help",
     links: [
       { label: "Admissions", href: "/admissions" },
-      { label: "Get Into Treatment", href: "/admissions#self" },
-      { label: "Help for a Loved One", href: "/admissions#loved-one" },
-      { label: "Verify Your Insurance", href: "/admissions#insurance" },
+      { label: "Get Into Treatment", href: "/admissions/help-for-yourself" },
+      { label: "Help for a Loved One", href: "/admissions/help-for-loved-one" },
+      { label: "Verify Your Insurance", href: "/admissions/insurance-verification" },
       { label: "Admissions Hotline", href: site.phoneHref },
     ],
   },
@@ -31,14 +31,16 @@ const columns = [
       { label: "Meet the Team", href: "/about/meet-the-team" },
       { label: "Our Locations", href: "/locations" },
       { label: "Blog & Resources", href: "/blog" },
-      { label: "FAQs", href: "/about#faq" },
+      { label: "FAQs", href: "/about/faq" },
       { label: "Contact", href: "/contact" },
     ],
   },
 ];
 
 export default function Footer() {
-  const year = 2026;
+  // F-11 — was hardcoded to 2026. This is a server component rendered at build
+  // time, so there is no hydration mismatch to avoid; a redeploy keeps it current.
+  const year = new Date().getFullYear();
   return (
     <footer className={styles.footer}>
       {/* CTA band */}
@@ -56,7 +58,7 @@ export default function Footer() {
               <Icon name="phone" size={19} />
               Call {site.phone}
             </a>
-            <Link href="/admissions#insurance" className="btn btn-outline-white btn-lg">
+            <Link href="/admissions/insurance-verification" className="btn btn-outline-white btn-lg">
               Verify Insurance
             </Link>
           </div>
@@ -68,8 +70,8 @@ export default function Footer() {
           <Image
             src="/images/logo-white.png"
             alt={site.name}
-            width={220}
-            height={177}
+            width={580}
+            height={440}
             className={styles.logo}
           />
           <p className={styles.blurb}>
@@ -134,6 +136,7 @@ export default function Footer() {
           </p>
           <nav className={styles.legal} aria-label="Legal">
             <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/editorial-policy">Editorial Policy</Link>
             <Link href="/sms-terms">SMS Terms &amp; Conditions</Link>
             <Link href="/contact">Contact</Link>
           </nav>

@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
-import { site } from "@/lib/site";
+import { site, seo } from "@/lib/site";
 import c from "../content.module.css";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "How Quadrant Health Group collects, uses, and protects your personal information.",
+  ...seo({
+    path: "/privacy-policy",
+    title: "Privacy Policy",
+    description:
+      "How Quadrant Health Group collects, uses, and protects your personal information.",
+  }),
 };
 
 export default function PrivacyPage() {

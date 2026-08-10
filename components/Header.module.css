@@ -273,11 +273,20 @@
   display: flex;
   flex-direction: column;
   transform: translateX(100%);
-  transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+  /* F-04 — `transform` alone leaves the 23 links and buttons inside the closed
+     drawer in the focus order while it carries aria-hidden="true", so keyboard
+     users tab into content screen readers are told does not exist.
+     `visibility` removes it from the focus tree; transitioning it over the same
+     duration keeps the slide-out animation intact (visibility flips discretely
+     at the end of the close, and immediately on open). */
+  visibility: hidden;
+  transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.32s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: -12px 0 40px rgba(10, 31, 66, 0.18);
 }
 .drawerOpen {
   transform: translateX(0);
+  visibility: visible;
 }
 .drawerHead {
   display: flex;

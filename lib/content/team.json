@@ -1,19 +1,291 @@
 [
   {
+    "slug": "joseph-cameron",
+    "name": "Joseph Cameron",
+    "role": "Founder",
+    "credentials": "",
+    "bio": "With more than a decade of personal recovery and extensive experience in behavioral health business development, Joey has dedicated his career to expanding access to high-quality, evidence-based treatment for individuals and families affected by mental health and substance use disorders.\nIn 2020, Joey founded Quadrant Health Group with a vision of creating a boutique behavioral healthcare experience rooted in clinical excellence, compassion, and long-term recovery. What began with a single luxury treatment center in Laguna Beach has grown into a rapidly expanding, multi-state behavioral health organization serving communities across the country.\nUnder Joey's leadership, Quadrant Health Group has developed a network of inpatient, outpatient, and specialty behavioral health programs while remaining committed to raising the standard of care. His strategic vision, entrepreneurial drive, and unwavering belief in recovery continue to guide the organization's growth and its mission of transforming lives through exceptional treatment and compassionate care.",
+    "image": "/images/team/joseph-cameron.jpg",
+    "group": "Founders"
+  },
+  {
+    "slug": "louis-iacona",
+    "name": "Louis Iacona",
+    "role": "Founder",
+    "credentials": "",
+    "bio": "Louis Iacona plays an integral role in driving the organization's growth, brand strategy, and community outreach initiatives. With more than a decade of personal recovery and extensive experience in marketing and business development, Louis combines professional expertise with a deeply personal commitment to helping individuals and families affected by substance use and mental health disorders.\nAs a certified interventionist, Louis has dedicated his career to connecting people with life-changing treatment and resources during some of the most difficult moments in their lives. His unique perspective, shaped by both lived experience and years of industry leadership, allows him to build meaningful relationships while advocating for accessible, high-quality behavioral healthcare.\nGuided by a passion for service, Louis remains actively involved in supporting individuals and families seeking recovery. His leadership continues to help shape Quadrant Health Group's mission of delivering compassionate, evidence-based care while expanding access to treatment for communities across the country.",
+    "image": "/images/team/louis-iacona.jpg",
+    "group": "Founders"
+  },
+  {
+    "slug": "nicholas-petrillo",
+    "name": "Nicholas Petrillo",
+    "role": "Chief Executive Officer",
+    "credentials": "",
+    "bio": "Nicholas Petrillo serves as the Chief Executive Officer of Quadrant Health Group, where he is committed to expanding access to high-quality behavioral healthcare while fostering a culture centered on compassion, clinical excellence, and long-term recovery.\nWith extensive experience in behavioral healthcare operations, admissions, marketing, and organizational development, Nicholas has dedicated his career to helping treatment providers better serve individuals and families seeking care. His leadership has focused on building systems that make it easier for people to access treatment, receive personalized support, and continue their recovery journey with confidence.\nSince co-founding Quadrant Health Group, Nicholas has led the organization's growth across multiple states while ensuring that quality of care remains at the center of every decision. He has helped develop an integrated network of behavioral health services that includes detoxification, residential treatment, outpatient care, and supportive recovery resources, allowing clients to receive seamless care throughout every stage of healing.\nNicholas believes that lasting recovery begins with treating every individual with dignity, respect, and compassion. He is passionate about creating environments where clients feel safe, supported, and empowered to achieve meaningful, lasting change. Under his leadership, Quadrant Health Group continues to invest in experienced clinicians, innovative treatment programs, and a patient-first approach that prioritizes individualized care.\nAs CEO, Nicholas remains focused on expanding access to evidence-based behavioral healthcare, strengthening clinical programs, and ensuring that every person who walks through Quadrant Health Group's doors receives the support they need to build a healthier future.",
+    "image": "/images/team/nicholas-petrillo.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "michael-zornberg",
+    "name": "Michael Zornberg",
+    "role": "Chief Operating Officer",
+    "credentials": "",
+    "bio": "Michael Zornberg serves as Chief Operating Officer of Quadrant Health Group, bringing extensive expertise in behavioral healthcare operations, regulatory compliance, and multi-state facility development. Since entering the behavioral health industry in 2018, Michael has played a pivotal role in the successful development, licensing, and operational oversight of more than 100 treatment facilities across the United States. His expertise includes state and federal regulatory compliance, Joint Commission accreditation, payer requirements, and complex healthcare transactions, helping organizations achieve operational excellence while maintaining the highest standards of patient care and safety.\nBefore transitioning into behavioral healthcare, Michael worked in strategic partnerships with the National Football League, where he developed a strong foundation in business operations, organizational growth, and relationship management. He holds a Bachelor of Science in Business Administration and Business Law and has earned recognition as a trusted expert in healthcare compliance, frequently serving as an expert witness in legal proceedings involving behavioral health regulations and operational standards.\nAs Chief Operating Officer, Michael oversees the operational strategy and performance of Quadrant Health Group's growing network of behavioral healthcare facilities. His leadership is centered on building scalable, compliant systems that support clinical excellence, operational efficiency, and sustainable growth. Guided by a commitment to accountability, innovation, and continuous improvement, he is dedicated to advancing the organization's mission of delivering exceptional behavioral healthcare to the communities it serves.",
+    "image": "/images/team/michael-zornberg.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "sal-rabie",
+    "name": "Sal Rabie",
+    "role": "Chief Financial Officer",
+    "credentials": "",
+    "bio": "Sal Rabie serves as the Chief Financial Officer for Quadrant Health Group, bringing more than 15 years of accounting, financial management, and strategic leadership experience. He earned his Bachelor of Science in Accounting from Long Island University, C.W. Post, and is a licensed Certified Public Accountant (CPA).\nPrior to joining Quadrant Health Group, Sal spent a decade with a boutique accounting firm on Long Island, where he specialized in small business taxation and financial consulting. He later founded, owned, and successfully operated his own accounting firm for five years, leading a team of accounting professionals while providing comprehensive financial services to businesses across a variety of industries.\nThroughout his career, Sal has developed extensive expertise in financial reporting, bookkeeping, payroll, tax planning and preparation, internal controls, and regulatory compliance. His experience includes preparing GAAP-compliant financial statements, serving on audit teams for both for-profit and nonprofit organizations, acting as an internal audit resource for companies requiring reviewed or audited financial statements, and representing businesses and individuals during IRS, state tax department, and Department of Labor audits. He has also served as a fractional Chief Financial Officer for numerous organizations, helping guide financial strategy, operational efficiency, and sustainable growth.\nAs Chief Financial Officer, Sal oversees Quadrant Health Group's financial operations, ensuring fiscal responsibility while supporting the organization's continued growth and commitment to delivering high-quality behavioral healthcare.",
+    "image": "/images/team/sal-rabie.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "colin-mcbride",
+    "name": "Colin McBride",
+    "role": "Chief Revenue Officer",
+    "credentials": "",
+    "bio": "As Vice President of Revenue & Billing, Colin McBride provides executive oversight and leadership to Quadrant Billing Solutions (QBS)—Quadrant Health Group’s in-house billing company. Colin led the development of QBS from the ground up, building it to meet the complex demands of behavioral health providers. Though QBS operates under the Quadrant Health umbrella, it functions independently with its own systems, leadership, and results-driven infrastructure. QBS remains Colin’s primary focus; however, he also plays a key strategic role across Quadrant Health Group, supporting revenue operations through clinical quality oversight, and admissions strategy across the organization’s growing network of facilities. With over a decade of experience in behavioral health, Colin’s background in direct care and facility leadership gives him a deep understanding of the challenges providers face—insights that now inform his leadership across Quadrant Health Group. Colin’s passion lies in developing innovative solutions that bridge clinical care with financial strategy, improving both patient\noutcomes and organizational performance.",
+    "image": "/images/team/colin-mcbride.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "pamela-tambini",
+    "name": "Dr. Pamela Tambini",
+    "role": "Medical Oversight",
+    "credentials": "",
+    "bio": "Dr. Pamela Tambini is a board-certified physician in Internal Medicine and Addiction Medicine, entrepreneur, and healthcare executive dedicated to advancing evidence-based treatment for individuals with substance use and co-occurring mental health disorders. She is the Founder and Chief Executive Officer of The Sober Connection, a physician-led medical services organization that partners with behavioral healthcare facilities nationwide to provide comprehensive medical leadership, provider staffing, quality assurance, and regulatory compliance solutions.\nWith extensive experience across the continuum of addiction treatment—including medical detoxification, residential treatment, partial hospitalization, intensive outpatient, and outpatient care—Dr. Tambini has developed scalable clinical programs that improve patient outcomes while helping organizations maintain regulatory excellence and operational efficiency. Her expertise includes addiction medicine, psychopharmacology, withdrawal management, medical stabilization, utilization review, physician leadership, and multi-state healthcare operations.\nPrior to founding The Sober Connection, Dr. Tambini served as a hospitalist within the Veterans Health Administration, where she managed medically complex patients and collaborated with multidisciplinary teams to deliver high-quality inpatient care. Her clinical expertise, combined with her operational leadership, provides a unique perspective on integrating medical excellence with sustainable healthcare systems.\nUnder Dr. Tambini's leadership, The Sober Connection has grown into a multi-state organization supporting behavioral healthcare facilities through physician staffing, medical directorships, quality improvement initiatives, provider education, credentialing, policy development, and clinical oversight. She is recognized for building high-performing medical teams, implementing standardized clinical processes, and helping treatment centers navigate accreditation, licensing, and payer requirements.\nDr. Tambini is passionate about raising the standard of addiction medicine by combining compassionate patient care with innovative operational strategies. Her leadership philosophy emphasizes clinical integrity, accountability, and collaboration, with a focus on creating systems that support both providers and the patients they serve.\nShe remains actively involved in medical education, physician mentorship, and the ongoing advancement of best practices in behavioral healthcare while continuing to care for patients and advise organizations on clinical program development, healthcare operations, and quality improvement initiatives.",
+    "image": "/images/team/pamela-tambini.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "catherine-alpaugh",
+    "name": "Catherine Alpaugh",
+    "role": "Executive VP of Administration",
+    "credentials": "",
+    "bio": "Catherine joined the Quadrant Health Group’s team as Executive Vice President bringing over a decade of industry experience and a proven track record of leadership in multisite organizations. Throughout her career, she has held key roles including Director of Admissions, where she successfully oversaw placement operations across multiple locations and was instrumental in driving growth, operational efficiency and expanding market presence.\nShe holds a Bachelor's degree in Marketing and a Master's degree in Healthcare Administration, combining strategic business insights with deep knowledge of healthcare operations. Her leadership is defined by a commitment to excellence, data-driven decision-making, and building high-performing teams that deliver measurable results.",
+    "image": "/images/team/catherine-alpaugh.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "jessica-dalton",
+    "name": "Jessica Dalton",
+    "role": "Executive VP of Operations",
+    "credentials": "",
+    "bio": "serves as Executive Vice President of Operations for Quadrant Health Group, bringing extensive leadership experience in behavioral healthcare operations, compliance, and organizational development. Throughout her career, she has overseen operations across multiple behavioral health and substance use treatment facilities, leading initiatives that strengthen operational performance, enhance regulatory compliance, and improve the overall quality of patient care.\nWith a deep understanding of healthcare operations, Jessica has successfully implemented standardized policies, optimized organizational processes, and fostered collaboration across multidisciplinary teams to support sustainable growth and clinical excellence. Her strategic approach to leadership has helped organizations maintain high standards while creating efficient, patient-centered systems of care.\nJessica earned her bachelor's degree from Indiana University of Pennsylvania and is a National Certified Peer Recovery Support Specialist (NCPRSS). She is recognized for her collaborative leadership style, commitment to professional development, and passion for empowering teams to achieve operational excellence. As Executive Vice President of Operations, she is dedicated to advancing Quadrant Health Group's mission by building high-performing teams and ensuring exceptional care across the organization's growing network of behavioral health facilities.",
+    "image": "/images/team/jessica-dalton.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "riley-monahan",
+    "name": "Riley Monahan",
+    "role": "Executive VP of Clinical Services",
+    "credentials": "",
+    "bio": "Riley Monahan joins Quadrant Health Group with over a decade of experience in behavioral health, spanning clinical practice and organizational leadership. Prior to Quadrant, Riley worked in clinical and administrative roles at a large, multi-location Arizona-based behavioral health agency while working in a private practice setting serving high performers and entrepreneurs. His clinical background includes trauma-focused therapy, EMDR, and specialized intensives, along with corporate retreat facilitation and executive mediation. We're excited to have him on the team.",
+    "image": "/images/team/riley-monahan.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "chelsea-stelmach",
+    "name": "Chelsea Stelmach",
+    "role": "Director of Marketing",
+    "credentials": "",
+    "bio": "Chelsea Stelmach is the Director of Marketing at Quadrant Health Group, where she leads the organization's branding, digital marketing, communications, and public relations initiatives. With more than a decade of experience in behavioral healthcare marketing, she is passionate about building trusted brands, sharing meaningful stories, and connecting individuals and families with quality mental health and addiction treatment resources. Chelsea combines creative strategy with a patient-first approach to ensure every communication reflects the compassion, integrity, and excellence that define Quadrant Health Group.",
+    "image": "/images/team/chelsea-stelmach.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "stephanie-hakim",
+    "name": "Stephanie Hakim",
+    "role": "Director of Compliance",
+    "credentials": "",
+    "bio": "Stephanie Hakim serves as the Director of Compliance for Quadrant Health Group, where she leads the organization's compliance, regulatory, and quality assurance initiatives across its behavioral healthcare programs. She is committed to fostering a culture of integrity, accountability, and operational excellence by ensuring compliance is seamlessly integrated into every aspect of the organization.\nWhat distinguishes Stephanie's approach to compliance is her comprehensive understanding of treatment center operations. Throughout her career, she has held leadership roles in executive operations, admissions, information technology, medication management, and clinical services as a Certified Drug and Alcohol Counselor (CADCII). This diverse experience provides her with a unique perspective on how regulatory requirements impact every stage of the patient experience—from the first point of contact through discharge planning, quality improvement, and organizational performance.\nStephanie leads the development and implementation of compliance programs, regulatory initiatives, policy development, internal auditing, corrective action planning, and accreditation readiness. She works collaboratively with state regulatory agencies and The Joint Commission to ensure Quadrant Health Group consistently meets and exceeds regulatory standards while advancing quality improvement, mitigating organizational risk, and promoting the delivery of safe, ethical, and high-quality care.\nBeyond regulatory oversight, Stephanie is passionate about building sustainable systems that empower organizations to thrive. She believes compliance is more than meeting standards—it is the foundation of exceptional patient care, operational excellence, and organizational integrity. By fostering collaboration across clinical, operational, medical, and executive teams, she helps translate complex regulatory requirements into practical, sustainable processes that strengthen both compliance and organizational performance.\nStephanie is recognized for her strategic leadership, collaborative approach, and ability to bridge the gap between regulations and day-to-day operations. Her commitment to excellence continues to support Quadrant Health Group's mission of delivering compassionate, high-quality behavioral healthcare while maintaining the highest standards of compliance and accountability.",
+    "image": "/images/team/stephanie-hakim.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "marc-north",
+    "name": "Marc North",
+    "role": "Procurement Manager",
+    "credentials": "",
+    "bio": "Marc North has spent more than a decade serving the recovery community, beginning his career as a Certified Peer Recovery Specialist (CPRS) in nonprofit organizations. His frontline experience supporting individuals with substance use disorders built a strong foundation in recovery, leadership, and patient-centered care.\nMarc advanced into leadership roles at Wellness Recovery Center of New Jersey, serving first as Director of Operations and later as Executive Director, where he led multidisciplinary teams, oversaw daily operations, and drove strategic initiatives that strengthened both organizational performance and patient care.\nToday, Marc serves as Procurement Manager for Quadrant Health Group, where he oversees strategic sourcing, vendor partnerships, and purchasing operations across a multi-state network of behavioral healthcare facilities. His unique blend of recovery, operational, and executive leadership experience enables him to build efficient systems that strengthen organizational performance while supporting exceptional patient care.",
+    "image": null,
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "danielle-gorman",
+    "name": "Danielle Gorman",
+    "role": "Executive Coordinator",
+    "credentials": "",
+    "bio": "Danielle Gorman is the Executive Coordinator at Quadrant Health Group. Danielle brings extensive leadership experience and a hands-on approach to every aspect of the organization. Her role encompasses a wide range of responsibilities, providing support wherever it is needed to help teams operate efficiently and successfully.\nDanielle is passionate about building strong teams, creating organized systems, and helping others succeed. She takes great pride in being part of a company dedicated to changing lives by guiding individuals on their journey to recovery.",
+    "image": "/images/team/danielle-gorman.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "diana-guzman",
+    "name": "Diana Guzman",
+    "role": "HR Manager",
+    "credentials": "",
+    "bio": "Diana Guzman serves as Human Resources Manager at Quadrant Health Group, where she is dedicated to fostering a workplace culture built on trust, communication, and employee engagement. She believes that people are the heart of every organization and that meaningful relationships are the foundation of a strong and successful team.\nPassionate about creating a positive employee experience, Diana views communication as one of the most important aspects of human resources—not only ensuring information is shared clearly, but also making certain employees feel heard, supported, and valued. She strives to recognize each individual's contributions, celebrate achievements, and maintain an approachable presence where team members feel comfortable seeking guidance and support.\nDiana is committed to helping cultivate an environment where employees feel connected, appreciated, and empowered to thrive. She believes that when people feel recognized and supported, they are better equipped to grow professionally, collaborate effectively, and make a meaningful impact on the individuals and communities Quadrant Health Group serves.",
+    "image": "/images/team/diana-guzman.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "armanee-cross",
+    "name": "Armanee Cross",
+    "role": "HR Assistant/Coordinator",
+    "credentials": "",
+    "bio": "Armanee Cross, MBA serves as an HR Assistant/Coordinator at Quadrant Health Group, where she is dedicated to creating a positive employee experience and supporting team members throughout every stage of their career journey. She works closely with leadership and employees across recruitment, onboarding, HR operations, and day-to-day employee support to help foster an engaging and collaborative workplace.\nArmanee holds a Master of Business Administration with a concentration in Human Resources Management and is passionate about building strong relationships, improving processes, and helping employees feel valued and supported. She believes that great workplaces are built by investing in great people and is committed to contributing to a culture where individuals and teams can thrive.",
+    "image": "/images/team/armanee-cross.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "kevin-bocanegra",
+    "name": "Kevin Bocanegra",
+    "role": "Human Resources/Payroll Specialist",
+    "credentials": "",
+    "bio": "Kevin Bocanegra is a Human Resources/Payroll Specialist at Quadrant Health Group, where he is dedicated to ensuring employees receive accurate, timely payroll while providing dependable support across payroll and human resources functions. As a U.S. Marine Corps veteran, Kevin brings the values of integrity, accountability, and service to every aspect of his work.\nKevin believes payroll is about more than processing numbers—it is about supporting the people behind them. He takes pride in managing payroll operations, assisting with payroll tax compliance, and maintaining the accuracy and reliability that employees and leadership depend on. Through clear communication, attention to detail, and a commitment to excellence, he strives to create a positive experience for every employee.\nKnown for his professionalism and dependable approach, Kevin is committed to solving challenges, building trust, and contributing to a workplace where employees feel respected, supported, and valued. His mission is to help ensure every team member has the confidence that their contributions are recognized through accurate and efficient payroll services.",
+    "image": "/images/team/kevin-bocanegra.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "maria-gonzalez",
+    "name": "Maria Gonzalez",
+    "role": "Talent Acquisition & Onboarding Coordinator",
+    "credentials": "",
+    "bio": "Maria Gonzalez serves as the Talent Acquisition & Onboarding Coordinator at Quadrant Health Group, where she is passionate about connecting talented professionals with meaningful career opportunities while creating a positive and welcoming hiring experience from the very first conversation.\nWorking closely with hiring managers and candidates, Maria supports the full recruitment and onboarding process, helping attract exceptional talent and ensure new team members feel informed, supported, and prepared for success. She values building lasting relationships, fostering open communication, and matching individuals with opportunities where they can grow professionally while making a meaningful impact.\nMaria is proud to support Quadrant Health Group's mission by helping recruit and retain compassionate, dedicated professionals who are committed to providing outstanding behavioral healthcare to the individuals and communities they serve.",
+    "image": null,
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "emmanuel-lacruz",
+    "name": "Emmanuel Lacruz",
+    "role": "Talent Acquisition Recruiter",
+    "credentials": "",
+    "bio": "Emmanuel Lacruz serves as an HR Talent Acquisition Recruiter, where he is passionate about connecting talented healthcare professionals with opportunities to grow, make a meaningful impact, and build rewarding careers. He works closely with candidates and hiring managers to create a seamless, transparent, and positive recruitment experience from the initial conversation through the onboarding process.\nEmmanuel believes that every great organization is built on exceptional people. He is committed to identifying individuals who not only possess the skills and experience needed for success but also share a dedication to delivering compassionate, high-quality care. Known for his approachable nature and strong communication skills, he takes pride in building lasting relationships while helping candidates find positions where they can thrive professionally.\nWith experience recruiting nurses, therapists, behavioral health professionals, and administrative staff, Emmanuel is dedicated to supporting Quadrant Health Group's mission by attracting outstanding talent and fostering a workplace culture where employees feel valued, supported, and empowered to succeed.",
+    "image": "/images/team/emmanuel-lacruz.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "ben-kolb",
+    "name": "Ben Kolb",
+    "role": "President of Business Development",
+    "credentials": "",
+    "bio": "Ben Kolb has been in long-term recovery since August 2011\\. His personal journey through addiction and into sobriety gives him a deep, authentic understanding of the challenges individuals and families face.\nSince 2016, Ben has dedicated his career to the addiction treatment field, specializing in building strong strategic relationships with hospitals, interventionists, therapists, and community partners across the country. In 2022, he co-founded Dallas Detox Center, helping to create a compassionate, clinically driven detox and treatment program that puts clients’ long-term success first.\nToday, Ben continues to lead community outreach and partnerships for the center, ensuring that those who need help can find a trusted, effective path to recovery.",
+    "image": "/images/team/ben-kolb.jpg",
+    "group": "Business Development & Alumni Services"
+  },
+  {
+    "slug": "douglas-penny",
+    "name": "Douglas Penny",
+    "role": "VP of Business Development West Coast",
+    "credentials": "",
+    "bio": "With over 15 years of experience in the behavioral health care industry, Douglas Penny has built a career dedicated to expanding access to quality treatment and leading growth initiatives across the country. Based in Southern California, he has played a key role in developing and managing rehabilitation centers nationwide, combining strategic business development with a deep commitment to improving lives.\nDouglas specializes in behavioral health program development, strategic partnerships, and team leadership, guiding organizations from concept to full-scale operations. With a proven ability to build strong referral networks and high-performing teams, he has helped treatment providers strengthen their impact and achieve sustainable growth.\nDriven by a passion for behavioral health and a results-oriented approach, Douglas continues to champion innovation, collaboration, and excellence in every project he undertakes.",
+    "image": "/images/team/douglas-penny.jpg",
+    "group": "Business Development & Alumni Services"
+  },
+  {
+    "slug": "mike-simmons",
+    "name": "Mike Simmons",
+    "role": "VP of Business Development East Coast",
+    "credentials": "",
+    "bio": "Mike Simmons serves as Vice President of Business Development for Quadrant Health Group, where he leads referral network expansion, admissions growth, and strategic partnerships.\nMike brings nearly a decade of experience in the behavioral health industry, with a strong track record in relationship-driven business development and patient acquisition. He began his career in alumni services, where he developed deep expertise in long-term engagement and referral pipeline development, which has translated into consistent admissions growth and strong industry relationships.\nIn his current role, Mike is responsible for expanding referral channels, strengthening provider relationships, and driving census growth across Quadrant’s East Coast locations. His ability to combine industry knowledge with a performance-driven approach to business development has been a key contributor to the platform’s growth and market positioning.\nMike plays a critical role in maintaining a sustainable and diversified admissions pipeline, supporting continued expansion and long-term value creation.",
+    "image": "/images/team/mike-simmons.jpg",
+    "group": "Business Development & Alumni Services"
+  },
+  {
+    "slug": "richard-bradshaw",
+    "name": "Richard Bradshaw",
+    "role": "Business Development Representative",
+    "credentials": "",
+    "bio": "Richard Bradshaw is a seasoned professional in behavioral health and addiction treatment with over 15 years of experience in addiction and recovery, currently serving as Business Development Representative for Quadrant Health Group, a nationwide network of luxury addiction treatment centers focused on personalized, evidence-based care.\nWith extensive experience as Director of Admissions, Business Development, and over the last decade, he drives growth through strategic outreach, admissions processes, and operational excellence in the substance use disorder field.",
+    "image": "/images/team/richard-bradshaw.jpg",
+    "group": "Business Development & Alumni Services"
+  },
+  {
+    "slug": "maggie-galleymore",
+    "name": "Maggie Galleymore",
+    "role": "Business Development Representative",
+    "credentials": "",
+    "bio": "Maggie Galleymore brings over a decade of experience in the substance use and mental health treatment field, with a strong passion for helping individuals and families navigate the path to healing. Her commitment to this work is deeply rooted in both professional expertise and personal understanding, allowing her to connect with clients and partners in a meaningful and compassionate way.\nAs a Business Development Representative for Quadrant Health Group, supporting both Dallas Detox Center and Fort Worth Wellness, Maggie is dedicated to building authentic relationships and helping individuals find the level of care that best supports their needs. She believes in meeting people where they are, advocating fiercely for those in need, and working collaboratively with trusted partners who share the same mission of recovery and healing.\nMaggie is committed to ongoing growth in the behavioral health space and stays informed on evolving treatment approaches and recovery pathways to better serve the individuals and communities she works with.",
+    "image": "/images/team/maggie-galleymore.jpg",
+    "group": "Business Development & Alumni Services"
+  },
+  {
+    "slug": "ej-larson",
+    "name": "EJ Larson",
+    "role": "Business Development Representative",
+    "credentials": "",
+    "bio": "Elijah (EJ) serves as a Business Development Representative at Quadrant Health Group, bringing nearly a decade of experience in the substance abuse and mental health treatment field. His well-rounded background across multiple roles, including Behavioral Health Technician, Alumni Coordinator, and Outreach leadership, has given him a comprehensive understanding of the recovery journey and the importance of connecting individuals to the right level of care.\nElijah is deeply committed to building meaningful relationships within the community and expanding access to quality treatment. His approach is rooted in authenticity, compassion, and a strong belief that everyone deserves the opportunity to heal.\nOriginally from Las Vegas, Elijah studied at Mira Costa College and continues to grow professionally through hands-on experience and service. In his role at Quadrant Health Group, he is focused on fostering partnerships, supporting referral networks, and helping individuals and families take the first step toward lasting recovery.",
+    "image": "/images/team/ej-larson.jpg",
+    "group": "Business Development & Alumni Services"
+  },
+  {
+    "slug": "sage-steinberg",
+    "name": "Sage Steinberg",
+    "role": "Business Development Representative",
+    "credentials": "",
+    "bio": "Sage's personal recovery journey ignited a passion for serving others and led her to a career in behavioral health. Over the past four years, she has focused on building strong relationships throughout the community while advocating for education, prevention, and treatment for substance use and mental health disorders.\nAs a Business Development Representative serving the east coast area, Sage is driven by the belief that meaningful collaboration creates better outcomes. She is dedicated to connecting providers, resources, and individuals in ways that make recovery more accessible, while fostering lasting partnerships that strengthen the continuum of care.",
+    "image": "/images/team/sage-steinberg.jpg",
+    "group": "Business Development & Alumni Services"
+  },
+  {
+    "slug": "nick-gore",
+    "name": "Nick Gore",
+    "role": "Business Development Representative",
+    "credentials": "",
+    "bio": "Nick Gore is a business development leader with nearly a decade of experience in behavioral healthcare. In long-term recovery since 2016, he is passionate about connecting individuals, families, employers, and healthcare partners with quality treatment resources. Throughout his career, Nick has built strong partnerships across healthcare systems, businesses, and communities, while advocating for improved access to mental health and substance use disorder treatment. His personal journey and professional experience drive his commitment to helping others find hope and recovery.",
+    "image": "/images/team/nick-gore.jpg",
+    "group": "Business Development & Alumni Services"
+  },
+  {
+    "slug": "lexie-zeller",
+    "name": "Lexie Zeller",
+    "role": "National Alumni Director",
+    "credentials": "",
+    "bio": "Lexie Zeller is a dedicated alumni relations professional with experience developing and growing alumni engagement programs that foster lifelong connections and meaningful involvement. With a strong background in relationship management, program development, and strategic planning, Lexie is passionate about creating alumni experiences that inspire connection, mentorship, and continued support. As National Alumni Director, she is leading the development of a nationwide alumni program focused on building an engaged network that empowers alumni to stay connected, give back, and make a lasting impact in their own recovery communities.",
+    "image": "/images/team/lexie-zeller.jpg",
+    "group": "Business Development & Alumni Services"
+  },
+  {
+    "slug": "robert-spady",
+    "name": "Robert Spady",
+    "role": "Admissions Director",
+    "credentials": "",
+    "bio": "As the Admissions Director at Quadrant Health Group, (change title) I understand that seeking help for addiction is a profoundly courageous act, often made during one of life's most challenging periods. With 10 years of dedicated professional experience in the field, my primary focus is to provide a clear, compassionate, and supportive pathway for individuals and families seeking treatment. I'm committed to guiding you through every step of the admissions process with empathy and expertise, ensuring you feel understood and confident in the care options available.\nWhat truly drives my approach is a deep, personal understanding of the recovery journey. Having navigated my own battle with addiction for over a decade, and celebrating 12 years of sobriety through the principles of the 12 Steps AA program, I know firsthand the challenges and triumphs involved. This lived experience allows me to connect with clients and their loved ones on a uniquely empathetic level, offering not just guidance but also genuine hope for a new beginning.\nOriginally from Trenton, NJ, I am passionate about connecting people with the vital support they need to transform their lives. My goal is to alleviate the stress often associated with beginning treatment, providing comprehensive information and a steady hand as you take this crucial step towards healing and lasting recovery. I am here to help you or your loved one embark on a path to a healthier, more fulfilling future.",
+    "image": "/images/team/robert-spady.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "john-jurman",
+    "name": "John Jurman",
+    "role": "Admissions Manager",
+    "credentials": "",
+    "bio": "John Jurman is the Admissions Manager at Quadrant Health Group, where he oversees the admissions team and helps ensure a smooth, supportive process for individuals entering the company's care facilities. With over eight years of experience in healthcare admissions, John brings a strong commitment to organization, communication, and compassionate service, playing a key role in helping families navigate an often-stressful time with clarity and care.\nOutside of work, John enjoys spending quality time with his family and cheering on Philadelphia's sports teams. Whether it's watching the Eagles on a Sunday or catching a Phillies game, he brings the same passion and dedication to his personal life that he brings to his role at Quadrant Health Group.",
+    "image": "/images/team/john-jurman.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
     "slug": "alanna-mcmurtrey",
     "name": "Alanna McMurtrey",
     "role": "Lead Case Manager of SoCal",
     "credentials": "",
     "bio": "Alanna McMurtrey serves as the Lead Case Manager for the Southern California facilities of Quadrant Health Group, where she oversees case management services and supports clients through detox and residential levels of care. In her role, she coordinates client care, provides leadership and clinical support to case management staff, and helps ensure that each individual receives consistent, structured, and personalized support throughout their treatment journey.\nWith several years of experience in behavioral health and addiction treatment, Alanna has developed a strong passion for helping individuals overcome substance use disorders and co-occurring mental health challenges. She is dedicated to fostering engagement in treatment, promoting personal growth, and supporting clients as they work toward sustainable, long-term recovery.\nAlanna takes a client-centered, strengths-based approach to care, meeting individuals where they are and helping them build upon their unique strengths. She is committed to creating a safe, respectful, and supportive environment where clients feel heard, valued, and empowered to make meaningful changes in their lives. Through collaboration, compassion, and clinical consistency, she strives to help clients develop the skills, confidence, and stability needed to achieve lasting recovery and improved well-being.",
-    "image": "/images/team/alanna-mcmurtrey.png"
+    "image": "/images/team/alanna-mcmurtrey.jpg",
+    "group": "California Leadership"
   },
   {
-    "slug": "trevor-amador",
+    "slug": "alicia-joslin",
     "name": "Alicia Joslin",
     "role": "Program Director",
     "credentials": "",
     "bio": "With a deep passion for recovery and mental health care, Alicia Joslin brings empathy, leadership, and dedication to her role as Program Director at Marina Harbor Detox. She works closely with both clients and staff to foster an environment centered on accountability, compassion, and personal growth.\nAlicia understands that recovery is not one-size-fits-all and believes every client deserves individualized support and encouragement throughout their treatment journey. Her goal is to help clients feel supported during some of the most difficult moments of their lives while empowering them to move toward lasting recovery and stability.",
-    "image": "/images/team/trevor-amador.png"
+    "image": "/images/team/alicia-joslin.jpg",
+    "group": "Marina Harbor Detox"
   },
   {
     "slug": "angela-taylor",
@@ -21,7 +293,8 @@
     "role": "Case Manager at Hillside Mission Recovery",
     "credentials": "RADT",
     "bio": "Angela Taylor, serves as a Case Manager dedicated to supporting individuals throughout their recovery journey. With experience in the substance use treatment field, Angela is passionate about helping clients navigate the treatment process with greater confidence, comfort, and purpose while fostering personal growth and long-term success.\nKnown for her compassionate and supportive approach, Angela strives to make the recovery experience as meaningful and stress-free as possible. She is committed to helping clients access the resources, guidance, and encouragement they need to build a strong foundation for lasting change.\nAngela is currently pursuing a degree in Human Services and plans to continue advancing her education to further enhance her ability to serve individuals, families, and communities impacted by substance use and behavioral health challenges.",
-    "image": "/images/team/angela-taylor.jpg"
+    "image": "/images/team/angela-taylor.jpg",
+    "group": "Hillside Mission Recovery"
   },
   {
     "slug": "anom-grant",
@@ -29,15 +302,17 @@
     "role": "IT Director",
     "credentials": "",
     "bio": "As an IT Director with over a decade of experience, I bring a distinctive approach to technology leadership. My background in Psychology isn't just a detail; it's the very foundation of my career transition into IT. I firmly believe that technology should empower, not complicate, the human experience at work. This unique perspective drives me to transform tech landscapes, focusing on efficiency and innovation by ensuring IT initiatives truly align with business goals and build robust, scalable systems that enhance both organizational growth and overall user well-being.\nMy core strengths lie in dynamic team leadership, strategic project management, and comprehensive system optimizations. I consistently apply these skills to refine our technological infrastructure and streamline workflows. This ensures our IT operations are not only resilient and reliable but also directly contribute to achieving the organization's strategic objectives, making technology a true enabler. Moving forward, I'm passionate about leveraging my expertise to deepen organizational efficiency in ways that genuinely uplift both our internal teams and our valued clients. My aim is to implement tech solutions that optimize performance while simultaneously fostering a seamless, intuitive, and highly productive experience for everyone. I'm always eager to connect with fellow leaders to explore how thoughtful IT strategy can spark innovation and significantly boost user satisfaction.",
-    "image": "/images/team/anom-grant.png"
+    "image": "/images/team/anom-grant.jpg",
+    "group": "Clinical & Operations"
   },
   {
     "slug": "antoine-gross",
     "name": "Antoine Gross Sr.",
     "role": "Director of Clinical Services - Dallas Detox Center",
     "credentials": "LPC (Licensed Professional Counselor)",
-    "bio": "Antoine is an independently licensed counselor with nearly a decade of experience in the mental health field. Over the past three years, he has provided independent counseling services, supporting individuals who are committed to creating meaningful and lasting change in their lives.\nAntoine is deeply passionate about walking alongside individuals during some of their most challenging and transformative seasons. He believes therapy should be a safe, welcoming space where clients can openly explore their identity, experiences, and struggles without judgment\u2014while also being thoughtfully challenged to grow.\nHis clinical approach is collaborative and practical, focusing on identifying patterns, building effective coping strategies, and developing the skills necessary for long-term success. Antoine's goal is for each client to leave treatment feeling empowered, balanced, and equipped to maintain continued growth well beyond their time in therapy.\nHe firmly believes in the principle: 'You can be great by chance, or you can be great by choice,' and is dedicated to helping individuals intentionally choose a path toward growth, healing, and fulfillment.",
-    "image": "/images/team/antoine-gross.jpg"
+    "bio": "Antoine is an independently licensed counselor with nearly a decade of experience in the mental health field. Over the past three years, he has provided independent counseling services, supporting individuals who are committed to creating meaningful and lasting change in their lives.\nAntoine is deeply passionate about walking alongside individuals during some of their most challenging and transformative seasons. He believes therapy should be a safe, welcoming space where clients can openly explore their identity, experiences, and struggles without judgment—while also being thoughtfully challenged to grow.\nHis clinical approach is collaborative and practical, focusing on identifying patterns, building effective coping strategies, and developing the skills necessary for long-term success. Antoine's goal is for each client to leave treatment feeling empowered, balanced, and equipped to maintain continued growth well beyond their time in therapy.\nHe firmly believes in the principle: 'You can be great by chance, or you can be great by choice,' and is dedicated to helping individuals intentionally choose a path toward growth, healing, and fulfillment.",
+    "image": "/images/team/antoine-gross.jpg",
+    "group": "Texas Facilities"
   },
   {
     "slug": "ashley-hurtado",
@@ -45,7 +320,8 @@
     "role": "Therapist at Marina Harbor Detox",
     "credentials": "AMFT (Associate Marriage and Family Therapist)",
     "bio": "Ashley Hurtado, is an Associate Marriage and Family Therapist dedicated to helping individuals navigate the early stages of recovery with compassion, understanding, and clinical excellence. As a therapist at Marina Harbor Detox, Ashley works closely with clients as they begin their healing journey, providing trauma-informed care and individualized support during one of the most transformative periods of treatment.\nAshley earned her Master of Arts in Clinical Psychology from Pepperdine University and her Bachelor of Arts in Psychology from San Francisco State University. Her educational background, combined with her commitment to client-centered care, allows her to help individuals address the emotional, psychological, and behavioral challenges that often accompany substance use disorders and co-occurring mental health concerns.\nIn her role, Ashley facilitates individual and group therapy sessions, helping clients develop insight into the underlying factors contributing to their struggles while building healthier coping skills and emotional resilience. She is passionate about creating a safe, supportive therapeutic environment where clients feel heard, respected, and empowered to make meaningful changes in their lives.\nAshley's clinical approach is collaborative, strengths-based, and rooted in meeting each person where they are. She believes that lasting recovery begins with genuine connection and that every individual has the capacity for growth, healing, and transformation. Through empathy, encouragement, and evidence-based therapeutic practices, she helps clients build a strong foundation for sustained recovery and long-term well-being.\nAshley is committed to supporting clients through every stage of the recovery process, helping them cultivate hope, confidence, and the tools needed to create healthier, more fulfilling lives.",
-    "image": "/images/team/ashley-hurtado.png"
+    "image": "/images/team/ashley-hurtado.jpg",
+    "group": "Marina Harbor Detox"
   },
   {
     "slug": "christi-llamas",
@@ -53,7 +329,8 @@
     "role": "Case Manager - Laguna View Detox",
     "credentials": "SUDRC",
     "bio": "Christi Llamas is a dedicated Case Manager whose passion for helping others is rooted in both personal and professional experience. Having grown up in a family impacted by mental health and substance use challenges, and later navigating her own recovery journey, Christi brings a unique level of empathy, understanding, and authenticity to her work.\nHer lived experience has given her firsthand insight into the complexities of addiction, recovery, and the barriers many individuals face when seeking support. Through overcoming challenges associated with substance use and involvement with the criminal justice system, Christi developed a deep commitment to helping others find hope, stability, and a path forward.\nAs a Case Manager, Christi is dedicated to building meaningful connections with clients, advocating for their needs, and helping them access the resources and support necessary for lasting recovery. She is passionate about empowering individuals to recognize their strengths and create positive change in their lives.\nChristi is currently pursuing her education with the long-term goal of becoming a Licensed Clinical Social Worker (LCSW), allowing her to further expand her knowledge and ability to support individuals and families affected by substance use and mental health disorders.",
-    "image": "/images/team/christi-llamas.png"
+    "image": "/images/team/christi-llamas.jpg",
+    "group": "Laguna View Detox"
   },
   {
     "slug": "christina-lilly",
@@ -61,15 +338,17 @@
     "role": "Office Manager",
     "credentials": "",
     "bio": "Christina Lilly serves as the Office Manager at Wellness Recovery Center, where she plays a vital role in ensuring the day-to-day operations of the facility run smoothly and efficiently. Since joining the team in 2024, Christina has become a central point of support for all departments, helping to maintain organization, communication, and overall workflow across the organization.\nIn her role, Christina oversees administrative operations, coordinates office procedures, and provides ongoing support to clinical, case management, and leadership teams. She is known for her strong ability to multitask, prioritize responsibilities, and respond quickly to the evolving needs of both staff and clients.\nA natural people-person, Christina brings empathy and approachability into every interaction. She takes pride in being accessible and responsive, fostering a supportive and collaborative environment throughout the workplace. Her problem-solving skills allow her to effectively address challenges as they arise, ensuring minimal disruption to daily operations.\nChristina is deeply committed to helping Wellness Recovery Center function at its highest level, consistently going above and beyond to support staff, enhance efficiency, and contribute to a positive, client-centered atmosphere.",
-    "image": "/images/team/christina-lilly.jpg"
+    "image": "/images/team/christina-lilly.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
   },
   {
     "slug": "cristina-turiello",
     "name": "Cristina Turiello",
-    "role": "Director of Client Care",
+    "role": "Manager of Client Care",
     "credentials": "",
-    "bio": "Cristina Turiello is a kind, compassionate, and highly skilled behavioral health professional with over five years of experience at Quadrant Health Group. As the Director of Client Care, she leads a team dedicated to supporting individuals facing substance use and mental health challenges, ensuring they receive personalized, respectful, and effective care.\nCristina's journey in healthcare began as a patient advocate, where she championed the rights and well-being of individuals navigating complex systems. Her deep-rooted passion for helping others in all aspects of life continues to drive her work and leadership style today.\nWith a strong foundation in organization, attention to detail, and team leadership, Cristina brings structure and clarity to challenging environments while maintaining a warm, client-centered approach. She is known not only for her operational expertise but for her unwavering kindness, empathy, and ability to connect meaningfully with both clients and colleagues.\nCristina remains committed to making a difference\u2014one compassionate interaction at a time.",
-    "image": "/images/team/cristina-turiello.jpg"
+    "bio": "Cristina Turiello is a kind, compassionate, and highly skilled behavioral health professional with over five years of experience at Quadrant Health Group. As the Director of Client Care, she leads a team dedicated to supporting individuals facing substance use and mental health challenges, ensuring they receive personalized, respectful, and effective care.\nCristina's journey in healthcare began as a patient advocate, where she championed the rights and well-being of individuals navigating complex systems. Her deep-rooted passion for helping others in all aspects of life continues to drive her work and leadership style today.\nWith a strong foundation in organization, attention to detail, and team leadership, Cristina brings structure and clarity to challenging environments while maintaining a warm, client-centered approach. She is known not only for her operational expertise but for her unwavering kindness, empathy, and ability to connect meaningfully with both clients and colleagues.\nCristina remains committed to making a difference—one compassionate interaction at a time.",
+    "image": "/images/team/cristina-turiello.jpg",
+    "group": "Admissions & Client Care"
   },
   {
     "slug": "deborah-wade",
@@ -77,15 +356,8 @@
     "role": "Director of Nursing (Dallas Detox)",
     "credentials": "BSN, RN",
     "bio": "Deborah has been a dedicated member of the Dallas Detox Center team for the past three years. With a strong passion for client care and recovery, Deborah plays a vital role in medically supporting clients through the detoxification process. She also manages client care at the Residential Treatment Center (RTC) level of care and provides leadership and oversight to the nursing staff. Her compassionate approach and clinical expertise help ensure a safe, supportive environment for clients at every stage of their recovery journey.",
-    "image": "/images/team/deborah-wade.jpg"
-  },
-  {
-    "slug": "denise-edwards",
-    "name": "Denise Edwards",
-    "role": "Mental Health Case Manager",
-    "credentials": "MSW",
-    "bio": "Denise Edwards is a mental health professional with over 17 years of experience working with individuals facing substance use and co-occurring mental health challenges. Denise has served in roles spanning administration, admissions, case management, counseling, and advocacy, and spent two years supporting survivors of domestic violence.\nDenise holds a Master of Social Work (MSW) and is currently pursuing licensure as an LSW on the path to becoming an LCSW. Denise's work is grounded in a commitment to reducing stigma and supporting recovery through compassionate, client-centered care.",
-    "image": "/images/team/denise-edwards.png"
+    "image": "/images/team/deborah-wade.jpg",
+    "group": "Texas Facilities"
   },
   {
     "slug": "olivia-gibson",
@@ -93,15 +365,17 @@
     "role": "Medical Director",
     "credentials": "M.D.",
     "bio": "Dr. Olivia Gibson-Delaney earned her medical degree from Rutgers New Jersey Medical School in Newark, NJ. She completed her Psychiatry residency at Mount Sinai Morningside and Mount Sinai West in New York, NY, where she developed expertise in diagnosing and treating a wide range of mental health conditions. Dr. Gibson-Delaney is dedicated to providing compassionate, evidence-based care to her patients and is committed to advancing mental health awareness and treatment in her community.",
-    "image": "/images/team/olivia-gibson.png"
+    "image": "/images/team/olivia-gibson.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
   },
   {
     "slug": "elizabeth-wald",
     "name": "Elizabeth Wald",
-    "role": "Director of Operations - Ocean Coast Recovery Center",
+    "role": "Program Director - Ocean Coast Recovery Center",
     "credentials": "RADT",
-    "bio": "I currently serve as the Director of Operations at Ocean Coast Recovery Center, where I am responsible for overseeing the daily operations of the facility. My role includes managing staff, developing and implementing policies and procedures, and ensuring full compliance with industry regulations and standards.\nI've been working in the addiction treatment field since 2021. I've proudly been part of the team since the facility's opening. I've continued my work here since that time. What I appreciate most about being part of a small, six-bed facility is the family-like atmosphere it creates. It allows us to truly focus on each individual's needs and provide meaningful, personalized support.\nProfessionally, I'm passionate about creating a space where people feel heard, supported, and empowered. I entered this field because I understand firsthand what our clients are going through, I've walked that path myself. My own recovery journey gives me insight into the challenges they face. My Job is about meeting people where they are, equipping them with the tools, knowledge, and encouragement they need to pursue lasting sobriety",
-    "image": "/images/team/elizabeth-wald.jpg"
+    "bio": "Elizabeth Wald serves as Program Director for Quadrant Health Group's Southern California facilities, where she oversees program operations, clinical coordination, and day-to-day management across the organization's behavioral health treatment centers. She works closely with multidisciplinary teams to ensure each program delivers exceptional, individualized care while maintaining the highest standards of quality, compliance, and operational excellence.\nSince entering the behavioral health field in 2021, Elizabeth has been an integral part of Quadrant Health Group's growth, beginning with the opening of one of its Northern California facilities. Her leadership has been instrumental in fostering compassionate, client-centered treatment environments where individuals receive personalized support throughout every stage of their recovery journey.\nElizabeth's passion for behavioral healthcare is deeply rooted in her own lived experience in recovery. She believes that meaningful healing begins by meeting individuals where they are, building genuine connections, and empowering them with the tools, education, and support needed to achieve lasting recovery. Her leadership is driven by empathy, authenticity, and an unwavering commitment to helping others reclaim their lives while supporting her teams in delivering the highest level of care.",
+    "image": "/images/team/elizabeth-wald.jpg",
+    "group": "Ocean Coast Recovery Center"
   },
   {
     "slug": "emma-fyffe",
@@ -109,39 +383,44 @@
     "role": "Primary Therapist (Greater Texas Behavioral Clinic)",
     "credentials": "LPC (Licensed Professional Counselor)",
     "bio": "Emma is a Licensed Professional Counselor (LPC) and a compassionate, client-centered mental health professional. She serves as the primary therapist at Greater Texas Behavioral Clinic, an intensive outpatient program providing care for individuals experiencing mental health and substance use challenges. In her role, Emma facilitates both individual and group therapy, supporting clients as they build insight, develop healthier coping skills, and work toward sustainable recovery. She values creating a safe, nonjudgmental environment where clients feel heard, supported, and empowered. Her approach emphasizes emotional awareness, accountability, and practical tools to promote long-term growth and stability.",
-    "image": "/images/team/emma-fyffe.jpg"
+    "image": "/images/team/emma-fyffe.jpg",
+    "group": "Texas Facilities"
   },
   {
     "slug": "riky-hanaumi",
     "name": "Erika \"Riky\" Hanaumi",
     "role": "Clinical Director of California",
     "credentials": "Licensed Clinical Social Worker (LCSW); Master of Social Work (MSW), California State University, Fullerton (2013); trained in evidence-based modalities including Cognitive Behavioral Therapy (CBT) and Dialectical Behavior Therapy (DBT)",
-    "bio": "Erika \u201cRiky\u201d Hanaumi is a Licensed Clinical Social Worker with more than 20 years of experience in behavioral health and addiction treatment. She currently serves as Clinical Director for Quadrant Health Group\u2019s California facilities, where she oversees clinical programming, mentors and supports therapists in developing effective treatment strategies, and ensures the delivery of compassionate, individualized, and clinically sound care. Her leadership focuses on promoting evidence-based practices, clinical excellence, and positive treatment outcomes for individuals with co-occurring mental health and substance use disorders.\nRiky began her career working with individuals experiencing homelessness, providing intensive support, advocacy, and resource coordination to help clients overcome barriers and access essential services. This experience fueled her passion for serving vulnerable populations and inspired her to pursue a Master of Social Work degree from California State University, Fullerton, which she earned in 2013.\nThroughout her career, Riky has worked in both inpatient and outpatient settings, providing therapy, crisis intervention, case management, and recovery-oriented services. She has extensive experience supporting adults with complex behavioral health needs, including co-occurring mental health and substance use disorders, while helping individuals navigate the challenges of recovery and major life transitions.\nRiky is trained in evidence-based treatment modalities, including Cognitive Behavioral Therapy (CBT) and Dialectical Behavior Therapy (DBT). She is passionate about helping clients build resilience, strengthen coping skills, improve interpersonal relationships, and achieve lasting recovery.",
-    "image": "/images/team/riky-hanaumi.jpg"
+    "bio": "Erika “Riky” Hanaumi is a Licensed Clinical Social Worker with more than 20 years of experience in behavioral health and addiction treatment. She currently serves as Clinical Director for Quadrant Health Group’s California facilities, where she oversees clinical programming, mentors and supports therapists in developing effective treatment strategies, and ensures the delivery of compassionate, individualized, and clinically sound care. Her leadership focuses on promoting evidence-based practices, clinical excellence, and positive treatment outcomes for individuals with co-occurring mental health and substance use disorders.\nRiky began her career working with individuals experiencing homelessness, providing intensive support, advocacy, and resource coordination to help clients overcome barriers and access essential services. This experience fueled her passion for serving vulnerable populations and inspired her to pursue a Master of Social Work degree from California State University, Fullerton, which she earned in 2013.\nThroughout her career, Riky has worked in both inpatient and outpatient settings, providing therapy, crisis intervention, case management, and recovery-oriented services. She has extensive experience supporting adults with complex behavioral health needs, including co-occurring mental health and substance use disorders, while helping individuals navigate the challenges of recovery and major life transitions.\nRiky is trained in evidence-based treatment modalities, including Cognitive Behavioral Therapy (CBT) and Dialectical Behavior Therapy (DBT). She is passionate about helping clients build resilience, strengthen coping skills, improve interpersonal relationships, and achieve lasting recovery.",
+    "image": "/images/team/riky-hanaumi.jpg",
+    "group": "California Leadership"
   },
   {
     "slug": "erika-sirianos",
     "name": "Erika Sirianos",
-    "role": "Director of Human Resources",
+    "role": "HR Director",
     "credentials": "SPHR, SHRM-CP",
-    "bio": "With over 20 years of progressive leadership experience, Erika Sirianos is a seasoned Human Resources and Payroll Director with a dynamic background spanning both the nonprofit and corporate sectors. Her expertise lies in aligning people strategies with organizational goals, ensuring compliance, and fostering inclusive workplace cultures that drive performance and engagement.\nThroughout her career, Erika has led HR and payroll operations in diverse environments, including behavioral health and substance abuse treatment organizations as well as educational institutions. Her hands-on experience navigating complex regulatory frameworks, managing multi-state payroll systems, and implementing HR best practices uniquely positions her to support mission-driven and growth-oriented organizations alike.\nKnown for her collaborative approach and strong ethical compass, Erika has a proven track record in talent management, benefits administration, policy development, and organizational change. She is especially passionate about shaping people and culture strategies that cultivate belonging, accountability, and continuous improvement.",
-    "image": "/images/team/erika-sirianos.jpg"
+    "bio": "With over 20 years of progressive leadership experience, Erika Sirianos is a seasoned Human Resources and Payroll Director with a dynamic background spanning both the nonprofit and corporate sectors. Her expertise lies in aligning people strategies with organizational goals, ensuring compliance, and fostering inclusive workplace cultures that drive performance and engagement.\nThroughout her career, Erika has led HR and payroll operations in diverse environments, including behavioral health and substance abuse treatment organizations as well as educational institutions. Her hands-on experience navigating complex regulatory frameworks, managing multi-state payroll systems, and implementing HR best practices uniquely positions her to support mission-driven and growth-oriented organizations alike.\nKnown for her collaborative approach and strong ethical compass, Erika has a proven track record in talent management, benefits administration, policy development, and organizational change. She is especially passionate about shaping people and culture strategies that cultivate belonging, accountability, and continuous improvement.\nErika holds a deep commitment to employee well-being and organizational integrity, making her a trusted advisor to leadership teams and a valued partner to staff at all levels.",
+    "image": "/images/team/erika-sirianos.jpg",
+    "group": "Clinical & Operations"
   },
   {
     "slug": "erin-crawford",
     "name": "Erin Crawford",
     "role": "Director of Nursing",
     "credentials": "Registered Nurse (RN); Bachelor of Science in Nursing (Chamberlain University); currently pursuing Master of Science in Nursing with a Family Nurse Practitioner (FNP) concentration",
-    "bio": "Born in Okinawa, Japan and raised in South Florida, Erin Crawford is a dedicated and compassionate Registered Nurse with a strong commitment to serving individuals affected by substance abuse, mental health challenges, and health disparities within our communities. She is a proud mother of two and finds balance between her professional and personal life. When she's not cheering her children on at the soccer pitch, Erin enjoys relaxing at the beach with her beloved dog.\nErin graduated with President's Distinguished Honors from Chamberlain University, earning her Bachelor of Science in Nursing. She is currently pursuing her Master of Science in Nursing with a concentration as a Family Nurse Practitioner (FNP), continuing her mission to broaden her impact in patient care and advocacy.\nWith a deep-rooted passion for helping others, Erin focuses her nursing career on empowering individuals facing addiction and mental health challenges. She is a fierce advocate for equitable care and works to uplift those experiencing social, economic, and healthcare disparities. Erin brings empathy, strength, and dedication to every role she takes on\u2014driven by a desire to be a source of support and hope for those most in need.",
-    "image": "/images/team/erin-crawford.png"
+    "bio": "Born in Okinawa, Japan and raised in South Florida, Erin Crawford is a dedicated and compassionate Registered Nurse with a strong commitment to serving individuals affected by substance abuse, mental health challenges, and health disparities within our communities. She is a proud mother of two and finds balance between her professional and personal life. When she's not cheering her children on at the soccer pitch, Erin enjoys relaxing at the beach with her beloved dog.\nErin graduated with President's Distinguished Honors from Chamberlain University, earning her Bachelor of Science in Nursing. She is currently pursuing her Master of Science in Nursing with a concentration as a Family Nurse Practitioner (FNP), continuing her mission to broaden her impact in patient care and advocacy.\nWith a deep-rooted passion for helping others, Erin focuses her nursing career on empowering individuals facing addiction and mental health challenges. She is a fierce advocate for equitable care and works to uplift those experiencing social, economic, and healthcare disparities. Erin brings empathy, strength, and dedication to every role she takes on—driven by a desire to be a source of support and hope for those most in need.",
+    "image": "/images/team/erin-crawford.jpg",
+    "group": "Florida Facilities — Seaside Wellness of Palm Beach"
   },
   {
     "slug": "gus-saadeh",
     "name": "Gus Saadeh",
     "role": "Director of Operations",
     "credentials": "",
-    "bio": "As the Director of Operations at Marina Harbor Detox, Gus Saadeh manages and oversees the day-to-day operations with a strong focus on facilities maintenance, Health & Safety compliance, and staff coordination. Working closely with the Program Director, Gus ensures staff are trained effectively and that services are delivered with professionalism, compassion, and alignment with industry best practices.\nGus's path into this field is deeply personal\u2014being in recovery himself provides a unique understanding of the challenges clients face in early sobriety. This lived experience drives his commitment to creating an environment that is safe, respectful, and grounded in genuine hope. Every operational decision Gus makes is guided by a client-centered mindset, knowing firsthand how critical stability and empathy are during the early stages of recovery.\nBefore stepping into this role, Gus worked as a licensed realtor in San Francisco. That experience taught him how to connect with people from all walks of life, build trust quickly, and communicate with empathy\u2014skills that now serve him well in supporting clients, families, and staff in a treatment setting. He has also worked closely with aging individuals and their families on issues of trust, long-term planning, and transitions of care, bringing sensitivity and structure to complex and emotional situations.\nGus's areas of expertise include recovery-based operational leadership, staff and facilities management, and maintaining Health & Safety compliance. He is also skilled in providing empathetic support to clients and their families and has a strong background in transitional planning for aging adults and their loved ones. These combined strengths allow him to bring a balanced approach of structure, compassion, and practical guidance to every aspect of his role.",
-    "image": "/images/team/gus-saadeh.jpg"
+    "bio": "As the Director of Operations at Marina Harbor Detox, Gus Saadeh manages and oversees the day-to-day operations with a strong focus on facilities maintenance, Health & Safety compliance, and staff coordination. Working closely with the Program Director, Gus ensures staff are trained effectively and that services are delivered with professionalism, compassion, and alignment with industry best practices.\nGus's path into this field is deeply personal—being in recovery himself provides a unique understanding of the challenges clients face in early sobriety. This lived experience drives his commitment to creating an environment that is safe, respectful, and grounded in genuine hope. Every operational decision Gus makes is guided by a client-centered mindset, knowing firsthand how critical stability and empathy are during the early stages of recovery.\nBefore stepping into this role, Gus worked as a licensed realtor in San Francisco. That experience taught him how to connect with people from all walks of life, build trust quickly, and communicate with empathy—skills that now serve him well in supporting clients, families, and staff in a treatment setting. He has also worked closely with aging individuals and their families on issues of trust, long-term planning, and transitions of care, bringing sensitivity and structure to complex and emotional situations.\nGus's areas of expertise include recovery-based operational leadership, staff and facilities management, and maintaining Health & Safety compliance. He is also skilled in providing empathetic support to clients and their families and has a strong background in transitional planning for aging adults and their loved ones. These combined strengths allow him to bring a balanced approach of structure, compassion, and practical guidance to every aspect of his role.",
+    "image": "/images/team/gus-saadeh.jpg",
+    "group": "Marina Harbor Detox"
   },
   {
     "slug": "haley-wadlington",
@@ -149,7 +428,8 @@
     "role": "Director of Client Care - Texas",
     "credentials": "",
     "bio": "Haley Wadlington serves as the Director of Client Care, where she is dedicated to ensuring that each client receives compassionate, individualized, and consistent support throughout their treatment experience. In her role, Haley helps oversee client care coordination, discharge planning, family communication, and ongoing support services to help clients feel seen, heard, and guided during a vulnerable time in their lives.\nHaley is passionate about creating a client-centered environment built on dignity, accountability, and meaningful connection. She works closely with clients, families, and the clinical team to help identify needs, reduce barriers, and support a smooth transition into the next appropriate level of care. Her approach emphasizes advocacy, clear communication, and practical support, ensuring that clients are not only cared for during treatment but also prepared for continued success after discharge.\nWith a strong commitment to ethical care and trauma-informed support, Haley strives to make every client interaction purposeful, respectful, and rooted in hope. Her goal is to help clients and their loved ones feel supported, informed, and empowered as they move forward in their recovery journey.",
-    "image": "/images/team/haley-wadlington.png"
+    "image": "/images/team/haley-wadlington.png",
+    "group": "Texas Facilities"
   },
   {
     "slug": "halie-nall",
@@ -157,15 +437,17 @@
     "role": "Case Manager at Ocean Coast Recovery Center",
     "credentials": "",
     "bio": "Halie Nall is a dedicated Case Manager who is passionate about supporting individuals throughout their recovery journey and helping them access the resources, tools, and support needed to build healthy, fulfilling lives. Her commitment to this work is shaped by both professional experience and personal lived experience with addiction and mental health challenges, as well as witnessing the impact of substance use within her own family.\nThese experiences have provided Halie with a deep sense of empathy, understanding, and compassion for those facing similar struggles. She believes that recovery is possible for everyone and is committed to meeting clients where they are, offering encouragement, advocacy, and support every step of the way.\nKnown for her compassionate approach and genuine connection with clients, Halie strives to create a safe and supportive environment where individuals feel heard, valued, and empowered as they work toward lasting recovery and personal growth.",
-    "image": "/images/team/halie-nall.png"
+    "image": "/images/team/halie-nall.jpg",
+    "group": "Ocean Coast Recovery Center"
   },
   {
     "slug": "ila-holgerson",
     "name": "Ila Holgerson",
-    "role": "Lead Case Manager",
+    "role": "Director of Clinical Operations",
     "credentials": "",
-    "bio": "Ila is the Lead Case Manager at Wellness Recovery Center, where she has been a dedicated member of the team since 2023. Originally from Gilbert, Arizona, Ila brings a compassionate and client-centered approach to her work, focusing on helping individuals navigate the practical challenges that can impact their recovery journey.\nIn her leadership role, Ila oversees a team of case managers who provide support in areas such as legal coordination, housing, employment, and aftercare planning. She prides herself on her strong problem-solving skills, using them to develop effective, individualized solutions that empower clients to focus on healing and long-term stability. Ila is deeply committed to creating a supportive environment where clients feel heard, understood, and guided every step of the way.",
-    "image": "/images/team/ila-holgerson.jpg"
+    "bio": "Ila serves as the Director of Clinical Operations at Wellness Recovery Center, where she has been a dedicated member of the team since 2023\\. Originally from Gilbert, Arizona, she brings a compassionate, client-centered approach to leadership, with a strong commitment to delivering high-quality, individualized care that supports lasting recovery.\nAs Director of Clinical Operations, Ila oversees the day-to-day clinical operations of the facility, working closely with multidisciplinary teams to ensure seamless coordination of care, regulatory compliance, and exceptional client outcomes. Drawing on her background in case management, she is passionate about removing barriers to recovery and developing systems that allow both clients and staff to thrive. Known for her strong leadership, collaborative mindset, and problem-solving abilities, Ila is dedicated to fostering a supportive environment where every client feels heard, valued, and empowered throughout their treatment journey.",
+    "image": "/images/team/ila-holgerson.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
   },
   {
     "slug": "jaclyn-paradise",
@@ -173,7 +455,8 @@
     "role": "Clinical Therapist",
     "credentials": "LPC, NCC, CTP",
     "bio": "Jaclyn Paradise is a Licensed Professional Counselor (LPC) and Certified Trauma Professional who works with adults navigating trauma, anxiety, life transitions, and recovery. She earned her master's degree in Clinical Mental Health Counseling from Rider University and has extensive experience in both private practice and intensive outpatient settings, supporting individuals with co-occurring mental health and substance use challenges.\nJaclyn's approach is holistic and trauma-informed, integrating parts work, mindfulness, and body-based practices to help clients reconnect with themselves and feel safe in their own bodies. She is especially passionate about inner child healing, self-empowerment, and guiding clients through meaningful life changes.\nDrawing from both clinical training and personal insight, Jaclyn creates a grounded, supportive space where clients can explore, grow, and develop a deeper understanding of who they are.",
-    "image": "/images/team/jaclyn-paradise.jpg"
+    "image": "/images/team/jaclyn-paradise.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
   },
   {
     "slug": "jacob-cameron",
@@ -181,7 +464,8 @@
     "role": "Client Care Director of California",
     "credentials": "Registered Substance Use Disorder Counselor (SUDCC I)",
     "bio": "Jacob Cameron serves as the Client Care Director at Quadrant Health Group and is a Registered Substance Use Disorder Counselor (SUDCC I). Passionate about helping individuals navigate the recovery process, Jacob is dedicated to creating a treatment experience that is both meaningful and engaging. He believes that lasting recovery is built through genuine connection, compassionate support, and an environment where clients feel valued every step of the way.\nIn his role, Jacob works to ensure that each client receives personalized care and experiences a sense of belonging throughout their treatment journey. His goal is to help individuals not only achieve recovery but also discover that life in recovery can be fulfilling, rewarding, and enjoyable. Through his commitment to client-centered care, Jacob strives to make a lasting positive impact on the lives of those he serves.",
-    "image": "/images/team/jacob-cameron.png"
+    "image": "/images/team/jacob-cameron.jpg",
+    "group": "California Leadership"
   },
   {
     "slug": "jada-spencer",
@@ -189,7 +473,8 @@
     "role": "Case Manager",
     "credentials": "",
     "bio": "Jada brings over five years of experience in mental and behavioral health, driven by a genuine passion for supporting individuals through life's most challenging seasons. She is committed to building meaningful, authentic connections so clients feel safe, supported, and comfortable being open throughout their treatment journey. As a Case Manager, Jada helps clients navigate everyday stressors while identifying practical next steps toward stability and long-term growth.\nWellness plays a central role in her approach. Through her own grounding routines, including Pilates, Jada has developed a deep appreciation for the connection between physical and emotional regulation. She encourages clients to explore movement, structure, and self-care practices that promote balance and reduce stress. Her goal is for every individual she works with to leave treatment feeling more stable, confident, and prepared for the road ahead.",
-    "image": "/images/team/jada-spencer.jpg"
+    "image": "/images/team/jada-spencer.jpg",
+    "group": "Clinical & Operations"
   },
   {
     "slug": "jeremiah-ross",
@@ -197,7 +482,8 @@
     "role": "Nursing Supervisor of SoCal",
     "credentials": "CADC-II, SUDRC",
     "bio": "Jeremiah Ross, is a dedicated healthcare professional with more than 10 years of patient care experience and a strong background in substance use disorder treatment, client care coordination, and clinical team leadership. As the Nursing Supervisor, Jeremiah plays an integral role in supporting both clients and staff, helping oversee day-to-day clinical operations, medication-assisted treatment (MAT) protocols, documentation compliance, staff development, and multidisciplinary collaboration to ensure the highest standards of care.\nPassionate about helping individuals navigate the recovery process, Jeremiah is committed to creating a safe, supportive, and structured treatment environment where clients can build stability, develop healthy coping skills, and work toward lasting recovery. His leadership style emphasizes compassion, accountability, and teamwork, helping foster positive outcomes for both clients and clinical staff.",
-    "image": "/images/team/jeremiah-ross.jpg"
+    "image": "/images/team/jeremiah-ross.jpg",
+    "group": "California Leadership"
   },
   {
     "slug": "joshua-leder",
@@ -205,23 +491,17 @@
     "role": "Director of Operations - DDC/FW",
     "credentials": "",
     "bio": "Joshua Leder serves as Director of Operations for the Texas facilities under Quadrant Health Group, where he oversees daily operations and supports the continued growth and development of the organization's behavioral health programs across the state.\nOriginally born in Colorado and raised primarily in Texas, Joshua brings both personal passion and professional dedication to his role. As a proud father of two children, he values family, purpose, and creating a positive impact in the lives of others.\nJoshua is deeply committed to helping individuals build healthier, more fulfilling lives while encouraging hope, healing, and personal growth. Guided by compassion, understanding, and faith, he strives to support others in recognizing that lasting change and recovery are possible. Drawing from his own experiences and journey, Joshua is passionate about inspiring those around him through strength, empathy, and service to others.",
-    "image": "/images/team/joshua-leder.png"
+    "image": "/images/team/joshua-leder.jpg",
+    "group": "Texas Facilities"
   },
   {
     "slug": "justin-white",
     "name": "Justin White",
     "role": "Program Director",
     "credentials": "Registered Addiction Counselor (RAC)",
-    "bio": "Justin White is a Registered Addiction Counselor with a passion for helping individuals find hope, healing, and long-term stability in recovery. With experience working in both detox and residential treatment settings, Justin is dedicated to creating a safe, supportive environment where clients feel heard, respected, and empowered throughout their recovery journey.\nJustin believes recovery is not one-size-fits-all and values building genuine connections with each client through compassion, honesty, and understanding. He is committed to helping individuals navigate the challenges of addiction and co-occurring mental health disorders while supporting the development of healthier habits, stronger coping skills, and renewed confidence.\nKnown for his approachable and supportive nature, Justin strives to make a meaningful impact on the lives of the clients and families he works with each day. His goal is to help individuals recognize their potential for growth and lasting change while reminding them they never have to face recovery alone.",
-    "image": "/images/team/justin-white.png"
-  },
-  {
-    "slug": "karen-pettit",
-    "name": "Karen Pettit",
-    "role": "Program Director (Laguna View Detox)",
-    "credentials": "CADII",
-    "bio": "As a passionate advocate for mental health and substance abuse treatment, I have dedicated my career to helping those in need. My journey began with personal experiences of loss and witnessing the struggles of loved ones who faced mental health challenges and substance abuse. This profound understanding ignited a desire within me to make a meaningful impact in the lives of others.\nI hold an Associate's degree in Alcohol and Drug Studies from Saddleback College, which I completed in 2024, and I am proud to have passed the state exam for my Substance Use Disorder Certified Counselor (SUDCC II) credential. Currently, I am pursuing a bachelor's degree in Psychology to deepen my understanding and enhance my ability to support those on their journey to recovery.\n\u201cA little consideration, a little thought for others, makes all the difference.\u201d \u2013 Eeyore.  I embody this belief in my work, committed to providing the care and guidance that individuals and families need, drawing from both my professional training and my personal experiences.",
-    "image": "/images/team/karen-pettit.jpg"
+    "bio": "Justin White serves as Program Director for Quadrant Health Group's Southern California facilities, providing operational leadership and program oversight across the organization's behavioral health treatment centers. In this role, he works closely with multidisciplinary teams to ensure each facility delivers high-quality, individualized care while maintaining excellence in clinical programming, regulatory compliance, and day-to-day operations.\nA Registered Addiction Counselor, Justin brings extensive experience in both detoxification and residential treatment settings. His leadership is rooted in the belief that recovery is never one-size-fits-all, and he is committed to fostering treatment environments where every client feels respected, supported, and empowered throughout their healing journey.\nKnown for his compassionate and collaborative leadership style, Justin is passionate about developing strong teams and creating programs that promote lasting recovery. He believes meaningful change begins with genuine human connection and is dedicated to helping both clients and staff reach their fullest potential. Through his leadership, he continues to advance Quadrant Health Group's mission of providing exceptional, evidence-based behavioral healthcare across Southern California.",
+    "image": "/images/team/justin-white.jpg",
+    "group": "Clinical & Operations"
   },
   {
     "slug": "lamont-damon",
@@ -229,15 +509,17 @@
     "role": "Therapist at Laguna View Detox",
     "credentials": "AMFT (Associate Marriage and Family Therapist)",
     "bio": "Lamont Damon is an Associate Marriage and Family Therapist dedicated to helping individuals navigate substance use recovery and behavioral health challenges with compassion, understanding, and evidence-based care. With experience working in detoxification and residential treatment settings, Lamont facilitates process groups, mindfulness groups, and trauma-informed therapeutic interventions designed to support healing and personal growth.\nHis clinical approach is rooted in creating a safe, supportive environment where clients can openly explore their emotions, strengthen recovery skills, develop healthy coping strategies, and build greater self-awareness. Drawing from person-centered, cognitive behavioral, mindfulness-based, and trauma-informed modalities, Lamont tailors his work to meet each individual's unique needs and goals.\nPassionate about empowering individuals on their recovery journey, Lamont strives to help clients build resilience, foster meaningful change, and establish a strong foundation for long-term wellness and sustained recovery.",
-    "image": "/images/team/lamont-damon.png"
+    "image": "/images/team/lamont-damon.jpg",
+    "group": "Laguna View Detox"
   },
   {
     "slug": "michael-mcarthur",
     "name": "Michael McArthur",
-    "role": "Regional Nursing Director",
+    "role": "Nursing Director",
     "credentials": "LVN",
-    "bio": "I am the Director of Nursing for California facilities, overseeing all medical staff and client care operations. My journey into nursing was inspired by a personal desire to provide hope and compassion during life's most challenging moments. Watching nurses care for my family during a difficult time, I realized how powerful a little hope and dedicated care can be. This inspired me to pursue a career in nursing, knowing I could make a difference when people need it most.\nI love working in addiction recovery because it allows me to witness clients grow and thrive within our walls. Our staff's client-focused approach creates a positive, motivating environment that makes coming to work truly rewarding.\nOutside of my professional life, I am a proud father of four wonderful kids. They are my greatest inspiration\u2014teaching me patience, resilience, and the importance of hope every day. My personal recovery journey has also strengthened my understanding of overcoming adversity, and it fuels my dedication to helping others find their path to healing.\nI work in this industry because I believe that substance use disorder and behavioral health are underserved populations that deserve attention, compassion, and support. I am excited to be on the front lines helping to reduce stigma and provide clients with genuine opportunities for recovery.\nPersonally, I am passionate about my family, continuous improvement in patient care through scientific and technological advances, and my love for the Los Angeles Lakers. My goal is to make a meaningful difference, one life at a time, with hope, compassion, and unwavering dedication.",
-    "image": "/images/team/michael-mcarthur.jpeg"
+    "bio": "I am the Director of Nursing for California facilities, overseeing all medical staff and client care operations. My journey into nursing was inspired by a personal desire to provide hope and compassion during life's most challenging moments. Watching nurses care for my family during a difficult time, I realized how powerful a little hope and dedicated care can be. This inspired me to pursue a career in nursing, knowing I could make a difference when people need it most.\nI love working in addiction recovery because it allows me to witness clients grow and thrive within our walls. Our staff's client-focused approach creates a positive, motivating environment that makes coming to work truly rewarding.\nOutside of my professional life, I am a proud father of four wonderful kids. They are my greatest inspiration—teaching me patience, resilience, and the importance of hope every day. My personal recovery journey has also strengthened my understanding of overcoming adversity, and it fuels my dedication to helping others find their path to healing.\nI work in this industry because I believe that substance use disorder and behavioral health are underserved populations that deserve attention, compassion, and support. I am excited to be on the front lines helping to reduce stigma and provide clients with genuine opportunities for recovery.\nPersonally, I am passionate about my family, continuous improvement in patient care through scientific and technological advances, and my love for the Los Angeles Lakers. My goal is to make a meaningful difference, one life at a time, with hope, compassion, and unwavering dedication.",
+    "image": "/images/team/michael-mcarthur.jpg",
+    "group": "California Leadership"
   },
   {
     "slug": "michael-meagher",
@@ -245,7 +527,8 @@
     "role": "Clinical Director (Seaside)",
     "credentials": "MSW, LCSW, CAP; Master of Social Work from Samford University; Licensed Clinical Social Worker and Certified Addiction Professional in the state of Florida; EMDR trained",
     "bio": "Michael Meagher, MSW, LCSW, CAP, is the Clinical Director with more than 13 years of experience in the behavioral health and substance use treatment field. He holds a Master of Social Work from Samford University and is both a Licensed Clinical Social Worker and Certified Addiction Professional in the state of Florida. Michael is also EMDR trained and specializes in co-occurring disorders, trauma-informed care, and addiction treatment.\nThroughout his career, Michael has worked across multiple levels of care, beginning in recovery support services before advancing into counseling, operations, and executive clinical leadership. As Clinical Director, he oversees clinical programming, staff supervision, regulatory compliance, utilization review, and multidisciplinary treatment coordination. He is passionate about creating individualized, evidence-based treatment experiences that support long-term recovery and meaningful personal growth. 'This is not just my profession, it's my passion.'",
-    "image": "/images/team/michael-meagher.jpg"
+    "image": "/images/team/michael-meagher.jpg",
+    "group": "Florida Facilities — Seaside Wellness of Palm Beach"
   },
   {
     "slug": "michelle-szwed",
@@ -253,23 +536,17 @@
     "role": "Clinical Director",
     "credentials": "LPC, LCADC, ACS, BCC, NCC, CCTP, BA",
     "bio": "Michelle Szwed is a Licensed Professional Counselor and Licensed Clinical Alcohol and Drug Counselor with experience treating co-occurring disorders, addiction, trauma, and substance use. She has worked across private practice, partial hospitalization, and intensive outpatient settings, where she has developed a strong clinical foundation through hands-on experience, collaboration with multidisciplinary teams, and a commitment to ongoing professional growth.\nMichelle is known for her empathetic and grounded approach, creating a therapeutic environment where clients feel supported, understood, and empowered. Her clinical strengths include active listening, thoughtful communication, strong organizational skills, attention to detail, and the ability to foster meaningful engagement in both individual and group settings. She is especially skilled at leading interactive psychoeducational and process groups while maintaining an authentic, down-to-earth presence.\nIn her work, Michelle draws from a range of evidence-based modalities, including DBT, Motivational Interviewing, Internal Family Systems, EMDR, Cognitive Processing Therapy, relapse prevention, and expressive arts therapies. She is trained in both EMDR and Brainspotting and specializes in supporting individuals navigating trauma, borderline personality disorder, and substance use challenges.\nIn addition to her counseling credentials, Michelle is a board-certified life coach (BCC), nationally certified counselor (NCC), certified clinical trauma professional (CCTP), and certified behavior assistant (BA), reflecting her dedication to providing comprehensive, compassionate care.",
-    "image": "/images/team/michelle-szwed.png"
+    "image": "/images/team/michelle-szwed.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
   },
   {
-    "slug": "monica-olivires",
-    "name": "Monica Olivires",
-    "role": "Program Director",
+    "slug": "monica-olivares",
+    "name": "Monica Olivares",
+    "role": "Clinical Supervisor",
     "credentials": "CADII (Certified Alcohol and Drug Counselor II / CADC II)",
-    "bio": "Hi, I'm Monica Olivares \u2014 Program Director at Hillside Mission and a firm believer that healing doesn't have to be boring. With over 11 years in the behavioral health field, I bring clinical experience, leadership, humor, heart, and a whole lot of hustle to the work I love. I've worked in just about every setting imaginable \u2014 Detox, Residential, IOP, PHP, OP \u2014 and in nearly every role, from graveyard tech, lead tech, biofeedback therapy, to case manager, assistant manager, program manager, and now, program director.\nI hold a CADC II certification and have a background of working with clients facing substance use, co-occurring disorders, and eating disorders. But more than anything, I bring my lived experience: I've been clean and sober for 13 years, and this work is deeply personal to me. I speak the language of recovery from the heart, and I'm passionate about reaching people in a way that makes them feel truly seen, heard, and supported.\nAt Hillside, we're more than just a treatment center \u2014 we're a family. Our home-like environment is warm, real, and full of life. We believe in laughing when we can, crying when we need to, and always showing up for our clients with compassion and honesty. We don't do cookie-cutter care \u2014 we do soul work, and we take it seriously.\nOutside of work, I'm a proud mom, wife, sister, and daughter. I love animals, nature, music festivals, escape rooms, movies, and adventures that make great stories later. I live life out loud and love helping others do the same. Recovery gave me my life back \u2014 and I'm here to help others find theirs.",
-    "image": "/images/team/monica-olivires.jpg"
-  },
-  {
-    "slug": "nastasya-aracena",
-    "name": "Nastasya Aracena",
-    "role": "Clinical Therapist",
-    "credentials": "CADC, CPC",
-    "bio": "Nastasya (Nas) Aracena is a dedicated Clinical Therapist specializing in addiction and trauma, with extensive experience working across multiple levels of care, including PHP and IOP settings. She utilizes an integrative, compassionate, and evidence-based approach, incorporating Cognitive Behavioral Therapy (CBT), Dialectical Behavior Therapy (DBT), person-centered therapy, and solution-focused therapy to support clients in achieving sustainable recovery and emotional healing.\nNastasya is currently in the process of becoming EMDR-trained, further expanding her ability to facilitate deeper trauma resolution. She holds a CADC in the state of New Jersey and is actively advancing her clinical credentials while completing her Master's degree in Clinical Mental Health Counseling with emphasis in trauma, finalizing her LCADC and LAC.\nHer areas of interest include trauma recovery, addiction treatment, purpose-driven living, and the integration of mental health with personal and professional development. Nastasya's personal recovery journey\u2014choosing to discontinue alcohol and other substances used during her adolescence\u2014fuels her deep commitment to this work. This lived experience allows her to connect with clients authentically while modeling resilience, growth, and transformation. She is deeply passionate about empowering individuals to break through trauma and limiting patterns and build lives aligned with clarity, purpose, fulfillment and long-term success.",
-    "image": "/images/team/nastasya-aracena.jpg"
+    "bio": "Monica Olivares serves as the Clinical Supervisor for Quadrant Health Group’s California facilities, bringing over 11 years of experience in the behavioral health field and a deeply personal passion for recovery and healing. Throughout her career, Monica has worked across nearly every level of care — including Detox, Residential, IOP, PHP, and Outpatient programs — while holding a wide range of roles from Behavioral Health Technician and Case Manager to Program Manager and Program Director.\nMonica holds a CADC II certification and has extensive experience supporting individuals struggling with substance use disorders, co-occurring mental health conditions, and eating disorders. Her leadership style is rooted in compassion, authenticity, accountability, and connection, helping create treatment environments where clients feel genuinely supported, understood, and empowered throughout their recovery journey.\nIn addition to her professional experience, Monica brings 13 years of personal recovery experience to the work she does each day. Her lived experience allows her to connect with clients on a deeper level while helping foster hope, trust, and meaningful change. She believes recovery should be individualized, engaging, and centered around human connection, emphasizing that healing can happen while still embracing joy, humor, and community.\nKnown for her energy, heart, and dedication, Monica is passionate about helping both clients and staff grow while cultivating strong, supportive treatment teams across the California programs. Outside of work, she enjoys spending time with her family, being outdoors, attending music festivals, exploring escape rooms, traveling, and creating memorable life experiences.",
+    "image": "/images/team/monica-olivares.jpg",
+    "group": "Hillside Mission Recovery"
   },
   {
     "slug": "nicholas-incognito",
@@ -277,15 +554,17 @@
     "role": "Director of Quality Assurance",
     "credentials": "",
     "bio": "Nicholas Incognito Jr. is a seasoned professional with over a decade of experience in the behavioral healthcare sector, currently serving as the Director of QA at Quadrant Health Group, Inc. In this role, he is at the forefront of providing a compassionate and streamlined entry point for individuals seeking treatment for substance abuse and mental health. His leadership philosophy centers on a blend of strategic oversight and hands-on guidance, ensuring that every client's journey begins with professionalism and empathy. Throughout his career, Nicholas has developed a strong reputation for optimizing operational efficiency and enhancing client outcomes. He has a proven track record of significantly improving conversion rates and client engagement, which has been instrumental in the growth and success of the admissions department. By fostering a collaborative environment, he ensures seamless coordination between his team, other internal departments, and external referral partners, creating a clear and supportive path to care for all clients. Passionate about reducing the barriers that prevent people from accessing necessary treatment, Nicholas is deeply committed to supporting individuals and their families through one of the most critical decisions of their lives. When he's not busy guiding his team or refining internal systems, he enjoys spending time outdoors and exploring creative outlets, which help him stay grounded and energized for the important work he does.",
-    "image": "/images/team/nicholas-incognito.jpg"
+    "image": "/images/team/nicholas-incognito.jpg",
+    "group": "Admissions & Client Care"
   },
   {
     "slug": "norberto-segredo",
     "name": "Norberto Segredo",
     "role": "Case Manager",
     "credentials": "",
-    "bio": "Norberto serves as a dedicated Case Manager committed to empowering clients to achieve mastery over their mental health and recovery from substance use. He approaches his work with compassion, structure, and a deep belief in each individual's capacity for meaningful and lasting change.\nHis clinical perspective is grounded in his own recovery journey, which began in 2012. Having navigated both substance and process addictions alongside mental health challenges, Norberto brings a powerful lived-experience lens to his role. His personal transformation was further shaped through years of mentorship under the late Bob Proctor, where he studied the science of rewiring the mind to support sustainable growth and behavioral change.\nNorberto specializes in integrating multiple recovery frameworks\u2014including SMART Recovery, Dharma Recovery, and the 12-Step model\u2014within a holistic wellness approach. He emphasizes a personalized 'toolkit' model, incorporating nutrition, meditation, exercise, and sauna therapy to strengthen resilience and long-term stability. With experience as both a peer specialist and group facilitator, his mission is to guide each client from simply surviving to truly thriving.",
-    "image": "/images/team/norberto-segredo.jpg"
+    "bio": "Norberto serves as a dedicated Case Manager committed to empowering clients to achieve mastery over their mental health and recovery from substance use. He approaches his work with compassion, structure, and a deep belief in each individual's capacity for meaningful and lasting change.\nHis clinical perspective is grounded in his own recovery journey, which began in 2012. Having navigated both substance and process addictions alongside mental health challenges, Norberto brings a powerful lived-experience lens to his role. His personal transformation was further shaped through years of mentorship under the late Bob Proctor, where he studied the science of rewiring the mind to support sustainable growth and behavioral change.\nNorberto specializes in integrating multiple recovery frameworks—including SMART Recovery, Dharma Recovery, and the 12-Step model—within a holistic wellness approach. He emphasizes a personalized 'toolkit' model, incorporating nutrition, meditation, exercise, and sauna therapy to strengthen resilience and long-term stability. With experience as both a peer specialist and group facilitator, his mission is to guide each client from simply surviving to truly thriving.",
+    "image": "/images/team/norberto-segredo.jpg",
+    "group": "Clinical & Operations"
   },
   {
     "slug": "olivia-hadjerioua",
@@ -293,47 +572,44 @@
     "role": "Executive Director - Texas",
     "credentials": "Licensed Professional Counselor (LPC)",
     "bio": "Olivia Hadjerioua serves as Executive Director for Dallas Detox Center and Fort Worth Wellness Center, where she oversees daily operations across both Texas facilities while supporting initiatives centered on quality care, team development, and client success.\nOriginally from Tennessee, Olivia brings a compassionate, people-centered approach to leadership rooted in her clinical background as a Licensed Professional Counselor (LPC). With experience working across all levels of care, she is deeply passionate about helping individuals navigate mental health and substance use recovery with dignity, support, and hope.\nIn her leadership role, Olivia is committed to fostering a culture of accountability, integrity, and excellence while creating an environment where both clients and staff can thrive. Her dedication to operational excellence and individualized care continues to support the growth and mission of both Dallas Detox Center and Fort Worth Wellness Center.",
-    "image": null
+    "image": "/images/team/olivia-hadjerioua.jpg",
+    "group": "Texas Facilities"
   },
   {
     "slug": "phillip-carter",
     "name": "Phillip Carter",
     "role": "Director of Operations",
     "credentials": "",
-    "bio": "Phillip Carter serves as the Director of Operations at Hillside Mission Recovery, bringing extensive experience in criminal justice, behavioral health, and recovery support. He began his career with the Indiana Department of Corrections, where he spent eight years working in state parole, case management, crisis intervention, and employment placement. During that time, he developed a strong foundation in meeting individuals where they are, navigating high-pressure situations with steadiness, and helping people recognize their potential\u2014even when they struggle to see it themselves.\nPhillip joined Hillside Mission Recovery as a Behavioral Health Technician and steadily advanced through leadership roles including Lead Tech and Case Manager before stepping into his current position as Director of Operations. He also spent two years managing sober living homes, an experience that strengthened his commitment to supporting individuals as they rebuild their lives with structure, accountability, and hope.\nAs Director of Operations, Phillip leads with integrity, grit, and compassion. He is deeply invested in cultivating a strong team culture and empowering staff to grow into their strengths. Seeing both clients and team members develop confidence, resilience, and purpose is what fuels his passion for the work. Phillip remains dedicated to helping create an environment where lasting recovery and meaningful transformation are possible.",
-    "image": "/images/team/phillip-carter.jpg"
+    "bio": "Phillip Carter serves as the Director of Operations at Hillside Mission Recovery, bringing extensive experience in criminal justice, behavioral health, and recovery support. He began his career with the Indiana Department of Corrections, where he spent eight years working in state parole, case management, crisis intervention, and employment placement. During that time, he developed a strong foundation in meeting individuals where they are, navigating high-pressure situations with steadiness, and helping people recognize their potential—even when they struggle to see it themselves.\nPhillip joined Hillside Mission Recovery as a Behavioral Health Technician and steadily advanced through leadership roles including Lead Tech and Case Manager before stepping into his current position as Director of Operations. He also spent two years managing sober living homes, an experience that strengthened his commitment to supporting individuals as they rebuild their lives with structure, accountability, and hope.\nAs Director of Operations, Phillip leads with integrity, grit, and compassion. He is deeply invested in cultivating a strong team culture and empowering staff to grow into their strengths. Seeing both clients and team members develop confidence, resilience, and purpose is what fuels his passion for the work. Phillip remains dedicated to helping create an environment where lasting recovery and meaningful transformation are possible.",
+    "image": "/images/team/phillip-carter.jpg",
+    "group": "Hillside Mission Recovery"
   },
   {
     "slug": "shawn-young",
     "name": "Shawn Young",
-    "role": "Regional Executive Director of California",
+    "role": "Executive Director of California",
     "credentials": "",
-    "bio": "As the Executive Director of Southern California, I have the privilege of leading a team of dedicated professionals across several substance abuse treatment facilities \u2014 but at the heart of what I do is people. Whether it's helping a client take their first step toward recovery or supporting a staff member as they grow into leadership, my passion lies in developing others and building environments where people can thrive.\nI didn't get here by accident. I worked my way up through this field \u2014 from cooking in the kitchen and working as a tech, to becoming a clinician, and now serving in executive leadership. That journey gave me a deep understanding of what this work really takes \u2014 grit, heart, and an unwavering commitment to showing up for people when they need it most.\nI believe recovery is more than just treatment \u2014 it's a life long journey that we have the privilege of helping people build that foundation.\nAt the end of the day, I'm a husband and a father. My family is my foundation and the reason I lead with heart. The way I show up at home is how I try to show up in this work \u2014 grounded, honest, and fully present.\nThis isn't just a job to me \u2014 it's a calling, and I'm all in.",
-    "image": "/images/team/shawn-young.png"
+    "bio": "As the Executive Director of Southern California, I have the privilege of leading a team of dedicated professionals across several substance abuse treatment facilities — but at the heart of what I do is people. Whether it's helping a client take their first step toward recovery or supporting a staff member as they grow into leadership, my passion lies in developing others and building environments where people can thrive.\nI didn't get here by accident. I worked my way up through this field — from cooking in the kitchen and working as a tech, to becoming a clinician, and now serving in executive leadership. That journey gave me a deep understanding of what this work really takes — grit, heart, and an unwavering commitment to showing up for people when they need it most.\nI believe recovery is more than just treatment — it's a life long journey that we have the privilege of helping people build that foundation.\nAt the end of the day, I'm a husband and a father. My family is my foundation and the reason I lead with heart. The way I show up at home is how I try to show up in this work — grounded, honest, and fully present.\nThis isn't just a job to me — it's a calling, and I'm all in.",
+    "image": "/images/team/shawn-young.jpg",
+    "group": "California Leadership"
   },
   {
     "slug": "shan-raiford",
-    "name": "Sh\u00e1n Raiford",
+    "name": "Shán Raiford",
     "role": "Case Manager (Seaside Wellness)",
     "credentials": "NCRC (National Certified Recovery Coach)",
-    "bio": "Sh\u00e1n Raiford is a National Certified Recovery Coach (NCRC) and experienced Case Manager with over a decade of service in the addiction treatment field. Since beginning his career in 2013, he has built a reputation for compassionate leadership, ethical practice, and results-driven client advocacy.\nWith a foundation in behavioral health, recovery coaching, and case management, Sh\u00e1n specializes in comprehensive needs assessment, individualized service planning, care coordination, and discharge planning across multiple levels of care. His systems-level understanding of treatment operations allows him to effectively navigate complex cases while ensuring each client receives structured, person-centered support.\nSh\u00e1n's approach is grounded in accountability, collaboration, and genuine human connection. He believes recovery is not just about sobriety\u2014it is about rebuilding purpose, restoring dignity, and strengthening community.\nHis mission remains simple: empower individuals to transform adversity into growth and create sustainable, meaningful change.",
-    "image": "/images/team/shan-raiford.jpg"
+    "bio": "Shán Raiford is a National Certified Recovery Coach (NCRC) and experienced Case Manager with over a decade of service in the addiction treatment field. Since beginning his career in 2013, he has built a reputation for compassionate leadership, ethical practice, and results-driven client advocacy.\nWith a foundation in behavioral health, recovery coaching, and case management, Shán specializes in comprehensive needs assessment, individualized service planning, care coordination, and discharge planning across multiple levels of care. His systems-level understanding of treatment operations allows him to effectively navigate complex cases while ensuring each client receives structured, person-centered support.\nShán's approach is grounded in accountability, collaboration, and genuine human connection. He believes recovery is not just about sobriety—it is about rebuilding purpose, restoring dignity, and strengthening community.\nHis mission remains simple: empower individuals to transform adversity into growth and create sustainable, meaningful change.",
+    "image": "/images/team/shan-raiford.jpg",
+    "group": "Florida Facilities — Seaside Wellness of Palm Beach"
   },
   {
     "slug": "steve-ryan",
     "name": "Steven Ryan",
-    "role": "Director of Operations",
+    "role": "Operations Director",
     "credentials": "",
     "bio": "Steven Ryan serves as the Director of Operations at Seaside Wellness Palm Beach, where he helps oversee the day-to-day operations of the facility and supports a treatment environment built on structure, accountability, and compassion. Guided by a strong belief in faith, responsibility, and meaningful connection, Steven brings both leadership and lived understanding to his role.\nSteven's path into this work is deeply personal. At a pivotal point in his own life, someone stepped in to offer the guidance, structure, and support he needed to begin rebuilding. That experience continues to shape the way he leads today. He understands that recovery is not a one-time event, but a daily commitment to growth, purpose, and doing the next right thing.\nIn his role, Steven is focused on creating a safe, well-run, and supportive environment where clients can begin treatment with confidence. He is committed to helping both staff and clients stay grounded in the values that support lasting change, while ensuring the facility operates with consistency, care, and professionalism.",
-    "image": "/images/team/steve-ryan.jpg"
-  },
-  {
-    "slug": "tami-distefano",
-    "name": "Tami Distefano",
-    "role": "Program Director - Ocean Coast Recovery Center",
-    "credentials": "CADII",
-    "bio": "I've been in this field for a little over 18 years, beginning my journey in 2007 by supporting Veterans. I started as a housing specialist and case manager, helping Veterans secure permanent housing and access their VA benefits. That experience opened the door for me to explore other meaningful ways to help people.\nIn 2013, I began working in treatment and discovered my passion for this work. I enrolled in school to become a drug and alcohol counselor and have since had the opportunity to work with a wide range of populations, including First Responders.\nAs someone in recovery myself, I bring a deep sense of understanding and empathy to the work I do. I know firsthand how challenging\u2014and how rewarding\u2014the journey can be. That experience allows me to meet people exactly where they are, with compassion, respect, and hope.\nWhat I love most about working at Ocean Coast Recovery Center is the genuine care everyone here has\u2014not just for their work, but for every person who comes through our doors. It truly feels like a family. I find purpose in connecting with each client and walking alongside them as they discover their own strength and work toward a life of sobriety.\nOutside of work, I enjoy spending time with my family and taking beach days to reset and recharge. I'm passionate about sponsoring women in recovery and being part of their growth. I also love anything outdoors\u2014traveling, ziplining, and skydiving whenever I get the chance. I believe in living fully, finding joy in the moment, and staying connected to what makes life meaningful.",
-    "image": "/images/team/tami-distefano.jpg"
+    "image": "/images/team/steve-ryan.jpg",
+    "group": "Florida Facilities — Seaside Wellness of Palm Beach"
   },
   {
     "slug": "timothy-foley",
@@ -341,14 +617,277 @@
     "role": "Program Director",
     "credentials": "Bachelor's degree in behavioral science",
     "bio": "Tim is a dedicated and compassionate Program Director with over seven years of experience in addiction treatment and behavioral health. He has developed and managed evidence-based, patient-centered programs and is skilled at leading multidisciplinary teams to deliver seamless, holistic care.\nWith a strong background in program evaluation and staff development, Tim ensures services are effective, up to date, and tailored to client needs. He holds a bachelor's degree in behavioral science and is known for his empathetic leadership style. Under his guidance, the program has achieved higher patient engagement and improved long-term recovery outcomes.",
-    "image": "/images/team/timothy-foley.png"
+    "image": "/images/team/timothy-foley.jpg",
+    "group": "Florida Facilities — Seaside Wellness of Palm Beach"
   },
   {
     "slug": "vinny-turiello",
     "name": "Vinny Turiello",
-    "role": "Client Care Coordinator Supervisor",
+    "role": "Admissions Manager",
     "credentials": "",
-    "bio": "Vinny Turiello is the Client Care Coordinator Supervisor at Quadrant Health Group, where he has been a key part of the team since 2022. With over eight years of prior experience in public safety, Vinny brings a calm, solutions-focused approach to helping individuals and families navigate the challenges of seeking treatment for substance use and mental health concerns. At Quadrant, Vinny leads a dedicated team focused on client engagement, admissions support, and care coordination. His background in public safety gives him a unique perspective on crisis response, communication, and building trust with clients during vulnerable moments. Vinny is committed to ensuring that every client feels heard, respected, and supported from their first point of contact through their transition into care. His mission is to make accessing treatment not only possible\u2014but personal.",
-    "image": "/images/team/vinny-turiello.png"
+    "bio": "Vinny Turiello is the Client Care Coordinator Supervisor at Quadrant Health Group, where he has been a key part of the team since 2022. With over eight years of prior experience in public safety, Vinny brings a calm, solutions-focused approach to helping individuals and families navigate the challenges of seeking treatment for substance use and mental health concerns. At Quadrant, Vinny leads a dedicated team focused on client engagement, admissions support, and care coordination. His background in public safety gives him a unique perspective on crisis response, communication, and building trust with clients during vulnerable moments. Vinny is committed to ensuring that every client feels heard, respected, and supported from their first point of contact through their transition into care. His mission is to make accessing treatment not only possible—but personal.",
+    "image": "/images/team/vinny-turiello.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "vahan-oknayan",
+    "name": "Vahan Oknayan",
+    "role": "Therapist",
+    "credentials": "AMFT",
+    "bio": "Vahan Oknayan is an Associate Marriage and Family Therapist who earned his Master of Arts in Clinical Psychology from Pepperdine University and his Bachelor of Fine Arts in Acting from California State University, Fullerton. His background in the arts has fostered a deep appreciation for creativity, emotional expression, and the powerful connection between the mind and body.\nVahan takes an integrative, client-centered approach to therapy, recognizing the unique ways that thoughts, emotions, relationships, behaviors, past experiences, and physical responses influence overall well-being. He values curiosity, authenticity, and collaboration, striving to understand each individual beyond the challenges that initially bring them into treatment.\nCommitted to creating a safe, supportive, and engaging therapeutic environment, Vahan believes that meaningful healing begins with a strong therapeutic relationship. He encourages both honest reflection and moments of humor throughout the recovery process, tailoring treatment to each client's individual needs while empowering them to build lasting resilience and meaningful change.",
+    "image": "/images/team/vahan-oknayan.jpg",
+    "group": "Ocean Coast Recovery Center"
+  },
+  {
+    "slug": "sarah-bentley",
+    "name": "Sarah Bentley",
+    "role": "Case Manager",
+    "credentials": "",
+    "bio": "Sarah serves as a Case Manager at Dallas Detox Center, where she is dedicated to helping individuals navigate their recovery journey with compassion, empathy, and unwavering support.\nSarah earned her Bachelor of Science in Psychology from the University of Texas at Dallas in 2017 and also holds a teaching certification for preschool through sixth grade. Her passion for behavioral health began early in life, as her own experiences fostered a deep understanding of the importance of mental health, self-awareness, and advocacy. Those experiences inspired her commitment to supporting individuals who may feel misunderstood and empowering those who need someone to stand beside them.\nWith more than five years of experience in case management, Sarah joined Dallas Detox Center in March 2026\\. She is passionate about helping clients overcome challenges, access the resources they need, and build a foundation for lasting recovery. She believes meaningful connections, compassionate guidance, and individualized support can make a lasting difference in a person's healing journey.\nSarah is honored to be part of a team committed to changing lives and looks forward to continuing to serve others, advocate for those in need, and help individuals find hope, healing, and a brighter future.",
+    "image": "/images/team/sarah-bentley.jpg",
+    "group": "Texas Facilities"
+  },
+  {
+    "slug": "corney-best",
+    "name": "Corney Best",
+    "role": "Clinical Director",
+    "credentials": "M.C.J., LCDC",
+    "bio": "Cortney Best is the Clinical Director at Fort Worth Wellness Center, where she leads the clinical team in providing compassionate, evidence-based treatment for individuals struggling with substance use disorders and co-occurring mental health conditions. She is committed to creating a supportive, client-centered environment that promotes healing, personal growth, and long-term recovery.\nCortney earned her Bachelor's degree from Texas Christian University (TCU) and her Master's degree from Tarleton State University. She is a Licensed Chemical Dependency Counselor (LCDC) and has extensive experience working with individuals and families affected by addiction. Her clinical approach emphasizes individualized treatment, trauma-informed care, accountability, and the development of practical skills that support lasting recovery.\nAs Clinical Director, Cortney oversees all clinical programming, supervises the multidisciplinary treatment team, ensures compliance with state and accreditation standards, and works collaboratively with staff to maintain the highest quality of care. She is passionate about fostering a culture of clinical excellence while empowering clients to build meaningful, healthy lives in recovery.\nCortney believes that recovery is possible for everyone and is dedicated to helping each client identify their strengths, overcome barriers, and achieve lasting change through compassionate, evidence-based care.",
+    "image": "/images/team/corney-best.jpg",
+    "group": "Texas Facilities"
+  },
+  {
+    "slug": "jacci-westbrook",
+    "name": "Jacci Westbrook",
+    "role": "Case Manager",
+    "credentials": "",
+    "bio": "Jacci Westbrook serves as a Case Manager at Fort Worth Wellness Center, where she is dedicated to helping individuals find hope, healing, and lasting recovery.\nDrawing from her own lived experience, Jessica brings authenticity, compassion, and understanding to every client interaction. Her personal journey allows her to build meaningful connections and provide encouragement and guidance to individuals as they navigate their treatment and recovery process. As a Certified Peer Support Specialist, she is passionate about empowering others by meeting them where they are and helping them recognize their strengths.\nJessica is proud to be part of the team at Fort Worth Wellness Center, where she works alongside compassionate professionals who share a commitment to delivering exceptional, individualized care. She believes recovery is possible for everyone and is honored to support clients as they take meaningful steps toward a healthier, more fulfilling future.",
+    "image": "/images/team/jacci-westbrook.jpg",
+    "group": "Texas Facilities"
+  },
+  {
+    "slug": "krystal-moore",
+    "name": "Krystal Moore",
+    "role": "Case Manager",
+    "credentials": "",
+    "bio": "Krystal Moore is a Behavioral Health Case Manager at Fort Worth Wellness Center, where she is dedicated to supporting individuals as they navigate their mental health and recovery journeys. Born and raised in Fort Worth, Texas, Krystal has built her career around serving communities experiencing behavioral health challenges with compassion, empathy, and advocacy.\nShe holds a Master of Social Work degree and brings experience as both a Community Health Worker and Behavioral Health Case Manager. Krystal is passionate about empowering clients, connecting them with meaningful resources, and helping them build the skills and support needed to achieve lasting wellness. She is committed to providing individualized care that promotes hope, resilience, and long-term success.",
+    "image": "/images/team/krystal-moore.jpg",
+    "group": "Texas Facilities"
+  },
+  {
+    "slug": "robert-dzieniszewski",
+    "name": "Robert Dzieniszewski",
+    "role": "Director of Operations",
+    "credentials": "",
+    "bio": "Robert Dzieniszewski serves as the Director of Operations for Zen Sobriety Homes, overseeing daily operations, staff management, scheduling, onboarding, and compliance across multiple recovery residences. Known for his clear, structured, and fair leadership style, Robert ensures that systems run smoothly and that staff feel supported and prepared. He is especially passionate about helping admit new clients, welcoming them with respect and guiding them through a safe and compassionate transition into care.",
+    "image": "/images/team/robert-dzieniszewski.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
+  },
+  {
+    "slug": "amy-baisden",
+    "name": "Amy Baisden",
+    "role": "Lead Clinical Therapist",
+    "credentials": "LAMFT",
+    "bio": "Amy Baisden is a Licensed Associate Marriage and Family Therapist and EMDR-trained clinician who works with adults navigating trauma, grief and loss, depression, anxiety, attachment wounds, life transitions, and recovery. She earned her Master’s degree in Marriage and Family Therapy from Touro University and brings extensive experience in community mental health, non profit settings and partial hospitalization/intensive outpatient settings, supporting individuals with co-occurring mental health and substance use disorders. Amy also has a strong background in crisis management, as well as grief and loss work, with a particular focus on complex family dynamics.\nAmy has worked with children, adolescents, adults, couples, and families, and approaches all clinical work through a systemic lens that considers the broader relational and environmental context. Her therapeutic style is warm, collaborative, and trauma-informed, integrating Internal Family Systems (IFS), EMDR, inner child work, and attachment-based approaches. She helps clients build insight, process unresolved experiences, and develop greater resilience, self-compassion, and emotional regulation.",
+    "image": "/images/team/amy-baisden.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
+  },
+  {
+    "slug": "zala-henry-samuel",
+    "name": "Zala Henry-Samuel",
+    "role": "Clinical Therapist",
+    "credentials": "",
+    "bio": "Zala Henry-Samuels is a Clinical Therapist at Wellness Recovery Center of New Jersey, where she provides compassionate, evidence-based care to individuals navigating substance use disorders, co-occurring disorders, and mental health challenges. She is dedicated to creating a safe, supportive therapeutic environment where clients feel heard, respected, and empowered throughout their recovery journey.\nZala earned her Master of Arts in Clinical Mental Health Counseling from Rider University and brings a person-centered, trauma-informed approach to therapy. She has experience working with individuals experiencing anxiety, depression, PTSD, and other behavioral health concerns, helping clients develop healthy coping strategies, increase emotional awareness, and build the skills needed for long-term wellness and recovery.\nPassionate about fostering hope and resilience, Zala is committed to meeting each client where they are, providing individualized support that encourages meaningful growth, healing, and lasting change.",
+    "image": "/images/team/zala-henry-samuel.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
+  },
+  {
+    "slug": "sara-enderle",
+    "name": "Sara Enderle",
+    "role": "Counselor Intern",
+    "credentials": "",
+    "bio": "Sara Enderle serves asa Counselor Intern at Wellness Recovery Center of New Jersey, where she provides individualized, evidence-based therapy for individuals navigating substance use disorders, co-occurring disorders, and mental health challenges. She is dedicated to creating a safe, supportive environment where clients feel empowered to explore their experiences, build resilience, and develop the tools needed for lasting recovery.\nSara brings a compassionate, authentic, and trauma-informed approach to therapy. With lived experience in recovery, she fosters meaningful therapeutic relationships rooted in empathy, trust, and respect. She is passionate about helping clients reconnect with themselves, process past experiences, and build lives grounded in purpose, self-worth, and emotional wellness.\nCommitted to ongoing professional growth, Sara continues to expand her clinical knowledge while pursuing advanced credentials in the behavioral health field. She believes recovery is a journey of rediscovering one's strengths and that every individual deserves the opportunity to heal, grow, and create a fulfilling future.",
+    "image": "/images/team/sara-enderle.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
+  },
+  {
+    "slug": "olivia-jones",
+    "name": "Olivia Jones",
+    "role": "Group Facilitator",
+    "credentials": "Intern",
+    "bio": "Olivia is a group facilitator and intern, studying Clinical Mental Health Counseling at Rider University. I am passionate about working with individuals facing challenges related to addiction and mental health, and am committed to fostering a safe, supportive environment where clients can build insight, develop coping skills, and work toward lasting change.",
+    "image": "/images/team/olivia-jones.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
+  },
+  {
+    "slug": "kimberly-cotterell",
+    "name": "Kimberly Cotterell",
+    "role": "Group Facilitator",
+    "credentials": "",
+    "bio": "Kim is a 200-hour Registered Yoga Teacher (RYT) with additional training in mobility, Yoga Nidra, Reiki Level II, and somatic methods. Since 2019, they have led workshops, events, and retreats through their business, Transformative Wellness with Kim. These offerings integrate modalities such as meditation, yoga, breathwork, sound healing, primal scream, vocal toning, somatic practices, Reiki, intuitive movement, and ecstatic dance. Kim draws on these modalities in one-on-one sessions and group facilitation at recovery centers, mental health facilities, retreats, and wellness spaces. As a sober individual, their work in recovery settings is especially meaningful. They are committed to creating supportive environments rooted in mindfulness, authenticity, and compassionate acceptance.",
+    "image": "/images/team/kimberly-cotterell.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
+  },
+  {
+    "slug": "jordan-kane",
+    "name": "Jordan Kane",
+    "role": "Group Facilitator",
+    "credentials": "",
+    "bio": "Since earning my Bachelor’s degree in Recreational Therapy from Temple University in 2018, I have been working as a Certified Therapeutic Recreation Specialist (CTRS) in a variety of behavioral health settings. My experience includes both inpatient and outpatient care, where I have facilitated group therapy focused on supporting individuals in their mental health and substance use recovery journeys.\nI am passionate about integrating leisure education, team-building activities, journaling, and horticulture-based interventions into my groups to promote self-expression, coping skills, and overall well-being. I strive to create a supportive and engaging environment where individuals feel empowered to explore personal growth and build meaningful connections.\nIn addition to my clinical work, I remain actively involved in the field of recreational therapy and currently serve as a board member for my local chapter organization.",
+    "image": "/images/team/jordan-kane.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
+  },
+  {
+    "slug": "neil-tucker",
+    "name": "Neil Tucker",
+    "role": "Group Facilitator",
+    "credentials": "",
+    "bio": "Drawing from his diverse background in behavioral healthcare, emergency medical services, and health education, Neil creates an engaging, supportive environment where clients feel empowered to grow both emotionally and physically.\nNeil holds a Master of Education and is an LCADC-Intern and Emergency Medical Technician with extensive experience in substance use disorder education, overdose prevention, and recovery support. Throughout his career, he has worked alongside healthcare providers, first responders, and community organizations to expand access to education, recovery resources, and evidence-based support for individuals and families affected by addiction.\nKnown for his holistic approach to recovery, Neil integrates principles of mindfulness, resilience, and somatic wellness into his work. His lifelong practice of Tai Chi and Qigong has shaped his belief that lasting recovery involves healing the mind, body, and spirit together. He is also the creator of the proprietary 5 Step Protocol©, a framework designed to promote personal growth, self-awareness, and sustainable recovery.\nIn addition to his clinical work, Neil is an active advocate for overdose prevention and recovery initiatives throughout New Jersey. His commitment to improving behavioral healthcare has earned recognition within the emergency medical services community, and he continues to educate professionals and community members through training, public speaking, and collaborative outreach. Neil is dedicated to helping every client discover hope, develop confidence, and build the skills needed for lasting recovery.",
+    "image": "/images/team/neil-tucker.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
+  },
+  {
+    "slug": "anthony-paccillo",
+    "name": "Anthony Paccillo",
+    "role": "Client Relations Liaison",
+    "credentials": "",
+    "bio": "Anthony Paccillo serves as the Client Relations Liaison at Wellness Recovery Center New Jersey, where he is dedicated to creating a welcoming, supportive experience for clients and their families throughout the treatment journey. He works closely with admissions, clinical, and operations teams to ensure clients feel informed, connected, and supported from their first interaction through their transition into ongoing recovery.\nPrior to joining Wellness Recovery Center, Anthony gained hands-on experience working directly with clients in the behavioral healthcare field while collaborating with multidisciplinary teams and community partners to strengthen engagement and improve the overall client experience. Known for his authentic, approachable, and compassionate nature, Anthony values transparency, accountability, and building genuine relationships founded on trust.\nAnthony's passion for helping others is deeply rooted in his own lived experience in recovery, which continues to shape both his personal and professional perspective. He believes that meaningful connection and consistent support can make a lasting difference in an individual's recovery journey. Through empathy, encouragement, and a commitment to serving others, Anthony strives to ensure every client feels heard, respected, and empowered as they work toward lasting healing and wellness.",
+    "image": "/images/team/anthony-paccillo.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
+  },
+  {
+    "slug": "laura-conners",
+    "name": "Laura Conners",
+    "role": "Case Manager",
+    "credentials": "",
+    "bio": "Laura Conners is a dedicated Case Manager at Wellness Recovery Center, where she has been supporting clients on their recovery journeys since 2024\\. In her role, Laura works closely with individuals to help them navigate the practical aspects of treatment, including discharge planning, coordination of care, and connecting clients to essential resources such as housing, employment support, and aftercare services.\nLaura is known for her personable and easygoing nature, which allows her to build strong, trusting relationships with clients. She has a natural ability to connect with individuals from all walks of life, helping them feel comfortable, heard, and supported throughout their time in treatment.\nWith a compassionate and understanding approach, Laura meets clients where they are and works collaboratively with them to identify their goals and needs. She is committed to advocating for her clients and ensuring they have the tools and support necessary to continue their progress beyond treatment.",
+    "image": "/images/team/laura-conners.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
+  },
+  {
+    "slug": "danielle-foreman",
+    "name": "Danielle Foreman",
+    "role": "Case Manager",
+    "credentials": "",
+    "bio": "Danielle Foreman is a Case Manager at Wellness Recovery Center of New Jersey who is committed to helping individuals navigate the recovery process with compassion, encouragement, and personalized support. With more than eight years of experience in the behavioral health field, she works closely with clients to help them access resources, overcome challenges, and build a strong foundation for lasting recovery.\nDanielle believes every individual has the capacity for growth and positive change when provided with the right guidance, support, and opportunities. She is passionate about empowering clients to achieve their goals while fostering confidence, independence, and hope throughout their recovery journey.\nKnown for her compassionate and client-centered approach, Danielle strives to create meaningful connections with those she serves and is dedicated to helping each individual feel supported, respected, and encouraged every step of the way. Outside of work, she enjoys reading and spending quality time with her family.",
+    "image": "/images/team/danielle-foreman.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
+  },
+  {
+    "slug": "deanna-koester",
+    "name": "Deanna Koester",
+    "role": "Case Manager",
+    "credentials": "",
+    "bio": "Deanna Koester is a Case Manager at Wellness Recovery Center of New Jersey who is passionate about helping individuals navigate their recovery journey with compassion, encouragement, and personalized support. Drawing on her background in mental health and substance use recovery, she is committed to creating a safe, welcoming environment where clients feel seen, heard, and empowered to make meaningful progress.\nCurrently pursuing a degree in Social Work, Deanna continues to expand her knowledge and clinical skills to better serve individuals and families affected by behavioral health and substance use disorders. She is known for her empathy, strong problem-solving abilities, and her talent for meeting clients where they are, recognizing that every recovery journey is unique.\nDeanna believes that healing begins with authentic human connection and that trust, compassion, and consistency are essential to helping individuals build confidence and lasting change. She is dedicated to supporting clients as they overcome challenges, celebrate milestones, and work toward healthier, more fulfilling lives.\nOutside of work and school, Deanna enjoys practicing yoga, spending time in nature, caring for her three chinchillas, and sharing great food with family and friends. She believes that maintaining balance, staying curious, and embracing a sense of humor are important both in life and in the work of helping others.",
+    "image": "/images/team/deanna-koester.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
+  },
+  {
+    "slug": "julie-mitchell",
+    "name": "Julie Mitchell",
+    "role": "Alumni Coordinator",
+    "credentials": "",
+    "bio": "Julie Mitchell is passionate about supporting individuals as they continue their recovery journey beyond treatment, helping alumni build meaningful connections, strengthen their support systems, and maintain long-term wellness. As Alumni Coordinator, she is dedicated to fostering a strong recovery community where individuals feel encouraged, supported, and empowered to thrive in their everyday lives.\nJulie earned her Bachelor of Science in Psychology from the New York Institute of Technology and her Master of Arts in Addiction Counseling from the Hazelden Betty Ford Graduate School of Addiction Studies, a nationally recognized leader in addiction treatment education. Her background in behavioral health provides her with a deep understanding of the challenges and triumphs individuals experience throughout the recovery process.\nIn her role, Julie develops and coordinates alumni programming, recovery events, peer support initiatives, and ongoing outreach designed to help former clients stay connected long after completing treatment. She believes that lasting recovery is strengthened through community, accountability, and meaningful relationships, and she is committed to creating opportunities for alumni to celebrate milestones, share experiences, and support one another.\nJulie approaches every interaction with compassion, authenticity, and respect, recognizing that each recovery journey is unique. She strives to create an inclusive and welcoming environment where alumni feel valued, inspired, and confident as they continue building lives rooted in purpose, resilience, and hope.",
+    "image": "/images/team/julie-mitchell.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
+  },
+  {
+    "slug": "dylan-kuzinski",
+    "name": "Dylan Kuzinski",
+    "role": "Medical Liaison",
+    "credentials": "",
+    "bio": "Dylan Kuzinski serves as the Medical Liaison at Wellness Recovery Center of New Jersey, where he plays a key role in facilitating clear and effective communication between clients and medical providers to ensure continuity of care. In his role, Dylan oversees medication orders and coordinates timely delivery, helping clients receive the treatment they need without delay.\nWith over five years of experience in the field, including one year in his current position, Dylan brings both knowledge and dedication to his work. As someone living with Type 1 diabetes, he has a personal understanding of the critical role medication plays in daily life, which further fuels his commitment to supporting others throughout their healthcare journey.",
+    "image": "/images/team/dylan-kuzinski.jpg",
+    "group": "New Jersey Facilities — Wellness Recovery NJ"
+  },
+  {
+    "slug": "dr-shaun-hutton",
+    "name": "Dr. Shaun Hutton",
+    "role": "Primary Therapist",
+    "credentials": "PhD, RMHCI, CAP, ICADC",
+    "bio": "Dr. Shaun Faith Hutton is a mental health and substance use disorder clinician with more than 25 years of experience helping individuals and families navigate addiction, trauma, grief, and co-occurring mental health challenges. She currently serves as a Primary Therapist, providing individual, group, and family counseling within residential and detoxification treatment settings.\nDr. Hutton holds a Ph.D. and M.Phil. in Educational Psychology from Walden University and a Master's degree in Counseling Psychology (substance abuse concentration) from Pace University. She is a Registered Mental Health Counselor Intern (RMHCI), Certified Addictions Professional (CAP), and International Certified Alcohol and Drug Counselor (ICADC).\nHer therapeutic approach integrates Cognitive Behavioral Therapy (CBT), Dialectical Behavior Therapy (DBT), Motivational Interviewing (MI), trauma-informed care, and strengths-based interventions. Dr. Hutton is committed to creating a compassionate, supportive environment where clients can gain insight, build resilience, strengthen relationships, and develop the tools necessary for lasting recovery and personal growth.",
+    "image": "/images/team/dr-shaun-hutton.jpg",
+    "group": "Florida Facilities — Seaside Wellness of Palm Beach"
+  },
+  {
+    "slug": "april-blair",
+    "name": "April Blair",
+    "role": "Primary Therapist",
+    "credentials": "MSW, RCSWI",
+    "bio": "April Blair received her Master’s in Social Work from Florida State University. She utilizes a trauma-informed, person-centered approach in her work and is trained in LGBTQ-affirmative Cognitive Behavioral Therapy (CBT), creating a supportive and inclusive space for clients navigating recovery and life’s challenges. Before becoming a therapist, April spent more than a decade in case management, working closely with individuals facing major life stressors such as poverty, homelessness, unemployment, mental health concerns, substance use, and disability. This experience continues to shape her holistic and empathetic approach to therapy today.",
+    "image": "/images/team/april-blair.jpg",
+    "group": "Florida Facilities — Seaside Wellness of Palm Beach"
+  },
+  {
+    "slug": "kate-gulam",
+    "name": "Kate Gulam",
+    "role": "Primary Therapist",
+    "credentials": "MSW",
+    "bio": "Kate Gulam, MSW, is a Primary Therapist at Seaside Wellness of Palm Beach who is dedicated to helping individuals navigate life's challenges and achieve meaningful, lasting change. Born and raised in Hobe Sound, Florida, Kate has always been passionate about serving her local community and supporting those in need.\nAfter earning her Bachelor's degree in Human Services from Palm Beach State College, Kate began her career advocating for children through the Guardian Ad Litem Program. Inspired by the impact of this work, she pursued a clinical path and earned her Master of Social Work from Tulane University.\nKate has extensive experience working in high-acuity behavioral health settings, including serving as a therapist in an inpatient psychiatric hospital for children and later within a residential treatment environment. These experiences have shaped her compassionate, client-centered, and trauma-informed approach to care. She is committed to creating a safe and supportive therapeutic environment where individuals feel empowered to heal, grow, and build healthier lives.\nAt Seaside Wellness of Palm Beach, Kate utilizes evidence-based therapeutic approaches while meeting each client with empathy, respect, and genuine compassion. She is passionate about helping individuals develop insight, resilience, and the tools necessary to support long-term recovery and emotional wellness.\nOutside of her professional role, Kate enjoys spending time outdoors, traveling, and baking. She has been married to her husband, Craig, for three years, and together they share their home with their beloved dog, Macho Man.",
+    "image": "/images/team/kate-gulam.jpg",
+    "group": "Florida Facilities — Seaside Wellness of Palm Beach"
+  },
+  {
+    "slug": "wesley-starlin",
+    "name": "Wesley Starlin",
+    "role": "Executive Director",
+    "credentials": "",
+    "bio": "Wesley Starlin is a licensed mental health counselor with over 15 years of experience leading clinical programs across inpatient, outpatient, and community-based behavioral health settings.  His background blends hands-on clinical work with executive leadership in operations, program development, and team management.  Known for a practical, person-centered approach, Wesley focuses on building strong teams and delivering high-quality care that makes a meaningful impact in the communities and people he serves.",
+    "image": "/images/team/wesley-starlin.jpg",
+    "group": "Iowa Facilities — Des Moines Wellness Center"
+  },
+  {
+    "slug": "lacey-stielow",
+    "name": "Lacey Stielow",
+    "role": "Director of Nursing",
+    "credentials": "MSN, RN",
+    "bio": "Lacey Stielow, MSN, RN, serves as the Director of Nursing at Des Moines Wellness Center. With a background in emergency and critical care nursing, nursing education, and healthcare leadership, she is passionate about providing compassionate, patient-centered care while supporting and developing strong clinical teams. Lacey is committed to fostering a culture of trust, teamwork, and continuous learning, and believes every patient deserves to feel respected, supported, and empowered on their journey to recovery and wellness. She is especially passionate about mentoring nurses, building collaborative teams, and helping individuals navigate some of life’s most challenging moments with dignity and hope. Her leadership philosophy centers on serving others, promoting excellence, and creating an environment where both patients and staff can thrive.",
+    "image": "/images/team/lacey-stielow.jpg",
+    "group": "Iowa Facilities — Des Moines Wellness Center"
+  },
+  {
+    "slug": "parneet-sahota",
+    "name": "Parneet Sahota",
+    "role": "Clinical Director",
+    "credentials": "MA, LMHC, IADC, CCMHC",
+    "bio": "Parneet “Pam” Sahota, serves as the Clinical Director of Des Moines Wellness Center, where she oversees clinical programming and ensures the delivery of high-quality, evidence-based behavioral healthcare. With extensive experience treating individuals, couples, adolescents, and families, Pam specializes in helping clients navigate co-occurring mental health and substance use disorders through compassionate, trauma-informed care.\nPam earned her Master of Arts in Clinical Mental Health Counseling and is currently pursuing a Ph.D. in Traumatology. As a Licensed Mental Health Counselor (LMHC), International Alcohol and Drug Counselor (IADC), Certified Clinical Mental Health Counselor (CCMHC), and Substance Abuse Professional (SAP), she brings a diverse clinical skill set to her work. She is also EMDR-trained and DBT-certified, integrating evidence-based approaches that promote healing, resilience, and long-term recovery.\nThroughout her career, Pam has worked with diverse populations in both mental health and addiction treatment settings, addressing trauma, anxiety, depression, substance use disorders, emotional regulation challenges, and relationship concerns. Her treatment philosophy centers on meeting individuals where they are, creating a supportive and nonjudgmental environment, and empowering clients to achieve meaningful, lasting change.\nAs Clinical Director, Pam is dedicated to fostering clinical excellence, supporting staff development, implementing best practices, and ensuring treatment remains ethical, individualized, and outcome-driven. She is passionate about helping individuals build resilience, strengthen relationships, overcome obstacles, and create healthier, more fulfilling lives.",
+    "image": "/images/team/parneet-sahota.jpg",
+    "group": "Iowa Facilities — Des Moines Wellness Center"
+  },
+  {
+    "slug": "alexander-maddux",
+    "name": "Alexander Maddux",
+    "role": "Director of Operations",
+    "credentials": "",
+    "bio": "Alexander Maddux serves as Director of Operations, bringing more than a decade of experience across behavioral health, rehabilitation, case management, corrections, and security operations. Throughout his career, he has dedicated himself to supporting individuals facing mental health challenges, substance use disorders, and complex life circumstances, helping them access resources, navigate barriers, and build pathways toward lasting stability.\nPrior to joining the organization, Alex held leadership roles in community behavioral health, where he coordinated care for individuals with serious mental illness, managed crisis situations, and collaborated with multidisciplinary teams to promote recovery and long-term success. His diverse professional background also includes experience in juvenile corrections, correctional healthcare, and security supervision, providing him with extensive expertise in crisis intervention, de-escalation, risk assessment, investigations, and maintaining safe, structured environments.\nKnown for his strong leadership, professionalism, and commitment to client-centered care, Alex combines operational excellence with a compassionate, recovery-oriented approach. As Director of Operations, he is focused on fostering a culture of accountability, safety, and high-quality care while supporting both staff and clients in achieving positive outcomes.",
+    "image": "/images/team/alexander-maddux.jpg",
+    "group": "Iowa Facilities — Des Moines Wellness Center"
+  },
+  {
+    "slug": "bethany-hamilton",
+    "name": "Bethany Hamilton",
+    "role": "Case Manager",
+    "credentials": "RCS, CMA",
+    "bio": "Bethany Hamilton serves as a Case Manager at Des Moines Wellness Center, where she is committed to helping individuals build a strong foundation for lasting recovery and long-term wellness.\nBethany works closely with each client to develop personalized discharge and aftercare plans that support continued success beyond treatment. She is passionate about ensuring every individual has access to the resources, guidance, and encouragement they need as they transition into the next stage of their recovery journey.\nKnown for her compassionate and client-centered approach, Bethany strives to create an environment where every person feels heard, supported, empowered, and hopeful. She is honored to be part of each client's journey and is dedicated to helping them achieve lasting healing and a brighter future.",
+    "image": "/images/team/bethany-hamilton.jpg",
+    "group": "Iowa Facilities — Des Moines Wellness Center"
+  },
+  {
+    "slug": "amanda-daniels",
+    "name": "Amanda Daniels",
+    "role": "Executive Director",
+    "credentials": "",
+    "bio": "Amanda Daniels serves as the Executive Director of Wellness Ranch, where she leads the organization's operations, strategic growth, regulatory compliance, and long-term vision. She has extensive experience developing and growing behavioral health organizations, building sustainable programs, and driving long-term success.\nKnown for her high-energy, motivational leadership style, Amanda is passionate about cultivating strong, high-performing teams and creating treatment environments that combine operational excellence with compassionate, patient-centered care. She believes lasting recovery begins with creating an environment where people feel safe, supported, and empowered to heal.\nA bestselling author with more than a decade in recovery, Amanda is committed to expanding access to high-quality, evidence-based care while inspiring hope and lasting recovery in the communities she serves.\nAmanda is a proud mom to her son, Mason, and is rarely far from her dobermans and ducks.",
+    "image": "/images/team/amanda-daniels.jpg",
+    "group": "Kentucky Facilities — Wellness Ranch"
+  },
+  {
+    "slug": "jennifer-penny",
+    "name": "Jennifer Penny",
+    "role": "Client Care Coordinator",
+    "credentials": "",
+    "bio": "Jennifer serves as a Client Care Coordinator and is passionate about helping individuals and families navigate the recovery process with compassion, understanding, and personalized support. With several years of experience in the behavioral healthcare field, she is dedicated to ensuring every client feels heard, valued, and supported from their very first interaction.\nDrawing from both her professional background and personal experience with recovery, Jennifer understands the courage it takes to ask for help. She is committed to making each client’s experience as seamless, comfortable, and encouraging as possible while advocating for the care that best meets their unique needs.\nJennifer believes that every person deserves the opportunity to heal and is honored to be part of each client’s recovery journey. Her goal is to provide exceptional care, build meaningful connections, and help every individual take the next step toward lasting recovery with confidence and hope.",
+    "image": null,
+    "group": "Florida Facilities — Seaside Wellness of Palm Beach"
   }
 ]

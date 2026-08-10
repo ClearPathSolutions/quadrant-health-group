@@ -4,13 +4,16 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import Icon from "@/components/Icon";
 import FaqList from "@/components/FaqList";
+import Prose from "@/components/Prose";
 import {
   getTreatment,
   treatments,
   treatmentsByCategory,
   categoryLabel,
 } from "@/lib/content";
-import { site } from "@/lib/site";
+import { site, seo } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { treatmentSchema, faqSchema, breadcrumbSchema } from "@/lib/schema";
 import d from "./detail.module.css";
 
 export function generateStaticParams() {
@@ -20,10 +23,21 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const t = getTreatment(params.slug);
   if (!t) return {};
+  const description = t.metaDescription || t.intro.slice(0, 160);
   return {
-    title: t.metaTitle || t.title,
-    description: t.metaDescription || t.intro.slice(0, 160),
-    openGraph: { title: t.title, description: t.metaDescription || t.intro.slice(0, 160), images: t.image ? [t.image] : undefined },
+    // F-07 — `absolute` suppresses the layout's "%s | Quadrant Health Group"
+    // template. These metaTitles are already self-contained SEO titles and two
+    // of them carry the brand themselves, which rendered it twice. Dropping the
+    // 23-character suffix also pulls every treatment title back under the
+    // length where search results truncate.
+    title: { absolute: t.metaTitle || t.title },
+    description,
+    ...seo({
+      path: `/treatment/${t.slug}`,
+      title: t.title,
+      description,
+      images: t.image ? [t.image] : undefined,
+    }),
   };
 }
 
@@ -39,6 +53,18 @@ export default function TreatmentDetail({ params }: { params: { slug: string } }
 
   return (
     <>
+      {/* F-06 — FAQPage only where the data actually carries pairs; 10 of the
+          21 pages have none, and an empty mainEntity is invalid. */}
+      <JsonLd
+        data={[
+          treatmentSchema(t),
+          breadcrumbSchema([
+            { name: "Treatment", path: "/treatment" },
+            { name: t.title, path: `/treatment/${t.slug}` },
+          ]),
+          ...(t.faqs.length ? [faqSchema(t.faqs, `/treatment/${t.slug}`)] : []),
+        ]}
+      />
       {/* Hero */}
       <section className={d.hero}>
         <div className={d.blob} />
@@ -57,7 +83,7 @@ export default function TreatmentDetail({ params }: { params: { slug: string } }
                 <Icon name="phone" size={18} />
                 Call {site.phone}
               </a>
-              <Link href="/admissions#insurance" className="btn btn-lg btn-outline-white">
+              <Link href="/admissions/insurance-verification" className="btn btn-lg btn-outline-white">
                 Verify Insurance
               </Link>
             </div>
@@ -76,18 +102,17 @@ export default function TreatmentDetail({ params }: { params: { slug: string } }
           <div className={d.content}>
             {sections.map((s, i) => (
               <div key={i} className={d.block}>
-                {s.heading && <h2>{s.heading}</h2>}
-                {s.body.split("\n").filter(Boolean).map((para, j) =>
-                  para.trim().startsWith("- ") ? (
-                    <ul key={j}>
-                      {para.split("\n").map((li, k) => (
-                        <li key={k}>{li.replace(/^-\s*/, "")}</li>
-                      ))}
-                    </ul>
+                {/* T5.1 — sections render at h2 unless the workbook asked for a
+                    deeper level for this one. */}
+                {s.heading &&
+                  (s.level === 4 ? (
+                    <h4>{s.heading}</h4>
+                  ) : s.level === 3 ? (
+                    <h3>{s.heading}</h3>
                   ) : (
-                    <p key={j}>{para}</p>
-                  )
-                )}
+                    <h2>{s.heading}</h2>
+                  ))}
+                <Prose body={s.body} promote={s.promote} />
               </div>
             ))}
 
@@ -108,7 +133,7 @@ export default function TreatmentDetail({ params }: { params: { slug: string } }
                 <Icon name="phone" size={18} />
                 {site.phone}
               </a>
-              <Link href="/admissions#insurance" className="btn btn-ghost btn-block mt-2">
+              <Link href="/admissions/insurance-verification" className="btn btn-ghost btn-block mt-2">
                 Verify Insurance
               </Link>
             </div>

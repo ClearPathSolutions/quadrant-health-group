@@ -3,13 +3,19 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import LocationCard from "@/components/LocationCard";
 import Icon from "@/components/Icon";
-import { locations, site } from "@/lib/site";
+import { locations, site, seo } from "@/lib/site";
 import c from "../content.module.css";
 
 export const metadata: Metadata = {
   title: "Our Locations",
   description:
     "Find a Quadrant Health treatment center near you. A nationwide network of luxury, accredited addiction and mental health facilities across CA, TX, FL, NJ and IA.",
+  ...seo({
+    path: "/locations",
+    title: "Our Locations",
+    description:
+      "Find a Quadrant Health treatment center near you. A nationwide network of luxury, accredited addiction and mental health facilities across CA, TX, FL, NJ and IA.",
+  }),
 };
 
 const order = ["California", "Texas", "Florida", "New Jersey", "Iowa"];

@@ -13,9 +13,9 @@ export default function LeadForm({
   /** Label reported to Clarion Form Capture (data-clarion-form). */
   formName?: string;
 }) {
-  const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">(
-    "idle"
-  );
+  const [status, setStatus] = useState<
+    "idle" | "sending" | "done" | "undelivered" | "error"
+  >("idle");
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -37,16 +37,50 @@ export default function LeadForm({
 
     setStatus("sending");
     try {
-      const res = await fetch("/api/lead", {
+      // Trailing slash is deliberate: `trailingSlash: true` (T1.1) 308-redirects
+      // the slashless form, which would put an extra round-trip in front of
+      // every lead submission.
+      const res = await fetch("/api/lead/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
       const json = await res.json().catch(() => ({}));
-      setStatus(res.ok && json.ok ? "done" : "error");
+      // F-02 — `delivered: false` means the lead reached us but Clarion
+      // rejected it, so nothing was captured. Showing the thank-you state there
+      // would tell someone asking for help that admissions had been contacted
+      // when it had not. Route them to the 24/7 line instead.
+      if (res.ok && json.ok) {
+        setStatus(json.delivered === false ? "undelivered" : "done");
+      } else {
+        setStatus("error");
+      }
     } catch {
       setStatus("error");
     }
+  }
+
+  if (status === "undelivered") {
+    return (
+      <div
+        className={`${styles.form} ${variant === "card" ? styles.asCard : ""} ${styles.success}`}
+        role="alert"
+      >
+        <div className={styles.successIcon}>
+          <Icon name="phone" size={34} />
+        </div>
+        <h3>Please call us — we couldn&apos;t send that through.</h3>
+        <p>
+          Something went wrong on our end and your message didn&apos;t reach our
+          admissions team. Please call us directly so we can help you right now
+          — we&apos;re here 24/7, and the call is free and confidential.
+        </p>
+        <a href={site.phoneHref} className="btn btn-lg mt-2">
+          <Icon name="phone" size={18} />
+          Call {site.phone}
+        </a>
+      </div>
+    );
   }
 
   if (status === "done") {

@@ -5,7 +5,9 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
-import { site } from "@/lib/site";
+import { site, canonical, isIndexable } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { organizationSchema } from "@/lib/schema";
 
 const CLARION_SITE_KEY =
   process.env.NEXT_PUBLIC_CLARION_SITE_KEY ||
@@ -42,13 +44,20 @@ export const metadata: Metadata = {
     "residential treatment",
     "intensive outpatient",
   ],
+  // T1.4 / V0092 — the homepage self-canonical. Every other route sets its own
+  // in `generateMetadata`; Next does not inherit `alternates`, so a page with
+  // no override would emit none rather than the wrong one.
+  alternates: { canonical: canonical("/") },
   openGraph: {
     title: "Addiction & Mental Health Treatment Network | Quadrant Health",
     description: site.description,
-    url: site.url,
+    // T2.1 / V0093 — was `site.url` site-wide, which is what produced the 53
+    // pages pointing at the bare domain root. Per-page values are set in each
+    // `generateMetadata`; this one is the homepage's own.
+    url: canonical("/"),
     siteName: site.name,
     type: "website",
-    images: ["/images/photos/hero-aerial.jpg"],
+    images: ["/images/photos/laguna-coast.jpg"],
   },
   icons: {
     icon: [
@@ -57,7 +66,11 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
-  robots: { index: true, follow: true },
+  // F-03 — see `isIndexable`. Off until SITE_INDEXABLE=true is set on the
+  // production deployment, so the preview cannot compete with the live site.
+  robots: isIndexable
+    ? { index: true, follow: true }
+    : { index: false, follow: false },
 };
 
 export const viewport: Viewport = {
@@ -84,6 +97,9 @@ export default function RootLayout({
             __html: "document.documentElement.classList.add('js')",
           }}
         />
+        {/* F-06 — the organisation node every other schema block references
+            by @id, so the graph resolves on any single page a crawler lands on. */}
+        <JsonLd data={organizationSchema()} />
         <a href="#main" className="sr-only">
           Skip to content
         </a>

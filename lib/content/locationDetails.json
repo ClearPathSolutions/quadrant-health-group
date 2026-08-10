@@ -99,9 +99,9 @@
   },
   "dallas-detox-center": {
     "slug": "dallas-detox-center",
-    "metaTitle": "Dallas Detox Center \u2014 Premier Drug & Alcohol Rehab in the Heart of Texas",
+    "metaTitle": "Dallas Detox Center — Premier Drug & Alcohol Rehab in the Heart of Texas",
     "metaDescription": "Premier drug and alcohol detox in Dallas, TX. Luxury rehab with medical detox, residential inpatient, PHP, IOP, and Virtual IOP programs.",
-    "intro": "Dallas Detox offers a premium, all-inclusive addiction treatment experience designed for privacy, comfort, and long-term success. Located in the heart of Texas, our state-of-the-art facility provides all levels of care under one roof \u2014 from detox and residential treatment to PHP, IOP, and Virtual IOP.",
+    "intro": "Dallas Detox offers a premium, all-inclusive addiction treatment experience designed for privacy, comfort, and long-term success. Located in the heart of Texas, our state-of-the-art facility provides all levels of care under one roof — from detox and residential treatment to PHP, IOP, and Virtual IOP.",
     "amenities": [
       "Luxury private rooms and suites",
       "24/7 on-site medical and clinical staff",
@@ -113,11 +113,11 @@
       "Evening entertainment"
     ],
     "team": [
-      "Olivia Hadjerioua \u2014 Executive Director",
-      "Deborah Wade, RN, BSN \u2014 Director of Nursing",
-      "Haley Wadlington \u2014 Director of Client Care",
-      "Joshua Leder \u2014 Director of Operations",
-      "Antoine Gross Sr., LPC \u2014 Director of Clinical Services"
+      "Olivia Hadjerioua — Executive Director",
+      "Deborah Wade, RN, BSN — Director of Nursing",
+      "Haley Wadlington — Director of Client Care",
+      "Joshua Leder — Director of Operations",
+      "Antoine Gross Sr., LPC — Director of Clinical Services"
     ],
     "care": [
       "Detox",
@@ -132,7 +132,7 @@
   },
   "seaside-wellness": {
     "slug": "seaside-wellness",
-    "metaTitle": "Seaside Wellness \u2014 Compassionate, Private Addiction Care in West Palm Beach, FL",
+    "metaTitle": "Seaside Wellness — Compassionate, Private Addiction Care in West Palm Beach, FL",
     "metaDescription": "Seaside Wellness of Palm Beach offers premier rehab in West Palm Beach, FL with specialized addiction and mental health treatment in a luxury coastal setting.",
     "intro": "Seaside Wellness provides a premier rehab experience in West Palm Beach, Florida, offering comprehensive care for both substance use disorders and mental health conditions. Our luxury facility combines medical expertise with the restorative atmosphere of South Florida's coastline.",
     "amenities": [
@@ -146,11 +146,11 @@
       "Family visitation and situational acceptance of pets"
     ],
     "team": [
-      "F. Timothy Foley \u2014 Program Director",
-      "Michael Meagher \u2014 Clinical Director",
-      "Erin Crawford \u2014 Director of Nursing",
-      "Steve Ryan \u2014 Director of Operations",
-      "Sh\u00e1n Raiford \u2014 Case Manager"
+      "F. Timothy Foley — Program Director",
+      "Michael Meagher — Clinical Director",
+      "Erin Crawford — Director of Nursing",
+      "Steve Ryan — Director of Operations",
+      "Shán Raiford — Case Manager"
     ],
     "care": [
       "Detox",
@@ -166,9 +166,9 @@
   },
   "ocean-coast-recovery": {
     "slug": "ocean-coast-recovery",
-    "metaTitle": "Ocean Coast Recovery Center \u2014 Evidence-Based Rehab in Costa Mesa, CA",
+    "metaTitle": "Ocean Coast Recovery Center — Evidence-Based Rehab in Costa Mesa, CA",
     "metaDescription": "Evidence-based drug & alcohol addiction rehab in Costa Mesa, CA. Expert treatment for substance abuse and co-occurring mental health disorders.",
-    "intro": "Ocean Coast Recovery Center provides expert, evidence-based addiction treatment in Costa Mesa \u2014 just minutes from the Pacific Coast, scenic parks, and all that Southern California has to offer. Our peaceful residential setting offers the ideal space to step away from outside stressors and fully engage in healing.",
+    "intro": "Ocean Coast Recovery Center provides expert, evidence-based addiction treatment in Costa Mesa — just minutes from the Pacific Coast, scenic parks, and all that Southern California has to offer. Our peaceful residential setting offers the ideal space to step away from outside stressors and fully engage in healing.",
     "amenities": [
       "Private and semi-private bedrooms in a calm setting",
       "24/7 on-site medical and clinical supervision",
@@ -180,7 +180,7 @@
       "Family visits and situational acceptance of pets"
     ],
     "team": [
-      "Elizabeth Wald, RADT \u2014 Director of Operations"
+      "Elizabeth Wald, RADT — Director of Operations"
     ],
     "care": [
       "Detox",
@@ -193,9 +193,9 @@
   },
   "wellness-recovery-nj": {
     "slug": "wellness-recovery-nj",
-    "metaTitle": "Wellness Recovery NJ \u2014 Expert-Led Substance Use & Mental Health Treatment",
+    "metaTitle": "Wellness Recovery NJ — Expert-Led Substance Use & Mental Health Treatment",
     "metaDescription": "Wellness Recovery NJ offers luxury behavioral health and addiction treatment in New Jersey with expert-led substance abuse and mental health rehab.",
-    "intro": "Wellness Recovery NJ offers a luxury behavioral health and addiction treatment experience in New Jersey, designed to help individuals begin or continue their journey toward lasting wellness in a calm, supportive, and structured environment \u2014 for substance use, mental health, or co-occurring disorders.",
+    "intro": "Wellness Recovery NJ offers a luxury behavioral health and addiction treatment experience in New Jersey, designed to help individuals begin or continue their journey toward lasting wellness in a calm, supportive, and structured environment — for substance use, mental health, or co-occurring disorders.",
     "amenities": [
       "Gender-specific housing with structured routines",
       "Chef-prepared meals (PHP) & client-cooked meals at housing",
@@ -207,14 +207,12 @@
       "Family visitation and situational acceptance of pets"
     ],
     "team": [
-      "Michelle Szwed, LPC, LCADC, ACS \u2014 Clinical Director",
-      "Dr. Olivia M. Gibson-Delaney, M.D. \u2014 Medical Director",
-      "Amy Baisden, LAMFT \u2014 Lead Clinical Therapist",
-      "Jaclyn Paradise, LPC, NCC, CTP \u2014 Clinical Therapist",
-      "Nastasya Aracena, CADC, CPC \u2014 Clinical Therapist",
-      "Ila Holgerson \u2014 Lead Case Manager",
-      "Denise Edwards, MSW \u2014 Mental Health Case Manager",
-      "Christina Lilly \u2014 Office Manager"
+      "Michelle Szwed, LPC, LCADC, ACS — Clinical Director",
+      "Dr. Olivia M. Gibson-Delaney, M.D. — Medical Director",
+      "Amy Baisden, LAMFT — Lead Clinical Therapist",
+      "Jaclyn Paradise, LPC, NCC, CTP — Clinical Therapist",
+      "Ila Holgerson — Lead Case Manager",
+      "Christina Lilly — Office Manager"
     ],
     "care": [
       "PHP",
@@ -225,5 +223,23 @@
     ],
     "city": "West Windsor",
     "state": "NJ"
+  },
+  "des-moines-wellness": {
+    "slug": "des-moines-wellness",
+    "metaTitle": "Luxury Detox & Drug Rehab in Des Moines, Iowa | Des Moines Wellness Center",
+    "metaDescription": "Des Moines Wellness Center offers 24/7 medical detox, inpatient residential rehab, PHP, IOP and dual diagnosis care in Iowa.",
+    "intro": "Des Moines Wellness Center is Quadrant Health's Iowa facility, offering a full continuum of care in the heart of the Midwest. Clients move through medically supervised detox, inpatient residential treatment and flexible PHP and IOP programming without leaving the state, supported by a clinical team experienced in complex substance use disorders.\nThe centre specialises in dual diagnosis, treating addiction and co-occurring mental health conditions together rather than in sequence, in a trauma-informed environment built around dignity and long-term stability.",
+    "amenities": [],
+    "team": [],
+    "care": [
+      "Detox",
+      "Residential",
+      "PHP",
+      "IOP",
+      "Dual Diagnosis",
+      "Aftercare"
+    ],
+    "city": "Des Moines",
+    "state": "IA"
   }
 }

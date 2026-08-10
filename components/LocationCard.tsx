@@ -44,6 +44,18 @@ export default function LocationCard({ loc }: { loc: Location }) {
           {loc.comingSoon ? "Get notified" : "Learn more"}
           <Icon name="arrow-right" size={18} />
         </Link>
+        {/* T4.2 / V0091 — the parent passed no authority to any facility. Held
+            back where `websiteHold` is set; see the field's note. */}
+        {loc.website && !loc.websiteHold && (
+          <a
+            href={loc.website}
+            className={styles.website}
+            target="_blank"
+            rel="noopener"
+          >
+            Visit {loc.website.replace(/^https?:\/\//, "")}
+          </a>
+        )}
       </div>
     </article>
   );

@@ -32,7 +32,7 @@ export default function HomePage() {
                 <Icon name="phone" size={19} />
                 Call {site.phone}
               </a>
-              <Link href="/admissions#insurance" className="btn btn-lg btn-outline-white">
+              <Link href="/admissions/insurance-verification" className="btn btn-lg btn-outline-white">
                 Verify Your Insurance
               </Link>
             </div>
@@ -55,8 +55,8 @@ export default function HomePage() {
           <div className={s.heroMedia}>
             <div className={s.heroImgWrap}>
               <Image
-                src="/images/photos/hero-aerial.jpg"
-                alt="Aerial view of a Quadrant Health luxury treatment facility"
+                src="/images/photos/laguna-coast.jpg"
+                alt="Laguna View Detox — a Quadrant Health treatment center on the California coast"
                 width={1024}
                 height={576}
                 priority
@@ -105,7 +105,7 @@ export default function HomePage() {
         <div className={`container ${s.split}`}>
           <div className={`${s.splitMedia} reveal`}>
             <Image
-              src="/images/photos/facility-lounge.jpg"
+              src="/images/photos/facility-interior-2.jpg"
               alt="Interior of a Quadrant Health treatment center"
               width={900}
               height={640}
@@ -259,7 +259,7 @@ export default function HomePage() {
               coverage.
             </p>
             <div className="btn-group mt-3">
-              <Link href="/admissions#insurance" className="btn btn-lg btn-white">
+              <Link href="/admissions/insurance-verification" className="btn btn-lg btn-white">
                 Verify Your Insurance
               </Link>
               <a href={site.phoneHref} className="btn btn-lg btn-outline-white">

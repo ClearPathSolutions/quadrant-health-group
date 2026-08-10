@@ -4,7 +4,7 @@ import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import Icon, { type IconName } from "@/components/Icon";
 import { treatmentsByCategory } from "@/lib/content";
-import { site } from "@/lib/site";
+import { site, seo } from "@/lib/site";
 import c from "../content.module.css";
 import s from "../home.module.css";
 
@@ -12,6 +12,12 @@ export const metadata: Metadata = {
   title: "Treatment Programs",
   description:
     "A full continuum of addiction and mental health treatment — medical detox, residential inpatient, PHP, IOP, virtual IOP and dual diagnosis — plus evidence-based and holistic therapy modalities.",
+  ...seo({
+    path: "/treatment",
+    title: "Treatment Programs",
+    description:
+      "A full continuum of addiction and mental health treatment — medical detox, residential inpatient, PHP, IOP, virtual IOP and dual diagnosis — plus evidence-based and holistic therapy modalities.",
+  }),
 };
 
 const iconFor: Record<string, IconName> = {
@@ -88,7 +94,7 @@ export default function TreatmentPage() {
             </div>
           </div>
           <div className={`${c.mediaCard} reveal`}>
-            <Image src="/images/photos/therapy.jpg" alt="A supportive therapy session" width={900} height={675} sizes="(max-width: 900px) 90vw, 44vw" />
+            <Image src="/images/photos/lounge-laguna.jpg" alt="A communal lounge at Laguna View Detox, where group sessions are held" width={900} height={675} sizes="(max-width: 900px) 90vw, 44vw" />
           </div>
         </div>
       </section>
@@ -125,7 +131,7 @@ export default function TreatmentPage() {
             </div>
             <div className="btn-group">
               <a href={site.phoneHref} className="btn btn-lg"><Icon name="phone" size={18} />Call {site.phone}</a>
-              <Link href="/admissions#insurance" className="btn btn-ghost btn-lg">Verify Insurance</Link>
+              <Link href="/admissions/insurance-verification" className="btn btn-ghost btn-lg">Verify Insurance</Link>
             </div>
           </div>
         </div>

@@ -2,6 +2,38 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  /* T4.5 (visual 1085) — anchors the stretched primary link below. */
+  position: relative;
+}
+
+/* T4.5 — the whole card is a click target for the location page. Implemented as
+   a stretched pseudo-element on the existing link rather than by wrapping the
+   card in an <a>, because the card also carries an outbound facility link
+   (T4.2) and nesting one anchor inside another is invalid HTML. This keeps a
+   single focusable element per destination. */
+.link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* Sits above the stretched link so it stays independently clickable. */
+.website {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.65rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.website:hover {
+  color: var(--blue-dark);
 }
 .media {
   position: relative;

@@ -67,8 +67,8 @@ export default function Header() {
             <Image
               src="/images/logo.png"
               alt={site.name}
-              width={443}
-              height={147}
+              width={800}
+              height={220}
               priority
             />
           </Link>
@@ -119,7 +119,7 @@ export default function Header() {
               <Icon name="phone" size={18} />
               <span className={styles.callText}>{site.phone}</span>
             </a>
-            <Link href="/admissions#insurance" className={`btn ${styles.verifyBtn}`}>
+            <Link href="/admissions/insurance-verification" className={`btn ${styles.verifyBtn}`}>
               Verify Insurance
             </Link>
             <button
@@ -145,7 +145,7 @@ export default function Header() {
         aria-hidden={!open}
       >
         <div className={styles.drawerHead}>
-          <Image src="/images/logo.png" alt={site.name} width={200} height={66} />
+          <Image src="/images/logo.png" alt={site.name} width={400} height={110} />
           <button
             className={styles.drawerClose}
             aria-label="Close menu"
@@ -207,7 +207,7 @@ export default function Header() {
             <Icon name="phone" size={18} />
             Call {site.phone}
           </a>
-          <Link href="/admissions#insurance" className="btn btn-ghost btn-block">
+          <Link href="/admissions/insurance-verification" className="btn btn-ghost btn-block">
             Verify Your Insurance
           </Link>
           <p className={styles.drawerNote}>100% confidential · No obligation</p>

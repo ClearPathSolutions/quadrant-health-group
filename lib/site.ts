@@ -22,6 +22,88 @@ export const site = {
   url: "https://quadranthealthgroup.com",
 };
 
+/**
+ * The canonical URL for a path, on the production domain, in the trailing-slash
+ * form (T1.1 / V0102).
+ *
+ * All 12 production sites in the network are slash-canonical while all 12
+ * previews were slashless, so every inbound link using the production
+ * convention would have hit a redirect at cutover. `trailingSlash: true` in
+ * next.config.mjs aligns the build; this helper is the single place the
+ * convention is expressed, so canonicals (T1.4), og:url (T2.1) and the sitemap
+ * cannot drift apart.
+ */
+export function canonical(path = "/"): string {
+  const clean = path.replace(/^\/+|\/+$/g, "");
+  return clean ? `${site.url}/${clean}/` : `${site.url}/`;
+}
+
+/**
+ * Whether this deployment may be indexed (F-03, paired with T1.4 / V0092).
+ *
+ * Until DNS moves, this build serves from quadrant-health-group.vercel.app
+ * while quadranthealthgroup.com still serves the WordPress site. The preview is
+ * currently fully crawlable, so every page competes with its live twin as a
+ * near-duplicate — the exact risk V0092 describes.
+ *
+ * Deliberately fail-safe: indexing is OFF unless `SITE_INDEXABLE` is explicitly
+ * "true". A preview can therefore never be indexed by accident, and the switch
+ * at cutover is one environment variable rather than a code change.
+ */
+export const isIndexable = process.env.SITE_INDEXABLE === "true";
+
+/** Site-wide Open Graph fallback image. */
+export const OG_IMAGE = "/images/photos/laguna-coast.jpg";
+
+/**
+ * Destinations for the recurring "Therapies we offer" / "About us" bullets on
+ * treatment pages (T5.2 — 43 rows, all reading "Link the bullet points to their
+ * respective pages"). The bullets are plain strings inside `sections[].body`,
+ * so the renderer resolves them through this map rather than the data carrying
+ * markup. Keys are matched case-insensitively with punctuation stripped.
+ */
+export const BULLET_LINKS: Record<string, string> = {
+  "individual therapy": "/treatment/individual-therapy",
+  "family therapy": "/treatment/family-therapy",
+  "group therapy": "/treatment/group-therapy",
+  "equine therapy": "/treatment/equine-therapy",
+  "our story & mission": "/about/our-story",
+  "our locations": "/locations",
+  "meet the staff": "/about/meet-the-team",
+  "our alumni family": "/about/alumni",
+};
+
+/**
+ * The canonical + Open Graph block for one page (T1.4 / V0092, T2.1 / V0093).
+ *
+ * Next merges metadata shallowly: a route that declares its own `openGraph`
+ * replaces the layout's object rather than extending it. That is precisely what
+ * produced the audit's split — 53 pages inheriting the layout's root-pointing
+ * `og:url` and 38 more emitting none at all because they overrode `openGraph`
+ * without setting `url`. Building the whole block in one place makes both
+ * failure modes unreachable and keeps the canonical and og:url in lockstep.
+ */
+export function seo(opts: {
+  path: string;
+  title: string;
+  description: string;
+  images?: string[];
+  type?: "website" | "article";
+}) {
+  const url = canonical(opts.path);
+  return {
+    alternates: { canonical: url },
+    openGraph: {
+      title: opts.title,
+      description: opts.description,
+      url,
+      siteName: site.name,
+      type: opts.type ?? ("website" as const),
+      images: opts.images?.length ? opts.images : [OG_IMAGE],
+    },
+  };
+}
+
 export type NavItem = {
   label: string;
   href: string;
@@ -33,11 +115,11 @@ export const nav: NavItem[] = [
     label: "About",
     href: "/about",
     children: [
-      { label: "Our Story", href: "/about#story", desc: "Who we are and why we exist" },
+      { label: "Our Story", href: "/about/our-story", desc: "Who we are and why we exist" },
       { label: "Meet the Team", href: "/about/meet-the-team", desc: "The people behind your care" },
       { label: "Blog & Resources", href: "/blog", desc: "Insights on recovery & treatment" },
-      { label: "Alumni", href: "/about#alumni", desc: "A community for life after treatment" },
-      { label: "FAQ", href: "/about#faq", desc: "Answers to common questions" },
+      { label: "Alumni", href: "/about/alumni", desc: "A community for life after treatment" },
+      { label: "FAQ", href: "/about/faq", desc: "Answers to common questions" },
     ],
   },
   {
@@ -54,10 +136,10 @@ export const nav: NavItem[] = [
     label: "Admissions",
     href: "/admissions",
     children: [
-      { label: "Get Help for Yourself", href: "/admissions#self", desc: "Start your own journey" },
-      { label: "Get Help for a Loved One", href: "/admissions#loved-one", desc: "Support someone you love" },
-      { label: "Admissions Process", href: "/admissions#process", desc: "What to expect, step by step" },
-      { label: "Verify Your Insurance", href: "/admissions#insurance", desc: "Fast, free & confidential" },
+      { label: "Get Help for Yourself", href: "/admissions/help-for-yourself", desc: "Start your own journey" },
+      { label: "Get Help for a Loved One", href: "/admissions/help-for-loved-one", desc: "Support someone you love" },
+      { label: "Admissions Process", href: "/admissions/admissions-process", desc: "What to expect, step by step" },
+      { label: "Verify Your Insurance", href: "/admissions/insurance-verification", desc: "Fast, free & confidential" },
     ],
   },
   { label: "Contact", href: "/contact" },
@@ -75,7 +157,7 @@ export const stats = [
     text: "Over 10,000 people came to us with substance abuse and mental health issues, and left equipped to live the life they truly deserve.",
   },
   {
-    value: "10",
+    value: "12",
     label: "Locations Nationwide",
     text: "There's always a center near you, offering luxury, fully equipped facilities and caring staff to support you on your recovery journey.",
   },
@@ -180,6 +262,16 @@ export type Location = {
   blurb: string;
   care: string[];
   comingSoon?: boolean;
+  /** Production domain for the facility (T4.1 / V0091). */
+  website?: string;
+  /**
+   * Suppress the outbound link even though `website` is set (T4.2).
+   * V0086's verification found 106 of 107 Ocean Coast pages canonical to their
+   * domain root rather than themselves, so the site currently disclaims every
+   * page in favour of its homepage. Linking there passes authority nowhere and
+   * the workbook flags the fix as unsafe until V0109 is corrected.
+   */
+  websiteHold?: string;
 };
 
 export const locations: Location[] = [
@@ -194,6 +286,7 @@ export const locations: Location[] = [
     blurb:
       "Perched along California's breathtaking coast, Laguna View Detox offers a serene, supportive environment where healing can truly begin.",
     care: ["Detox", "Residential", "Dual Diagnosis", "Aftercare"],
+    website: "https://lagunaviewdetox.com",
   },
   {
     slug: "ocean-coast-recovery",
@@ -206,6 +299,8 @@ export const locations: Location[] = [
     blurb:
       "Minutes from the Pacific Coast, Ocean Coast Recovery offers a peaceful residential setting for those beginning their recovery journey.",
     care: ["Detox", "Residential", "Dual Diagnosis", "Aftercare"],
+    website: "https://oceancoastrecovery.com",
+    websiteHold: "V0109 — Ocean Coast canonicals every page to its domain root",
   },
   {
     slug: "hillside-mission-recovery",
@@ -218,6 +313,7 @@ export const locations: Location[] = [
     blurb:
       "Nestled in the hills away from the hustle and bustle, Hillside Mission offers a calming, nature-filled retreat for recovery.",
     care: ["Detox", "Residential", "Dual Diagnosis", "Aftercare"],
+    website: "https://hillsidemission.com",
   },
   {
     slug: "marina-harbor-detox",
@@ -230,6 +326,7 @@ export const locations: Location[] = [
     blurb:
       "Located by the water in a quiet setting on Marina Boulevard, Marina Harbor Detox is a private, upscale facility.",
     care: ["Detox", "Residential", "Dual Diagnosis", "Aftercare"],
+    website: "https://marinaharbordetox.com",
   },
   {
     slug: "wellness-detox-la",
@@ -242,6 +339,7 @@ export const locations: Location[] = [
     blurb:
       "Set in a tranquil corner of Los Angeles, Wellness Detox LA provides luxury amenities and evidence-based addiction care.",
     care: ["Detox", "Residential", "Dual Diagnosis", "Aftercare"],
+    website: "https://wellnessdetoxla.com",
   },
   {
     slug: "dallas-detox-center",
@@ -254,6 +352,7 @@ export const locations: Location[] = [
     blurb:
       "Just outside the heart of Dallas, our state-of-the-art facility provides a full continuum of care including detox, residential treatment, and holistic therapies.",
     care: ["Detox", "Residential", "Virtual IOP", "Dual Diagnosis"],
+    website: "https://dallasdetoxcenter.com",
   },
   {
     slug: "fort-worth-wellness",
@@ -266,6 +365,7 @@ export const locations: Location[] = [
     blurb:
       "Fort Worth Wellness Center provides dedicated, primary residential mental health treatment in a comfortable, supportive setting.",
     care: ["Mental Health Inpatient", "Dual Diagnosis"],
+    website: "https://fortworthwellness.org",
   },
   {
     slug: "seaside-wellness",
@@ -278,6 +378,7 @@ export const locations: Location[] = [
     blurb:
       "In West Palm Beach, Seaside Wellness is a premier destination for individuals seeking treatment for drug and alcohol addiction.",
     care: ["Detox", "Residential", "Dual Diagnosis", "Aftercare"],
+    website: "https://seasidewellnesspb.com",
   },
   {
     slug: "wellness-recovery-nj",
@@ -290,6 +391,7 @@ export const locations: Location[] = [
     blurb:
       "In a welcoming, easily accessible part of New Jersey, our drug & alcohol rehab center is here to help you achieve lasting recovery.",
     care: ["PHP", "IOP", "Virtual IOP", "Dual Diagnosis"],
+    website: "https://wellnessrecoverynj.com",
   },
   {
     slug: "des-moines-wellness",
@@ -297,12 +399,20 @@ export const locations: Location[] = [
     city: "Des Moines",
     state: "IA",
     region: "Iowa",
-    image: "/images/photos/aerial-2.jpg",
+    // T8.3b — was aerial-2.jpg, a Texas ranch property standing in for an Iowa
+    // facility. This is the real Des Moines Wellness Center exterior.
+    image: "/images/locations/des-moines.jpg",
     hasCard: false,
+    // T4.4 / V0090 + visual row 1084 — this was flagged "coming soon" with
+    // `care: ["Coming Soon"]`, which excluded it from `generateStaticParams` and
+    // left the network's Iowa centre with no page. The facility is open and
+    // operating: desmoinesrecovery.com publishes the full programme list below,
+    // and the workbook's own portfolio treats Des Moines as a live build.
+    // Blurb and care levels are the client's own published wording.
     blurb:
-      "A new Quadrant Health center is coming soon to the Midwest, bringing luxury, evidence-based recovery care to Iowa.",
-    care: ["Coming Soon"],
-    comingSoon: true,
+      "Des Moines Wellness Center provides a full continuum of care including medical detox, inpatient residential treatment, and flexible PHP/IOP programs — specialising in dual diagnosis, treating addiction and co-occurring mental health conditions together in a trauma-informed environment.",
+    care: ["Detox", "Residential", "PHP", "IOP", "Dual Diagnosis", "Aftercare"],
+    website: "https://desmoinesrecovery.com",
   },
 ];
 

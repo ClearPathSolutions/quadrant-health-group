@@ -402,6 +402,30 @@ strong {
   border: 0;
 }
 
+/* The skip link is the first thing a keyboard user reaches, and while clipped
+   to 1x1px it gives them no visible target — WCAG 2.4.7. Focusing it restores
+   it to a real, visible control. Scoped to links so genuinely visually-hidden
+   text (which should stay hidden) is unaffected. */
+a.sr-only:focus {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 200;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0.85rem 1.4rem;
+  overflow: visible;
+  clip: auto;
+  clip-path: none;
+  border-radius: var(--r-full);
+  background: var(--navy);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 600;
+  box-shadow: var(--sh-lg);
+}
+
 /* Reveal-on-scroll (progressive enhancement).
    Hidden state is gated behind `.js` on <html>, added synchronously before
    paint — so if JavaScript never runs, all content stays fully visible. */

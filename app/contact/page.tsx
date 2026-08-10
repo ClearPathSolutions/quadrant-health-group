@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Icon from "@/components/Icon";
 import PageHero from "@/components/PageHero";
 import LeadForm from "@/components/LeadForm";
-import { site } from "@/lib/site";
+import { site, seo } from "@/lib/site";
 import c from "../content.module.css";
 import s from "../home.module.css";
 
@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: "Contact Us",
   description:
     "Contact Quadrant Health Group. Our admissions team is available 24/7 — call, email, or send us a message and we'll respond promptly and confidentially.",
+  ...seo({
+    path: "/contact",
+    title: "Contact Us",
+    description:
+      "Contact Quadrant Health Group. Our admissions team is available 24/7 — call, email, or send us a message and we'll respond promptly and confidentially.",
+  }),
 };
 
 export default function ContactPage() {

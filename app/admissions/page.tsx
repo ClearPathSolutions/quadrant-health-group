@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Icon from "@/components/Icon";
 import PageHero from "@/components/PageHero";
 import LeadForm from "@/components/LeadForm";
-import { site } from "@/lib/site";
+import { site, seo } from "@/lib/site";
 import c from "../content.module.css";
 import s from "../home.module.css";
 
@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: "Admissions",
   description:
     "Starting treatment at Quadrant Health is simple and confidential. Verify your insurance for free, understand the admissions process, and get help for yourself or a loved one — 24/7.",
+  ...seo({
+    path: "/admissions",
+    title: "Admissions",
+    description:
+      "Starting treatment at Quadrant Health is simple and confidential. Verify your insurance for free, understand the admissions process, and get help for yourself or a loved one — 24/7.",
+  }),
 };
 
 const steps = [

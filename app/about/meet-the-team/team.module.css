@@ -63,3 +63,18 @@
   color: var(--blue-dark);
   font-weight: 500;
 }
+
+/* T6.1 — department / facility group headings on the team index. */
+.groupBlock {
+  margin-bottom: clamp(2.75rem, 5vw, 4rem);
+}
+.groupBlock:last-child {
+  margin-bottom: 0;
+}
+.groupTitle {
+  font-size: clamp(1.3rem, 2.2vw, 1.75rem);
+  color: var(--navy);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line);
+}

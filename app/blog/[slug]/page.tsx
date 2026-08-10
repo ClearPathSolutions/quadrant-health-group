@@ -3,8 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Icon from "@/components/Icon";
+import Prose from "@/components/Prose";
 import { getPost, posts, formatDate, readingTime } from "@/lib/content";
-import { site } from "@/lib/site";
+import { site, seo } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import a from "../article.module.css";
 
 export function generateStaticParams() {
@@ -15,14 +18,17 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const post = getPost(params.slug);
   if (!post) return {};
   return {
-    title: post.title,
+    // F-07 — article headlines are self-contained and five of the seven already
+    // name the brand, so the layout template rendered it twice.
+    title: { absolute: post.title },
     description: post.excerpt,
-    openGraph: {
+    ...seo({
+      path: `/blog/${post.slug}`,
       title: post.title,
       description: post.excerpt,
       type: "article",
       images: post.image ? [post.image] : undefined,
-    },
+    }),
   };
 }
 
@@ -34,6 +40,15 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
   return (
     <>
+      <JsonLd
+        data={[
+          articleSchema(post),
+          breadcrumbSchema([
+            { name: "Blog", path: "/blog" },
+            { name: post.title, path: `/blog/${post.slug}` },
+          ]),
+        ]}
+      />
       <article>
         <header className={a.header}>
           <div className="container">
@@ -72,17 +87,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             {post.sections.map((sec, i) => (
               <section key={i} className={a.block}>
                 {sec.heading && sec.heading !== post.title && <h2>{sec.heading}</h2>}
-                {sec.body.split("\n").filter(Boolean).map((para, j) =>
-                  para.trim().startsWith("- ") ? (
-                    <ul key={j}>
-                      {para.split("\n").map((li, k) => (
-                        <li key={k}>{li.replace(/^-\s*/, "")}</li>
-                      ))}
-                    </ul>
-                  ) : (
-                    <p key={j}>{para}</p>
-                  )
-                )}
+                <Prose body={sec.body} />
               </section>
             ))}
 

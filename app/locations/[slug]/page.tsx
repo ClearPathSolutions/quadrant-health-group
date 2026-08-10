@@ -4,8 +4,10 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import Icon from "@/components/Icon";
 import LeadForm from "@/components/LeadForm";
-import { locations, site } from "@/lib/site";
+import { locations, site, seo } from "@/lib/site";
 import { getLocationDetail } from "@/lib/content";
+import JsonLd from "@/components/JsonLd";
+import { locationSchema, breadcrumbSchema } from "@/lib/schema";
 import d from "./location.module.css";
 
 const detailable = locations.filter((l) => !l.comingSoon);
@@ -18,10 +20,16 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const loc = locations.find((l) => l.slug === params.slug);
   const detail = getLocationDetail(params.slug);
   if (!loc) return {};
+  const description = detail?.metaDescription || loc.blurb;
   return {
     title: `${loc.name} — ${loc.city}, ${loc.state}`,
-    description: detail?.metaDescription || loc.blurb,
-    openGraph: { title: loc.name, description: detail?.metaDescription || loc.blurb, images: [loc.image] },
+    description,
+    ...seo({
+      path: `/locations/${loc.slug}`,
+      title: loc.name,
+      description,
+      images: [loc.image],
+    }),
   };
 }
 
@@ -47,6 +55,15 @@ export default function LocationDetail({ params }: { params: { slug: string } })
 
   return (
     <>
+      <JsonLd
+        data={[
+          locationSchema(loc, detail),
+          breadcrumbSchema([
+            { name: "Locations", path: "/locations" },
+            { name: loc.name, path: `/locations/${loc.slug}` },
+          ]),
+        ]}
+      />
       {/* Hero */}
       <section className={d.hero}>
         <div className={`container ${d.heroInner}`}>
@@ -67,9 +84,24 @@ export default function LocationDetail({ params }: { params: { slug: string } })
                 <Icon name="phone" size={18} />
                 Call {site.phone}
               </a>
-              <Link href="/admissions#insurance" className="btn btn-lg btn-outline-white">
+              <Link href="/admissions/insurance-verification" className="btn btn-lg btn-outline-white">
                 Verify Insurance
               </Link>
+              {/* T4.3 (visual 1074–1083) — facility website, beside Call and
+                  Verify Insurance. V0091's verification found the gap was not
+                  limited to the index: no page anywhere on the parent linked to
+                  a facility domain. Suppressed where `websiteHold` is set. */}
+              {loc.website && !loc.websiteHold && (
+                <a
+                  href={loc.website}
+                  className="btn btn-lg btn-outline-white"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Visit Website
+                  <Icon name="arrow-right" size={18} />
+                </a>
+              )}
             </div>
           </div>
           <div className={d.heroMedia}>

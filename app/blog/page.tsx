@@ -6,11 +6,18 @@ import Icon from "@/components/Icon";
 import ClarionBlog from "@/components/ClarionBlog";
 import { posts, formatDate, readingTime } from "@/lib/content";
 import s from "./blog.module.css";
+import { seo } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Blog & Resources",
   description:
     "Insights and guidance on addiction, mental health, treatment options, and recovery from the clinical team at Quadrant Health Group.",
+  ...seo({
+    path: "/blog",
+    title: "Blog & Resources",
+    description:
+      "Insights and guidance on addiction, mental health, treatment options, and recovery from the clinical team at Quadrant Health Group.",
+  }),
 };
 
 export default function BlogPage() {

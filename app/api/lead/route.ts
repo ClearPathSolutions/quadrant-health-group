@@ -22,8 +22,45 @@ function resolveOrigin(req: Request): string {
   return host ? `${proto}://${host}` : "";
 }
 
+// F-12 — the endpoint is unauthenticated with no throttle, so it is an open
+// pipe for flooding the admissions team. In-memory and therefore per-instance:
+// it blunts a naive flood but is not a substitute for edge rate limiting, which
+// is the real fix before this sees production traffic.
+const RATE_LIMIT = 5; // submissions per window, per IP
+const RATE_WINDOW_MS = 60_000;
+const MAX_BODY_BYTES = 16_000; // a legitimate lead is well under 2 KB
+const hits = new Map<string, number[]>();
+
+function rateLimited(ip: string): boolean {
+  const now = Date.now();
+  const recent = (hits.get(ip) ?? []).filter((t) => now - t < RATE_WINDOW_MS);
+  recent.push(now);
+  hits.set(ip, recent);
+  if (hits.size > 5000) hits.clear(); // crude unbounded-growth guard
+  return recent.length > RATE_LIMIT;
+}
+
 export async function POST(req: Request) {
-  const data = await req.json().catch(() => ({} as Record<string, unknown>));
+  const ip =
+    req.headers.get("x-forwarded-for")?.split(",")[0].trim() || "unknown";
+  if (rateLimited(ip)) {
+    return NextResponse.json(
+      { ok: false, error: "Too many requests. Please call us." },
+      { status: 429 }
+    );
+  }
+
+  const raw = await req.text();
+  if (raw.length > MAX_BODY_BYTES) {
+    return NextResponse.json({ ok: false, error: "Payload too large." }, { status: 413 });
+  }
+  const data = (() => {
+    try {
+      return JSON.parse(raw) as Record<string, unknown>;
+    } catch {
+      return {} as Record<string, unknown>;
+    }
+  })();
   if (data.company) return NextResponse.json({ ok: true }); // honeypot
 
   const name = String(data.name || "").trim();
@@ -53,14 +90,23 @@ export async function POST(req: Request) {
       .map(([k, v]) => `${k}: ${v}`)
       .join("\n");
 
-  // Never lose a lead: log it if Clarion is unreachable, still tell the visitor "ok".
-  const logLead = (why: string) =>
-    console.warn(`[lead] NOT delivered (${why}):`, {
-      name,
-      phone,
-      email,
-      message: data.message,
-    });
+  // F-02 / F-05 — when Clarion rejects or is unreachable the lead is NOT
+  // captured anywhere. Two rules follow:
+  //   1. Never report success we did not get. The response carries
+  //      `delivered: false` and the form routes the visitor to the phone line
+  //      instead of showing the thank-you state.
+  //   2. Never write the lead itself to the log. Name, phone, email and the
+  //      free-text message are health-related information and Vercel runtime
+  //      logs are not a covered store. Only a correlation ref and the shape of
+  //      the failure are logged, so `[lead] NOT DELIVERED` can be alerted on.
+  // Still outstanding: a durable fallback (transactional email or webhook) so a
+  // rejected lead is retained rather than only surfaced to the visitor.
+  const ref = randomUUID().slice(0, 8);
+  const logFailure = (why: string) =>
+    console.error(
+      `[lead] NOT DELIVERED ref=${ref} reason=${why} origin=${origin} ` +
+        `hasPhone=${!!phone} hasEmail=${!!email} hasMessage=${!!data.message}`
+    );
 
   const headers = {
     "Content-Type": "application/json",
@@ -83,8 +129,8 @@ export async function POST(req: Request) {
       }),
     });
     if (!s.ok) {
-      logLead(`session ${s.status}`);
-      return NextResponse.json({ ok: true, delivered: false });
+      logFailure(`session_${s.status}`);
+      return NextResponse.json({ ok: true, delivered: false, ref });
     }
 
     const { conversation_id, visitor_token } = await s.json();
@@ -94,14 +140,14 @@ export async function POST(req: Request) {
       body: JSON.stringify({ client_msg_id: randomUUID(), text }),
     });
     if (!m.ok) {
-      logLead(`messages ${m.status}`);
-      return NextResponse.json({ ok: true, delivered: false });
+      logFailure(`messages_${m.status}`);
+      return NextResponse.json({ ok: true, delivered: false, ref });
     }
 
-    console.log(`[lead] delivered: ${conversation_id}`);
+    console.log(`[lead] delivered ref=${ref} conversation=${conversation_id}`);
     return NextResponse.json({ ok: true, delivered: true });
   } catch (e) {
-    logLead(String(e));
-    return NextResponse.json({ ok: true, delivered: false });
+    logFailure(`exception_${(e as Error)?.name || "unknown"}`);
+    return NextResponse.json({ ok: true, delivered: false, ref });
   }
 }

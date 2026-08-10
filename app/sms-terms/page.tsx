@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
-import { site } from "@/lib/site";
+import { site, seo } from "@/lib/site";
 import c from "../content.module.css";
 
 export const metadata: Metadata = {
   title: "SMS Terms & Conditions",
   description:
     "Terms and conditions for SMS/text-message communications with Quadrant Health Group.",
+  ...seo({
+    path: "/sms-terms",
+    title: "SMS Terms & Conditions",
+    description:
+      "Terms and conditions for SMS/text-message communications with Quadrant Health Group.",
+  }),
 };
 
 export default function SmsTermsPage() {

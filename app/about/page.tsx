@@ -4,7 +4,9 @@ import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import Icon from "@/components/Icon";
 import Faq from "@/components/Faq";
-import { site, stats, whyPoints } from "@/lib/site";
+import { site, stats, whyPoints, seo, faqs } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { faqSchema, breadcrumbSchema } from "@/lib/schema";
 import c from "../content.module.css";
 import s from "../home.module.css";
 
@@ -12,11 +14,23 @@ export const metadata: Metadata = {
   title: "About Us",
   description:
     "Quadrant Health Group blends clinical excellence with compassionate support across a nationwide network of luxury, accredited addiction and mental health treatment centers.",
+  ...seo({
+    path: "/about",
+    title: "About Us",
+    description:
+      "Quadrant Health Group blends clinical excellence with compassionate support across a nationwide network of luxury, accredited addiction and mental health treatment centers.",
+  }),
 };
 
 export default function AboutPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          faqSchema(faqs, "/about"),
+          breadcrumbSchema([{ name: "About", path: "/about" }]),
+        ]}
+      />
       <PageHero
         crumb="About"
         eyebrow="About Quadrant Health"
@@ -131,8 +145,8 @@ export default function AboutPage() {
           </div>
           <div className={`${c.mediaCard} reveal`}>
             <Image
-              src="/images/photos/support.jpg"
-              alt="Quadrant Health alumni community support"
+              src="/images/photos/patio-hillside.jpg"
+              alt="The outdoor gathering area at Hillside Mission Recovery"
               width={900}
               height={675}
               sizes="(max-width: 900px) 90vw, 46vw"

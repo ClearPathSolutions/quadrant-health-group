@@ -3,8 +3,23 @@ import teamData from "./content/team.json";
 import postsData from "./content/posts.json";
 import treatmentsData from "./content/treatments.json";
 import locationDetailsData from "./content/locationDetails.json";
+import pagesData from "./content/pages.json";
 
-export type Section = { heading: string; body: string };
+export type Section = {
+  heading: string;
+  body: string;
+  /**
+   * Heading level for this section's own heading (T5.1). Sections render at h2
+   * by default; 10 of the workbook's 51 heading rows ask for h3/h4 instead.
+   */
+  level?: number;
+  /**
+   * In-body labels to promote to real headings, keyed by line text (T5.1).
+   * The other 41 heading rows name a label that sits inside the body rather
+   * than being a section of its own — see `components/Prose.tsx`.
+   */
+  promote?: Record<string, number>;
+};
 export type Faq = { q: string; a: string };
 
 export type TeamMember = {
@@ -14,7 +29,57 @@ export type TeamMember = {
   credentials: string;
   bio: string;
   image: string | null;
+  /** Department / facility grouping for the team page (T6.1, visual row 856). */
+  group?: string;
 };
+
+/**
+ * Display order for the team page, following visual row 856.
+ *
+ * Groups with no members are skipped, so the corporate sections stay hidden
+ * until T3.2 publishes those 30 bios and then appear in the right place with no
+ * further change. People are assigned only where their own record — role, bio,
+ * or a facility roster in locationDetails.json — states the facility; anyone
+ * whose record names none stays in the general group rather than being guessed.
+ */
+export const TEAM_GROUP_ORDER = [
+  "Founders",
+  "Corporate Leadership Team",
+  "Business Development & Alumni Services",
+  "Admissions & Client Care",
+  "Clinical & Operations",
+  "California Leadership",
+  "Marina Harbor Detox",
+  "Laguna View Detox",
+  "Ocean Coast Recovery Center",
+  "Hillside Mission Recovery",
+  "Texas Facilities",
+  "Florida Facilities — Seaside Wellness of Palm Beach",
+  "New Jersey Facilities — Wellness Recovery NJ",
+  "Iowa Facilities — Des Moines Wellness Center",
+  "Kentucky Facilities — Wellness Ranch",
+];
+
+/** The roster split into row 856's groups, empty groups omitted. */
+export function teamByGroup(): { group: string; members: TeamMember[] }[] {
+  const seen = new Set<string>();
+  const out: { group: string; members: TeamMember[] }[] = [];
+  for (const g of TEAM_GROUP_ORDER) {
+    const members = team.filter((m) => m.group === g);
+    if (members.length) {
+      out.push({ group: g, members });
+      seen.add(g);
+    }
+  }
+  // Anything carrying a group not in the list still gets shown, never dropped.
+  const extra = team.filter((m) => m.group && !seen.has(m.group));
+  for (const m of extra) {
+    const bucket = out.find((o) => o.group === m.group);
+    if (bucket) bucket.members.push(m);
+    else out.push({ group: m.group!, members: [m] });
+  }
+  return out;
+}
 
 export type Post = {
   slug: string;
@@ -49,6 +114,27 @@ export type LocationDetail = {
   city?: string;
   state?: string;
 };
+
+/**
+ * A page ported back from production (T1.2 / V0127). Seven pages — the whole
+ * admissions funnel plus our-story, alumni and FAQ — were lost in the migration
+ * and 404 on the build while returning 200 on production. Content is the
+ * client's own, recovered from the crawl archived in `_scrape/`.
+ */
+export type ContentPage = {
+  slug: string;
+  title: string;
+  crumb: string;
+  eyebrow: string;
+  h1: string;
+  metaDescription: string;
+  sections: Section[];
+  faqs: Faq[];
+  bullets: string[];
+};
+
+export const pages = pagesData as ContentPage[];
+export const getPage = (slug: string) => pages.find((p) => p.slug === slug);
 
 export const team = teamData as TeamMember[];
 export const posts = postsData as Post[];

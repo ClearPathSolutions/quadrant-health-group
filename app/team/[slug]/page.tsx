@@ -4,7 +4,9 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import Icon from "@/components/Icon";
 import { getTeamMember, team } from "@/lib/content";
-import { site } from "@/lib/site";
+import { site, seo } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { personSchema, breadcrumbSchema } from "@/lib/schema";
 import b from "./bio.module.css";
 
 export function generateStaticParams() {
@@ -14,9 +16,17 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const m = getTeamMember(params.slug);
   if (!m) return {};
+  const title = `${m.name}${m.role ? ` — ${m.role}` : ""}`;
+  const description = m.bio.slice(0, 160);
   return {
-    title: `${m.name}${m.role ? ` — ${m.role}` : ""}`,
-    description: m.bio.slice(0, 160),
+    title,
+    description,
+    ...seo({
+      path: `/team/${m.slug}`,
+      title,
+      description,
+      images: m.image ? [m.image] : undefined,
+    }),
   };
 }
 
@@ -26,6 +36,15 @@ export default function BioPage({ params }: { params: { slug: string } }) {
 
   return (
     <section className="section">
+      <JsonLd
+        data={[
+          personSchema(m),
+          breadcrumbSchema([
+            { name: "Meet the Team", path: "/about/meet-the-team" },
+            { name: m.name, path: `/team/${m.slug}` },
+          ]),
+        ]}
+      />
       <div className="container">
         <nav className={b.crumbs} aria-label="Breadcrumb">
           <Link href="/">Home</Link>

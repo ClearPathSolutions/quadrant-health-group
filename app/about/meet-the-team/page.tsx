@@ -2,13 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
-import { team } from "@/lib/content";
+import { teamByGroup } from "@/lib/content";
 import t from "./team.module.css";
+import { seo } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Meet the Team",
   description:
     "Meet the licensed clinicians, medical professionals, and care coordinators behind Quadrant Health Group — the compassionate experts guiding your recovery.",
+  ...seo({
+    path: "/about/meet-the-team",
+    title: "Meet the Team",
+    description:
+      "Meet the licensed clinicians, medical professionals, and care coordinators behind Quadrant Health Group — the compassionate experts guiding your recovery.",
+  }),
 };
 
 function initials(name: string) {
@@ -27,30 +34,38 @@ export default function TeamPage() {
 
       <section className="section">
         <div className="container">
-          <div className={t.grid}>
-            {team.map((m) => (
-              <Link key={m.slug} href={`/team/${m.slug}`} className={`${t.card} reveal`}>
-                <div className={t.photo}>
-                  {m.image ? (
-                    <Image
-                      src={m.image}
-                      alt={m.name}
-                      width={400}
-                      height={400}
-                      className={t.img}
-                      sizes="(max-width: 620px) 50vw, (max-width: 960px) 33vw, 25vw"
-                    />
-                  ) : (
-                    <span className={t.initials}>{initials(m.name)}</span>
-                  )}
-                </div>
-                <div className={t.info}>
-                  <h3 className={t.name}>{m.name}</h3>
-                  {m.role && <p className={t.role}>{m.role}</p>}
-                </div>
-              </Link>
-            ))}
-          </div>
+          {/* T6.1 (visual row 856) — grouped by department and facility rather
+              than one flat grid. Empty groups are omitted, so the corporate
+              sections appear automatically once T3.2 publishes those bios. */}
+          {teamByGroup().map(({ group, members }) => (
+            <div key={group} className={t.groupBlock}>
+              <h2 className={t.groupTitle}>{group}</h2>
+              <div className={t.grid}>
+                {members.map((m) => (
+                  <Link key={m.slug} href={`/team/${m.slug}`} className={`${t.card} reveal`}>
+                    <div className={t.photo}>
+                      {m.image ? (
+                        <Image
+                          src={m.image}
+                          alt={m.name}
+                          width={400}
+                          height={400}
+                          className={t.img}
+                          sizes="(max-width: 620px) 50vw, (max-width: 960px) 33vw, 25vw"
+                        />
+                      ) : (
+                        <span className={t.initials}>{initials(m.name)}</span>
+                      )}
+                    </div>
+                    <div className={t.info}>
+                      <h3 className={t.name}>{m.name}</h3>
+                      {m.role && <p className={t.role}>{m.role}</p>}
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
     </>
