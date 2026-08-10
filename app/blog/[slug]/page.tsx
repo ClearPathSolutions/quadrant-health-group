@@ -4,18 +4,34 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import Icon from "@/components/Icon";
 import Prose from "@/components/Prose";
-import { getPost, posts, formatDate, readingTime } from "@/lib/content";
-import { site, seo } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
+import {
+  getPost,
+  posts,
+  getAllPosts,
+  formatDate,
+  readingTime,
+  readingTimeFromHtml,
+} from "@/lib/content";
+import { getClarionPost, getClarionPosts } from "@/lib/clarion";
+import { site, seo } from "@/lib/site";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import a from "../article.module.css";
 
-export function generateStaticParams() {
-  return posts.map((p) => ({ slug: p.slug }));
+// Pre-render every native post at build time, plus any Clarion posts known at
+// build time. New Clarion posts published later still work: dynamicParams
+// defaults to true, so an unknown slug falls through to the runtime fetch below.
+export async function generateStaticParams() {
+  const clarion = await getClarionPosts();
+  return [...posts, ...clarion].map((p) => ({ slug: p.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const post = getPost(params.slug);
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const post = getPost(params.slug) || (await getClarionPost(params.slug));
   if (!post) return {};
   return {
     // F-07 — article headlines are self-contained and five of the seven already
@@ -32,11 +48,16 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function PostPage({ params }: { params: { slug: string } }) {
-  const post = getPost(params.slug);
+export default async function PostPage({ params }: { params: { slug: string } }) {
+  const clarionPost = getPost(params.slug)
+    ? null
+    : await getClarionPost(params.slug);
+  const post = getPost(params.slug) || clarionPost;
   if (!post) notFound();
 
-  const related = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
+  const related = (await getAllPosts())
+    .filter((p) => p.slug !== post.slug)
+    .slice(0, 3);
 
   return (
     <>
@@ -60,7 +81,12 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             <div className={a.meta}>
               <span>{formatDate(post.date)}</span>
               <span>·</span>
-              <span>{readingTime(post.sections)} min read</span>
+              <span>
+                {clarionPost
+                  ? readingTimeFromHtml(clarionPost.bodyHtml)
+                  : readingTime(post.sections)}{" "}
+                min read
+              </span>
             </div>
             <h1 className={a.title}>{post.title}</h1>
             {post.excerpt && <p className={a.lede}>{post.excerpt}</p>}
@@ -77,6 +103,8 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                 height={700}
                 priority
                 sizes="(max-width: 900px) 100vw, 900px"
+                // Clarion covers are remote; skip the optimizer (no host allowlist).
+                unoptimized={post.source === "clarion"}
               />
             </div>
           </div>
@@ -84,12 +112,22 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
         <div className="container">
           <div className={a.body}>
-            {post.sections.map((sec, i) => (
-              <section key={i} className={a.block}>
-                {sec.heading && sec.heading !== post.title && <h2>{sec.heading}</h2>}
-                <Prose body={sec.body} />
-              </section>
-            ))}
+            {clarionPost ? (
+              // Clarion posts arrive as sanitized HTML from Clarion's API.
+              <section
+                className={a.block}
+                dangerouslySetInnerHTML={{ __html: clarionPost.bodyHtml }}
+              />
+            ) : (
+              // Native posts render through Prose so they pick up the heading
+              // levels and bullet links from T5.1 / T5.2.
+              post.sections.map((sec, i) => (
+                <section key={i} className={a.block}>
+                  {sec.heading && sec.heading !== post.title && <h2>{sec.heading}</h2>}
+                  <Prose body={sec.body} />
+                </section>
+              ))
+            )}
 
             <aside className={a.cta}>
               <div>
@@ -114,7 +152,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                 <Link key={p.slug} href={`/blog/${p.slug}`} className={`card card-hover ${a.relCard}`}>
                   {p.image && (
                     <div className={a.relMedia}>
-                      <Image src={p.image} alt={p.title} width={600} height={400} sizes="(max-width: 620px) 100vw, 33vw" />
+                      <Image src={p.image} alt={p.title} width={600} height={400} sizes="(max-width: 620px) 100vw, 33vw" unoptimized={p.source === "clarion"} />
                     </div>
                   )}
                   <div className={a.relBody}>

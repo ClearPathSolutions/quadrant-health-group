@@ -1,11 +1,14 @@
 import type { MetadataRoute } from "next";
 import { canonical, locations } from "@/lib/site";
-import { pages, posts, team, treatments } from "@/lib/content";
+import { pages, getAllPosts, team, treatments } from "@/lib/content";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  // F-11 — was hardcoded to a fixed date, which goes stale silently. Build time
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  // F-10 — was hardcoded to a fixed date, which goes stale silently. Build time
   // is the honest value for a fully static export.
   const now = new Date();
+  // Clarion-authored posts are merged with the native ones, so the sitemap
+  // covers both feeds rather than only what ships in posts.json.
+  const posts = await getAllPosts();
   const staticRoutes = [
     "",
     "/about",

@@ -3,8 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import Icon from "@/components/Icon";
-import ClarionBlog from "@/components/ClarionBlog";
-import { posts, formatDate, readingTime } from "@/lib/content";
+import { getAllPosts, formatDate, readingTime } from "@/lib/content";
 import s from "./blog.module.css";
 import { seo } from "@/lib/site";
 
@@ -20,7 +19,8 @@ export const metadata: Metadata = {
   }),
 };
 
-export default function BlogPage() {
+export default async function BlogPage() {
+  const posts = await getAllPosts();
   const [feature, ...rest] = posts;
   return (
     <>
@@ -45,6 +45,9 @@ export default function BlogPage() {
                     className={s.img}
                     sizes="(max-width: 900px) 100vw, 55vw"
                     priority
+                    // Clarion cover images are remote (any host); skip Next's
+                    // optimizer so they aren't blocked by remotePatterns.
+                    unoptimized={feature.source === "clarion"}
                   />
                 )}
               </div>
@@ -76,6 +79,7 @@ export default function BlogPage() {
                       height={400}
                       className={s.img}
                       sizes="(max-width: 620px) 100vw, (max-width: 960px) 50vw, 33vw"
+                      unoptimized={p.source === "clarion"}
                     />
                   )}
                 </div>
@@ -96,9 +100,6 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-
-      {/* Clarion-managed posts (hidden until Clarion has content) */}
-      <ClarionBlog heading="More from the Quadrant Health team" />
     </>
   );
 }
