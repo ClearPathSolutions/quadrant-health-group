@@ -38,6 +38,11 @@ const redirectMap = [
   { source: "/locations/wellness-nj", destination: "/locations/wellness-recovery-nj/", statusCode: 301 },
   // Blog index moved out of /about.
   { source: "/about/blog", destination: "/blog/", statusCode: 301 },
+  // T1.5 cutover diff, 2026-08-13. "Our Addiction Treatment Facilities" is live
+  // and indexed on production but was dropped from the build — an eighth page
+  // beyond the seven V0127 catalogued. /locations is the equivalent content, so
+  // it redirects rather than 404s at cutover.
+  { source: "/about/facilities", destination: "/locations/", statusCode: 301 },
   // 7 dated WordPress permalinks -> flat /blog/<slug>.
   { source: "/2026/03/09/breaking-barriers-to-mental-health-treatment", destination: "/blog/breaking-barriers-to-mental-health-treatment/", statusCode: 301 },
   { source: "/2026/04/21/how-opiate-addiction-starts", destination: "/blog/how-opiate-addiction-starts/", statusCode: 301 },
