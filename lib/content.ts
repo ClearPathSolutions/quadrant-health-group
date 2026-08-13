@@ -170,6 +170,27 @@ export const getLocationDetail = (slug: string): LocationDetail | undefined =>
 export const treatmentsByCategory = (cat: TreatmentCategory) =>
   treatments.filter((t) => t.category === cat);
 
+/**
+ * Chip label for an addiction page: "fentanyl-addiction" -> "Fentanyl Addiction".
+ *
+ * Derived from the slug, not the title. The titles in treatments.json are full
+ * marketing headlines ("Struggling with fentanyl dependency? We're here to help
+ * you"), and the regex that used to trim them only matched the handful ending
+ * in "… Addiction Treatment" — every other page rendered its whole headline
+ * inside a chip. Slugs are uniform, so the label is too.
+ */
+export const addictionLabel = (slug: string) =>
+  slug
+    .split("-")
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(" ");
+
+/** Addiction pages in the alphabetical order the previous site listed them. */
+export const addictionsAZ = () =>
+  treatmentsByCategory("addiction")
+    .map((t) => ({ ...t, label: addictionLabel(t.slug) }))
+    .sort((a, b) => a.label.localeCompare(b.label));
+
 // Nice display labels for the treatment categories.
 export const categoryLabel: Record<TreatmentCategory, string> = {
   addiction: "What We Treat",

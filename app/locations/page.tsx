@@ -18,7 +18,9 @@ export const metadata: Metadata = {
   }),
 };
 
-const order = ["California", "Texas", "Florida", "New Jersey", "Iowa"];
+// Any region missing from this list is silently dropped from the page, so it
+// must be extended whenever a location in a new state is added.
+const order = ["California", "Texas", "Florida", "New Jersey", "Iowa", "Ohio"];
 
 export default function LocationsPage() {
   const byRegion = order

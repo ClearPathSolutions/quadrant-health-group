@@ -299,8 +299,11 @@ export const locations: Location[] = [
     blurb:
       "Minutes from the Pacific Coast, Ocean Coast Recovery offers a peaceful residential setting for those beginning their recovery journey.",
     care: ["Detox", "Residential", "Dual Diagnosis", "Aftercare"],
+    // Client instruction 2026-08-13: link out to oceancoastrecovery.com from
+    // the facility block. This overrides the `websiteHold` that V0086 argued
+    // for — see the field's note. The link ships; V0109 is still worth fixing
+    // on Ocean Coast's own build so the target stops disclaiming itself.
     website: "https://oceancoastrecovery.com",
-    websiteHold: "V0109 — Ocean Coast canonicals every page to its domain root",
   },
   {
     slug: "hillside-mission-recovery",
@@ -413,6 +416,27 @@ export const locations: Location[] = [
       "Des Moines Wellness Center provides a full continuum of care including medical detox, inpatient residential treatment, and flexible PHP/IOP programs — specialising in dual diagnosis, treating addiction and co-occurring mental health conditions together in a trauma-informed environment.",
     care: ["Detox", "Residential", "PHP", "IOP", "Dual Diagnosis", "Aftercare"],
     website: "https://desmoinesrecovery.com",
+  },
+  {
+    // Client instruction 2026-08-13: add the Ohio location, theohiorc.com.
+    // theohiorc.com sits behind a Cloudflare challenge that blocks server-side
+    // fetches, so the details below come from the facility's public directory
+    // listings rather than its own pages. Worth a second pass against the
+    // source once someone can open it in a browser.
+    slug: "ohio-recovery-center",
+    name: "Ohio Recovery Center",
+    city: "Van Wert",
+    state: "OH",
+    region: "Ohio",
+    // No Ohio photography exists in any client asset folder. Branded card in
+    // the house face-card style rather than another state's property standing
+    // in for this one — that was the T8.3b defect on Des Moines.
+    image: "/images/locations/ohio-recovery.png",
+    hasCard: true,
+    blurb:
+      "Set on a private 55-acre campus in northwest Ohio, Ohio Recovery Center offers medical detox, residential treatment, and outpatient care for addiction alongside co-occurring mental health conditions.",
+    care: ["Detox", "Residential", "IOP", "Dual Diagnosis"],
+    website: "https://theohiorc.com",
   },
 ];
 

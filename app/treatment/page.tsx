@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import Icon, { type IconName } from "@/components/Icon";
-import { treatmentsByCategory } from "@/lib/content";
+import { treatmentsByCategory, addictionsAZ } from "@/lib/content";
 import { site, seo } from "@/lib/site";
 import c from "../content.module.css";
 import s from "../home.module.css";
@@ -40,7 +40,7 @@ function excerpt(intro: string, n = 155) {
 
 export default function TreatmentPage() {
   const levels = treatmentsByCategory("level");
-  const addictions = treatmentsByCategory("addiction");
+  const addictions = addictionsAZ();
   const modalities = treatmentsByCategory("modality");
 
   return (
@@ -88,7 +88,7 @@ export default function TreatmentPage() {
               {addictions.map((a) => (
                 <Link key={a.slug} href={`/treatment/${a.slug}`} className={s.treatChip}>
                   <Icon name="check" size={16} />
-                  {a.title.replace(/ (Addiction )?Treatment.*$/i, "").replace(/ Addiction$/i, "")}
+                  {a.label}
                 </Link>
               ))}
             </div>
