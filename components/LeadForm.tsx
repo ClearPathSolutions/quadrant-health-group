@@ -22,10 +22,8 @@ export default function LeadForm({
     const form = e.currentTarget;
     const fd = new FormData(form);
 
-    const firstName = String(fd.get("firstName") || "").trim();
-    const lastName = String(fd.get("lastName") || "").trim();
     const payload = {
-      name: `${firstName} ${lastName}`.trim(),
+      name: String(fd.get("name") || "").trim(),
       phone: String(fd.get("phone") || "").trim(),
       email: String(fd.get("email") || "").trim(),
       who: String(fd.get("who") || ""),
@@ -111,16 +109,10 @@ export default function LeadForm({
       data-clarion-form={formName}
       noValidate
     >
-      <div className={styles.row}>
-        <label className={styles.field}>
-          <span>First name</span>
-          <input name="firstName" type="text" required autoComplete="given-name" placeholder="Jane" />
-        </label>
-        <label className={styles.field}>
-          <span>Last name</span>
-          <input name="lastName" type="text" required autoComplete="family-name" placeholder="Doe" />
-        </label>
-      </div>
+      <label className={styles.field}>
+        <span>Name</span>
+        <input name="name" type="text" required autoComplete="name" placeholder="Jane Doe" />
+      </label>
       <div className={styles.row}>
         <label className={styles.field}>
           <span>Phone</span>
