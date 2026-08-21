@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
+import AttributionTracker from "@/components/AttributionTracker";
 import { site, canonical, isIndexable } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
 import { organizationSchema } from "@/lib/schema";
@@ -108,9 +109,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','${GTM_ID}');`}
         </Script>
-        {/* CallTrackingMetrics — loads in <head> site-wide for dynamic number
-            insertion; must load early so on-page phone numbers get swapped. */}
-        <Script src="//264810.tctm.co/t.js" strategy="beforeInteractive" />
+        {/* CallTrackingMetrics — loads site-wide for dynamic number insertion
+            and must load eagerly, so a visitor never reads and dials a number
+            that has not been swapped yet. Absolute https, not the
+            protocol-relative form. */}
+        <Script
+          src="https://264810.tctm.co/t.js"
+          strategy="beforeInteractive"
+        />
         {/* Enable scroll-reveal only when JS is available — runs before paint
             so content is never hidden for no-JS users or before hydration. */}
         <script
@@ -128,6 +134,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <main id="main">{children}</main>
         <Footer />
         <Reveal />
+        <AttributionTracker />
         {/* Clarion live-chat widget — themed to the Quadrant brand blue
             (widget default is teal #0d9488). */}
         <Script
@@ -140,15 +147,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           data-title="Quadrant Health Group"
           data-header-text="We're here 24/7 — how can we help?"
         />
-        {/* Clarion Form Capture — mirrors submissions of any form tagged with
-            data-clarion-form into Clarion's "Form Submissions". The custom
-            /api/lead endpoint stays as a server-side backup. */}
-        <Script
-          src="https://www.clarionlabs.ai/forms-capture.v1.js"
-          strategy="afterInteractive"
-          data-site-key={CLARION_SITE_KEY}
-          data-api="https://api.clarionlabs.ai"
-        />
+        {/* Clarion Form Capture (forms-capture.v1.js) is deliberately NOT
+            loaded. It attaches its own submit listener to every
+            data-clarion-form element and does not check defaultPrevented, so
+            running it alongside LeadForm's own POST filed every lead twice — as
+            a Form Submission and again as a webchat conversation. /api/lead is
+            the single path; it forwards to the same /forms/public/submit
+            endpoint the vendor script used, and reports real delivery so a
+            rejected lead is never shown a thank-you. */}
       </body>
     </html>
   );

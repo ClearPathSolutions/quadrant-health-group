@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Icon from "./Icon";
 import { site } from "@/lib/site";
+import { leadAttribution } from "@/lib/attribution";
 import styles from "./LeadForm.module.css";
 
 export default function LeadForm({
@@ -10,7 +11,7 @@ export default function LeadForm({
   formName = "website_lead",
 }: {
   variant?: "card" | "plain";
-  /** Label reported to Clarion Form Capture (data-clarion-form). */
+  /** Sent to Clarion as `form_key`, so leads stay separable by surface. */
   formName?: string;
 }) {
   const [status, setStatus] = useState<
@@ -22,15 +23,19 @@ export default function LeadForm({
     const form = e.currentTarget;
     const fd = new FormData(form);
 
+    // page_url / referrer / utm / gclid / ctm_visitor_sid all come from the
+    // first-touch store rather than the live URL. Reading them here would give
+    // the form's own page and an empty campaign for anyone who browsed before
+    // converting — which is almost everyone.
     const payload = {
+      form_key: formName,
       name: String(fd.get("name") || "").trim(),
       phone: String(fd.get("phone") || "").trim(),
       email: String(fd.get("email") || "").trim(),
       who: String(fd.get("who") || ""),
       message: String(fd.get("message") || "").trim(),
       company: String(fd.get("company") || ""), // honeypot
-      page_url: typeof window !== "undefined" ? window.location.href : "",
-      referrer: typeof document !== "undefined" ? document.referrer : "",
+      ...leadAttribution(),
     };
 
     setStatus("sending");
@@ -106,7 +111,6 @@ export default function LeadForm({
     <form
       className={`${styles.form} ${variant === "card" ? styles.asCard : ""}`}
       onSubmit={onSubmit}
-      data-clarion-form={formName}
       noValidate
     >
       <label className={styles.field}>
