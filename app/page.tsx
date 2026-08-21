@@ -3,6 +3,7 @@ import Image from "next/image";
 import Icon from "@/components/Icon";
 import LocationCard from "@/components/LocationCard";
 import LeadForm from "@/components/LeadForm";
+import InsurerLogos from "@/components/InsurerLogos";
 import { site, stats, levels, locations, addictions, whyPoints } from "@/lib/site";
 import s from "./home.module.css";
 
@@ -269,14 +270,10 @@ export default function HomePage() {
             </div>
           </div>
           <div className={s.insImageWrap}>
-            <Image
-              src="/images/photos/insurance.png"
-              alt="Verify your insurance benefits"
-              width={600}
-              height={400}
-              className={s.insImage}
-              sizes="(max-width: 900px) 80vw, 40vw"
-            />
+{/* T8.5 — was a flat image with carrier marks baked in, naming three
+                carriers that are not on the client's approved list and omitting
+                twelve that are. Now real markup from the approved set. */}
+            <InsurerLogos />
           </div>
         </div>
       </section>
