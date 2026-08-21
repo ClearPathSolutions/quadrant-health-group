@@ -444,6 +444,29 @@ export const locations: Location[] = [
     care: ["PHP", "IOP", "Outpatient", "Virtual"],
     website: "https://theohiorc.com",
   },
+  {
+    // CR-10 — client asked for Greater Texas Behavioral as its own tile. This
+    // also closes V0090 and answers T7.3, which had been holding the question of
+    // whether Greater Texas should be a location page or a service-line entry.
+    //
+    // V0044/V0046 established it is a virtual provider with no physical address,
+    // so there is no facility to photograph and no city to name. The card is in
+    // the Quadrant house style rather than using the GTB logo: the client's own
+    // BRAND-DISCREPANCY note records that the glyph inside the Texas outline is
+    // unresolved (shipping assets use a medical cross, official assets use two
+    // speech bubbles), and no location card on this site uses a facility logo.
+    slug: "greater-texas-behavioral",
+    name: "Greater Texas Behavioral",
+    city: "Statewide",
+    state: "TX",
+    region: "Texas",
+    image: "/images/locations/greater-texas-behavioral.png",
+    hasCard: true,
+    blurb:
+      "Greater Texas Behavioral delivers virtual outpatient care across Texas — dual diagnosis and mental health treatment you can reach from home, with the same licensed clinical team behind every session.",
+    care: ["Virtual Outpatient", "Dual Diagnosis", "Mental Health"],
+    website: "https://greatertexasbehavioral.com",
+  },
 ];
 
 export const whyPoints = [
