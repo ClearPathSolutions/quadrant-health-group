@@ -2,6 +2,12 @@
   background: var(--grad-navy);
   color: rgba(255, 255, 255, 0.72);
   position: relative;
+  /* CR-06 — `.ctaBand` is translateY(-50%), so roughly half its height (~100px
+     on desktop) hangs above the footer's top edge and ate the bottom padding of
+     whatever section came last. On /admissions that left the phone number
+     almost touching the CTA card. Reserving the overhang here fixes every page
+     rather than patching one. */
+  padding-top: clamp(3rem, 6vw, 6rem);
 }
 
 /* CTA band sits on top, overlapping into the footer */
@@ -44,7 +50,10 @@
 }
 .logo {
   width: auto;
-  height: 88px;
+  /* CR-05 — 88px suited the stacked lockup (ratio 1.32). The horizontal one is
+     ratio 3.64, so 88px would render ~320px wide and fill almost the whole
+     1.2fr brand column. 52px gives ~189px, which balances against the blurb. */
+  height: 52px;
   object-fit: contain;
   object-position: left top;
   margin-left: -6px;

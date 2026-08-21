@@ -22,6 +22,10 @@ const redirectMap = [
   // the shorter form, matching /locations/fort-worth-wellness. Redirect so the
   // slug the audit named does not dead-end.
   { source: "/locations/des-moines-wellness-center", destination: "/locations/des-moines-wellness/", statusCode: 301 },
+  // CR-12 — the Ohio tile shipped on 2026-08-21 under a name and slug taken from
+  // third-party directories. Both were wrong; the facility is The Ohio Recovery
+  // Collective. The old slug was live and in the sitemap, so it redirects.
+  { source: "/locations/ohio-recovery-center", destination: "/locations/ohio-recovery-collective/", statusCode: 301 },
 
   // T1.3 / V0128 — the 16 production pairs. Derived from the production
   // sitemaps archived in _scrape/inv/, not hand-written, and every

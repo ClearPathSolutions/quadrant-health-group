@@ -67,11 +67,13 @@ export default function Footer() {
 
       <div className={`container ${styles.main}`}>
         <div className={styles.brandCol}>
+          {/* CR-05 — client asked for the horizontal lockup here. It also spells
+              out "HEALTH GROUP" beside the wordmark, which serves CR-01. */}
           <Image
-            src="/images/logo-white.png"
+            src="/images/logo-white-horizontal.png"
             alt={site.name}
-            width={580}
-            height={440}
+            width={900}
+            height={247}
             className={styles.logo}
           />
           <p className={styles.blurb}>

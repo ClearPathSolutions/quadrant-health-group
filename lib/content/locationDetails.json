@@ -100,8 +100,8 @@
   "dallas-detox-center": {
     "slug": "dallas-detox-center",
     "metaTitle": "Dallas Detox Center — Premier Drug & Alcohol Rehab in the Heart of Texas",
-    "metaDescription": "Premier drug and alcohol detox in Dallas, TX. Luxury rehab with medical detox, residential inpatient, PHP, IOP, and Virtual IOP programs.",
-    "intro": "Dallas Detox offers a premium, all-inclusive addiction treatment experience designed for privacy, comfort, and long-term success. Located in the heart of Texas, our state-of-the-art facility provides all levels of care under one roof — from detox and residential treatment to PHP, IOP, and Virtual IOP.",
+    "metaDescription": "Premier drug and alcohol detox in Dallas, TX. Luxury rehab with medical detox, residential inpatient, PHP and IOP programs.",
+    "intro": "Dallas Detox offers a premium, all-inclusive addiction treatment experience designed for privacy, comfort, and long-term success. Located in the heart of Texas, our state-of-the-art facility provides all levels of care under one roof — from detox and residential treatment to PHP and IOP.",
     "amenities": [
       "Luxury private rooms and suites",
       "24/7 on-site medical and clinical staff",
@@ -124,7 +124,6 @@
       "Residential",
       "PHP",
       "IOP",
-      "Virtual IOP",
       "Dual Diagnosis"
     ],
     "city": "Dallas",
@@ -155,7 +154,7 @@
     "care": [
       "Detox",
       "Residential",
-      "Mental Health Residential",
+      "Mental Health Inpatient",
       "PHP",
       "IOP",
       "Virtual IOP",
@@ -218,7 +217,7 @@
       "PHP",
       "IOP",
       "Virtual IOP",
-      "Mental Health IOP",
+      "Mental Health Outpatient",
       "Dual Diagnosis"
     ],
     "city": "West Windsor",
@@ -234,6 +233,7 @@
     "care": [
       "Detox",
       "Residential",
+      "Mental Health Inpatient",
       "PHP",
       "IOP",
       "Dual Diagnosis",

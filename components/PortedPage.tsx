@@ -16,6 +16,15 @@ import c from "@/app/content.module.css";
  * bullet list and FAQ set, then the enquiry path. Four of the seven are the
  * primary conversion route, so every one ends with the form and the 24/7 line.
  */
+/**
+ * CR-16 — `page.bullets` is deliberately NOT rendered. The porting pass swept
+ * every list item on the source page into that array *and* left them inside the
+ * section bodies, so rendering it duplicated the lists: 27 items on
+ * /admissions/help-for-loved-one, 6 on /admissions/admissions-process, 5 on
+ * /about/alumni. All seven ported pages were checked; every bullet is a verbatim
+ * duplicate of section copy, so nothing unique is lost. The field stays on the
+ * type so re-running the porting script cannot regress this.
+ */
 export default function PortedPage({ page }: { page: ContentPage }) {
   return (
     <>
@@ -39,13 +48,6 @@ export default function PortedPage({ page }: { page: ContentPage }) {
               </div>
             ))}
 
-            {page.bullets.length > 0 && (
-              <ul>
-                {page.bullets.map((b, i) => (
-                  <li key={i}>{b}</li>
-                ))}
-              </ul>
-            )}
           </div>
 
           {page.faqs.length > 0 && (

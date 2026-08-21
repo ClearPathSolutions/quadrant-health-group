@@ -354,7 +354,8 @@ export const locations: Location[] = [
     hasCard: true,
     blurb:
       "Just outside the heart of Dallas, our state-of-the-art facility provides a full continuum of care including detox, residential treatment, and holistic therapies.",
-    care: ["Detox", "Residential", "Virtual IOP", "Dual Diagnosis"],
+    // CR-09 — client removed Virtual IOP from Dallas.
+    care: ["Detox", "Residential", "Dual Diagnosis"],
     website: "https://dallasdetoxcenter.com",
   },
   {
@@ -380,7 +381,8 @@ export const locations: Location[] = [
     hasCard: true,
     blurb:
       "In West Palm Beach, Seaside Wellness is a premier destination for individuals seeking treatment for drug and alcohol addiction.",
-    care: ["Detox", "Residential", "Dual Diagnosis", "Aftercare"],
+    // CR-11 — client added mental health inpatient.
+    care: ["Detox", "Residential", "Mental Health Inpatient", "Dual Diagnosis", "Aftercare"],
     website: "https://seasidewellnesspb.com",
   },
   {
@@ -393,7 +395,8 @@ export const locations: Location[] = [
     hasCard: true,
     blurb:
       "In a welcoming, easily accessible part of New Jersey, our drug & alcohol rehab center is here to help you achieve lasting recovery.",
-    care: ["PHP", "IOP", "Virtual IOP", "Dual Diagnosis"],
+    // CR-11 — client added mental health outpatient.
+    care: ["PHP", "IOP", "Virtual IOP", "Mental Health Outpatient", "Dual Diagnosis"],
     website: "https://wellnessrecoverynj.com",
   },
   {
@@ -414,28 +417,28 @@ export const locations: Location[] = [
     // Blurb and care levels are the client's own published wording.
     blurb:
       "Des Moines Wellness Center provides a full continuum of care including medical detox, inpatient residential treatment, and flexible PHP/IOP programs — specialising in dual diagnosis, treating addiction and co-occurring mental health conditions together in a trauma-informed environment.",
-    care: ["Detox", "Residential", "PHP", "IOP", "Dual Diagnosis", "Aftercare"],
+    // CR-11 — client added mental health inpatient.
+    care: ["Detox", "Residential", "Mental Health Inpatient", "PHP", "IOP", "Dual Diagnosis", "Aftercare"],
     website: "https://desmoinesrecovery.com",
   },
   {
-    // Client instruction 2026-08-13: add the Ohio location, theohiorc.com.
-    // theohiorc.com sits behind a Cloudflare challenge that blocks server-side
-    // fetches, so the details below come from the facility's public directory
-    // listings rather than its own pages. Worth a second pass against the
-    // source once someone can open it in a browser.
-    slug: "ohio-recovery-center",
-    name: "Ohio Recovery Center",
-    city: "Van Wert",
+    // CR-12 — every field here was wrong on the first pass. theohiorc.com sits
+    // behind a Cloudflare challenge that blocked server-side fetching, so this
+    // was built from third-party directory listings. The client confirmed it was
+    // wrong and the facility's own saved page settles it: "Ohio Recovery Center"
+    // appears zero times on their site, the city is Steubenville not Van Wert,
+    // and they are outpatient-only — the old entry advertised detox and
+    // residential care the facility does not provide.
+    slug: "ohio-recovery-collective",
+    name: "The Ohio Recovery Collective",
+    city: "Steubenville",
     state: "OH",
     region: "Ohio",
-    // No Ohio photography exists in any client asset folder. Branded card in
-    // the house face-card style rather than another state's property standing
-    // in for this one — that was the T8.3b defect on Des Moines.
-    image: "/images/locations/ohio-recovery.png",
-    hasCard: true,
+    image: "/images/locations/ohio-recovery-collective.jpg",
+    hasCard: false,
     blurb:
-      "Set on a private 55-acre campus in northwest Ohio, Ohio Recovery Center offers medical detox, residential treatment, and outpatient care for addiction alongside co-occurring mental health conditions.",
-    care: ["Detox", "Residential", "IOP", "Dual Diagnosis"],
+      "At The Ohio Recovery Collective, compassionate, evidence-based outpatient care meets you where you are — with flexible PHP, IOP and virtual programming built around your life.",
+    care: ["PHP", "IOP", "Outpatient", "Virtual"],
     website: "https://theohiorc.com",
   },
 ];
