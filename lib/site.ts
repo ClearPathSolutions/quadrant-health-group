@@ -371,7 +371,10 @@ export const locations: Location[] = [
     hasCard: false,
     blurb:
       "Fort Worth Wellness Center provides dedicated, primary residential mental health treatment in a comfortable, supportive setting.",
-    care: ["Mental Health Inpatient", "Dual Diagnosis"],
+    // Scraped from fortworthwellness.org: their own nav lists Detox,
+    // Residential Mental Health, Dual Diagnosis and Aftercare Planning. Ours
+    // claimed only two of the four.
+    care: ["Detox", "Mental Health Inpatient", "Dual Diagnosis", "Aftercare"],
     website: "https://fortworthwellness.org",
   },
   {
@@ -463,7 +466,7 @@ export const locations: Location[] = [
     image: "/images/locations/greater-texas-behavioral.png",
     hasCard: true,
     blurb:
-      "Greater Texas Behavioral delivers virtual outpatient care across Texas — dual diagnosis and mental health treatment you can reach from home, with the same licensed clinical team behind every session.",
+      "Greater Texas Behavioral delivers structured online treatment for addiction and mental health across Texas — a virtual IOP you can join from anywhere in the state, with the same licensed clinical team behind every session.",
     care: ["Virtual Outpatient", "Dual Diagnosis", "Mental Health"],
     website: "https://greatertexasbehavioral.com",
   },
