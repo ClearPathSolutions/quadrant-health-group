@@ -3,6 +3,7 @@ import Icon from "./Icon";
 import Prose from "./Prose";
 import FaqList from "./FaqList";
 import LeadForm from "./LeadForm";
+import Reviews from "./Reviews";
 import PageHero from "./PageHero";
 import { site } from "@/lib/site";
 import JsonLd from "./JsonLd";
@@ -94,6 +95,11 @@ export default function PortedPage({ page }: { page: ContentPage }) {
             ))}
 
           </div>
+
+          {/* CR-14 — the section this replaces had scraper commentary as its
+              body. Renders only on the page the client flagged; hides itself if
+              Trustindex is not licensed for the domain yet. */}
+          {page.slug === "about/our-story" && <Reviews />}
 
           {page.faqs.length > 0 && (
             <div style={{ marginTop: "3rem" }}>
