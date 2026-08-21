@@ -49,7 +49,7 @@ export default function TreatmentPage() {
         crumb="Treatment"
         eyebrow="Comprehensive care"
         title="Evidence-based treatment for lasting recovery"
-        subtitle="From medical detox to outpatient support, Quadrant Health delivers a full continuum of care with personalized plans and seamless transitions between every level — so you get the right support at the right time."
+        subtitle="From medical detox to outpatient support, Quadrant Health Group delivers a full continuum of care with personalized plans and seamless transitions between every level — so you get the right support at the right time."
       />
 
       {/* Levels of care */}
@@ -58,7 +58,9 @@ export default function TreatmentPage() {
           <div className="section-head center">
             <span className="eyebrow">Levels of care</span>
             <h2>We offer all levels of care</h2>
-            <p>Our integrated approach ensures you receive the right level of support at every stage of recovery.</p>
+            {/* CR-08 — the section named no mental health at all; every level
+                here treats it alongside substance use. */}
+            <p>Every level of care treats addiction and mental health together, so you get the right depth of support at each stage of recovery — and move between levels without starting over.</p>
           </div>
           <div className="grid grid-3 mt-4">
             {levels.map((lv) => (

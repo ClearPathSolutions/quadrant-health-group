@@ -9,12 +9,12 @@ import c from "../content.module.css";
 export const metadata: Metadata = {
   title: "Our Locations",
   description:
-    "Find a Quadrant Health treatment center near you. A nationwide network of luxury, accredited addiction and mental health facilities across CA, TX, FL, NJ and IA.",
+    "Find a Quadrant Health Group treatment center near you. A nationwide network of luxury, accredited addiction and mental health facilities across CA, TX, FL, NJ and IA.",
   ...seo({
     path: "/locations",
     title: "Our Locations",
     description:
-      "Find a Quadrant Health treatment center near you. A nationwide network of luxury, accredited addiction and mental health facilities across CA, TX, FL, NJ and IA.",
+      "Find a Quadrant Health Group treatment center near you. A nationwide network of luxury, accredited addiction and mental health facilities across CA, TX, FL, NJ and IA.",
   }),
 };
 
@@ -35,7 +35,7 @@ export default function LocationsPage() {
       <PageHero
         crumb="Locations"
         eyebrow="Our locations"
-        title="Find a Quadrant Health treatment center near you"
+        title="Find a Quadrant Health Group treatment center near you"
         subtitle="With addiction recovery centers across the country, we're here wherever you need us. Our nationwide network of fully equipped, luxury facilities offers proven treatment, compassionate care, and a dedicated admissions team to make your path to recovery as seamless and stress-free as possible."
       />
 

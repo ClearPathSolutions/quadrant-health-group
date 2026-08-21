@@ -3,8 +3,11 @@
 
 export const site = {
   name: "Quadrant Health Group",
-  shortName: "Quadrant Health",
-  tagline: "Your trusted network of addiction treatment centers",
+  // CR-01 — client asked for the company name written out in full.
+  shortName: "Quadrant Health Group",
+  // CR-02/CR-07 — the network treats mental health as well as addiction;
+  // "behavioral health" is the umbrella the client asked for.
+  tagline: "Your trusted network of behavioral health centers",
   description:
     "Quadrant Health Group is a nationwide network of luxury, accredited addiction and mental health treatment centers delivering personalized, evidence-based care — from medical detox to outpatient support.",
   phone: "(888) 970-6234",

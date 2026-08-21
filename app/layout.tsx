@@ -30,7 +30,7 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Addiction & Mental Health Treatment Network | Quadrant Health",
+    default: "Addiction & Mental Health Treatment Network | Quadrant Health Group",
     template: "%s | Quadrant Health Group",
   },
   description: site.description,
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   // no override would emit none rather than the wrong one.
   alternates: { canonical: canonical("/") },
   openGraph: {
-    title: "Addiction & Mental Health Treatment Network | Quadrant Health",
+    title: "Addiction & Mental Health Treatment Network | Quadrant Health Group",
     description: site.description,
     // T2.1 / V0093 — was `site.url` site-wide, which is what produced the 53
     // pages pointing at the bare domain root. Per-page values are set in each

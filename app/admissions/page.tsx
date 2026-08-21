@@ -9,12 +9,12 @@ import s from "../home.module.css";
 export const metadata: Metadata = {
   title: "Admissions",
   description:
-    "Starting treatment at Quadrant Health is simple and confidential. Verify your insurance for free, understand the admissions process, and get help for yourself or a loved one — 24/7.",
+    "Starting treatment at Quadrant Health Group is simple and confidential. Verify your insurance for free, understand the admissions process, and get help for yourself or a loved one — 24/7.",
   ...seo({
     path: "/admissions",
     title: "Admissions",
     description:
-      "Starting treatment at Quadrant Health is simple and confidential. Verify your insurance for free, understand the admissions process, and get help for yourself or a loved one — 24/7.",
+      "Starting treatment at Quadrant Health Group is simple and confidential. Verify your insurance for free, understand the admissions process, and get help for yourself or a loved one — 24/7.",
   }),
 };
 

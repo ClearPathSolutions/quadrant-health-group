@@ -19,7 +19,7 @@ export default function HomePage() {
           <div className={s.heroCopy}>
             <span className="eyebrow">Trusted nationwide recovery network</span>
             <h1 className={s.heroTitle}>
-              We are <span className={s.grad}>Quadrant Health</span>
+              We are <span className={s.grad}>Quadrant Health Group</span>
             </h1>
             <p className={s.heroSub}>{site.tagline}</p>
             <p className={s.heroLead}>
@@ -56,7 +56,7 @@ export default function HomePage() {
             <div className={s.heroImgWrap}>
               <Image
                 src="/images/photos/laguna-coast.jpg"
-                alt="Laguna View Detox — a Quadrant Health treatment center on the California coast"
+                alt="Laguna View Detox — a Quadrant Health Group treatment center on the California coast"
                 width={1024}
                 height={576}
                 priority
@@ -106,7 +106,7 @@ export default function HomePage() {
           <div className={`${s.splitMedia} reveal`}>
             <Image
               src="/images/photos/facility-interior-2.jpg"
-              alt="Interior of a Quadrant Health treatment center"
+              alt="Interior of a Quadrant Health Group treatment center"
               width={900}
               height={640}
               className={s.roundImg}
@@ -119,7 +119,7 @@ export default function HomePage() {
           </div>
           <div className={`${s.splitCopy} reveal`}>
             <span className="eyebrow">Who we are</span>
-            <h2>Luxury addiction treatment centers that put you first</h2>
+            <h2>Luxury addiction and mental health treatment centers that put you first</h2>
             <p className="lead mt-2">
               At Quadrant Health Group, we provide access to a nationwide network
               of luxury addiction treatment centers delivering personalized,
@@ -147,7 +147,7 @@ export default function HomePage() {
               ))}
             </ul>
             <Link href="/about" className="btn mt-4">
-              About Quadrant Health
+              About Quadrant Health Group
               <Icon name="arrow-right" size={18} />
             </Link>
           </div>
@@ -162,7 +162,7 @@ export default function HomePage() {
               <span className="eyebrow">Our locations</span>
               <h2>Nationwide access to trusted addiction treatment</h2>
               <p>
-                Quadrant Health operates a network of accredited treatment
+                Quadrant Health Group operates a network of accredited treatment
                 centers across the United States — each offering high-quality
                 care in a safe, supportive environment, wherever you are on your
                 recovery journey.
@@ -285,7 +285,7 @@ export default function HomePage() {
       <section className="section bg-navy">
         <div className="container">
           <div className="section-head center">
-            <span className="eyebrow">Why Quadrant Health</span>
+            <span className="eyebrow">Why Quadrant Health Group</span>
             <h2>Your recovery comes first — always</h2>
             <p style={{ color: "rgba(255,255,255,0.8)" }}>
               We blend clinical excellence with compassionate support to guide

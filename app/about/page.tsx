@@ -33,7 +33,7 @@ export default function AboutPage() {
       />
       <PageHero
         crumb="About"
-        eyebrow="About Quadrant Health"
+        eyebrow="About Quadrant Health Group"
         title="Compassionate care, backed by clinical excellence"
         subtitle="We exist to give people struggling with addiction and mental health the tools, environment, and guidance to reclaim their lives — with dignity, and on their own terms."
       />
@@ -44,7 +44,7 @@ export default function AboutPage() {
           <div className={`${c.mediaCard} reveal`}>
             <Image
               src="/images/photos/facility-interior.jpg"
-              alt="Inside a Quadrant Health treatment center"
+              alt="Inside a Quadrant Health Group treatment center"
               width={900}
               height={675}
               sizes="(max-width: 900px) 90vw, 46vw"
@@ -96,7 +96,7 @@ export default function AboutPage() {
         <div className="container">
           <div className="section-head center">
             <span className="eyebrow">Our approach</span>
-            <h2>What makes Quadrant different</h2>
+            <h2>What makes Quadrant Health Group different</h2>
             <p>
               We blend clinical excellence with compassionate support to guide
               you through every step of the treatment journey.
