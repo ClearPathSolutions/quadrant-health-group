@@ -268,6 +268,12 @@ export type Location = {
   /** Production domain for the facility (T4.1 / V0091). */
   website?: string;
   /**
+   * Facility-specific enquiry line. Where set, the location page calls this
+   * instead of the network number, so the enquiry reaches that facility's own
+   * admissions desk.
+   */
+  phone?: string;
+  /**
    * Suppress the outbound link even though `website` is set (T4.2).
    * V0086's verification found 106 of 107 Ocean Coast pages canonical to their
    * domain root rather than themselves, so the site currently disclaims every
@@ -454,6 +460,8 @@ export const locations: Location[] = [
       "At The Ohio Recovery Collective, compassionate, evidence-based outpatient care meets you where you are — with flexible PHP, IOP and virtual programming built around your life.",
     care: ["PHP", "IOP", "Outpatient", "Virtual"],
     website: "https://theohiorc.com",
+    // Client 2026-08-21: Ohio takes its own line rather than the network number.
+    phone: "(888) 270-1642",
   },
   {
     // CR-10 — client asked for Greater Texas Behavioral as its own tile. This

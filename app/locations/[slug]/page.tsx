@@ -49,6 +49,12 @@ export default function LocationDetail({ params }: { params: { slug: string } })
   const detail = getLocationDetail(params.slug);
 
   const care = detail?.care?.length ? detail.care : loc.care;
+  // A facility with its own admissions line uses it here; everyone else falls
+  // back to the network number.
+  const phone = loc.phone || site.phone;
+  const phoneHref = loc.phone
+    ? `tel:+1${loc.phone.replace(/\D/g, "")}`
+    : site.phoneHref;
   const city = detail?.city || loc.city;
   const state = detail?.state || loc.state;
   const intro = detail?.intro || loc.blurb;
@@ -80,9 +86,9 @@ export default function LocationDetail({ params }: { params: { slug: string } })
             <h1 className={d.title}>{loc.name}</h1>
             <p className={d.intro}>{intro}</p>
             <div className="btn-group" style={{ marginTop: "1.75rem" }}>
-              <a href={site.phoneHref} className="btn btn-lg btn-white">
+              <a href={phoneHref} className="btn btn-lg btn-white">
                 <Icon name="phone" size={18} />
-                Call {site.phone}
+                Call {phone}
               </a>
               <Link href="/admissions/insurance-verification" className="btn btn-lg btn-outline-white">
                 Verify Insurance
