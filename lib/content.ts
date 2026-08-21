@@ -19,7 +19,19 @@ export type Section = {
    * than being a section of its own — see `components/Prose.tsx`.
    */
   promote?: Record<string, number>;
+  /**
+   * CR-15 — ported pages arrived as one prose blob per section, so anything that
+   * was a tile, a numbered step or a CTA on the old site rendered as a flat
+   * paragraph. These carry that structure back. All optional, so sections that
+   * are genuinely prose are unaffected.
+   */
+  items?: SectionItem[];
+  /** "steps" renders numbered cards; "tiles" a feature grid. */
+  layout?: "steps" | "tiles";
+  cta?: SectionCta;
 };
+export type SectionItem = { label: string; text: string };
+export type SectionCta = { label: string; href: string };
 export type Faq = { q: string; a: string };
 
 export type TeamMember = {

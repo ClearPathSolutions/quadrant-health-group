@@ -308,15 +308,69 @@
       },
       {
         "heading": "How Does the Admission Process Work",
-        "body": "Step 1: Confidential Consultation\nSpeak with an admissions specialist by phone or reach out via form. We'll listen, answer your questions, and offer guidance, no pressure, no obligation.\n\nStep 2: Clinical Assessment\nWe do a first screening to understand substance use history, co-occurring mental health conditions, medical needs, and any urgent concerns.\n\nStep 3: Insurance Verification\nWe'll contact your provider and review your coverage. This step is completely free, private, and non-binding. Usually at the same time as step 2.\n\nStep 4: Personalized Treatment Plan\nBased on your needs and coverage, we'll match you with the most appropriate level of care within our network and discuss your recovery plan.\n\nStep 5: Intake Coordination\nOur team will help you prepare for admission, assist with transportation if needed, and ensure a smooth transition into treatment."
+        "body": "",
+        "items": [
+          {
+            "label": "Confidential Consultation",
+            "text": "Speak with an admissions specialist by phone or reach out via form. We'll listen, answer your questions, and offer guidance, no pressure, no obligation."
+          },
+          {
+            "label": "Clinical Assessment",
+            "text": "We do a first screening to understand substance use history, co-occurring mental health conditions, medical needs, and any urgent concerns."
+          },
+          {
+            "label": "Insurance Verification",
+            "text": "We'll contact your provider and review your coverage. This step is completely free, private, and non-binding. Usually at the same time as step 2."
+          },
+          {
+            "label": "Personalized Treatment Plan",
+            "text": "Based on your needs and coverage, we'll match you with the most appropriate level of care within our network and discuss your recovery plan."
+          },
+          {
+            "label": "Intake Coordination",
+            "text": "Our team will help you prepare for admission, assist with transportation if needed, and ensure a smooth transition into treatment."
+          }
+        ],
+        "layout": "steps"
       },
       {
         "heading": "We Accept Most Insurance Plans",
-        "body": "See more about your insurance benefits verification"
+        "body": "",
+        "cta": {
+          "label": "Verify your insurance benefits",
+          "href": "/admissions/insurance-verification/"
+        }
       },
       {
         "heading": "Why Choose Quadrant?",
-        "body": "Choosing the right treatment center is one of the most important decisions you can make, for yourself or someone you love. At Quadrant, we combine evidence-based care with compassionate, personalized support to help each client build a strong foundation for lasting recovery. From the first phone call to aftercare planning, we're here to walk beside you every step of the way.\n\nFrom Detox to Aftercare\nComprehensive care at every stage of recovery from medical detox to outpatient treatment and ongoing support\n\nExperienced Medical Staff\nOur licensed addiction treatment professionals use evidence-based methods to deliver high-quality care.\n\nDual Diagnosis Programs\nTreat both substance use disorders and co-occurring mental health conditions like anxiety, depression, or PTSD.\n\nFamily Support Along the Way\nAddiction affects the whole family. We provide education and support services to help loved ones heal together.\n\nLuxury Healing Environment\nOur accredited facilities offer a safe, welcoming environment to support physical and emotional healing."
+        "body": "Choosing the right treatment center is one of the most important decisions you can make, for yourself or someone you love. At Quadrant, we combine evidence-based care with compassionate, personalized support to help each client build a strong foundation for lasting recovery. From the first phone call to aftercare planning, we're here to walk beside you every step of the way.",
+        "items": [
+          {
+            "label": "From Detox to Aftercare",
+            "text": "Comprehensive care at every stage of recovery from medical detox to outpatient treatment and ongoing support"
+          },
+          {
+            "label": "Experienced Medical Staff",
+            "text": "Our licensed addiction treatment professionals use evidence-based methods to deliver high-quality care."
+          },
+          {
+            "label": "Dual Diagnosis Programs",
+            "text": "Treat both substance use disorders and co-occurring mental health conditions like anxiety, depression, or PTSD."
+          },
+          {
+            "label": "Family Support Along the Way",
+            "text": "Addiction affects the whole family. We provide education and support services to help loved ones heal together."
+          },
+          {
+            "label": "Luxury Healing Environment",
+            "text": "Our accredited facilities offer a safe, welcoming environment to support physical and emotional healing."
+          }
+        ],
+        "layout": "tiles",
+        "cta": {
+          "label": "More about Quadrant Health Group",
+          "href": "/about/"
+        }
       }
     ],
     "faqs": [],
@@ -463,19 +517,58 @@
     "sections": [
       {
         "heading": "Treatment Might Cost Less Than You Think",
-        "body": "Not sure if your insurance covers drug or alcohol rehab? You're not alone, and the truth is, many health plans do. From medical detox to residential treatment and outpatient care, insurance often covers more than people expect. At Quadrant, we make it easy to verify your benefits through a fast, confidential, and free process. There's no obligation, no cost to you, and no impact on your policy. Our team will review your coverage and explain what services are available to you based on your plan.\n\nBelow are some of the addiction treatment programs your insurance may cover:\n- Detox\n- Residential Inpatient\n- Partial Hospitalization (PHP)\n- Intensive Outpatient (IOP)\n- Virtual Intensive Outpatient (VIOP)\n- Dual Diagnosis\n\nCall Today for a free verification\nPhone: (888) 970-6234"
+        "body": "Not sure if your insurance covers drug or alcohol rehab? You're not alone, and the truth is, many health plans do. From medical detox to residential treatment and outpatient care, insurance often covers more than people expect. At Quadrant, we make it easy to verify your benefits through a fast, confidential, and free process. There's no obligation, no cost to you, and no impact on your policy. Our team will review your coverage and explain what services are available to you based on your plan.\nBelow are some of the addiction treatment programs your insurance may cover:\n- Detox\n- Residential Inpatient\n- Partial Hospitalization (PHP)\n- Intensive Outpatient (IOP)\n- Virtual Intensive Outpatient (VIOP)\n- Dual Diagnosis",
+        "cta": {
+          "label": "Call (888) 970-6234 for a free verification",
+          "href": "tel:+18889706234"
+        }
       },
       {
         "heading": "Verify your insurance",
-        "body": "Don't want to call? Fill out the form below. Fast, private, and hassle-free.\n\nTake the first step toward recovery with a free and confidential insurance verification. Once you submit the form, one of our admissions specialists will review your information, check your benefits, and call you back to explain exactly what's covered. We will walk you through your options, answer your questions, and help you or your loved one get started. This process is fast, secure, and could be the turning point you've been waiting for.\n\nInsurance verification form fields: Last Name, First Name, Phone number, Email. [Send]\n\nMore questions about insurance? Check out our FAQ"
+        "body": "Don't want to call? Fill out the form below. Fast, private, and hassle-free.\nTake the first step toward recovery with a free and confidential insurance verification. Once you submit the form, one of our admissions specialists will review your information, check your benefits, and call you back to explain exactly what's covered. We will walk you through your options, answer your questions, and help you or your loved one get started. This process is fast, secure, and could be the turning point you've been waiting for.",
+        "cta": {
+          "label": "More questions about insurance? Read the FAQ",
+          "href": "/about/faq/"
+        }
       },
       {
         "heading": "We accept most Insurance plans",
-        "body": "Take the first step towards recovery\nCALL (888) 970-6234 NOW"
+        "body": "Take the first step towards recovery",
+        "cta": {
+          "label": "Call (888) 970-6234 now",
+          "href": "tel:+18889706234"
+        }
       },
       {
         "heading": "Why Choose Quadrant?",
-        "body": "Choosing the right treatment center is one of the most important decisions you can make, for yourself or someone you love. At Quadrant, we combine evidence-based care with compassionate, personalized support to help each client build a strong foundation for lasting recovery. From the first phone call to aftercare planning, we're here to walk beside you every step of the way.\n\nFrom Detox to Aftercare: Comprehensive care at every stage of recovery from medical detox to outpatient treatment and ongoing support\n\nExperienced Medical Staff: Our licensed addiction treatment professionals use evidence-based methods to deliver high-quality care.\n\nDual Diagnosis programs: Treat both substance use disorders and co-occurring mental health conditions like anxiety, depression, or PTSD.\n\nFamily support along the way: Addiction affects the whole family. We provide education and support services to help loved ones heal together.\n\nLuxury Healing Environment: Our accredited facilities offer a safe, welcoming environment to support physical and emotional healing.\n\nSee more about us"
+        "body": "Choosing the right treatment center is one of the most important decisions you can make, for yourself or someone you love. At Quadrant, we combine evidence-based care with compassionate, personalized support to help each client build a strong foundation for lasting recovery. From the first phone call to aftercare planning, we're here to walk beside you every step of the way.",
+        "items": [
+          {
+            "label": "From Detox to Aftercare",
+            "text": "Comprehensive care at every stage of recovery from medical detox to outpatient treatment and ongoing support"
+          },
+          {
+            "label": "Experienced Medical Staff",
+            "text": "Our licensed addiction treatment professionals use evidence-based methods to deliver high-quality care."
+          },
+          {
+            "label": "Dual Diagnosis programs",
+            "text": "Treat both substance use disorders and co-occurring mental health conditions like anxiety, depression, or PTSD."
+          },
+          {
+            "label": "Family support along the way",
+            "text": "Addiction affects the whole family. We provide education and support services to help loved ones heal together."
+          },
+          {
+            "label": "Luxury Healing Environment",
+            "text": "Our accredited facilities offer a safe, welcoming environment to support physical and emotional healing."
+          }
+        ],
+        "layout": "tiles",
+        "cta": {
+          "label": "More about Quadrant Health Group",
+          "href": "/about/"
+        }
       }
     ],
     "faqs": [],

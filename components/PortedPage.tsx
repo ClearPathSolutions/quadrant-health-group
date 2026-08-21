@@ -44,7 +44,52 @@ export default function PortedPage({ page }: { page: ContentPage }) {
             {page.sections.map((s, i) => (
               <div key={i}>
                 {s.heading && <h2>{s.heading}</h2>}
-                <Prose body={s.body} />
+                {s.body && <Prose body={s.body} />}
+
+                {/* CR-15 — structure the porting pass flattened. `items` was
+                    prose paragraphs; on the source these were numbered steps or
+                    feature tiles. */}
+                {s.items?.length ? (
+                  s.layout === "steps" ? (
+                    <div className={`${c.steps} mt-4`}>
+                      {s.items.map((it, n) => (
+                        <div key={it.label} className={c.step}>
+                          <span className={c.stepNum}>{n + 1}</span>
+                          <h3>{it.label}</h3>
+                          <p>{it.text}</p>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="grid grid-2 mt-4">
+                      {s.items.map((it) => (
+                        <div key={it.label} className={`card ${c.feature}`}>
+                          <div className={c.featureIcon}>
+                            <Icon name="check" size={24} />
+                          </div>
+                          <h3>{it.label}</h3>
+                          <p>{it.text}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )
+                ) : null}
+
+                {/* CR-15 — these were live links and buttons on the source. Four
+                    rendered as dead text, two of them phone numbers on the
+                    primary enquiry path, so untappable on mobile. */}
+                {s.cta &&
+                  (s.cta.href.startsWith("tel:") ? (
+                    <a href={s.cta.href} className="btn btn-lg mt-4">
+                      <Icon name="phone" size={18} />
+                      {s.cta.label}
+                    </a>
+                  ) : (
+                    <Link href={s.cta.href} className="btn mt-4">
+                      {s.cta.label}
+                      <Icon name="arrow-right" size={18} />
+                    </Link>
+                  ))}
               </div>
             ))}
 
