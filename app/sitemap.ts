@@ -27,7 +27,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...pages.map((p) => `/${p.slug}`),
     ...treatments.map((t) => `/treatment/${t.slug}`),
     ...locations.filter((l) => !l.comingSoon).map((l) => `/locations/${l.slug}`),
-    ...team.map((m) => `/team/${m.slug}`),
+    // Client instruction: staff bios are unlinked for now, so they are held out
+    // of the sitemap rather than shipped as orphaned pages. Restore alongside
+    // the card link.
+    // ...team.map((m) => `/team/${m.slug}`),
     ...posts.map((p) => `/blog/${p.slug}`),
   ];
   return [...staticRoutes, ...dynamic].map((path) => ({

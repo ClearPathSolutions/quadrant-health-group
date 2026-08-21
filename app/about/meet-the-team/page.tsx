@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import { teamByGroup } from "@/lib/content";
@@ -41,8 +40,12 @@ export default function TeamPage() {
             <div key={group} className={t.groupBlock}>
               <h2 className={t.groupTitle}>{group}</h2>
               <div className={t.grid}>
+                {/* Client instruction: staff cards are not linked for now. The
+                    /team/<slug> routes still build, so restoring the link is a
+                    one-line change — but they are dropped from the sitemap while
+                    unlinked so we are not publishing orphaned pages. */}
                 {members.map((m) => (
-                  <Link key={m.slug} href={`/team/${m.slug}`} className={`${t.card} reveal`}>
+                  <div key={m.slug} className={`${t.card} reveal`}>
                     <div className={t.photo}>
                       {m.image ? (
                         <Image
@@ -61,7 +64,7 @@ export default function TeamPage() {
                       <h3 className={t.name}>{m.name}</h3>
                       {m.role && <p className={t.role}>{m.role}</p>}
                     </div>
-                  </Link>
+                  </div>
                 ))}
               </div>
             </div>
