@@ -9,6 +9,8 @@ import { site, canonical, isIndexable } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
 import { organizationSchema } from "@/lib/schema";
 
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "GTM-N4W4LCGV";
+
 const CLARION_SITE_KEY =
   process.env.NEXT_PUBLIC_CLARION_SITE_KEY ||
   "cpx_-vOkPf-M2Zq1tmLgDgXOFblwF1FOh4sC";
@@ -87,6 +89,25 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${montserrat.variable} ${roboto.variable}`}>
       <body>
+        {/* Google Tag Manager. The noscript iframe is first inside <body> per
+            Google's snippet; the loader runs afterInteractive so it never
+            competes with first paint. dataLayer is initialised inline so any
+            push before GTM finishes loading is still picked up. */}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+        <Script id="gtm" strategy="afterInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${GTM_ID}');`}
+        </Script>
         {/* CallTrackingMetrics — loads in <head> site-wide for dynamic number
             insertion; must load early so on-page phone numbers get swapped. */}
         <Script src="//264810.tctm.co/t.js" strategy="beforeInteractive" />
