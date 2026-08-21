@@ -4,6 +4,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import Icon from "@/components/Icon";
 import FaqList from "@/components/FaqList";
+import Reviews from "@/components/Reviews";
 import Prose from "@/components/Prose";
 import {
   getTreatment,
@@ -116,12 +117,16 @@ export default function TreatmentDetail({ params }: { params: { slug: string } }
               </div>
             ))}
 
+            {/* T5.5 — 17 workbook rows ask for a Google reviews slide on the
+                treatment pages. Same Trustindex widget as /about/our-story;
+                hides itself if the domain is not licensed yet. */}
             {t.faqs.length > 0 && (
               <div className={d.faqs}>
                 <h2>Frequently asked questions</h2>
                 <FaqList items={t.faqs} />
               </div>
             )}
+            <Reviews heading="What our patients say" />
           </div>
 
           {/* Sidebar */}

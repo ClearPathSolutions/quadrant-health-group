@@ -27,6 +27,7 @@ const iconFor: Record<string, IconName> = {
   "intensive-outpatient": "calendar",
   "virtual-intensive-outpatient": "monitor",
   "dual-diagnosis": "heart",
+  aftercare: "steps",
   "individual-therapy": "user",
   "group-therapy": "users",
   "family-therapy": "heart",

@@ -43,8 +43,8 @@ export default function AboutPage() {
         <div className={`container ${c.split} ${c.splitWide}`}>
           <div className={`${c.mediaCard} reveal`}>
             <Image
-              src="/images/photos/facility-interior.jpg"
-              alt="Inside a Quadrant Health Group treatment center"
+              src="/images/photos/reception-des-moines.jpg"
+              alt="The reception area at Des Moines Wellness Center, one of the network's centers"
               width={900}
               height={675}
               sizes="(max-width: 900px) 90vw, 46vw"
