@@ -337,7 +337,10 @@ export const locations: Location[] = [
   {
     slug: "wellness-detox-la",
     name: "Wellness Detox of LA",
-    city: "Los Angeles",
+    // wellnessdetoxla.com gives 625 E Phillips Blvd, Pomona, CA 91766 — roughly
+    // 30 miles east of Los Angeles. Brand name keeps "LA"; the city follows
+    // their site.
+    city: "Pomona",
     state: "CA",
     region: "California",
     image: "/images/locations/wellness-detox-la.png",
@@ -364,13 +367,16 @@ export const locations: Location[] = [
   {
     slug: "fort-worth-wellness",
     name: "Fort Worth Wellness Center",
-    city: "Fort Worth",
+    // Their own contact block and "How to Find Us" both give 101 Mariah Drive,
+    // Weatherford, Texas 76087 — about 30 miles west of Fort Worth. The facility
+    // brands as Fort Worth and keeps that name, but the city follows their site.
+    city: "Weatherford",
     state: "TX",
     region: "Texas",
     image: "/images/photos/property-1.jpg",
     hasCard: false,
     blurb:
-      "Fort Worth Wellness Center provides dedicated, primary residential mental health treatment in a comfortable, supportive setting.",
+      "Fort Worth Wellness Center provides residential mental health and dual diagnosis treatment with 24/7 clinical support, medical detox and aftercare planning on a private campus west of Fort Worth.",
     // Scraped from fortworthwellness.org: their own nav lists Detox,
     // Residential Mental Health, Dual Diagnosis and Aftercare Planning. Ours
     // claimed only two of the four.
@@ -408,7 +414,9 @@ export const locations: Location[] = [
   {
     slug: "des-moines-wellness",
     name: "Des Moines Wellness Center",
-    city: "Des Moines",
+    // desmoinesrecovery.com gives 5820 Winwood Dr, Johnston, IA 50131 — a Des
+    // Moines suburb. Brand name keeps "Des Moines"; the city follows their site.
+    city: "Johnston",
     state: "IA",
     region: "Iowa",
     // T8.3b — was aerial-2.jpg, a Texas ranch property standing in for an Iowa
