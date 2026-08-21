@@ -46,7 +46,11 @@ export type TeamMember = {
 };
 
 /**
- * Display order for the team page, following visual row 856.
+ * Display order for the team page.
+ *
+ * CR-04 — facility-level staff are no longer published on the parent site, so
+ * the facility groups are gone; each facility's own site owns its team. CR-03
+ * splits HR and Alumni out of the groups they were folded into.
  *
  * Groups with no members are skipped, so the corporate sections stay hidden
  * until T3.2 publishes those 30 bios and then appear in the right place with no
@@ -57,19 +61,10 @@ export type TeamMember = {
 export const TEAM_GROUP_ORDER = [
   "Founders",
   "Corporate Leadership Team",
-  "Business Development & Alumni Services",
+  "Human Resources",
+  "Business Development",
+  "Alumni Services",
   "Admissions & Client Care",
-  "Clinical & Operations",
-  "California Leadership",
-  "Marina Harbor Detox",
-  "Laguna View Detox",
-  "Ocean Coast Recovery Center",
-  "Hillside Mission Recovery",
-  "Texas Facilities",
-  "Florida Facilities — Seaside Wellness of Palm Beach",
-  "New Jersey Facilities — Wellness Recovery NJ",
-  "Iowa Facilities — Des Moines Wellness Center",
-  "Kentucky Facilities — Wellness Ranch",
 ];
 
 /** The roster split into row 856's groups, empty groups omitted. */
