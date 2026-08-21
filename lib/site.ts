@@ -467,6 +467,34 @@ export const locations: Location[] = [
     care: ["Virtual Outpatient", "Dual Diagnosis", "Mental Health"],
     website: "https://greatertexasbehavioral.com",
   },
+  {
+    // CR-13c — Kentucky existed nowhere in this file, so the network's Kentucky
+    // centre had no tile and no page while the About timeline was due to claim
+    // it. Everything below comes from the facility's own site (wellnessranchky.com
+    // — the vercel.app link the client sent serves the same build).
+    //
+    // Their site publishes no town anywhere: the copy says "a private Kentucky
+    // ranch campus" throughout, which reads as deliberate discretion for a
+    // residential mental health facility rather than missing data. `city` uses
+    // their own phrasing; swap in the town if the client wants it named.
+    slug: "wellness-ranch-kentucky",
+    name: "Wellness Ranch Kentucky",
+    city: "Private ranch campus",
+    state: "KY",
+    region: "Kentucky",
+    image: "/images/locations/wellness-ranch-kentucky.jpg",
+    hasCard: false,
+    blurb:
+      "A private ranch campus in Kentucky built for mental wellness — residential mental health and integrated dual diagnosis care with medical detox and 24/7 clinical support, on tranquil grounds well away from everyday triggers.",
+    care: [
+      "Detox",
+      "Residential",
+      "Mental Health Inpatient",
+      "Dual Diagnosis",
+      "Aftercare",
+    ],
+    website: "https://wellnessranchky.com",
+  },
 ];
 
 export const whyPoints = [

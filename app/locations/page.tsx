@@ -20,7 +20,9 @@ export const metadata: Metadata = {
 
 // Any region missing from this list is silently dropped from the page, so it
 // must be extended whenever a location in a new state is added.
-const order = ["California", "Texas", "Florida", "New Jersey", "Iowa", "Ohio"];
+// Regions render in this order; any region not listed is silently dropped, so a
+// new location needs its region added here as well as in lib/site.ts.
+const order = ["California", "Texas", "Florida", "New Jersey", "Iowa", "Ohio", "Kentucky"];
 
 export default function LocationsPage() {
   const byRegion = order
