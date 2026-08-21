@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import AvatarPlaceholder from "@/components/AvatarPlaceholder";
 import { notFound } from "next/navigation";
 import Icon from "@/components/Icon";
 import { getTeamMember, team } from "@/lib/content";
@@ -58,9 +59,7 @@ export default function BioPage({ params }: { params: { slug: string } }) {
               {m.image ? (
                 <Image src={m.image} alt={m.name} width={500} height={500} priority sizes="(max-width: 800px) 90vw, 340px" />
               ) : (
-                <span className={b.initials}>
-                  {m.name.split(/\s+/).slice(0, 2).map((w) => w[0]).join("")}
-                </span>
+                <AvatarPlaceholder label={m.name} />
               )}
             </div>
             <a href={site.phoneHref} className="btn btn-block mt-3">

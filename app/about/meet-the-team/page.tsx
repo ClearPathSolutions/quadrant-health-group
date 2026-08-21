@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import AvatarPlaceholder from "@/components/AvatarPlaceholder";
 import PageHero from "@/components/PageHero";
 import { teamByGroup } from "@/lib/content";
 import t from "./team.module.css";
@@ -16,10 +17,6 @@ export const metadata: Metadata = {
       "Meet the licensed clinicians, medical professionals, and care coordinators behind Quadrant Health Group — the compassionate experts guiding your recovery.",
   }),
 };
-
-function initials(name: string) {
-  return name.split(/\s+/).slice(0, 2).map((w) => w[0]).join("").toUpperCase();
-}
 
 export default function TeamPage() {
   return (
@@ -57,7 +54,7 @@ export default function TeamPage() {
                           sizes="(max-width: 620px) 50vw, (max-width: 960px) 33vw, 25vw"
                         />
                       ) : (
-                        <span className={t.initials}>{initials(m.name)}</span>
+                        <AvatarPlaceholder label={m.name} />
                       )}
                     </div>
                     <div className={t.info}>
