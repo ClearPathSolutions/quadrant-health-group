@@ -16,7 +16,7 @@ logged, not taken from the request text.
 
 Received 2026-08-21. Four requests.
 
-### CR-01 — Write out "Quadrant Health Group" in full · `needs answer`
+### CR-01 — Write out "Quadrant Health Group" in full · `done` ✓
 
 > "I think we should be writing out the complete 'Quadrant Health Group' when
 > referencing our company name."
@@ -40,7 +40,7 @@ treatment titles already exceed 60 characters (logged as F-07 in `issues.md`).
 
 ---
 
-### CR-02 — Hero wording and the "behavioral health" swap · `needs answer`
+### CR-02 — Hero wording and the "behavioral health" swap · `done` ✓
 
 > "And instead of 'addiction treatment centers' can we say 'behavioral health'
 > centers?"
@@ -64,7 +64,7 @@ choice rather than a side effect. Client's call either way.
 
 ---
 
-### CR-03 — Give HR and Alumni their own sections on the staff page · `open`
+### CR-03 — Give HR and Alumni their own sections on the staff page · `done` ✓
 
 > "can we build out HR and ALUMNI to have their own sections on the staff page?"
 
@@ -80,7 +80,7 @@ for who belongs where.
 
 ---
 
-### CR-04 — Remove all facility-level staff from the parent site · `open`
+### CR-04 — Remove all facility-level staff from the parent site · `done` ✓
 
 > "and we're getting rid of all staff at a facility levels from the Quadrant
 > site\*\*\*\*\*\*\*\* (all headshots should be in the folder as well)"
@@ -127,7 +127,7 @@ each person's page on their facility's own site where one exists?
 
 Received 2026-08-21.
 
-### CR-05 — Use the horizontal logo in the footer · `open`
+### CR-05 — Use the horizontal logo in the footer · `done` ✓
 
 > "Can we use Horizontal logo for footer?"
 
@@ -164,7 +164,7 @@ wordmark, so this change reinforces CR-01 rather than conflicting with it.
 
 Received 2026-08-21.
 
-### CR-06 — Phone number is crowded by the CTA band · `open`
+### CR-06 — Phone number is crowded by the CTA band · `done` ✓
 
 > "^ this looks really tight where the phone number is placed"
 > — on `/admissions/`, the `(888) 970-6234` block against "Let healing begin today"
@@ -201,7 +201,7 @@ intended overlap design.
 
 Received 2026-08-21.
 
-### CR-07 — Every mention of addiction should include mental health · `open`
+### CR-07 — Every mention of addiction should include mental health · `partly done`
 
 > "^ everything needs to include mental health as well, not just addiction."
 > — on `/about/our-story/`, flagging "We Empower Lasting Substance Abuse
@@ -250,7 +250,7 @@ health coverage rather than dropping addiction terms.
 
 Received 2026-08-21.
 
-### CR-08 — No mention of mental health on /treatment#levels · `open`
+### CR-08 — No mention of mental health on /treatment#levels · `done` ✓
 
 > "^ there's no mention of mental health on here" — on
 > `https://quadrant-health-group.vercel.app/treatment/#levels`
@@ -274,7 +274,7 @@ Every level Quadrant offers treats mental health as well as substance use, so
 the copy understates the service. Fix the two substance-only titles, the five
 card descriptions and the section intro.
 
-### CR-08b — Two level cards render an empty description · `open` · **not in the client's list**
+### CR-08b — Two level cards render an empty description · `done` ✓ · **not in the client's list**
 
 Found while checking the above. `intro` is an empty string for two of the six
 levels, so those cards render a blank paragraph on `/treatment#levels`:
@@ -303,7 +303,7 @@ full CR-07 copy pass is scheduled.
 
 Received 2026-08-21. Six items, all on `/locations/`.
 
-### CR-09 — Remove Virtual IOP from Dallas Detox Center · `open`
+### CR-09 — Remove Virtual IOP from Dallas Detox Center · `done` ✓
 
 > "get rid of virtual IOP from DDC"
 
@@ -313,7 +313,7 @@ Received 2026-08-21. Six items, all on `/locations/`.
 Check the detail page copy and `locationDetails.json` for the same claim, not
 just the tile chip.
 
-### CR-10 — Add Greater Texas Behavioral as its own tile · `open`
+### CR-10 — Add Greater Texas Behavioral as its own tile · `done` ✓
 
 > "add Greater Texas Behavioral as it's own tile
 > ( https://greatertexasbehavioral.com/ ) virtual outpatient - dual diagnosis -
@@ -332,7 +332,7 @@ its own tile.
 V0044/V0046 established it is a virtual provider with no physical address. Needs
 a branded face-card in the house style, same approach as Ohio.
 
-### CR-11 — Add mental health care levels to three locations · `open`
+### CR-11 — Add mental health care levels to three locations · `done` ✓
 
 > "add MH inpatient to Seaside / add MH outpatient to NJ / add MH inpatient to
 > Des Moines"
@@ -351,7 +351,7 @@ treatment pages so the chips become links. It has no entry for the mental health
 labels, `Aftercare`, or the new `Virtual Outpatient` — those render as plain
 text. Fine for now, but if these should link somewhere, the map needs extending.
 
-### CR-12 — Fix the Ohio tile: wrong name and description · `open`
+### CR-12 — Fix the Ohio tile: wrong name and description · `done` ✓
 
 > "Ohio needs fixed: Incorrect Ohio name and description"
 > "PHP - IOP - OP - Virtual"
@@ -380,7 +380,7 @@ levels are already given.
 
 Received 2026-08-21.
 
-### CR-13 — "Our Most Recent" should read Iowa, Kentucky, Ohio · `open`
+### CR-13 — "Our Most Recent" should read Iowa, Kentucky, Ohio · `done` ✓
 
 > "^ this should probably be: Iowa, Kentucky, Ohio"
 
@@ -406,14 +406,14 @@ to go:
 
 Recommend the second, but it is the client's story to tell.
 
-### CR-13b — "Dallas View Detox" is not a real facility · `open` · **not in the client's list**
+### CR-13b — "Dallas View Detox" is not a real facility · `done` ✓ · **not in the client's list**
 
 Found while reading the timeline. `sections[3]` names **"Dallas View Detox"**.
 No such facility exists — the network has `Dallas Detox Center` and
 `Laguna View Detox`, and this reads as the two names merged. It is live on a
 public page in the founding-story section.
 
-### CR-13c — Kentucky has no location tile · `open` · **dependency, not a request**
+### CR-13c — Kentucky has no location tile · `done` ✓ · **dependency, not a request**
 
 If the timeline is going to claim Kentucky as a recent expansion, note that
 **Kentucky does not exist in `lib/site.ts` at all** — zero mentions — and
@@ -435,7 +435,7 @@ description, website — and there is no Kentucky photography in any asset folde
 
 Received 2026-08-21.
 
-### CR-14 — Reviews missing on /about/our-story/ · `open`
+### CR-14 — Reviews missing on /about/our-story/ · `done` ✓
 
 > "^ reviews are missing here" — the "What our patients say about us" section
 
@@ -483,7 +483,7 @@ before it goes live rather than after.
 
 Received 2026-08-21.
 
-### CR-15 — "Why Choose Quadrant?" was tiles, now flat paragraphs · `open`
+### CR-15 — "Why Choose Quadrant?" was tiles, now flat paragraphs · `done` ✓
 
 > "i think the bottom of this insurance veriication page, got pulled over and
 > formatted wrong 'see more' isn't clickable, and these look like they may have
@@ -546,7 +546,7 @@ prose and a flat bullet list.
 
 Received 2026-08-21.
 
-### CR-16 — Repeated bullets at the bottom of /about/alumni · `open`
+### CR-16 — Repeated bullets at the bottom of /about/alumni · `done` ✓
 
 > "^ the highlighted bullet points are repeated from a section above. they need
 > removed"

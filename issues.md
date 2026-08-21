@@ -2331,7 +2331,7 @@ dedicated per-facility pages.
 - [x] **T4.3 — Add a facility-website button to all 10 location pages** visual 1074–1083
   - Next to the existing Call and Verify Insurance buttons in [app/locations/[slug]/page.tsx](app/locations/[slug]/page.tsx).
 
-- [ ] **T4.4 — Build the two missing location pages** `V0090`
+- [x] **T4.4 — Build the two missing location pages** `V0090`
   - Des Moines Wellness Center and Greater Texas Behavioral.
   - Des Moines exists in [lib/site.ts](lib/site.ts) but is flagged `comingSoon: true`, so it is excluded from `generateStaticParams` — visual row 1084 logs the same thing from the front end.
   - Greater Texas is absent from the data entirely and appears zero times in the locations copy. V0090's verification instructs that the format be settled first: V0044/V0046 established Greater Texas is a virtual provider with no physical address, so the row's note is that *"a service-line entry would fit better… worth deciding rather than defaulting."* Settle that, then build.
@@ -2360,16 +2360,16 @@ treat them as template work plus a content pass — not 219 separate edits.
 - [ ] **T5.3 — Topic widgets** — 32 rows
   - New component. Renders the topics named in a section's copy as linked cards.
 
-- [ ] **T5.4 — Capitalization pass** — 18 rows
+- [x] **T5.4 — Capitalization pass** — 18 rows
   - Title-case failures and random mid-sentence capitals. Pure copy edits in `treatments.json`.
 
-- [ ] **T5.5 — Google reviews slide** — 17 rows
+- [x] **T5.5 — Google reviews slide** — 17 rows
   - One per treatment page, in the "Recovering from X Is Possible" section. New component.
 
 - [ ] **T5.6 — Add the missing standard blocks** — 14 rows
   - "Therapies we offer:" and "About us:" are absent on 14 pages that should carry them.
 
-- [ ] **T5.7 — Remove the duplicated subtitle** — 8 rows
+- [x] **T5.7 — Remove the duplicated subtitle** — 8 rows
   - The copy under the page title repeats the first section verbatim. Likely `intro` and `sections[0].body` holding the same text — check the data before changing the template.
 
 - [ ] **T5.8 — Sibling-facility widgets** — 6 rows
@@ -2379,7 +2379,7 @@ treat them as template work plus a content pass — not 219 separate edits.
 - [ ] **T5.10 — One-off rows** — 26 rows
   - No shared pattern; work from the per-page tables in Part 4.
 
-- [ ] **T5.11 — Review the two unaudited treatment pages**
+- [x] **T5.11 — Review the two unaudited treatment pages**
   - `barbiturates-addiction` and `fentanyl-addiction` have no rows in the workbook. They were not reviewed, not cleared. Apply the same checks.
 
 ## WP-6 · Other pages
@@ -2392,9 +2392,9 @@ treat them as template work plus a content pass — not 219 separate edits.
 - [x] **T6.2 — Fill the missing staff photo** visual 857 · done
   - `olivia-hadjerioua` had no photo. The headshot folder contained `Texas/Olivia Hadjerioua.png`, so she now has her own rather than the placeholder row 857 proposed. Closes F-08's photo gap too.
 
-- [ ] **T6.3 — Replace the About page photo** visual 858
+- [x] **T6.3 — Replace the About page photo** visual 858
 
-- [ ] **T6.4 — Unify the blog** visual 861
+- [x] **T6.4 — Unify the blog** visual 861
   - Clarion-authored posts render in a separate section from the seven native posts. All published posts should appear in one feed.
   - Touches [components/ClarionBlog.tsx](components/ClarionBlog.tsx) and [app/blog/page.tsx](app/blog/page.tsx). Note the Clarion embed only reveals itself once real content renders, so an empty feed currently hides the section entirely.
 
@@ -2407,13 +2407,13 @@ treat them as template work plus a content pass — not 219 separate edits.
 Three places where a document instructs that something be established before the work
 proceeds. These are part of the spec, not challenges to it.
 
-- [ ] **T7.1 — Build the aftercare page** `V0095`
+- [x] **T7.1 — Build the aftercare page** `V0095`
   - V0095's fix is *"Adopt /treatment/aftercare portfolio-wide."* This site has none, and its verification classes the three sites without one as a build decision rather than a rename. Build it at `/treatment/aftercare`.
 
 - [ ] **T7.2 — Pull the search-volume data for `opiate` vs `opioid`** `V0089` · blocks T2.2
   - V0089's own correction requires it: *"That should either be validated with keyword data or reworded to drop the volume claim."* The verification note adds that Semrush is connected, so the question is checkable — and that if the data does not support `opioid`, the standard flips.
 
-- [ ] **T7.3 — Settle the Greater Texas page format** `V0090` · blocks T4.4
+- [x] **T7.3 — Settle the Greater Texas page format** `V0090` · blocks T4.4
   - Location page or service-line entry. V0090's verification asks for this explicitly, since Greater Texas is a virtual provider with no physical address.
 
 **Closed, no longer open questions:** the facility count is 12 (visual 859). V0096 and V0099
@@ -2442,7 +2442,7 @@ ownership model is the sheet's corrected position, applied in T3.6.
   - Every treatment detail page, including the highest-intent ones, is fronted by stock.
   - The facility folders cover interiors and exteriors but not therapy-session or family scenes. **Decide the approach first** — shoot, license a named library, or design around it.
 
-- [ ] **T8.5 — Confirm the insurance carrier logos** Part 8.5
+- [x] **T8.5 — Confirm the insurance carrier logos** Part 8.5
   - `insurance.png` bakes Aetna, Humana, Anthem, Cigna, TRICARE, UnitedHealthcare and VA marks into one image. Confirm every carrier relationship is accurate, and rebuild as real markup so the names are readable by search engines and screen readers.
 
 ---
