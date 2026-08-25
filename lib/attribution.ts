@@ -123,6 +123,117 @@ export function captureFirstTouch(): void {
   });
 }
 
+/* ------------------------------------------------------------------------- *
+ * Session layer
+ *
+ * First touch above answers "what brought this person to the site, ever". A
+ * session answers "what is this particular visit". They are separate on
+ * purpose: a visit expires after 30 minutes idle, while first touch survives 30
+ * days, so one first-touch record spans many visits.
+ * ------------------------------------------------------------------------- */
+
+const SESSION_KEY = "qhg.attribution.session.v1";
+const SESSION_IDLE_MS = 30 * 60 * 1000; // 30 minutes idle ends the visit
+
+type Session = {
+  /**
+   * OUR id for the visit, and only ever ours. It must never be sent as
+   * `ctm_visitor_sid` — see `ctmSessionId` below for why a UUID in that field
+   * is worse than nothing.
+   */
+  id: string;
+  started_at: number;
+  last_seen_at: number;
+  pageviews: number;
+  /** Entry point for THIS visit, which a mid-visit ad click can replace. */
+  landing_page_url: string;
+  referrer: string;
+  params: Record<string, string>;
+  /** True once a fresh ad click has re-attributed the visit in flight. */
+  reattributed: boolean;
+};
+
+function newSessionId(): string {
+  try {
+    if (typeof crypto !== "undefined" && typeof crypto.randomUUID === "function") {
+      return crypto.randomUUID();
+    }
+  } catch {
+    /* fall through */
+  }
+  // Not a secure context, or an old browser. Uniqueness is all this needs.
+  return `s-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
+}
+
+function readSession(): Session | null {
+  try {
+    const raw = localStorage.getItem(SESSION_KEY);
+    if (!raw) return null;
+    const v = JSON.parse(raw) as Session | null;
+    if (!v || typeof v !== "object") return null;
+    if (typeof v.id !== "string" || typeof v.last_seen_at !== "number") return null;
+    return v;
+  } catch {
+    return null;
+  }
+}
+
+function writeSession(v: Session): void {
+  try {
+    localStorage.setItem(SESSION_KEY, JSON.stringify(v));
+  } catch {
+    /* storage unavailable — attribution degrades, submission must not */
+  }
+}
+
+/**
+ * Call on every pageview, including client-side route changes.
+ *
+ * Idempotent in the sense that matters: it never corrupts state, though it does
+ * count each call as a pageview, which is the point.
+ */
+export function recordPageview(): void {
+  if (typeof window === "undefined") return;
+
+  // First touch is maintained independently of the visit.
+  captureFirstTouch();
+
+  const now = Date.now();
+  const params = currentParams();
+  const freshClick = Object.keys(params).length > 0;
+
+  let s = readSession();
+  if (s && now - s.last_seen_at > SESSION_IDLE_MS) s = null; // idled out
+
+  if (!s) {
+    writeSession({
+      id: newSessionId(),
+      started_at: now,
+      last_seen_at: now,
+      pageviews: 1,
+      landing_page_url: window.location.href,
+      referrer: externalReferrer(),
+      params,
+      reattributed: false,
+    });
+    return;
+  }
+
+  s.last_seen_at = now;
+  s.pageviews += 1;
+
+  // A fresh ad click mid-visit re-attributes in place: same person, still
+  // browsing, but the new campaign is the one that earned the conversion. The
+  // session id is kept so a single visit does not fragment into two.
+  if (freshClick) {
+    s.params = params;
+    s.landing_page_url = window.location.href;
+    s.reattributed = true;
+  }
+
+  writeSession(s);
+}
+
 /**
  * CTM's visitor session id: 24 hex characters, no dashes.
  *
@@ -159,6 +270,57 @@ export function ctmSessionId(): string | null {
   return sid || cookieId || null;
 }
 
+/** Clarion's un-prefixed shape: `{source, medium, campaign, term, content}`. */
+function utmFrom(p: Record<string, string>): Record<string, string> | null {
+  const utm: Record<string, string> = {};
+  for (const k of ["source", "medium", "campaign", "term", "content"]) {
+    const v = p[`utm_${k}`];
+    if (v) utm[k] = v;
+  }
+  return Object.keys(utm).length > 0 ? utm : null;
+}
+
+/** `gclid` proper, else Google's iOS / consent-mode substitutes. */
+function gclidFrom(p: Record<string, string>): string | null {
+  return p.gclid || p.wbraid || p.gbraid || null;
+}
+
+export type SessionSnapshot = {
+  id: string;
+  started_at: string;
+  last_seen_at: string;
+  pageviews: number;
+  landing_page_url: string;
+  referrer: string | null;
+  utm: Record<string, string> | null;
+  gclid: string | null;
+  reattributed: boolean;
+};
+
+/**
+ * The visit as it stands, for the lead payload.
+ *
+ * Deliberately carries no list of pages visited. On this site a path names a
+ * diagnosis, so a per-visit browsing trail would ship "what this person
+ * considered" into a CRM. `pageviews` gives the engagement depth that trail was
+ * wanted for, without the disclosure.
+ */
+function sessionSnapshot(): SessionSnapshot | null {
+  const s = typeof window === "undefined" ? null : readSession();
+  if (!s) return null;
+  return {
+    id: s.id,
+    started_at: new Date(s.started_at).toISOString(),
+    last_seen_at: new Date(s.last_seen_at).toISOString(),
+    pageviews: s.pageviews,
+    landing_page_url: s.landing_page_url,
+    referrer: s.referrer || null,
+    utm: utmFrom(s.params),
+    gclid: gclidFrom(s.params),
+    reattributed: s.reattributed,
+  };
+}
+
 export type LeadAttribution = {
   page_url: string;
   landing_page_url: string;
@@ -166,6 +328,7 @@ export type LeadAttribution = {
   utm: Record<string, string> | null;
   gclid: string | null;
   ctm_visitor_sid: string | null;
+  session: SessionSnapshot | null;
 };
 
 /**
@@ -177,21 +340,15 @@ export function leadAttribution(): LeadAttribution {
   const ft = typeof window === "undefined" ? null : read();
   const p = ft?.params ?? {};
 
-  const utm: Record<string, string> = {};
-  for (const k of ["source", "medium", "campaign", "term", "content"]) {
-    const v = p[`utm_${k}`];
-    if (v) utm[k] = v;
-  }
-
   return {
     page_url: typeof window === "undefined" ? "" : window.location.href,
     landing_page_url:
       ft?.landing_page_url ??
       (typeof window === "undefined" ? "" : window.location.href),
     referrer: ft?.referrer || null,
-    utm: Object.keys(utm).length > 0 ? utm : null,
-    // gclid proper, else the iOS / consent-mode substitutes.
-    gclid: p.gclid || p.wbraid || p.gbraid || null,
+    utm: utmFrom(p),
+    gclid: gclidFrom(p),
     ctm_visitor_sid: ctmSessionId(),
+    session: sessionSnapshot(),
   };
 }

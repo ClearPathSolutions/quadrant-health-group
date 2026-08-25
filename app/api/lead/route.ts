@@ -96,6 +96,73 @@ function utm(v: unknown): Record<string, string> | null {
   return Object.keys(out).length > 0 ? out : null;
 }
 
+/* --- session sanitising -------------------------------------------------- *
+ * The client sends a `session` object describing the visit. This endpoint is
+ * public and unauthenticated, so that object's shape is entirely
+ * attacker-controlled: it gets rebuilt from scratch rather than forwarded, and
+ * every dimension that can grow is capped.
+ * ------------------------------------------------------------------------- */
+
+const SESSION_MAX_DEPTH = 4;
+const SESSION_MAX_KEYS = 24;
+const SESSION_MAX_ARRAY = 20;
+const SESSION_MAX_STRING = 512;
+const SESSION_MAX_BYTES = 4_000;
+
+/**
+ * `JSON.parse('{"__proto__": ...}')` creates a real own property, and
+ * `Object.entries` will hand it back, so these are dropped by name.
+ */
+const UNSAFE_KEYS = new Set(["__proto__", "constructor", "prototype"]);
+
+function sanitizeValue(v: unknown, depth: number): unknown {
+  if (v === null) return null;
+  const t = typeof v;
+  if (t === "string") return (v as string).slice(0, SESSION_MAX_STRING);
+  if (t === "number") return Number.isFinite(v as number) ? v : null;
+  if (t === "boolean") return v;
+  // Anything deeper than this is not attribution, whatever it claims to be.
+  if (depth >= SESSION_MAX_DEPTH) return null;
+  if (Array.isArray(v)) {
+    return v
+      .slice(0, SESSION_MAX_ARRAY)
+      .map((x) => sanitizeValue(x, depth + 1))
+      .filter((x) => x !== null);
+  }
+  if (t === "object") {
+    const out: Record<string, unknown> = {};
+    let kept = 0;
+    for (const [k, val] of Object.entries(v as Record<string, unknown>)) {
+      if (kept >= SESSION_MAX_KEYS) break;
+      if (UNSAFE_KEYS.has(k)) continue;
+      const clean = sanitizeValue(val, depth + 1);
+      if (clean !== null) {
+        out[k] = clean;
+        kept++;
+      }
+    }
+    return out;
+  }
+  return null; // functions, symbols, undefined
+}
+
+function sanitizeSession(v: unknown): Record<string, unknown> | null {
+  if (!v || typeof v !== "object" || Array.isArray(v)) return null;
+  const clean = sanitizeValue(v, 0) as Record<string, unknown> | null;
+  if (!clean || Object.keys(clean).length === 0) return null;
+  // The per-field caps still allow a wide shallow object, so cap the total.
+  if (JSON.stringify(clean).length > SESSION_MAX_BYTES) return null;
+  return clean;
+}
+
+/**
+ * Statuses worth one retry with `session` removed — the ones that plausibly
+ * mean "I do not accept this field". Deliberately not every 4xx: a 403 is the
+ * origin allowlist and a 429 is the throttle, and dropping a field fixes
+ * neither, so retrying those would just double the traffic per lead.
+ */
+const RETRY_WITHOUT_SESSION = new Set([400, 409, 415, 422]);
+
 export async function POST(req: Request) {
   const ip =
     req.headers.get("x-forwarded-for")?.split(",")[0].trim() || "unknown";
@@ -154,6 +221,7 @@ export async function POST(req: Request) {
     gclid: str(data.gclid, 500) || null,
     ctm_visitor_sid: sid,
     user_agent: visitorUa || BROWSER_UA,
+    session: sanitizeSession(data.session),
   };
 
   // F-02 / F-05 — when Clarion rejects or is unreachable the lead is NOT
@@ -186,8 +254,8 @@ export async function POST(req: Request) {
     );
   }
 
-  try {
-    const res = await fetch(`${CLARION_API}/forms/public/submit`, {
+  const send = (body: unknown) =>
+    fetch(`${CLARION_API}/forms/public/submit`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -196,15 +264,35 @@ export async function POST(req: Request) {
         Origin: origin,
         "User-Agent": visitorUa || BROWSER_UA,
       },
-      body: JSON.stringify(payload),
+      body: JSON.stringify(body),
     });
 
+  try {
+    let res = await send(payload);
+    let sessionDropped = false;
+
+    // `session` is a key Clarion was never asked to accept. If their validation
+    // is strict, an unknown field turns every lead into an error — and losing
+    // admissions enquiries to gain attribution is not a trade worth making. The
+    // lead goes through without it.
+    if (!res.ok && payload.session && RETRY_WITHOUT_SESSION.has(res.status)) {
+      console.warn(
+        `[lead] ${res.status} with session ref=${ref} — retrying without it`
+      );
+      const { session: _omit, ...withoutSession } = payload;
+      res = await send(withoutSession);
+      sessionDropped = true;
+    }
+
     if (!res.ok) {
-      logFailure(`submit_${res.status}`);
+      logFailure(`submit_${res.status}${sessionDropped ? "_no_session" : ""}`);
       return NextResponse.json({ ok: true, delivered: false, ref });
     }
 
-    console.log(`[lead] delivered ref=${ref} form=${payload.form_key} ctmSid=${sidSource}`);
+    console.log(
+      `[lead] delivered ref=${ref} form=${payload.form_key} ctmSid=${sidSource}` +
+        `${sessionDropped ? " session=dropped" : ""}`
+    );
     return NextResponse.json({ ok: true, delivered: true });
   } catch (e) {
     logFailure(`exception_${(e as Error)?.name || "unknown"}`);
