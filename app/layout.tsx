@@ -109,14 +109,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','${GTM_ID}');`}
         </Script>
-        {/* CallTrackingMetrics — loads site-wide for dynamic number insertion
-            and must load eagerly, so a visitor never reads and dials a number
-            that has not been swapped yet. Absolute https, not the
-            protocol-relative form. */}
-        <Script
-          src="https://264810.tctm.co/t.js"
-          strategy="beforeInteractive"
-        />
+        {/* CallTrackingMetrics — dynamic number insertion, site-wide.
+
+            DO NOT make this synchronous or move it to a blocking strategy. The
+            rollout spec says to load t.js eagerly; that guidance is wrong and
+            this is a deliberate override. Two silent failures come from a
+            synchronous tag:
+
+              1. A sync tag in <head> executes before <body> exists. CTM's
+                 number scan defaults its root to document.body and no-ops when
+                 that is null, so it can miss every number on the page. Nothing
+                 swaps, all visitors see the same hardcoded number, and CTM is
+                 left guessing which web session an inbound call belongs to —
+                 call attribution then fails intermittently.
+              2. On React it swaps before hydration, and React then reverts it
+                 and replaces the server HTML wholesale.
+
+            Neither surfaces as an error. `async` fixes both: the scan runs
+            after body exists and after hydration, so the swap sticks.
+
+            Absolute https, not protocol-relative. Root layout, so it is on
+            every page including campaign landing pages. Exactly one copy —
+            count with script[src*="tctm.co/t.js"], NOT script[src*="tctm.co"],
+            which returns 2 on a correct install because t.js injects its own
+            p.js. Removing that "extra" breaks CTM. */}
+        <script async src="https://264810.tctm.co/t.js" />
         {/* Enable scroll-reveal only when JS is available — runs before paint
             so content is never hidden for no-JS users or before hydration. */}
         <script
