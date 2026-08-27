@@ -135,6 +135,15 @@
     "group": "Corporate Leadership Team"
   },
   {
+    "slug": "erika-sirianos",
+    "name": "Erika Sirianos",
+    "role": "Human Resources & Payroll Director",
+    "credentials": "SPHR, SHRM-CP",
+    "bio": "With over 20 years of progressive leadership experience, Erika Sirianos is a seasoned Human Resources and Payroll Director with a dynamic background spanning both the nonprofit and corporate sectors. Her expertise lies in aligning people strategies with organizational goals, ensuring compliance, and fostering inclusive workplace cultures that drive performance and engagement.\nThroughout her career, Erika has led HR and payroll operations in diverse environments, including behavioral health and substance abuse treatment organizations as well as educational institutions. Her hands-on experience navigating complex regulatory frameworks, managing multi-state payroll systems, and implementing HR best practices uniquely positions her to support mission-driven and growth-oriented organizations alike.\nKnown for her collaborative approach and strong ethical compass, Erika has a proven track record in talent management, benefits administration, policy development, and organizational change. She is especially passionate about shaping people and culture strategies that cultivate belonging, accountability, and continuous improvement.\nErika holds a deep commitment to employee well-being and organizational integrity, making her a trusted advisor to leadership teams and a valued partner to staff at all levels.",
+    "image": "/images/team/erika-sirianos.jpg",
+    "group": "Human Resources"
+  },
+  {
     "slug": "diana-guzman",
     "name": "Diana Guzman",
     "role": "HR Manager",
@@ -167,7 +176,7 @@
     "role": "Talent Acquisition & Onboarding Coordinator",
     "credentials": "",
     "bio": "Maria Gonzalez serves as the Talent Acquisition & Onboarding Coordinator at Quadrant Health Group, where she is passionate about connecting talented professionals with meaningful career opportunities while creating a positive and welcoming hiring experience from the very first conversation.\nWorking closely with hiring managers and candidates, Maria supports the full recruitment and onboarding process, helping attract exceptional talent and ensure new team members feel informed, supported, and prepared for success. She values building lasting relationships, fostering open communication, and matching individuals with opportunities where they can grow professionally while making a meaningful impact.\nMaria is proud to support Quadrant Health Group's mission by helping recruit and retain compassionate, dedicated professionals who are committed to providing outstanding behavioral healthcare to the individuals and communities they serve.",
-    "image": null,
+    "image": "/images/team/maria-gonzalez.jpg",
     "group": "Human Resources"
   },
   {
@@ -177,15 +186,6 @@
     "credentials": "",
     "bio": "Emmanuel Lacruz serves as an HR Talent Acquisition Recruiter, where he is passionate about connecting talented healthcare professionals with opportunities to grow, make a meaningful impact, and build rewarding careers. He works closely with candidates and hiring managers to create a seamless, transparent, and positive recruitment experience from the initial conversation through the onboarding process.\nEmmanuel believes that every great organization is built on exceptional people. He is committed to identifying individuals who not only possess the skills and experience needed for success but also share a dedication to delivering compassionate, high-quality care. Known for his approachable nature and strong communication skills, he takes pride in building lasting relationships while helping candidates find positions where they can thrive professionally.\nWith experience recruiting nurses, therapists, behavioral health professionals, and administrative staff, Emmanuel is dedicated to supporting Quadrant Health Group's mission by attracting outstanding talent and fostering a workplace culture where employees feel valued, supported, and empowered to succeed.",
     "image": "/images/team/emmanuel-lacruz.jpg",
-    "group": "Human Resources"
-  },
-  {
-    "slug": "erika-sirianos",
-    "name": "Erika Sirianos",
-    "role": "HR Director",
-    "credentials": "SPHR, SHRM-CP",
-    "bio": "With over 20 years of progressive leadership experience, Erika Sirianos is a seasoned Human Resources and Payroll Director with a dynamic background spanning both the nonprofit and corporate sectors. Her expertise lies in aligning people strategies with organizational goals, ensuring compliance, and fostering inclusive workplace cultures that drive performance and engagement.\nThroughout her career, Erika has led HR and payroll operations in diverse environments, including behavioral health and substance abuse treatment organizations as well as educational institutions. Her hands-on experience navigating complex regulatory frameworks, managing multi-state payroll systems, and implementing HR best practices uniquely positions her to support mission-driven and growth-oriented organizations alike.\nKnown for her collaborative approach and strong ethical compass, Erika has a proven track record in talent management, benefits administration, policy development, and organizational change. She is especially passionate about shaping people and culture strategies that cultivate belonging, accountability, and continuous improvement.\nErika holds a deep commitment to employee well-being and organizational integrity, making her a trusted advisor to leadership teams and a valued partner to staff at all levels.",
-    "image": "/images/team/erika-sirianos.jpg",
     "group": "Human Resources"
   },
   {
