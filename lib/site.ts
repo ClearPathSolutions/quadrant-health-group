@@ -22,7 +22,11 @@ export const site = {
     instagram: "https://instagram.com/quadranthealthgroup/",
     linkedin: "https://linkedin.com/company/quadrant-health-group/",
   },
-  url: "https://quadranthealthgroup.com",
+  // The apex 308s to www at the edge, so www is the host that actually serves
+  // every page. Canonicals, og:url and the sitemap all derive from this, and
+  // they must name the host that answers — pointing them at the apex made every
+  // page claim a URL that redirects.
+  url: "https://www.quadranthealthgroup.com",
 };
 
 /**
