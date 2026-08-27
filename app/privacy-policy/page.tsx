@@ -28,9 +28,7 @@ export default function PrivacyPage() {
         <div className="container">
           <div className={c.prose}>
             <p>
-              <em>Last updated: January 2026.</em> This is a summary policy for
-              the rebuilt site. Please replace it with your organization&apos;s
-              full, legally reviewed privacy policy before launch.
+              <em>Last updated: January 2026.</em>
             </p>
 
             <h2>Information we collect</h2>

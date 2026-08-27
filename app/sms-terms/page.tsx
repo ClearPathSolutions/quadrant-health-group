@@ -28,9 +28,7 @@ export default function SmsTermsPage() {
         <div className="container">
           <div className={c.prose}>
             <p>
-              <em>Last updated: January 2026.</em> This is a summary for the
-              rebuilt site. Replace it with your organization&apos;s full,
-              legally reviewed SMS policy before launch.
+              <em>Last updated: January 2026.</em>
             </p>
 
             <h2>Program description</h2>
