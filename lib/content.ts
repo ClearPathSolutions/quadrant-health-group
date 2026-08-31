@@ -63,8 +63,10 @@ export const TEAM_GROUP_ORDER = [
   "Corporate Leadership Team",
   "Human Resources",
   "Business Development",
-  "Alumni Services",
   "Admissions & Client Care",
+  // Client instruction: alumni sits last. This array — not the order of records
+  // in team.json — is what drives the section order on the page.
+  "Alumni Services",
 ];
 
 /** The roster split into row 856's groups, empty groups omitted. */
