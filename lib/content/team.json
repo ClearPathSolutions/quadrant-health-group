@@ -297,21 +297,21 @@
     "group": "Business Development"
   },
   {
-    "slug": "lexie-zeller",
-    "name": "Lexie Zeller",
-    "role": "National Alumni Director",
-    "credentials": "",
-    "bio": "Lexie Zeller is a dedicated alumni relations professional with experience developing and growing alumni engagement programs that foster lifelong connections and meaningful involvement. With a strong background in relationship management, program development, and strategic planning, Lexie is passionate about creating alumni experiences that inspire connection, mentorship, and continued support. As National Alumni Director, she is leading the development of a nationwide alumni program focused on building an engaged network that empowers alumni to stay connected, give back, and make a lasting impact in their own recovery communities.",
-    "image": "/images/team/lexie-zeller.jpg",
-    "group": "Alumni Services"
-  },
-  {
     "slug": "robert-spady",
     "name": "Robert Spady",
     "role": "Admissions Director",
     "credentials": "",
     "bio": "As the Admissions Director at Quadrant Health Group, I understand that seeking help for addiction is a profoundly courageous act, often made during one of life's most challenging periods. With 10 years of dedicated professional experience in the field, my primary focus is to provide a clear, compassionate, and supportive pathway for individuals and families seeking treatment. I'm committed to guiding you through every step of the admissions process with empathy and expertise, ensuring you feel understood and confident in the care options available.\nWhat truly drives my approach is a deep, personal understanding of the recovery journey. Having navigated my own battle with addiction for over a decade, and celebrating 12 years of sobriety through the principles of the 12 Steps AA program, I know firsthand the challenges and triumphs involved. This lived experience allows me to connect with clients and their loved ones on a uniquely empathetic level, offering not just guidance but also genuine hope for a new beginning.\nOriginally from Trenton, NJ, I am passionate about connecting people with the vital support they need to transform their lives. My goal is to alleviate the stress often associated with beginning treatment, providing comprehensive information and a steady hand as you take this crucial step towards healing and lasting recovery. I am here to help you or your loved one embark on a path to a healthier, more fulfilling future.",
     "image": "/images/team/robert-spady.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "cristina-turiello",
+    "name": "Cristina Turiello",
+    "role": "Manager of Client Care",
+    "credentials": "",
+    "bio": "Cristina Turiello is a kind, compassionate, and highly skilled behavioral health professional with over five years of experience at Quadrant Health Group. As the Director of Client Care, she leads a team dedicated to supporting individuals facing substance use and mental health challenges, ensuring they receive personalized, respectful, and effective care.\nCristina's journey in healthcare began as a patient advocate, where she championed the rights and well-being of individuals navigating complex systems. Her deep-rooted passion for helping others in all aspects of life continues to drive her work and leadership style today.\nWith a strong foundation in organization, attention to detail, and team leadership, Cristina brings structure and clarity to challenging environments while maintaining a warm, client-centered approach. She is known not only for her operational expertise but for her unwavering kindness, empathy, and ability to connect meaningfully with both clients and colleagues.\nCristina remains committed to making a difference—one compassionate interaction at a time.",
+    "image": "/images/team/cristina-turiello.jpg",
     "group": "Admissions & Client Care"
   },
   {
@@ -351,15 +351,6 @@
     "group": "Admissions & Client Care"
   },
   {
-    "slug": "cristina-turiello",
-    "name": "Cristina Turiello",
-    "role": "Manager of Client Care",
-    "credentials": "",
-    "bio": "Cristina Turiello is a kind, compassionate, and highly skilled behavioral health professional with over five years of experience at Quadrant Health Group. As the Director of Client Care, she leads a team dedicated to supporting individuals facing substance use and mental health challenges, ensuring they receive personalized, respectful, and effective care.\nCristina's journey in healthcare began as a patient advocate, where she championed the rights and well-being of individuals navigating complex systems. Her deep-rooted passion for helping others in all aspects of life continues to drive her work and leadership style today.\nWith a strong foundation in organization, attention to detail, and team leadership, Cristina brings structure and clarity to challenging environments while maintaining a warm, client-centered approach. She is known not only for her operational expertise but for her unwavering kindness, empathy, and ability to connect meaningfully with both clients and colleagues.\nCristina remains committed to making a difference—one compassionate interaction at a time.",
-    "image": "/images/team/cristina-turiello.jpg",
-    "group": "Admissions & Client Care"
-  },
-  {
     "slug": "vinny-turiello",
     "name": "Vinny Turiello",
     "role": "Admissions Manager",
@@ -369,12 +360,12 @@
     "group": "Admissions & Client Care"
   },
   {
-    "slug": "dennis-root",
-    "name": "Dennis Root",
+    "slug": "anna-cole",
+    "name": "Anna Cole",
     "role": "Admissions Representative",
     "credentials": "",
     "bio": "",
-    "image": "/images/team/dennis-root.jpg",
+    "image": "/images/team/anna-cole.jpg",
     "group": "Admissions & Client Care"
   },
   {
@@ -384,6 +375,24 @@
     "credentials": "",
     "bio": "",
     "image": "/images/team/jacob-stevenson.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "jennifer-weisheit",
+    "name": "Jennifer Weisheit",
+    "role": "Admissions Representative",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/jennifer-weisheit.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "joshi-varughese",
+    "name": "Joshi Varughese",
+    "role": "Admissions Representative",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/joshi-varughese.jpg",
     "group": "Admissions & Client Care"
   },
   {
@@ -423,6 +432,15 @@
     "group": "Admissions & Client Care"
   },
   {
+    "slug": "robert-castorino",
+    "name": "Robert Castorino",
+    "role": "Admissions Representative",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/robert-castorino.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
     "slug": "sarah-carnacchi",
     "name": "Sarah Carnacchi",
     "role": "Admissions Representative",
@@ -438,42 +456,6 @@
     "credentials": "",
     "bio": "",
     "image": "/images/team/webb-mullin.jpg",
-    "group": "Admissions & Client Care"
-  },
-  {
-    "slug": "anna-cole",
-    "name": "Anna Cole",
-    "role": "Admissions Representative",
-    "credentials": "",
-    "bio": "",
-    "image": "/images/team/anna-cole.jpg",
-    "group": "Admissions & Client Care"
-  },
-  {
-    "slug": "jennifer-weisheit",
-    "name": "Jennifer Weisheit",
-    "role": "Admissions Representative",
-    "credentials": "",
-    "bio": "",
-    "image": "/images/team/jennifer-weisheit.jpg",
-    "group": "Admissions & Client Care"
-  },
-  {
-    "slug": "joshi-varughese",
-    "name": "Joshi Varughese",
-    "role": "Admissions Representative",
-    "credentials": "",
-    "bio": "",
-    "image": "/images/team/joshi-varughese.jpg",
-    "group": "Admissions & Client Care"
-  },
-  {
-    "slug": "robert-castorino",
-    "name": "Robert Castorino",
-    "role": "Admissions Representative",
-    "credentials": "",
-    "bio": "",
-    "image": "/images/team/robert-castorino.jpg",
     "group": "Admissions & Client Care"
   },
   {
@@ -502,5 +484,41 @@
     "bio": "",
     "image": "/images/team/ashley-watts.jpg",
     "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "dennis-root",
+    "name": "Dennis Root",
+    "role": "Admissions Representative",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/dennis-root.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "lexie-zeller",
+    "name": "Lexie Zeller",
+    "role": "National Alumni Director",
+    "credentials": "",
+    "bio": "Lexie Zeller is a dedicated alumni relations professional with experience developing and growing alumni engagement programs that foster lifelong connections and meaningful involvement. With a strong background in relationship management, program development, and strategic planning, Lexie is passionate about creating alumni experiences that inspire connection, mentorship, and continued support. As National Alumni Director, she is leading the development of a nationwide alumni program focused on building an engaged network that empowers alumni to stay connected, give back, and make a lasting impact in their own recovery communities.",
+    "image": "/images/team/lexie-zeller.jpg",
+    "group": "Alumni Services"
+  },
+  {
+    "slug": "bj-thome",
+    "name": "BJ Thome",
+    "role": "Alumni Coordinator | California",
+    "credentials": "",
+    "bio": "BJ Thome serves as the Alumni Coordinator for Quadrant Health Group’s California facilities, where his purpose is to ensure that no one feels they have to walk the road of recovery alone. His passion for this work is deeply personal. Having experienced the struggles of addiction firsthand, BJ understands both the courage it takes to begin recovery and the importance of continued support long after treatment ends.\nBJ focuses on building genuine, trusting relationships with clients while they are still in treatment, helping establish a sense of connection and community before they transition back into everyday life. He believes recovery does not end at discharge—and neither should the support. His goal is for every client to know they have somewhere to turn, people who understand, and a community that continues to stand behind them.\nDrawing from his own lived experience, BJ is passionate about meeting people where they are without judgment and reminding them that their story does not have to end where addiction once took them. He strives to make every person he encounters feel seen, heard, valued, and welcomed.\nFor BJ, alumni coordination is about more than building a program. It is about creating lasting connection, belonging, and purpose while helping individuals stay engaged in a recovery community that genuinely wants to see them succeed.",
+    "image": "/images/team/bj-thome.jpg",
+    "group": "Alumni Services"
+  },
+  {
+    "slug": "julie-mitchell",
+    "name": "Julie Mitchell",
+    "role": "Alumni Coordinator | New Jersey",
+    "credentials": "",
+    "bio": "Julie Mitchell is passionate about supporting individuals as they continue their recovery journey beyond treatment, helping alumni build meaningful connections, strengthen their support systems, and maintain long-term wellness. As Alumni Coordinator, she is dedicated to fostering a strong recovery community where individuals feel encouraged, supported, and empowered to thrive in their everyday lives.\nJulie earned her Bachelor of Science in Psychology from the New York Institute of Technology and her Master of Arts in Addiction Counseling from the Hazelden Betty Ford Graduate School of Addiction Studies, a nationally recognized leader in addiction treatment education. Her background in behavioral health provides her with a deep understanding of the challenges and triumphs individuals experience throughout the recovery process.\nIn her role, Julie develops and coordinates alumni programming, recovery events, peer support initiatives, and ongoing outreach designed to help former clients stay connected long after completing treatment. She believes that lasting recovery is strengthened through community, accountability, and meaningful relationships, and she is committed to creating opportunities for alumni to celebrate milestones, share experiences, and support one another.\nJulie approaches every interaction with compassion, authenticity, and respect, recognizing that each recovery journey is unique. She strives to create an inclusive and welcoming environment where alumni feel valued, inspired, and confident as they continue building lives rooted in purpose, resilience, and hope.",
+    "image": "/images/team/julie-mitchell.jpg",
+    "group": "Alumni Services"
   }
 ]
