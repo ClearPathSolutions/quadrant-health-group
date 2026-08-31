@@ -369,6 +369,15 @@
     "group": "Admissions & Client Care"
   },
   {
+    "slug": "dennis-root",
+    "name": "Dennis Root",
+    "role": "Admissions Representative",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/dennis-root.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
     "slug": "jacob-stevenson",
     "name": "Jacob Stevenson",
     "role": "Admissions Representative",
@@ -483,15 +492,6 @@
     "credentials": "",
     "bio": "",
     "image": "/images/team/ashley-watts.jpg",
-    "group": "Admissions & Client Care"
-  },
-  {
-    "slug": "dennis-root",
-    "name": "Dennis Root",
-    "role": "Admissions Representative",
-    "credentials": "",
-    "bio": "",
-    "image": "/images/team/dennis-root.jpg",
     "group": "Admissions & Client Care"
   },
   {
