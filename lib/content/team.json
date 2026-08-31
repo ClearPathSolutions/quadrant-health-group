@@ -90,6 +90,15 @@
     "group": "Corporate Leadership Team"
   },
   {
+    "slug": "darisa-almonte",
+    "name": "Darisa Almonte",
+    "role": "Controller",
+    "credentials": "",
+    "bio": "Darisa Almonte serves as Controller, supporting the financial operations and continued growth of the organization. In her role, she helps oversee financial reporting, accounting processes, and internal controls while working closely with leadership to promote accuracy, efficiency, and sound financial practices. Darisa brings a detail-oriented and collaborative approach to her work and is committed to supporting the organization’s long-term financial health.",
+    "image": "/images/team/darisa-almonte.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
     "slug": "nicholas-incognito",
     "name": "Nicholas Incognito Jr.",
     "role": "Director of Quality Assurance",
@@ -141,6 +150,15 @@
     "credentials": "",
     "bio": "Danielle Gorman is the Executive Coordinator at Quadrant Health Group. Danielle brings extensive leadership experience and a hands-on approach to every aspect of the organization. Her role encompasses a wide range of responsibilities, providing support wherever it is needed to help teams operate efficiently and successfully.\nDanielle is passionate about building strong teams, creating organized systems, and helping others succeed. She takes great pride in being part of a company dedicated to changing lives by guiding individuals on their journey to recovery.",
     "image": "/images/team/danielle-gorman.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "alie-wash",
+    "name": "Alie Wash",
+    "role": "Front Office Coordinator",
+    "credentials": "",
+    "bio": "Alie Wash serves as Front Office Coordinator at Quadrant Health Group, where she is passionate about helping others feel welcomed, supported, and valued. Drawing from her own experience in recovery, Alie brings a unique sense of empathy, understanding, and compassion to her role.\nShe is committed to creating a positive and welcoming experience for every individual she encounters and takes pride in being a supportive presence for clients, families, and team members alike. Alie’s personal journey inspires her dedication to helping others feel seen, respected, and encouraged throughout their own path toward healing and recovery.",
+    "image": null,
     "group": "Corporate Leadership Team"
   },
   {
@@ -294,6 +312,33 @@
     "credentials": "",
     "bio": "John Jurman is the Admissions Manager at Quadrant Health Group, where he oversees the admissions team and helps ensure a smooth, supportive process for individuals entering the company's care facilities. With over eight years of experience in healthcare admissions, John brings a strong commitment to organization, communication, and compassionate service, playing a key role in helping families navigate an often-stressful time with clarity and care.\nOutside of work, John enjoys spending quality time with his family and cheering on Philadelphia's sports teams. Whether it's watching the Eagles on a Sunday or catching a Phillies game, he brings the same passion and dedication to his personal life that he brings to his role at Quadrant Health Group.",
     "image": "/images/team/john-jurman.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "jay-ocampo",
+    "name": "Jay Ocampo",
+    "role": "Admissions Manager",
+    "credentials": "",
+    "bio": "Jay Ocampo serves as an Admissions Manager, helping individuals and families navigate the first steps toward treatment. He works closely with the admissions team to ensure each inquiry is handled with compassion, professionalism, and timely support. Jay is committed to creating a welcoming and efficient admissions experience while helping connect individuals with the care and resources that best meet their needs.",
+    "image": "/images/team/jay-ocampo.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "robbie-wheeles",
+    "name": "Robbie Wheeles",
+    "role": "Admissions Manager",
+    "credentials": "",
+    "bio": "Robbie Wheeles serves as an Admissions Manager at Quadrant Health Group, where he leads the evening admissions team with compassion, understanding, and a deeply personal connection to the work. With three years at Quadrant and experience across multiple roles in the behavioral health field, Robbie brings both professional knowledge and lived experience in recovery to his position.\nHaving experienced treatment himself, Robbie understands that the path to recovery is rarely a straight line. After several attempts at treatment and years of struggling with addiction, he ultimately found lasting recovery and a renewed sense of purpose. From the moment he completed his final treatment program, he knew he wanted to dedicate his life to helping others and their families find that same hope.\nAt Quadrant, Robbie leads a team committed to meeting people with empathy during some of the most difficult moments of their lives. Whether speaking with an individual struggling with addiction or a family member searching for help for a loved one, his focus is on listening, sharing hope, removing barriers, and developing a plan that connects each person with the care they need.\nFor Robbie, admissions is much more than a job. It is an opportunity to show people that there is light at the end of the tunnel and to help them take the first step toward rebuilding their lives.",
+    "image": "/images/team/robbie-wheeles.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "cai-von-rumohr",
+    "name": "Cai Von Rumohr",
+    "role": "Admissions Manager",
+    "credentials": "",
+    "bio": "Cai Von Rumohr serves as an Admissions Manager, supporting individuals and families as they explore treatment options and take the first steps toward care. In his role, he helps coordinate the admissions process while ensuring inquiries are handled efficiently, professionally, and with compassion. Cai is committed to providing a supportive experience and helping individuals feel informed and confident throughout the admissions process.",
+    "image": "/images/team/cai-von-rumohr.jpg",
     "group": "Admissions & Client Care"
   },
   {
