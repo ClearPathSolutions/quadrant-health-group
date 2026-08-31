@@ -63,6 +63,15 @@
     "group": "Corporate Leadership Team"
   },
   {
+    "slug": "riley-monahan",
+    "name": "Riley Monahan",
+    "role": "Executive VP of Clinical Services",
+    "credentials": "",
+    "bio": "Riley Monahan joins Quadrant Health Group with over a decade of experience in behavioral health, spanning clinical practice and organizational leadership. Prior to Quadrant, Riley worked in clinical and administrative roles at a large, multi-location Arizona-based behavioral health agency while working in a private practice setting serving high performers and entrepreneurs. His clinical background includes trauma-focused therapy, EMDR, and specialized intensives, along with corporate retreat facilitation and executive mediation. We're excited to have him on the team.",
+    "image": "/images/team/riley-monahan.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
     "slug": "catherine-alpaugh",
     "name": "Catherine Alpaugh",
     "role": "Executive VP of Administration",
@@ -81,12 +90,21 @@
     "group": "Corporate Leadership Team"
   },
   {
-    "slug": "riley-monahan",
-    "name": "Riley Monahan",
-    "role": "Executive VP of Clinical Services",
+    "slug": "nicholas-incognito",
+    "name": "Nicholas Incognito Jr.",
+    "role": "Director of Quality Assurance",
     "credentials": "",
-    "bio": "Riley Monahan joins Quadrant Health Group with over a decade of experience in behavioral health, spanning clinical practice and organizational leadership. Prior to Quadrant, Riley worked in clinical and administrative roles at a large, multi-location Arizona-based behavioral health agency while working in a private practice setting serving high performers and entrepreneurs. His clinical background includes trauma-focused therapy, EMDR, and specialized intensives, along with corporate retreat facilitation and executive mediation. We're excited to have him on the team.",
-    "image": "/images/team/riley-monahan.jpg",
+    "bio": "Nicholas Incognito Jr. is a seasoned professional with over a decade of experience in the behavioral healthcare sector, currently serving as the Director of QA at Quadrant Health Group, Inc. In this role, he is at the forefront of providing a compassionate and streamlined entry point for individuals seeking treatment for substance abuse and mental health. His leadership philosophy centers on a blend of strategic oversight and hands-on guidance, ensuring that every client's journey begins with professionalism and empathy. Throughout his career, Nicholas has developed a strong reputation for optimizing operational efficiency and enhancing client outcomes. He has a proven track record of significantly improving conversion rates and client engagement, which has been instrumental in the growth and success of the admissions department. By fostering a collaborative environment, he ensures seamless coordination between his team, other internal departments, and external referral partners, creating a clear and supportive path to care for all clients. Passionate about reducing the barriers that prevent people from accessing necessary treatment, Nicholas is deeply committed to supporting individuals and their families through one of the most critical decisions of their lives. When he's not busy guiding his team or refining internal systems, he enjoys spending time outdoors and exploring creative outlets, which help him stay grounded and energized for the important work he does.",
+    "image": "/images/team/nicholas-incognito.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "stephanie-hakim",
+    "name": "Stephanie Hakim",
+    "role": "Director of Compliance",
+    "credentials": "",
+    "bio": "Stephanie Hakim serves as the Director of Compliance for Quadrant Health Group, where she leads the organization's compliance, regulatory, and quality assurance initiatives across its behavioral healthcare programs. She is committed to fostering a culture of integrity, accountability, and operational excellence by ensuring compliance is seamlessly integrated into every aspect of the organization.\nWhat distinguishes Stephanie's approach to compliance is her comprehensive understanding of treatment center operations. Throughout her career, she has held leadership roles in executive operations, admissions, information technology, medication management, and clinical services as a Certified Drug and Alcohol Counselor (CADCII). This diverse experience provides her with a unique perspective on how regulatory requirements impact every stage of the patient experience—from the first point of contact through discharge planning, quality improvement, and organizational performance.\nStephanie leads the development and implementation of compliance programs, regulatory initiatives, policy development, internal auditing, corrective action planning, and accreditation readiness. She works collaboratively with state regulatory agencies and The Joint Commission to ensure Quadrant Health Group consistently meets and exceeds regulatory standards while advancing quality improvement, mitigating organizational risk, and promoting the delivery of safe, ethical, and high-quality care.\nBeyond regulatory oversight, Stephanie is passionate about building sustainable systems that empower organizations to thrive. She believes compliance is more than meeting standards—it is the foundation of exceptional patient care, operational excellence, and organizational integrity. By fostering collaboration across clinical, operational, medical, and executive teams, she helps translate complex regulatory requirements into practical, sustainable processes that strengthen both compliance and organizational performance.\nStephanie is recognized for her strategic leadership, collaborative approach, and ability to bridge the gap between regulations and day-to-day operations. Her commitment to excellence continues to support Quadrant Health Group's mission of delivering compassionate, high-quality behavioral healthcare while maintaining the highest standards of compliance and accountability.",
+    "image": "/images/team/stephanie-hakim.jpg",
     "group": "Corporate Leadership Team"
   },
   {
@@ -99,12 +117,12 @@
     "group": "Corporate Leadership Team"
   },
   {
-    "slug": "stephanie-hakim",
-    "name": "Stephanie Hakim",
-    "role": "Director of Compliance",
+    "slug": "anom-grant",
+    "name": "Anom Grant",
+    "role": "IT Director",
     "credentials": "",
-    "bio": "Stephanie Hakim serves as the Director of Compliance for Quadrant Health Group, where she leads the organization's compliance, regulatory, and quality assurance initiatives across its behavioral healthcare programs. She is committed to fostering a culture of integrity, accountability, and operational excellence by ensuring compliance is seamlessly integrated into every aspect of the organization.\nWhat distinguishes Stephanie's approach to compliance is her comprehensive understanding of treatment center operations. Throughout her career, she has held leadership roles in executive operations, admissions, information technology, medication management, and clinical services as a Certified Drug and Alcohol Counselor (CADCII). This diverse experience provides her with a unique perspective on how regulatory requirements impact every stage of the patient experience—from the first point of contact through discharge planning, quality improvement, and organizational performance.\nStephanie leads the development and implementation of compliance programs, regulatory initiatives, policy development, internal auditing, corrective action planning, and accreditation readiness. She works collaboratively with state regulatory agencies and The Joint Commission to ensure Quadrant Health Group consistently meets and exceeds regulatory standards while advancing quality improvement, mitigating organizational risk, and promoting the delivery of safe, ethical, and high-quality care.\nBeyond regulatory oversight, Stephanie is passionate about building sustainable systems that empower organizations to thrive. She believes compliance is more than meeting standards—it is the foundation of exceptional patient care, operational excellence, and organizational integrity. By fostering collaboration across clinical, operational, medical, and executive teams, she helps translate complex regulatory requirements into practical, sustainable processes that strengthen both compliance and organizational performance.\nStephanie is recognized for her strategic leadership, collaborative approach, and ability to bridge the gap between regulations and day-to-day operations. Her commitment to excellence continues to support Quadrant Health Group's mission of delivering compassionate, high-quality behavioral healthcare while maintaining the highest standards of compliance and accountability.",
-    "image": "/images/team/stephanie-hakim.jpg",
+    "bio": "As an IT Director with over a decade of experience, I bring a distinctive approach to technology leadership. My background in Psychology isn't just a detail; it's the very foundation of my career transition into IT. I firmly believe that technology should empower, not complicate, the human experience at work. This unique perspective drives me to transform tech landscapes, focusing on efficiency and innovation by ensuring IT initiatives truly align with business goals and build robust, scalable systems that enhance both organizational growth and overall user well-being.\nMy core strengths lie in dynamic team leadership, strategic project management, and comprehensive system optimizations. I consistently apply these skills to refine our technological infrastructure and streamline workflows. This ensures our IT operations are not only resilient and reliable but also directly contribute to achieving the organization's strategic objectives, making technology a true enabler. Moving forward, I'm passionate about leveraging my expertise to deepen organizational efficiency in ways that genuinely uplift both our internal teams and our valued clients. My aim is to implement tech solutions that optimize performance while simultaneously fostering a seamless, intuitive, and highly productive experience for everyone. I'm always eager to connect with fellow leaders to explore how thoughtful IT strategy can spark innovation and significantly boost user satisfaction.",
+    "image": "/images/team/anom-grant.jpg",
     "group": "Corporate Leadership Team"
   },
   {
@@ -126,15 +144,6 @@
     "group": "Corporate Leadership Team"
   },
   {
-    "slug": "anom-grant",
-    "name": "Anom Grant",
-    "role": "IT Director",
-    "credentials": "",
-    "bio": "As an IT Director with over a decade of experience, I bring a distinctive approach to technology leadership. My background in Psychology isn't just a detail; it's the very foundation of my career transition into IT. I firmly believe that technology should empower, not complicate, the human experience at work. This unique perspective drives me to transform tech landscapes, focusing on efficiency and innovation by ensuring IT initiatives truly align with business goals and build robust, scalable systems that enhance both organizational growth and overall user well-being.\nMy core strengths lie in dynamic team leadership, strategic project management, and comprehensive system optimizations. I consistently apply these skills to refine our technological infrastructure and streamline workflows. This ensures our IT operations are not only resilient and reliable but also directly contribute to achieving the organization's strategic objectives, making technology a true enabler. Moving forward, I'm passionate about leveraging my expertise to deepen organizational efficiency in ways that genuinely uplift both our internal teams and our valued clients. My aim is to implement tech solutions that optimize performance while simultaneously fostering a seamless, intuitive, and highly productive experience for everyone. I'm always eager to connect with fellow leaders to explore how thoughtful IT strategy can spark innovation and significantly boost user satisfaction.",
-    "image": "/images/team/anom-grant.jpg",
-    "group": "Corporate Leadership Team"
-  },
-  {
     "slug": "erika-sirianos",
     "name": "Erika Sirianos",
     "role": "Human Resources & Payroll Director",
@@ -153,21 +162,21 @@
     "group": "Human Resources"
   },
   {
-    "slug": "armanee-cross",
-    "name": "Armanee Cross",
-    "role": "HR Assistant/Coordinator",
-    "credentials": "",
-    "bio": "Armanee Cross, MBA serves as an HR Assistant/Coordinator at Quadrant Health Group, where she is dedicated to creating a positive employee experience and supporting team members throughout every stage of their career journey. She works closely with leadership and employees across recruitment, onboarding, HR operations, and day-to-day employee support to help foster an engaging and collaborative workplace.\nArmanee holds a Master of Business Administration with a concentration in Human Resources Management and is passionate about building strong relationships, improving processes, and helping employees feel valued and supported. She believes that great workplaces are built by investing in great people and is committed to contributing to a culture where individuals and teams can thrive.",
-    "image": "/images/team/armanee-cross.jpg",
-    "group": "Human Resources"
-  },
-  {
     "slug": "kevin-bocanegra",
     "name": "Kevin Bocanegra",
     "role": "Human Resources/Payroll Specialist",
     "credentials": "",
     "bio": "Kevin Bocanegra is a Human Resources/Payroll Specialist at Quadrant Health Group, where he is dedicated to ensuring employees receive accurate, timely payroll while providing dependable support across payroll and human resources functions. As a U.S. Marine Corps veteran, Kevin brings the values of integrity, accountability, and service to every aspect of his work.\nKevin believes payroll is about more than processing numbers—it is about supporting the people behind them. He takes pride in managing payroll operations, assisting with payroll tax compliance, and maintaining the accuracy and reliability that employees and leadership depend on. Through clear communication, attention to detail, and a commitment to excellence, he strives to create a positive experience for every employee.\nKnown for his professionalism and dependable approach, Kevin is committed to solving challenges, building trust, and contributing to a workplace where employees feel respected, supported, and valued. His mission is to help ensure every team member has the confidence that their contributions are recognized through accurate and efficient payroll services.",
     "image": "/images/team/kevin-bocanegra.jpg",
+    "group": "Human Resources"
+  },
+  {
+    "slug": "armanee-cross",
+    "name": "Armanee Cross",
+    "role": "HR Assistant/Coordinator",
+    "credentials": "",
+    "bio": "Armanee Cross, MBA serves as an HR Assistant/Coordinator at Quadrant Health Group, where she is dedicated to creating a positive employee experience and supporting team members throughout every stage of their career journey. She works closely with leadership and employees across recruitment, onboarding, HR operations, and day-to-day employee support to help foster an engaging and collaborative workplace.\nArmanee holds a Master of Business Administration with a concentration in Human Resources Management and is passionate about building strong relationships, improving processes, and helping employees feel valued and supported. She believes that great workplaces are built by investing in great people and is committed to contributing to a culture where individuals and teams can thrive.",
+    "image": "/images/team/armanee-cross.jpg",
     "group": "Human Resources"
   },
   {
@@ -200,7 +209,7 @@
   {
     "slug": "douglas-penny",
     "name": "Douglas Penny",
-    "role": "VP of Business Development West Coast",
+    "role": "VP of Business Development | West Coast",
     "credentials": "",
     "bio": "With over 15 years of experience in the behavioral health care industry, Douglas Penny has built a career dedicated to expanding access to quality treatment and leading growth initiatives across the country. Based in Southern California, he has played a key role in developing and managing rehabilitation centers nationwide, combining strategic business development with a deep commitment to improving lives.\nDouglas specializes in behavioral health program development, strategic partnerships, and team leadership, guiding organizations from concept to full-scale operations. With a proven ability to build strong referral networks and high-performing teams, he has helped treatment providers strengthen their impact and achieve sustainable growth.\nDriven by a passion for behavioral health and a results-oriented approach, Douglas continues to champion innovation, collaboration, and excellence in every project he undertakes.",
     "image": "/images/team/douglas-penny.jpg",
@@ -209,16 +218,25 @@
   {
     "slug": "mike-simmons",
     "name": "Mike Simmons",
-    "role": "VP of Business Development East Coast",
+    "role": "VP of Business Development | East Coast",
     "credentials": "",
     "bio": "Mike Simmons serves as Vice President of Business Development for Quadrant Health Group, where he leads referral network expansion, admissions growth, and strategic partnerships.\nMike brings nearly a decade of experience in the behavioral health industry, with a strong track record in relationship-driven business development and patient acquisition. He began his career in alumni services, where he developed deep expertise in long-term engagement and referral pipeline development, which has translated into consistent admissions growth and strong industry relationships.\nIn his current role, Mike is responsible for expanding referral channels, strengthening provider relationships, and driving census growth across Quadrant’s East Coast locations. His ability to combine industry knowledge with a performance-driven approach to business development has been a key contributor to the platform’s growth and market positioning.\nMike plays a critical role in maintaining a sustainable and diversified admissions pipeline, supporting continued expansion and long-term value creation.",
     "image": "/images/team/mike-simmons.jpg",
     "group": "Business Development"
   },
   {
+    "slug": "nick-gore",
+    "name": "Nick Gore",
+    "role": "Director of Business Development | Midwest",
+    "credentials": "",
+    "bio": "Nick Gore is a business development leader with nearly a decade of experience in behavioral healthcare. In long-term recovery since 2016, he is passionate about connecting individuals, families, employers, and healthcare partners with quality treatment resources. Throughout his career, Nick has built strong partnerships across healthcare systems, businesses, and communities, while advocating for improved access to mental health and substance use disorder treatment. His personal journey and professional experience drive his commitment to helping others find hope and recovery.",
+    "image": "/images/team/nick-gore.jpg",
+    "group": "Business Development"
+  },
+  {
     "slug": "richard-bradshaw",
     "name": "Richard Bradshaw",
-    "role": "Business Development Representative",
+    "role": "Business Development Representative | West Coast",
     "credentials": "",
     "bio": "Richard Bradshaw is a seasoned professional in behavioral health and addiction treatment with over 15 years of experience in addiction and recovery, currently serving as Business Development Representative for Quadrant Health Group, a nationwide network of luxury addiction treatment centers focused on personalized, evidence-based care.\nWith extensive experience as Director of Admissions, Business Development, and over the last decade, he drives growth through strategic outreach, admissions processes, and operational excellence in the substance use disorder field.",
     "image": "/images/team/richard-bradshaw.jpg",
@@ -227,7 +245,7 @@
   {
     "slug": "maggie-galleymore",
     "name": "Maggie Galleymore",
-    "role": "Business Development Representative",
+    "role": "Business Development Representative | Texas",
     "credentials": "",
     "bio": "Maggie Galleymore brings over a decade of experience in the substance use and mental health treatment field, with a strong passion for helping individuals and families navigate the path to healing. Her commitment to this work is deeply rooted in both professional expertise and personal understanding, allowing her to connect with clients and partners in a meaningful and compassionate way.\nAs a Business Development Representative for Quadrant Health Group, supporting both Dallas Detox Center and Fort Worth Wellness, Maggie is dedicated to building authentic relationships and helping individuals find the level of care that best supports their needs. She believes in meeting people where they are, advocating fiercely for those in need, and working collaboratively with trusted partners who share the same mission of recovery and healing.\nMaggie is committed to ongoing growth in the behavioral health space and stays informed on evolving treatment approaches and recovery pathways to better serve the individuals and communities she works with.",
     "image": "/images/team/maggie-galleymore.jpg",
@@ -236,7 +254,7 @@
   {
     "slug": "ej-larson",
     "name": "EJ Larson",
-    "role": "Business Development Representative",
+    "role": "Business Development Representative | California",
     "credentials": "",
     "bio": "Elijah (EJ) serves as a Business Development Representative at Quadrant Health Group, bringing nearly a decade of experience in the substance abuse and mental health treatment field. His well-rounded background across multiple roles, including Behavioral Health Technician, Alumni Coordinator, and Outreach leadership, has given him a comprehensive understanding of the recovery journey and the importance of connecting individuals to the right level of care.\nElijah is deeply committed to building meaningful relationships within the community and expanding access to quality treatment. His approach is rooted in authenticity, compassion, and a strong belief that everyone deserves the opportunity to heal.\nOriginally from Las Vegas, Elijah studied at Mira Costa College and continues to grow professionally through hands-on experience and service. In his role at Quadrant Health Group, he is focused on fostering partnerships, supporting referral networks, and helping individuals and families take the first step toward lasting recovery.",
     "image": "/images/team/ej-larson.jpg",
@@ -245,19 +263,10 @@
   {
     "slug": "sage-steinberg",
     "name": "Sage Steinberg",
-    "role": "Business Development Representative",
+    "role": "Business Development Representative | East Coast",
     "credentials": "",
     "bio": "Sage's personal recovery journey ignited a passion for serving others and led her to a career in behavioral health. Over the past four years, she has focused on building strong relationships throughout the community while advocating for education, prevention, and treatment for substance use and mental health disorders.\nAs a Business Development Representative serving the east coast area, Sage is driven by the belief that meaningful collaboration creates better outcomes. She is dedicated to connecting providers, resources, and individuals in ways that make recovery more accessible, while fostering lasting partnerships that strengthen the continuum of care.",
     "image": "/images/team/sage-steinberg.jpg",
-    "group": "Business Development"
-  },
-  {
-    "slug": "nick-gore",
-    "name": "Nick Gore",
-    "role": "Business Development Representative",
-    "credentials": "",
-    "bio": "Nick Gore is a business development leader with nearly a decade of experience in behavioral healthcare. In long-term recovery since 2016, he is passionate about connecting individuals, families, employers, and healthcare partners with quality treatment resources. Throughout his career, Nick has built strong partnerships across healthcare systems, businesses, and communities, while advocating for improved access to mental health and substance use disorder treatment. His personal journey and professional experience drive his commitment to helping others find hope and recovery.",
-    "image": "/images/team/nick-gore.jpg",
     "group": "Business Development"
   },
   {
@@ -294,15 +303,6 @@
     "credentials": "",
     "bio": "Cristina Turiello is a kind, compassionate, and highly skilled behavioral health professional with over five years of experience at Quadrant Health Group. As the Director of Client Care, she leads a team dedicated to supporting individuals facing substance use and mental health challenges, ensuring they receive personalized, respectful, and effective care.\nCristina's journey in healthcare began as a patient advocate, where she championed the rights and well-being of individuals navigating complex systems. Her deep-rooted passion for helping others in all aspects of life continues to drive her work and leadership style today.\nWith a strong foundation in organization, attention to detail, and team leadership, Cristina brings structure and clarity to challenging environments while maintaining a warm, client-centered approach. She is known not only for her operational expertise but for her unwavering kindness, empathy, and ability to connect meaningfully with both clients and colleagues.\nCristina remains committed to making a difference—one compassionate interaction at a time.",
     "image": "/images/team/cristina-turiello.jpg",
-    "group": "Admissions & Client Care"
-  },
-  {
-    "slug": "nicholas-incognito",
-    "name": "Nicholas Incognito Jr.",
-    "role": "Director of Quality Assurance",
-    "credentials": "",
-    "bio": "Nicholas Incognito Jr. is a seasoned professional with over a decade of experience in the behavioral healthcare sector, currently serving as the Director of QA at Quadrant Health Group, Inc. In this role, he is at the forefront of providing a compassionate and streamlined entry point for individuals seeking treatment for substance abuse and mental health. His leadership philosophy centers on a blend of strategic oversight and hands-on guidance, ensuring that every client's journey begins with professionalism and empathy. Throughout his career, Nicholas has developed a strong reputation for optimizing operational efficiency and enhancing client outcomes. He has a proven track record of significantly improving conversion rates and client engagement, which has been instrumental in the growth and success of the admissions department. By fostering a collaborative environment, he ensures seamless coordination between his team, other internal departments, and external referral partners, creating a clear and supportive path to care for all clients. Passionate about reducing the barriers that prevent people from accessing necessary treatment, Nicholas is deeply committed to supporting individuals and their families through one of the most critical decisions of their lives. When he's not busy guiding his team or refining internal systems, he enjoys spending time outdoors and exploring creative outlets, which help him stay grounded and energized for the important work he does.",
-    "image": "/images/team/nicholas-incognito.jpg",
     "group": "Admissions & Client Care"
   },
   {
