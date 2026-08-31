@@ -38,8 +38,13 @@ export default function TeamPage() {
             <div key={group} className={t.groupBlock}>
               <h2 className={t.groupTitle}>{group}</h2>
               <div className={t.grid}>
-                {members.map((m) => (
-                  <Link key={m.slug} href={`/team/${m.slug}`} className={`${t.card} reveal`}>
+                {/* Only people with a biography get a clickable card. The rest
+                    appear in the grid with their photo and title, but linking
+                    them would open an empty page. Card and link markup are
+                    otherwise identical, so the grid looks uniform either way. */}
+                {members.map((m) => {
+                  const inner = (
+                    <>
                     <div className={t.photo}>
                       {m.image ? (
                         <Image
@@ -58,8 +63,16 @@ export default function TeamPage() {
                       <h3 className={t.name}>{m.name}</h3>
                       {m.role && <p className={t.role}>{m.role}</p>}
                     </div>
-                  </Link>
-                ))}
+                    </>
+                  );
+                  return m.bio ? (
+                    <Link key={m.slug} href={`/team/${m.slug}`} className={`${t.card} reveal`}>
+                      {inner}
+                    </Link>
+                  ) : (
+                    <div key={m.slug} className={`${t.card} reveal`}>{inner}</div>
+                  );
+                })}
               </div>
             </div>
           ))}

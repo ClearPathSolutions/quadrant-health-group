@@ -11,7 +11,9 @@ import { personSchema, breadcrumbSchema } from "@/lib/schema";
 import b from "./bio.module.css";
 
 export function generateStaticParams() {
-  return team.map((m) => ({ slug: m.slug }));
+  // Skip anyone without biography copy — the page would render a heading and
+  // nothing else. They still appear on the team grid, just without a link.
+  return team.filter((m) => m.bio).map((m) => ({ slug: m.slug }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {

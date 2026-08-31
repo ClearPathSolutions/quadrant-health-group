@@ -99,6 +99,15 @@
     "group": "Corporate Leadership Team"
   },
   {
+    "slug": "taylor-drake",
+    "name": "Taylor Drake",
+    "role": "Director of Billing Operations",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/taylor-drake.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
     "slug": "nicholas-incognito",
     "name": "Nicholas Incognito Jr.",
     "role": "Director of Quality Assurance",
@@ -357,6 +366,141 @@
     "credentials": "",
     "bio": "Vinny Turiello is the Client Care Coordinator Supervisor at Quadrant Health Group, where he has been a key part of the team since 2022. With over eight years of prior experience in public safety, Vinny brings a calm, solutions-focused approach to helping individuals and families navigate the challenges of seeking treatment for substance use and mental health concerns. At Quadrant, Vinny leads a dedicated team focused on client engagement, admissions support, and care coordination. His background in public safety gives him a unique perspective on crisis response, communication, and building trust with clients during vulnerable moments. Vinny is committed to ensuring that every client feels heard, respected, and supported from their first point of contact through their transition into care. His mission is to make accessing treatment not only possible—but personal.",
     "image": "/images/team/vinny-turiello.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "dennis-root",
+    "name": "Dennis Root",
+    "role": "Admissions Representative",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/dennis-root.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "jacob-stevenson",
+    "name": "Jacob Stevenson",
+    "role": "Admissions Representative",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/jacob-stevenson.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "kristine-haag",
+    "name": "Kristine Haag",
+    "role": "Admissions Representative",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/kristine-haag.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "maddie-tatro",
+    "name": "Maddie Tatro",
+    "role": "Admissions Representative",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/maddie-tatro.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "mike-mueller",
+    "name": "Mike Mueller",
+    "role": "Admissions Representative",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/mike-mueller.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "navindra-ramoutar",
+    "name": "Navindra Ramoutar",
+    "role": "Admissions Representative",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/navindra-ramoutar.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "sarah-carnacchi",
+    "name": "Sarah Carnacchi",
+    "role": "Admissions Representative",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/sarah-carnacchi.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "webb-mullin",
+    "name": "Webb Mullin",
+    "role": "Admissions Representative",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/webb-mullin.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "anna-cole",
+    "name": "Anna Cole",
+    "role": "Admissions Representative",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/anna-cole.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "jennifer-weisheit",
+    "name": "Jennifer Weisheit",
+    "role": "Admissions Representative",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/jennifer-weisheit.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "joshi-varughese",
+    "name": "Joshi Varughese",
+    "role": "Admissions Representative",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/joshi-varughese.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "robert-castorino",
+    "name": "Robert Castorino",
+    "role": "Admissions Representative",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/robert-castorino.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "earl-king",
+    "name": "Earl King",
+    "role": "Travel Coordinator",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/earl-king.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "ashley-thames",
+    "name": "Ashley Thames",
+    "role": "Patient Advocate",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/ashley-thames.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "ashley-watts",
+    "name": "Ashley Watts",
+    "role": "Patient Advocate",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/ashley-watts.jpg",
     "group": "Admissions & Client Care"
   }
 ]

@@ -27,7 +27,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...pages.map((p) => `/${p.slug}`),
     ...treatments.map((t) => `/treatment/${t.slug}`),
     ...locations.filter((l) => !l.comingSoon).map((l) => `/locations/${l.slug}`),
-    ...team.map((m) => `/team/${m.slug}`),
+    ...team.filter((m) => m.bio).map((m) => `/team/${m.slug}`),
     ...posts.map((p) => `/blog/${p.slug}`),
   ];
   return [...staticRoutes, ...dynamic].map((path) => ({
