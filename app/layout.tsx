@@ -25,7 +25,9 @@ const montserrat = Montserrat({
 
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
+  // 300 is declared nowhere in any stylesheet — grepped every rule across
+  // app/ and components/. It was shipping a weight nothing renders.
+  weight: ["400", "500", "700"],
   variable: "--font-roboto",
   display: "swap",
 });
