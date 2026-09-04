@@ -60,11 +60,16 @@ export default function HomePage() {
                 alt="Laguna View Detox — a Quadrant Health Group treatment center on the California coast"
                 width={1024}
                 height={576}
-                priority
                 className={s.heroImg}
                 sizes="(max-width: 980px) 90vw, 46vw"
-              quality={65}
-                />
+                /* NOT `priority`. Under 980px heroInner goes single-column, so
+                   on mobile this sits below the copy and off the first screen —
+                   yet `priority` emitted a preload and fetchpriority=high for
+                   it, competing with the CSS and fonts that gate the real LCP
+                   element (the H1). It still loads eagerly, it just no longer
+                   jumps ahead of what actually paints first. */
+                quality={65}
+              />
             </div>
             <div className={s.floatCard}>
               <div className={s.floatIcon}>

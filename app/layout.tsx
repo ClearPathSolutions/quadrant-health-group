@@ -164,7 +164,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             (widget default is teal #0d9488). */}
         <Script
           src="https://www.clarionlabs.ai/widget.v1.js"
-          strategy="afterInteractive"
+          /* lazyOnload, not afterInteractive. afterInteractive made Next emit a
+             <link rel="preload"> for this third-party script, so a chat widget
+             was contending for bandwidth during the LCP window. Nobody needs the
+             bubble before the page has painted. */
+          strategy="lazyOnload"
           data-site-key={CLARION_SITE_KEY}
           data-api="https://api.clarionlabs.ai"
           data-color="#0396d0"
