@@ -20,7 +20,13 @@ const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["500", "600", "700", "800"],
   variable: "--font-montserrat",
-  display: "swap",
+  /* `optional`, not `swap`. With swap the H1 painted in the fallback at FCP and
+     repainted when Montserrat arrived, and that second paint was the LCP — a
+     2.2s gap between FCP 2.0s and LCP 4.2s. `optional` gives the font a ~100ms
+     window: if it is there (cached, or a fast connection) it is used, otherwise
+     the page keeps the fallback for that load and never repaints. Repeat visits
+     serve from cache and get Montserrat. */
+  display: "optional",
 });
 
 const roboto = Roboto({
@@ -29,7 +35,7 @@ const roboto = Roboto({
   // app/ and components/. It was shipping a weight nothing renders.
   weight: ["400", "500", "700"],
   variable: "--font-roboto",
-  display: "swap",
+  display: "optional",
 });
 
 export const metadata: Metadata = {
@@ -108,7 +114,12 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        <Script id="gtm" strategy="afterInteractive">
+        {/* lazyOnload, not afterInteractive. GTM is 111.7 KiB — the single
+            largest asset on the page, with 74.2 KiB of it unused — and on a
+            throttled connection it competed directly with the LCP window. It
+            now fires after `load`. Trade-off, deliberately taken: visitors who
+            leave within the first second or two may not be counted. */}
+        <Script id="gtm" strategy="lazyOnload">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
