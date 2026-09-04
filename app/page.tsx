@@ -63,7 +63,8 @@ export default function HomePage() {
                 priority
                 className={s.heroImg}
                 sizes="(max-width: 980px) 90vw, 46vw"
-              />
+              quality={65}
+                />
             </div>
             <div className={s.floatCard}>
               <div className={s.floatIcon}>
@@ -112,7 +113,8 @@ export default function HomePage() {
               height={640}
               className={s.roundImg}
               sizes="(max-width: 900px) 90vw, 44vw"
-            />
+                quality={65}
+              />
             <div className={s.expBadge}>
               <strong>10+</strong>
               <span>Years of<br />experience</span>
