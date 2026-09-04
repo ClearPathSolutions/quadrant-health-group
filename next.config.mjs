@@ -147,6 +147,19 @@ const nextConfig = {
       {
         source: "/:path*",
         headers: [
+          // Preconnect as an HTTP header, not a <link> in <head>.
+          //
+          // Next hoists its own font preloads, stylesheets and webpack preload
+          // above anything the layout puts in <head>, so the tag landed 9th —
+          // after everything it was meant to run ahead of. Lighthouse reported
+          // it as "Unused preconnect" and still listed the origin as a
+          // candidate worth 330ms. A Link header is acted on before the HTML is
+          // parsed at all, which is the earliest the connection can start.
+          {
+            key: "Link",
+            value:
+              "<https://264810.tctm.co>; rel=preconnect, <https://264810.tctm.co>; rel=dns-prefetch",
+          },
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "X-Frame-Options", value: "SAMEORIGIN" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
