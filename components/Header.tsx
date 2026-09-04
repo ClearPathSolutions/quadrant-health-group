@@ -67,8 +67,15 @@ export default function Header() {
             <Image
               src="/images/logo.png"
               alt={site.name}
-              width={800}
-              height={220}
+              /* Renders at a fixed 60px tall (52px under 480px) => ~218px wide.
+                 These are the 2x dimensions for that box, NOT the file's
+                 intrinsic 800x220. Declaring the intrinsic size made Next serve
+                 w=1920 for a 182px element — 14.5 KiB on the page's highest
+                 priority image. Adding `sizes` instead emits every configured
+                 width with a 3840 fallback, which is worse. For a fixed-size
+                 image the display size is the correct declaration. */
+              width={384}
+              height={106}
               priority
             />
           </Link>
@@ -145,7 +152,7 @@ export default function Header() {
         aria-hidden={!open}
       >
         <div className={styles.drawerHead}>
-          <Image src="/images/logo.png" alt={site.name} width={400} height={110} />
+          <Image src="/images/logo.png" alt={site.name} width={320} height={88} />
           <button
             className={styles.drawerClose}
             aria-label="Close menu"

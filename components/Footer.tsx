@@ -72,8 +72,10 @@ export default function Footer() {
           <Image
             src="/images/logo-white-horizontal.png"
             alt={site.name}
-            width={900}
-            height={247}
+            /* 2x the rendered box (52px tall, ratio 3.64 => ~190px wide), not
+               the file's intrinsic 900x247 — see the note in Header.tsx. */
+            width={384}
+            height={105}
             className={styles.logo}
           />
           <p className={styles.blurb}>

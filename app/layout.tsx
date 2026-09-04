@@ -89,6 +89,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${montserrat.variable} ${roboto.variable}`}>
+      <head>
+        {/* CallTrackingMetrics runs on every page and is the first third-party
+            connection the browser makes. Lighthouse measured 240ms of LCP sitting
+            in that handshake with nothing preconnected. Kept to this one origin —
+            preconnect is a finite budget and the rest load later or lazily. */}
+        <link rel="preconnect" href="https://264810.tctm.co" />
+        <link rel="dns-prefetch" href="https://264810.tctm.co" />
+      </head>
       <body>
         {/* Google Tag Manager. The noscript iframe is first inside <body> per
             Google's snippet; the loader runs afterInteractive so it never
