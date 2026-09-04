@@ -122,7 +122,16 @@ export default function Header() {
           </nav>
 
           <div className={styles.actions}>
-            <a href={site.phoneHref} className={`${styles.callBtn}`}>
+            {/* aria-label is required, not decorative: .callText is
+                display:none under 480px, which left this as an icon-only link
+                with no accessible name. The label stays correct at every width
+                because it names the action rather than mirroring the visible
+                text. */}
+            <a
+              href={site.phoneHref}
+              className={`${styles.callBtn}`}
+              aria-label={`Call ${site.phone}`}
+            >
               <Icon name="phone" size={18} />
               <span className={styles.callText}>{site.phone}</span>
             </a>
