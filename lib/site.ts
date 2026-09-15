@@ -503,7 +503,9 @@ export const locations: Location[] = [
     // their own phrasing; swap in the town if the client wants it named.
     slug: "wellness-ranch-kentucky",
     name: "Wellness Ranch Kentucky",
-    city: "Private ranch campus",
+    // Franklin, per the client's ADP careers workbook — the placeholder
+    // "Private ranch campus" predated having a real city.
+    city: "Franklin",
     state: "KY",
     region: "Kentucky",
     image: "/images/locations/wellness-ranch-kentucky.jpg",

@@ -90,3 +90,16 @@
 .tile:hover .cue {
   color: #fff;
 }
+
+/* Tiles with no photograph: brand mark centred on the navy gradient. */
+.markWrap {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+.mark {
+  width: clamp(44px, 28%, 88px);
+  height: auto;
+  opacity: 0.9;
+}
