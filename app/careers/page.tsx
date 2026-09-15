@@ -29,7 +29,7 @@ export default function CareersPage() {
         crumb="Careers"
         eyebrow="Work with us"
         title="Build your career where recovery happens"
-        subtitle="Join a team committed to making a meaningful difference in behavioral healthcare. Across our growing network of treatment centers and corporate operations, we're looking for compassionate, driven professionals ready to help individuals and families move toward recovery and wellness."
+        subtitle="Join a team committed to making a meaningful difference in behavioral healthcare. Across our growing network of treatment centers and corporate operations, we're looking for compassionate, driven professionals ready to help individuals and families move toward lasting recovery and wellness."
       />
 
       <section className="section">
