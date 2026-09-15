@@ -58,7 +58,6 @@ export type CareerTile = {
 const NON_LOCATION: CareerTile[] = [
   {
     key: "quadrant-health-group",
-    image: "/images/careers/quadrant-health-group.jpg",
     name: "Quadrant Health Group",
     city: "Boca Raton",
     state: "FL",
@@ -66,7 +65,6 @@ const NON_LOCATION: CareerTile[] = [
   },
   {
     key: "quadrant-billing-solutions",
-    image: "/images/careers/quadrant-billing-solutions.jpg",
     name: "Quadrant Billing Solutions",
     city: "Boca Raton",
     state: "FL",
@@ -91,7 +89,36 @@ const CAREERS_CITY: Record<string, { city: string; state: string }> = {
   "greater-texas-behavioral": { city: "Boca Raton", state: "FL" },
 };
 
-/** Every tile on /careers: the treatment locations, then the two above. */
+/**
+ * Display order, set by the client. Grouped as three rows of five on desktop:
+ * California, then the single-site states, then Texas and the corporate pair.
+ * Anything with a career-centre id but missing from this list still renders,
+ * appended in `locations` order, so adding a facility never silently drops it.
+ */
+const ORDER = [
+  "marina-harbor-detox",
+  "laguna-view-detox",
+  "hillside-mission-recovery",
+  "ocean-coast-recovery",
+  "wellness-detox-la",
+  "des-moines-wellness",
+  "wellness-ranch-kentucky",
+  "ohio-recovery-collective",
+  "wellness-recovery-nj",
+  "seaside-wellness",
+  "dallas-detox-center",
+  "fort-worth-wellness",
+  "greater-texas-behavioral",
+  "quadrant-health-group",
+  "quadrant-billing-solutions",
+];
+
+const rank = (key: string) => {
+  const i = ORDER.indexOf(key);
+  return i === -1 ? ORDER.length : i;
+};
+
+/** Every tile on /careers, in the client's order. */
 export const careerTiles: CareerTile[] = [
   ...locations
     .filter((l) => !l.comingSoon && CC[l.slug])
@@ -105,4 +132,4 @@ export const careerTiles: CareerTile[] = [
       hasCard: l.hasCard,
     })),
   ...NON_LOCATION,
-];
+].sort((a, b) => rank(a.key) - rank(b.key));
