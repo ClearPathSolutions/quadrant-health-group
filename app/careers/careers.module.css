@@ -13,6 +13,11 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media (min-width: 640px) {
+  .tile {
+    aspect-ratio: 4 / 5;
+  }
+}
 @media (min-width: 900px) {
   .grid {
     grid-template-columns: repeat(5, 1fr);
@@ -22,7 +27,10 @@
 .tile {
   position: relative;
   display: block;
-  aspect-ratio: 4 / 5;
+  /* Taller on small screens: at three across on a ~400px viewport a 4/5 tile is
+     about 110x138, and a three-line name plus a city plus the cue does not fit.
+     The text is clamped below as a second guard. */
+  aspect-ratio: 3 / 4.6;
   border-radius: var(--r-lg);
   overflow: hidden;
   background: var(--grad-navy);
@@ -66,14 +74,20 @@
   color: #fff;
 }
 .name {
-  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   font-family: var(--font-display);
   font-weight: 700;
   line-height: 1.2;
   font-size: clamp(0.82rem, 1.5vw, 1.02rem);
 }
 .place {
-  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   margin-top: 0.2rem;
   font-size: clamp(0.7rem, 1.1vw, 0.82rem);
   color: rgba(255, 255, 255, 0.82);

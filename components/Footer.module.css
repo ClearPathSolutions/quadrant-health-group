@@ -166,6 +166,17 @@
   }
 }
 @media (max-width: 560px) {
+  /* Stop the band overlapping the page above it.
+     `.ctaInner` turns into a column here, so the band roughly doubles in height
+     — heading, paragraph and two stacked buttons. The footer reserves a fixed
+     clamp(3rem, 6vw, 6rem) for the overhang, which is ~48px at this width and
+     nowhere near half the taller band, so the remainder rode up and clipped
+     whatever the page ended with. On /careers that was the "All open roles"
+     button. The overlap is decorative, so at this width it is simply dropped. */
+  .ctaBand {
+    transform: none;
+    margin-bottom: 0;
+  }
   .ctaInner {
     flex-direction: column;
     align-items: flex-start;
@@ -173,6 +184,9 @@
   .linkCols {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  .footer {
+    padding-top: 0;
   }
   .bottomInner {
     flex-direction: column;
