@@ -1,0 +1,92 @@
+/* Careers tile grid.
+   Chelsea's spec: "5 rows of 3 for mobile (and 3 rows of 5 on desktop)".
+   13 tiles divide into 5 rows of 3 and 3 rows of 5, so the counts hold.
+   Below 420px three across leaves ~105px per tile, which a facility name
+   cannot survive, so the narrowest phones drop to two. */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(0.6rem, 2vw, 1.25rem);
+}
+@media (max-width: 420px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.tile {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: var(--grad-navy);
+  box-shadow: var(--sh-md);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.tile:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--sh-lg);
+}
+.img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.tile:hover .img {
+  transform: scale(1.06);
+}
+
+/* Legibility scrim. The photos are bright exteriors, so the name needs a
+   gradient behind it rather than a text-shadow. */
+.scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(4, 16, 38, 0.92) 0%,
+    rgba(4, 16, 38, 0.55) 38%,
+    rgba(4, 16, 38, 0.1) 68%
+  );
+}
+.body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: clamp(0.6rem, 1.6vw, 1rem);
+  color: #fff;
+}
+.name {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: clamp(0.82rem, 1.5vw, 1.02rem);
+}
+.place {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: clamp(0.7rem, 1.1vw, 0.82rem);
+  color: rgba(255, 255, 255, 0.82);
+}
+.cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+  font-size: clamp(0.68rem, 1vw, 0.78rem);
+  font-weight: 600;
+  color: #9bd6f2;
+}
+.tile:hover .cue {
+  color: #fff;
+}

@@ -149,6 +149,7 @@ export const nav: NavItem[] = [
       { label: "Verify Your Insurance", href: "/admissions/insurance-verification", desc: "Fast, free & confidential" },
     ],
   },
+  { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
 ];
 

@@ -31,6 +31,7 @@ const columns = [
       { label: "Meet the Team", href: "/about/meet-the-team" },
       { label: "Our Locations", href: "/locations" },
       { label: "Blog & Resources", href: "/blog" },
+      { label: "Careers", href: "/careers" },
       { label: "FAQs", href: "/about/faq" },
       { label: "Contact", href: "/contact" },
     ],
