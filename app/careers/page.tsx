@@ -9,6 +9,8 @@ import { careerTiles, CAREERS_ALL } from "@/lib/careers";
 import c from "../content.module.css";
 import s from "./careers.module.css";
 
+const HR_PHONE = "(855) 511-5627";
+
 const TITLE = "Careers";
 const DESCRIPTION =
   "Join the Quadrant Health Group network. Browse open roles at our treatment centers across California, Texas, Florida, New Jersey, Iowa, Ohio and Kentucky.";
@@ -27,11 +29,15 @@ export default function CareersPage() {
         crumb="Careers"
         eyebrow="Work with us"
         title="Build your career where recovery happens"
-        subtitle="Our teams span thirteen treatment centers, the corporate office and the wider network. Choose a location to see its current openings and apply."
+        subtitle="Join a team committed to making a meaningful difference in behavioral healthcare. Across our growing network of treatment centers and corporate operations, we're looking for compassionate, driven professionals ready to help individuals and families move toward recovery and wellness."
       />
 
       <section className="section">
         <div className="container">
+          <p className={s.lede}>
+            Explore our locations below to view current opportunities and find
+            where you fit within Quadrant Health Group.
+          </p>
           <div className={s.grid}>
             {careerTiles.map((t) => (
               <a
@@ -67,9 +73,12 @@ export default function CareersPage() {
                 )}
                 <span className={s.scrim} />
                 <span className={s.body}>
-                  {/* Nine location photos are face-cards with the name already
-                      set into the artwork, so those show only the city. */}
-                  {!t.hasCard && <span className={s.name}>{t.name}</span>}
+                  {/* Client asked for the name on every tile. Nine of the
+                      location photos are face-cards with the name already set
+                      into the artwork, so on those it now reads twice — once in
+                      the image, once here. Plain photos for those nine would be
+                      the real fix. */}
+                  <span className={s.name}>{t.name}</span>
                   <span className={s.place}>
                     {t.city}, {t.state}
                   </span>
@@ -91,9 +100,11 @@ export default function CareersPage() {
               </p>
             </div>
             <div className="btn-group">
-              <a href={site.phoneHref} className="btn btn-lg">
+              {/* HR direct, not the admissions line. Careers page only — the
+                  site-wide number stays {site.phone}. */}
+              <a href={`tel:+1${HR_PHONE.replace(/\D/g, "")}`} className="btn btn-lg">
                 <Icon name="phone" size={18} />
-                Call {site.phone}
+                Call {HR_PHONE}
               </a>
               <a
                 href={CAREERS_ALL}

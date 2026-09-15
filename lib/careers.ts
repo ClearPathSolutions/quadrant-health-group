@@ -72,25 +72,34 @@ const NON_LOCATION: CareerTile[] = [
     state: "FL",
     href: link("9200865813294_2"),
   },
-  {
-    key: "zen-sobriety-homes",
-    image: "/images/careers/zen-sobriety-homes.jpg",
-    name: "Zen Sobriety Homes",
-    city: "Princeton",
-    state: "NJ",
-    href: link("9201728796457_2"),
-  },
 ];
 
-/** Every tile on /careers: the treatment locations, then the three above. */
+/**
+ * Locations the careers page labels differently from the rest of the site.
+ *
+ * Both come from the client's ADP workbook and are scoped to this page on
+ * purpose. `city` in `locations` drives the locations page, the per-location
+ * schema and local SEO, so changing it there makes a claim about where a
+ * treatment centre is. These only change what the careers tile reads.
+ *
+ * Dallas is worth a second look: Weatherford is ~90 miles west of Dallas and is
+ * also Fort Worth Wellness's city on the row directly above it in the workbook,
+ * which is what a copy-paste down a column looks like.
+ */
+const CAREERS_CITY: Record<string, { city: string; state: string }> = {
+  "dallas-detox-center": { city: "Weatherford", state: "TX" },
+  "greater-texas-behavioral": { city: "Boca Raton", state: "FL" },
+};
+
+/** Every tile on /careers: the treatment locations, then the two above. */
 export const careerTiles: CareerTile[] = [
   ...locations
     .filter((l) => !l.comingSoon && CC[l.slug])
     .map((l) => ({
       key: l.slug,
       name: l.name,
-      city: l.city,
-      state: l.state,
+      city: CAREERS_CITY[l.slug]?.city ?? l.city,
+      state: CAREERS_CITY[l.slug]?.state ?? l.state,
       href: link(CC[l.slug]),
       image: l.image,
       hasCard: l.hasCard,
