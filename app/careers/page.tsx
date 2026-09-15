@@ -52,10 +52,9 @@ export default function CareersPage() {
                     sizes="(max-width: 420px) 50vw, (max-width: 900px) 33vw, 20vw"
                   />
                 ) : (
-                  /* No property photography exists for the corporate office,
-                     the billing company or the sober-living brand. A brand mark
-                     on navy is honest; borrowing a treatment centre's building
-                     would show a candidate somewhere they would not work. */
+                  /* Every tile has an image today. This stays as the fallback
+                     for any entity added later without one — a brand mark on
+                     navy rather than a broken or borrowed photo. */
                   <span className={s.markWrap}>
                     <Image
                       src="/images/logo-mark.png"

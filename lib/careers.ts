@@ -38,8 +38,6 @@ export type CareerTile = {
   city: string;
   state: string;
   href: string;
-  /** Absent for the three entities with no property photography — those tiles
-   *  render the brand mark on navy rather than borrowing another site's building. */
   image?: string;
   /** True when the name is already set into the artwork (face-card photos). */
   hasCard?: boolean;
@@ -49,10 +47,18 @@ export type CareerTile = {
  * Entities on the careers grid that are not treatment locations, so have no
  * entry in `locations`: the corporate office, the billing company and the sober
  * living brand. Ordered after the facilities.
+ *
+ * Their images are the banners from their own ADP career centres. Those are
+ * embedded in the career-centre page as base64 data URIs rather than fetched,
+ * which is why they are invisible to the jobs API and to any plain HTTP crawl —
+ * they were pulled by rendering each page headless and reading the decoded
+ * `src`. Each is cropped to the tile ratio around its subject, which also drops
+ * the logo baked into the banner so the tile's own name does not duplicate it.
  */
 const NON_LOCATION: CareerTile[] = [
   {
     key: "quadrant-health-group",
+    image: "/images/careers/quadrant-health-group.jpg",
     name: "Quadrant Health Group",
     city: "Boca Raton",
     state: "FL",
@@ -60,6 +66,7 @@ const NON_LOCATION: CareerTile[] = [
   },
   {
     key: "quadrant-billing-solutions",
+    image: "/images/careers/quadrant-billing-solutions.jpg",
     name: "Quadrant Billing Solutions",
     city: "Boca Raton",
     state: "FL",
@@ -67,6 +74,7 @@ const NON_LOCATION: CareerTile[] = [
   },
   {
     key: "zen-sobriety-homes",
+    image: "/images/careers/zen-sobriety-homes.jpg",
     name: "Zen Sobriety Homes",
     city: "Princeton",
     state: "NJ",
