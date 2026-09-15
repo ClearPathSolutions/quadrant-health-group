@@ -63,7 +63,7 @@ export default function CareersPage() {
                      navy rather than a broken or borrowed photo. */
                   <span className={s.markWrap}>
                     <Image
-                      src="/images/logo-mark.png"
+                      src={t.mark ?? "/images/logo-mark.png"}
                       alt=""
                       width={96}
                       height={96}

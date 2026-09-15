@@ -39,6 +39,8 @@ export type CareerTile = {
   state: string;
   href: string;
   image?: string;
+  /** Overrides the default brand mark on tiles with no photo. */
+  mark?: string;
   /** True when the name is already set into the artwork (face-card photos). */
   hasCard?: boolean;
 };
@@ -65,6 +67,7 @@ const NON_LOCATION: CareerTile[] = [
   },
   {
     key: "quadrant-billing-solutions",
+    mark: "/images/careers/billing-mark.png",
     name: "Quadrant Billing Solutions",
     city: "Boca Raton",
     state: "FL",
@@ -128,8 +131,11 @@ export const careerTiles: CareerTile[] = [
       city: CAREERS_CITY[l.slug]?.city ?? l.city,
       state: CAREERS_CITY[l.slug]?.state ?? l.state,
       href: link(CC[l.slug]),
-      image: l.image,
-      hasCard: l.hasCard,
+      // The client supplied plain 900x1380 photos for these tiles. `locations`
+      // keeps its branded face-cards for the locations page; those have the
+      // facility name set into the artwork, which would read twice here now
+      // that every tile writes the name.
+      image: `/images/careers/${l.slug}.jpg`,
     })),
   ...NON_LOCATION,
 ].sort((a, b) => rank(a.key) - rank(b.key));

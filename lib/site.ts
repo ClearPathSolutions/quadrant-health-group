@@ -396,7 +396,7 @@ export const locations: Location[] = [
   },
   {
     slug: "seaside-wellness",
-    name: "Seaside Wellness",
+    name: "Seaside Wellness of Palm Beach",
     city: "West Palm Beach",
     state: "FL",
     region: "Florida",
@@ -410,7 +410,7 @@ export const locations: Location[] = [
   },
   {
     slug: "wellness-recovery-nj",
-    name: "Wellness Recovery NJ",
+    name: "Wellness Recovery Center of New Jersey",
     city: "West Windsor",
     state: "NJ",
     region: "New Jersey",
@@ -502,7 +502,7 @@ export const locations: Location[] = [
     // residential mental health facility rather than missing data. `city` uses
     // their own phrasing; swap in the town if the client wants it named.
     slug: "wellness-ranch-kentucky",
-    name: "Wellness Ranch Kentucky",
+    name: "Wellness Ranch",
     // Franklin, per the client's ADP careers workbook — the placeholder
     // "Private ranch campus" predated having a real city.
     city: "Franklin",
