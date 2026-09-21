@@ -93,6 +93,9 @@ export default function Footer() {
             <a href={site.social.linkedin} aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
               <Icon name="linkedin" size={20} />
             </a>
+            <a href={site.social.youtube} aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+              <Icon name="youtube" size={20} />
+            </a>
           </div>
         </div>
 

@@ -26,7 +26,8 @@ type IconName =
   | "clock"
   | "facebook"
   | "instagram"
-  | "linkedin";
+  | "linkedin"
+  | "youtube";
 
 const paths: Record<IconName, React.ReactNode> = {
   shield: <path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" />,
@@ -143,6 +144,12 @@ const paths: Record<IconName, React.ReactNode> = {
     <>
       <rect x="4" y="4" width="16" height="16" rx="3" />
       <path d="M8 10.5V17M8 7.6v.1M12 17v-3.4c0-1.6 2.3-1.8 2.3 0V17M12 17v-6.5" />
+    </>
+  ),
+  youtube: (
+    <>
+      <rect x="2.5" y="6" width="19" height="12" rx="3.5" />
+      <path d="M10.4 9.6v4.8l4.2-2.4-4.2-2.4z" />
     </>
   ),
 };

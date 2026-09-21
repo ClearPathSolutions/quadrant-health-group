@@ -21,6 +21,7 @@ export const site = {
     facebook: "https://facebook.com/quadranthealthgroup",
     instagram: "https://instagram.com/quadranthealthgroup/",
     linkedin: "https://linkedin.com/company/quadrant-health-group/",
+    youtube: "https://www.youtube.com/@QuadrantHealthGroup",
   },
   // The apex 308s to www at the edge, so www is the host that actually serves
   // every page. Canonicals, og:url and the sitemap all derive from this, and
