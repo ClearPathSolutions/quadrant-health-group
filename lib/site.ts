@@ -397,7 +397,7 @@ export const locations: Location[] = [
     city: "Weatherford",
     state: "TX",
     region: "Texas",
-    image: "/images/photos/property-1.jpg",
+    image: "/images/locations/fort-worth-wellness.jpg",
     hasCard: false,
     blurb:
       "Fort Worth Wellness Center provides residential mental health and dual diagnosis treatment with 24/7 clinical support, medical detox and aftercare planning on a private campus west of Fort Worth.",
