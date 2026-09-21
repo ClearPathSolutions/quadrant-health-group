@@ -472,7 +472,7 @@ export const locations: Location[] = [
     city: "Steubenville",
     state: "OH",
     region: "Ohio",
-    image: "/images/locations/ohio-recovery-collective.jpg",
+    image: "/images/locations/ohio-recovery-collective-group-room.jpg",
     hasCard: false,
     blurb:
       "At The Ohio Recovery Collective, compassionate, evidence-based outpatient care meets you where you are — with flexible PHP, IOP and virtual programming built around your life.",
