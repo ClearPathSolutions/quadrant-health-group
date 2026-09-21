@@ -267,7 +267,19 @@ export type Location = {
   state: string;
   region: string;
   image: string;
-  hasCard: boolean; // branded face-card (name baked into image) vs raw photo
+  /**
+   * True when the facility name is baked into the image itself, so
+   * `LocationCard` suppresses its own caption overlay rather than printing the
+   * name twice.
+   *
+   * The eight images that carry a baked-in name also carried a 1px white
+   * stroke inset ~9px from each edge — the "white square" the client asked
+   * about, since the five photos without a baked-in name have no such frame.
+   * The unframed copies under `locations/unframed/` are those same photos
+   * cropped to just inside that stroke; the framed originals are kept
+   * alongside them in case the branded treatment is ever wanted back.
+   */
+  hasCard: boolean;
   blurb: string;
   care: string[];
   comingSoon?: boolean;
@@ -296,7 +308,7 @@ export const locations: Location[] = [
     city: "Laguna Beach",
     state: "CA",
     region: "California",
-    image: "/images/locations/laguna-view.png",
+    image: "/images/locations/unframed/laguna-view.jpg",
     hasCard: true,
     blurb:
       "Perched along California's breathtaking coast, Laguna View Detox offers a serene, supportive environment where healing can truly begin.",
@@ -309,7 +321,7 @@ export const locations: Location[] = [
     city: "Costa Mesa",
     state: "CA",
     region: "California",
-    image: "/images/locations/ocean-coast.png",
+    image: "/images/locations/unframed/ocean-coast.jpg",
     hasCard: true,
     blurb:
       "Minutes from the Pacific Coast, Ocean Coast Recovery offers a peaceful residential setting for those beginning their recovery journey.",
@@ -326,7 +338,7 @@ export const locations: Location[] = [
     city: "Mission Viejo",
     state: "CA",
     region: "California",
-    image: "/images/locations/hillside-mission.png",
+    image: "/images/locations/unframed/hillside-mission.jpg",
     hasCard: true,
     blurb:
       "Nestled in the hills away from the hustle and bustle, Hillside Mission offers a calming, nature-filled retreat for recovery.",
@@ -339,7 +351,7 @@ export const locations: Location[] = [
     city: "San Francisco",
     state: "CA",
     region: "California",
-    image: "/images/locations/marina-harbor.png",
+    image: "/images/locations/unframed/marina-harbor.jpg",
     hasCard: true,
     blurb:
       "Located by the water in a quiet setting on Marina Boulevard, Marina Harbor Detox is a private, upscale facility.",
@@ -355,7 +367,7 @@ export const locations: Location[] = [
     city: "Pomona",
     state: "CA",
     region: "California",
-    image: "/images/locations/wellness-detox-la.png",
+    image: "/images/locations/unframed/wellness-detox-la.jpg",
     hasCard: true,
     blurb:
       "Set in a tranquil corner of Los Angeles, Wellness Detox LA provides luxury amenities and evidence-based addiction care.",
@@ -368,7 +380,7 @@ export const locations: Location[] = [
     city: "Dallas",
     state: "TX",
     region: "Texas",
-    image: "/images/locations/dallas.png",
+    image: "/images/locations/unframed/dallas.jpg",
     hasCard: true,
     blurb:
       "Just outside the heart of Dallas, our state-of-the-art facility provides a full continuum of care including detox, residential treatment, and holistic therapies.",
@@ -401,7 +413,7 @@ export const locations: Location[] = [
     city: "West Palm Beach",
     state: "FL",
     region: "Florida",
-    image: "/images/locations/seaside.png",
+    image: "/images/locations/unframed/seaside.jpg",
     hasCard: true,
     blurb:
       "In West Palm Beach, Seaside Wellness is a premier destination for individuals seeking treatment for drug and alcohol addiction.",
@@ -415,7 +427,7 @@ export const locations: Location[] = [
     city: "West Windsor",
     state: "NJ",
     region: "New Jersey",
-    image: "/images/locations/wellness-nj.png",
+    image: "/images/locations/unframed/wellness-nj.jpg",
     hasCard: true,
     blurb:
       "In a welcoming, easily accessible part of New Jersey, our drug & alcohol rehab center is here to help you achieve lasting recovery.",
