@@ -138,7 +138,7 @@ export default function AboutPage() {
               <li><Icon name="heart" size={18} /> Aftercare &amp; check-ins</li>
               <li><Icon name="calendar" size={18} /> Alumni events</li>
             </ul>
-            <a href={site.phoneHref} className="btn btn-white mt-4">
+            <a href={site.phoneHref} className="btn btn-white mt-4" suppressHydrationWarning>
               <Icon name="phone" size={18} />
               Connect with us
             </a>
@@ -161,7 +161,7 @@ export default function AboutPage() {
           <div className="section-head center">
             <span className="eyebrow">FAQ</span>
             <h2>Frequently asked questions</h2>
-            <p>
+            <p suppressHydrationWarning>
               Answers to the questions we hear most. Don&apos;t see yours?
               Call us any time at {site.phone}.
             </p>

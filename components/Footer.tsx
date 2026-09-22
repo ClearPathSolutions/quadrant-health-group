@@ -55,7 +55,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="btn-group">
-            <a href={site.phoneHref} className="btn btn-white btn-lg">
+            <a href={site.phoneHref} className="btn btn-white btn-lg" suppressHydrationWarning>
               <Icon name="phone" size={19} />
               Call {site.phone}
             </a>
@@ -118,7 +118,7 @@ export default function Footer() {
             <ul className={styles.contact}>
               <li>
                 <Icon name="phone" size={17} />
-                <a href={site.phoneHref}>{site.phone}</a>
+                <a href={site.phoneHref} suppressHydrationWarning>{site.phone}</a>
               </li>
               <li>
                 <Icon name="mail" size={17} />
@@ -150,7 +150,7 @@ export default function Footer() {
           </nav>
         </div>
         <div className={`container ${styles.disclaimer}`}>
-          <p>
+          <p suppressHydrationWarning>
             If you or someone you know is experiencing a medical emergency, call
             911 immediately. For 24/7 free and confidential support, contact the
             SAMHSA National Helpline at 1-800-662-4357.

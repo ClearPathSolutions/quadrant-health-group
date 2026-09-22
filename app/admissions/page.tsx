@@ -155,7 +155,7 @@ export default function AdmissionsPage() {
                 </div>
               </li>
             </ul>
-            <a href={site.phoneHref} className={s.bigPhone}>
+            <a href={site.phoneHref} className={s.bigPhone} suppressHydrationWarning>
               <Icon name="phone" size={22} />
               {site.phone}
             </a>

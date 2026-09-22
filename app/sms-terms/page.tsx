@@ -45,7 +45,7 @@ export default function SmsTermsPage() {
             <p>
               You can cancel at any time by replying <strong>STOP</strong> to any
               message. For help, reply <strong>HELP</strong> or contact us at{" "}
-              <a href={site.phoneHref}>{site.phone}</a>.
+              <a href={site.phoneHref} suppressHydrationWarning>{site.phone}</a>.
             </p>
 
             <h2>Privacy</h2>

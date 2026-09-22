@@ -29,7 +29,7 @@ export default function HomePage() {
               accredited facilities close to home.
             </p>
             <div className="btn-group">
-              <a href={site.phoneHref} className="btn btn-lg btn-white">
+              <a href={site.phoneHref} className="btn btn-lg btn-white" suppressHydrationWarning>
                 <Icon name="phone" size={19} />
                 Call {site.phone}
               </a>
@@ -270,7 +270,7 @@ export default function HomePage() {
               <Link href="/admissions/insurance-verification" className="btn btn-lg btn-white">
                 Verify Your Insurance
               </Link>
-              <a href={site.phoneHref} className="btn btn-lg btn-outline-white">
+              <a href={site.phoneHref} className="btn btn-lg btn-outline-white" suppressHydrationWarning>
                 <Icon name="phone" size={18} />
                 Call {site.phone}
               </a>
@@ -344,7 +344,7 @@ export default function HomePage() {
                 </div>
               </li>
             </ul>
-            <a href={site.phoneHref} className={s.bigPhone}>
+            <a href={site.phoneHref} className={s.bigPhone} suppressHydrationWarning>
               <Icon name="phone" size={22} />
               {site.phone}
             </a>

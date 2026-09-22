@@ -64,7 +64,7 @@ export default function BioPage({ params }: { params: { slug: string } }) {
                 <AvatarPlaceholder label={m.name} />
               )}
             </div>
-            <a href={site.phoneHref} className="btn btn-block mt-3">
+            <a href={site.phoneHref} className="btn btn-block mt-3" suppressHydrationWarning>
               <Icon name="phone" size={18} />
               {site.phone}
             </a>

@@ -46,7 +46,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3>Call us — 24/7</h3>
-                  <a href={site.phoneHref} style={{ fontSize: "1.2rem", fontWeight: 700, color: "var(--navy)" }}>
+                  <a href={site.phoneHref} style={{ fontSize: "1.2rem", fontWeight: 700, color: "var(--navy)" }} suppressHydrationWarning>
                     {site.phone}
                   </a>
                 </div>

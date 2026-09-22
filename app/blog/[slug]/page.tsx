@@ -134,7 +134,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
                 <h3>Ready to talk to someone?</h3>
                 <p>Our admissions team is here 24/7 — confidential and free.</p>
               </div>
-              <a href={site.phoneHref} className="btn btn-lg">
+              <a href={site.phoneHref} className="btn btn-lg" suppressHydrationWarning>
                 <Icon name="phone" size={18} />
                 Call {site.phone}
               </a>

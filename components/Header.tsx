@@ -53,9 +53,9 @@ export default function Header() {
               <Icon name="mail" size={15} />
               <span>{site.email}</span>
             </a>
-            <a href={site.phoneHref} className={styles.topLink}>
+            <a href={site.phoneHref} className={styles.topLink} suppressHydrationWarning>
               <Icon name="phone" size={15} />
-              <span>{site.phone}</span>
+              <span suppressHydrationWarning>{site.phone}</span>
             </a>
           </div>
         </div>
@@ -130,10 +130,10 @@ export default function Header() {
             <a
               href={site.phoneHref}
               className={`${styles.callBtn}`}
-              aria-label={`Call ${site.phone}`}
+              aria-label={`Call ${site.phone}`} suppressHydrationWarning
             >
               <Icon name="phone" size={18} />
-              <span className={styles.callText}>{site.phone}</span>
+              <span className={styles.callText} suppressHydrationWarning>{site.phone}</span>
             </a>
             <Link href="/admissions/insurance-verification" className={`btn ${styles.verifyBtn}`}>
               Verify Insurance
@@ -219,7 +219,7 @@ export default function Header() {
         </nav>
 
         <div className={styles.drawerFoot}>
-          <a href={site.phoneHref} className="btn btn-lg btn-block">
+          <a href={site.phoneHref} className="btn btn-lg btn-block" suppressHydrationWarning>
             <Icon name="phone" size={18} />
             Call {site.phone}
           </a>

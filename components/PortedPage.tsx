@@ -41,9 +41,9 @@ export default function PortedPage({ page }: { page: ContentPage }) {
 
       <section className="section">
         <div className="container" style={{ maxWidth: "820px" }}>
-          <div className={c.prose}>
+          <div className={c.prose} suppressHydrationWarning>
             {page.sections.map((s, i) => (
-              <div key={i}>
+              <div key={i} suppressHydrationWarning>
                 {s.heading && <h2>{s.heading}</h2>}
                 {s.body && <Prose body={s.body} />}
 
@@ -119,7 +119,7 @@ export default function PortedPage({ page }: { page: ContentPage }) {
             <h2>Talk to our admissions team</h2>
             <p>
               Free, confidential, and available 24 hours a day. Reach us any time
-              at <a href={site.phoneHref}>{site.phone}</a>.
+              at <a href={site.phoneHref} suppressHydrationWarning>{site.phone}</a>.
             </p>
           </div>
           <div className="mt-4">

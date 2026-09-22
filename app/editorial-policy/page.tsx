@@ -82,7 +82,7 @@ export default function EditorialPolicyPage() {
               or unclear — including anything published about a named member of
               our staff — tell us and we will review it. Write to{" "}
               <a href={`mailto:${site.email}`}>{site.email}</a> or call{" "}
-              <a href={site.phoneHref}>{site.phone}</a>. Substantive corrections
+              <a href={site.phoneHref} suppressHydrationWarning>{site.phone}</a>. Substantive corrections
               are made to the page itself rather than noted elsewhere.
             </p>
 
@@ -95,7 +95,7 @@ export default function EditorialPolicyPage() {
             </p>
 
             <h2>Medical disclaimer</h2>
-            <p>
+            <p suppressHydrationWarning>
               The information on this site is for general educational purposes.
               It is not a substitute for diagnosis or treatment by a licensed
               professional. If you or someone you know is experiencing a medical

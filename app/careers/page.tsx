@@ -102,7 +102,7 @@ export default function CareersPage() {
             <div className="btn-group">
               {/* HR direct, not the admissions line. Careers page only — the
                   site-wide number stays {site.phone}. */}
-              <a href={`tel:+1${HR_PHONE.replace(/\D/g, "")}`} className="btn btn-lg">
+              <a href={`tel:+1${HR_PHONE.replace(/\D/g, "")}`} className="btn btn-lg" suppressHydrationWarning>
                 <Icon name="phone" size={18} />
                 Call {HR_PHONE}
               </a>

@@ -80,7 +80,7 @@ export default function TreatmentDetail({ params }: { params: { slug: string } }
             <h1 className={d.title}>{t.title}</h1>
             {t.intro && <p className={d.intro}>{t.intro}</p>}
             <div className="btn-group" style={{ marginTop: "1.75rem" }}>
-              <a href={site.phoneHref} className="btn btn-lg btn-white">
+              <a href={site.phoneHref} className="btn btn-lg btn-white" suppressHydrationWarning>
                 <Icon name="phone" size={18} />
                 Call {site.phone}
               </a>
@@ -134,7 +134,7 @@ export default function TreatmentDetail({ params }: { params: { slug: string } }
             <div className={d.sideCard}>
               <h3>Speak with our team</h3>
               <p>Free, confidential, and available 24/7.</p>
-              <a href={site.phoneHref} className="btn btn-block mt-2">
+              <a href={site.phoneHref} className="btn btn-block mt-2" suppressHydrationWarning>
                 <Icon name="phone" size={18} />
                 {site.phone}
               </a>

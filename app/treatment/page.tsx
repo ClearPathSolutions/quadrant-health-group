@@ -133,7 +133,7 @@ export default function TreatmentPage() {
               <p>Speak with our admissions team to build a personalized treatment plan — free, confidential, and no obligation.</p>
             </div>
             <div className="btn-group">
-              <a href={site.phoneHref} className="btn btn-lg"><Icon name="phone" size={18} />Call {site.phone}</a>
+              <a href={site.phoneHref} className="btn btn-lg" suppressHydrationWarning><Icon name="phone" size={18} />Call {site.phone}</a>
               <Link href="/admissions/insurance-verification" className="btn btn-ghost btn-lg">Verify Insurance</Link>
             </div>
           </div>

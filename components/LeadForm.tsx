@@ -78,7 +78,7 @@ export default function LeadForm({
           admissions team. Please call us directly so we can help you right now
           — we&apos;re here 24/7, and the call is free and confidential.
         </p>
-        <a href={site.phoneHref} className="btn btn-lg mt-2">
+        <a href={site.phoneHref} className="btn btn-lg mt-2" suppressHydrationWarning>
           <Icon name="phone" size={18} />
           Call {site.phone}
         </a>
@@ -99,7 +99,7 @@ export default function LeadForm({
           A member of our admissions team will reach out shortly. If you&apos;d
           like to talk right now, we&apos;re here 24/7.
         </p>
-        <a href={site.phoneHref} className="btn btn-lg mt-2">
+        <a href={site.phoneHref} className="btn btn-lg mt-2" suppressHydrationWarning>
           <Icon name="phone" size={18} />
           Call {site.phone}
         </a>
@@ -111,7 +111,7 @@ export default function LeadForm({
     <form
       className={`${styles.form} ${variant === "card" ? styles.asCard : ""}`}
       onSubmit={onSubmit}
-      noValidate
+      noValidate suppressHydrationWarning
     >
       <label className={styles.field}>
         <span>Name</span>
@@ -166,7 +166,7 @@ export default function LeadForm({
         <p className={styles.errorMsg} role="alert">
           <Icon name="phone" size={15} />
           Something went wrong sending your message. Please call us directly at{" "}
-          <a href={site.phoneHref}>{site.phone}</a> — we&apos;re here 24/7.
+          <a href={site.phoneHref} suppressHydrationWarning>{site.phone}</a> — we&apos;re here 24/7.
         </p>
       )}
 

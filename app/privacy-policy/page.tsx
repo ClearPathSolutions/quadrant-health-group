@@ -60,11 +60,11 @@ export default function PrivacyPage() {
               You may request access to, correction of, or deletion of your
               personal information at any time by contacting us at{" "}
               <a href={`mailto:${site.email}`}>{site.email}</a> or{" "}
-              <a href={site.phoneHref}>{site.phone}</a>.
+              <a href={site.phoneHref} suppressHydrationWarning>{site.phone}</a>.
             </p>
 
             <h2>Contact</h2>
-            <p>
+            <p suppressHydrationWarning>
               Quadrant Health Group
               <br />
               {site.address.line1}, {site.address.line2}

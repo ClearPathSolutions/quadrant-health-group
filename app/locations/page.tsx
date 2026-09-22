@@ -73,7 +73,7 @@ export default function LocationsPage() {
               </p>
             </div>
             <div className="btn-group">
-              <a href={site.phoneHref} className="btn btn-lg">
+              <a href={site.phoneHref} className="btn btn-lg" suppressHydrationWarning>
                 <Icon name="phone" size={18} />
                 Call {site.phone}
               </a>

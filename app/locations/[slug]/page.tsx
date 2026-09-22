@@ -86,7 +86,7 @@ export default function LocationDetail({ params }: { params: { slug: string } })
             <h1 className={d.title}>{loc.name}</h1>
             <p className={d.intro}>{intro}</p>
             <div className="btn-group" style={{ marginTop: "1.75rem" }}>
-              <a href={phoneHref} className="btn btn-lg btn-white">
+              <a href={phoneHref} className="btn btn-lg btn-white" suppressHydrationWarning>
                 <Icon name="phone" size={18} />
                 Call {phone}
               </a>
