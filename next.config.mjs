@@ -125,6 +125,16 @@ const redirectMap = [
   { source: "/2026/02/23/national-addiction-treatment-network-quadrant-health-group", destination: "/blog/national-addiction-treatment-network-quadrant-health-group/", statusCode: 301 },
   { source: "/2026/01/16/detox-vs-residential-vs-php-vs-iop-how-to-choose-the-right-level-of-addiction-treatment", destination: "/blog/detox-vs-residential-vs-php-vs-iop-how-to-choose-the-right-level-of-addiction-treatment/", statusCode: 301 },
   { source: "/2025/12/13/holiday-relapse-risk-why-december-is-the-most-dangerous-time-for-addiction", destination: "/blog/holiday-relapse-risk-why-december-is-the-most-dangerous-time-for-addiction/", statusCode: 301 },
+
+  // Shareable short link to the network-wide ADP Career Center — the same
+  // centre as CAREERS_ALL in lib/careers.ts. 302, not 301: the destination is
+  // a third-party URL the client may change, and browsers cache a 301 forever.
+  {
+    source: "/jobs",
+    destination:
+      "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=e1094ba9-8b93-4f55-9dab-3102a4eaaa49&ccId=9200857813559_2&lang=en_US",
+    statusCode: 302,
+  },
 ];
 
 /** @type {import('next').NextConfig} */
