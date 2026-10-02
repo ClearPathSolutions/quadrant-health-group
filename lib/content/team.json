@@ -153,6 +153,15 @@
     "group": "Corporate Leadership Team"
   },
   {
+    "slug": "dana-barnes",
+    "name": "Dana Barnes",
+    "role": "Director of Clinical Quality",
+    "credentials": "",
+    "bio": "",
+    "image": "/images/team/dana-barnes.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
     "slug": "marc-north",
     "name": "Marc North",
     "role": "Procurement & IT Operations Manager",
@@ -546,6 +555,15 @@
     "credentials": "",
     "bio": "Zachary Walter brings both professional experience in behavioral health and a personal connection to recovery to his role as Alumni Coordinator at Seaside Wellness Palm Beach. His background supporting individuals throughout the recovery process has shaped a compassionate approach rooted in dignity, empathy, accountability, and respect. He is also Ocean Lifeguard Certified, reflecting his ability to remain calm, prepared, and focused in high-pressure situations.\nZachary’s own recovery journey has given him a strong appreciation for the importance of staying connected and involved within the recovery community. As Alumni Coordinator, he is passionate about creating opportunities for alumni to stay engaged, support one another, and continue building a strong foundation in recovery. For Zachary, recovery is about more than completing treatment, it’s about continuing to grow, stay connected, and build a meaningful life alongside a supportive community.",
     "image": "/images/team/zachary-walter.jpg",
+    "group": "Alumni Services"
+  },
+  {
+    "slug": "lindsay-arndorfer",
+    "name": "Lindsay Arndorfer",
+    "role": "Alumni Coordinator | Iowa",
+    "credentials": "",
+    "bio": "Lindsay Arndorfer is passionate about building genuine relationships and helping people feel connected and supported. As Alumni Coordinator, she works to create opportunities for alumni to stay connected to one another and to the recovery community long after treatment ends.\nLindsay brings more than 15 years of experience in relationship-focused roles across leadership, education, and technology. Most recently, she worked in a middle school supporting students with complex emotional and behavioral needs. That experience strengthened her interest in mental health and substance use and reinforced something that has been a common thread throughout her career: relationships matter, and people do better when they feel like they have someone in their corner.\nLindsay is currently pursuing her Master of Social Work at Grand View University with a clinical focus. Her move into behavioral health has been shaped by a desire to better understand people, their experiences, and the environments and relationships that influence their lives.\nAs Alumni Coordinator, Lindsay will develop events, programming, outreach, and other ways for alumni to stay involved and connected. She believes recovery is about more than what happens during treatment—it’s also about building relationships, finding community, and creating a life that feels meaningful moving forward.",
+    "image": "/images/team/lindsay-arndorfer.jpg",
     "group": "Alumni Services"
   }
 ]
