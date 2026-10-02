@@ -49,7 +49,7 @@
     "name": "Colin McBride",
     "role": "Chief Revenue Officer",
     "credentials": "",
-    "bio": "As Vice President of Revenue & Billing, Colin McBride provides executive oversight and leadership to Quadrant Billing Solutions (QBS)—Quadrant Health Group’s in-house billing company. Colin led the development of QBS from the ground up, building it to meet the complex demands of behavioral health providers. Though QBS operates under the Quadrant Health Group umbrella, it functions independently with its own systems, leadership, and results-driven infrastructure. QBS remains Colin’s primary focus; however, he also plays a key strategic role across Quadrant Health Group, supporting revenue operations through clinical quality oversight, and admissions strategy across the organization’s growing network of facilities. With over a decade of experience in behavioral health, Colin’s background in direct care and facility leadership gives him a deep understanding of the challenges providers face—insights that now inform his leadership across Quadrant Health Group. Colin’s passion lies in developing innovative solutions that bridge clinical care with financial strategy, improving both patient\noutcomes and organizational performance.",
+    "bio": "As Chief Revenue Officer, Colin McBride provides executive oversight and leadership to Quadrant Billing Solutions (QBS)—Quadrant Health Group’s in-house billing company. Colin led the development of QBS from the ground up, building it to meet the complex demands of behavioral health providers. Though QBS operates under the Quadrant Health Group umbrella, it functions independently with its own systems, leadership, and results-driven infrastructure. QBS remains Colin’s primary focus; however, he also plays a key strategic role across Quadrant Health Group, supporting revenue operations through clinical quality oversight, and admissions strategy across the organization’s growing network of facilities. With over a decade of experience in behavioral health, Colin’s background in direct care and facility leadership gives him a deep understanding of the challenges providers face—insights that now inform his leadership across Quadrant Health Group. Colin’s passion lies in developing innovative solutions that bridge clinical care with financial strategy, improving both patient\noutcomes and organizational performance.",
     "image": "/images/team/colin-mcbride.jpg",
     "group": "Corporate Leadership Team"
   },
@@ -162,15 +162,6 @@
     "group": "Corporate Leadership Team"
   },
   {
-    "slug": "alie-wash",
-    "name": "Alie Wash",
-    "role": "Front Office Coordinator",
-    "credentials": "",
-    "bio": "Alie Wash serves as Front Office Coordinator at Quadrant Health Group, where she is passionate about helping others feel welcomed, supported, and valued. Drawing from her own experience in recovery, Alie brings a unique sense of empathy, understanding, and compassion to her role.\nShe is committed to creating a positive and welcoming experience for every individual she encounters and takes pride in being a supportive presence for clients, families, and team members alike. Alie’s personal journey inspires her dedication to helping others feel seen, respected, and encouraged throughout their own path toward healing and recovery.",
-    "image": "/images/team/alie-wash.jpg",
-    "group": "Corporate Leadership Team"
-  },
-  {
     "slug": "erika-sirianos",
     "name": "Erika Sirianos",
     "role": "Human Resources & Payroll Director",
@@ -222,6 +213,15 @@
     "credentials": "",
     "bio": "Emmanuel Lacruz serves as an HR Talent Acquisition Recruiter, where he is passionate about connecting talented healthcare professionals with opportunities to grow, make a meaningful impact, and build rewarding careers. He works closely with candidates and hiring managers to create a seamless, transparent, and positive recruitment experience from the initial conversation through the onboarding process.\nEmmanuel believes that every great organization is built on exceptional people. He is committed to identifying individuals who not only possess the skills and experience needed for success but also share a dedication to delivering compassionate, high-quality care. Known for his approachable nature and strong communication skills, he takes pride in building lasting relationships while helping candidates find positions where they can thrive professionally.\nWith experience recruiting nurses, therapists, behavioral health professionals, and administrative staff, Emmanuel is dedicated to supporting Quadrant Health Group's mission by attracting outstanding talent and fostering a workplace culture where employees feel valued, supported, and empowered to succeed.",
     "image": "/images/team/emmanuel-lacruz.jpg",
+    "group": "Human Resources"
+  },
+  {
+    "slug": "alie-wash",
+    "name": "Alie Wash",
+    "role": "Front Office Coordinator",
+    "credentials": "",
+    "bio": "Alie Wash serves as Front Office Coordinator at Quadrant Health Group, where she is passionate about helping others feel welcomed, supported, and valued. Drawing from her own experience in recovery, Alie brings a unique sense of empathy, understanding, and compassion to her role.\nShe is committed to creating a positive and welcoming experience for every individual she encounters and takes pride in being a supportive presence for clients, families, and team members alike. Alie’s personal journey inspires her dedication to helping others feel seen, respected, and encouraged throughout their own path toward healing and recovery.",
+    "image": "/images/team/alie-wash.jpg",
     "group": "Human Resources"
   },
   {
