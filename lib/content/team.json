@@ -157,7 +157,7 @@
     "name": "Dana Barnes",
     "role": "Director of Clinical Quality",
     "credentials": "",
-    "bio": "",
+    "bio": "Dana Barnes serves as the Director of Clinical Quality, bringing over a decade of experience in the behavioral health field. Her well-rounded clinical background spans multiple levels of leadership, beginning as a therapist and progressing to roles including Executive Clinical Director. She is trained in Eye Movement Desensitization and Reprocessing (EMDR) and Accelerated Resolution Therapy (ART), further strengthening her expertise in evidence-based approaches to trauma treatment. Her clinical experience has shaped her understanding of effective, compassionate, and clinically sound treatment practices. This diverse experience has provided Dana with a comprehensive understanding of clinical operations, quality standards, and the key components of effective clinical auditing.\n\nThroughout her career, Dana has leveraged her clinical expertise and leadership experience to support clinical teams in strengthening documentation practices, improving compliance, and enhancing overall quality of care. Her ability to bridge clinical practice with quality and regulatory expectations allows her to identify opportunities for improvement while supporting clinicians and leadership in implementing sustainable, effective solutions.\n\nDana is passionate about promoting clinical excellence, maintaining high standards of documentation, and fostering a culture of continuous quality improvement within behavioral health organizations. She is committed to ensuring that strong clinical practices, thorough documentation, and quality standards work together to support positive outcomes for the individuals and communities served.",
     "image": "/images/team/dana-barnes.jpg",
     "group": "Corporate Leadership Team"
   },
@@ -252,6 +252,15 @@
     "group": "Business Development"
   },
   {
+    "slug": "rachel-kessler",
+    "name": "Rachel Kessler",
+    "role": "Director of Strategic Partnership",
+    "credentials": "",
+    "bio": "With nearly seven years of experience in the treatment field, Rachel has worked in both admissions and business development. Her experience has given her a genuine passion for helping individuals and families navigate difficult moments and find the support and care they need.\n\nRachel believes that connection, compassion, and trust are at the heart of this work. Through her own experiences and the many people she has had the opportunity to work with, she has developed a deep understanding of how important it is to have someone who truly listens, cares, and helps guide you in the right direction.",
+    "image": "/images/team/rachel-kessler.jpg",
+    "group": "Business Development"
+  },
+  {
     "slug": "douglas-penny",
     "name": "Douglas Penny",
     "role": "VP of Business Development | West Coast",
@@ -281,7 +290,7 @@
   {
     "slug": "richard-bradshaw",
     "name": "Richard Bradshaw",
-    "role": "Business Development Representative | West Coast",
+    "role": "Business Development Representative | Texas",
     "credentials": "",
     "bio": "Richard Bradshaw is a seasoned professional in behavioral health and addiction treatment with over 15 years of experience in addiction and recovery, currently serving as Business Development Representative for Quadrant Health Group, a nationwide network of luxury addiction treatment centers focused on personalized, evidence-based care.\nWith extensive experience as Director of Admissions, Business Development, and over the last decade, he drives growth through strategic outreach, admissions processes, and operational excellence in the substance use disorder field.",
     "image": "/images/team/richard-bradshaw.jpg",
@@ -382,7 +391,7 @@
     "name": "Vinny Turiello",
     "role": "Admissions Manager",
     "credentials": "",
-    "bio": "Vinny Turiello is the Client Care Coordinator Supervisor at Quadrant Health Group, where he has been a key part of the team since 2022. With over eight years of prior experience in public safety, Vinny brings a calm, solutions-focused approach to helping individuals and families navigate the challenges of seeking treatment for substance use and mental health concerns. At Quadrant, Vinny leads a dedicated team focused on client engagement, admissions support, and care coordination. His background in public safety gives him a unique perspective on crisis response, communication, and building trust with clients during vulnerable moments. Vinny is committed to ensuring that every client feels heard, respected, and supported from their first point of contact through their transition into care. His mission is to make accessing treatment not only possible—but personal.",
+    "bio": "Vinny Turiello is the Admissions Manager at Quadrant Health Group, where he has been a key part of the team since 2022. With over eight years of prior experience in public safety, Vinny brings a calm, solutions-focused approach to helping individuals and families navigate the challenges of seeking treatment for substance use and mental health concerns. At Quadrant, Vinny leads a dedicated team focused on client engagement, admissions support, and care coordination. His background in public safety gives him a unique perspective on crisis response, communication, and building trust with clients during vulnerable moments. Vinny is committed to ensuring that every client feels heard, respected, and supported from their first point of contact through their transition into care. His mission is to make accessing treatment not only possible—but personal.",
     "image": "/images/team/vinny-turiello.jpg",
     "group": "Admissions & Client Care"
   },

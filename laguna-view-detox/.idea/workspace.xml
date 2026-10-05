@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f6791454-aab4-4ba5-81e6-53a890a2aa02" name="Changes" comment="Add external redirect mappings for third-party job board links" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="359" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;eden-clearpathtx&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ClearPathSolutions/laguna-view-detox.git&quot;,
+    &quot;accountId&quot;: &quot;6708782f-b468-450f-98e4-383a49688421&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.4917577590656825" />
+      <entry key="MS500" value="2.941482329896769" />
+      <entry key="S2" value="5.357126204157577" />
+      <entry key="S5" value="6.8574842725642835" />
+      <entry key="S10" value="8.339045356100518" />
+      <entry key="S30" value="11.458202199230222" />
+      <entry key="S60" value="12.967160483682107" />
+      <entry key="M2" value="13.90733191581088" />
+      <entry key="M5" value="14.543049626539172" />
+      <entry key="M10" value="14.768069343909543" />
+      <entry key="M15" value="14.844600825700612" />
+      <entry key="M30" value="14.921908294543913" />
+      <entry key="H1" value="14.960855598669305" />
+      <entry key="H2" value="14.980403097003984" />
+      <entry key="H4" value="14.99019536475289" />
+      <entry key="D1" value="14.99836503457742" />
+      <entry key="W1" value="14.999766412451846" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.440122353259707" />
+      <entry key="MS500" value="2.9196801956739993" />
+      <entry key="S2" value="5.3477056903242" />
+      <entry key="S5" value="6.852744266673024" />
+      <entry key="S10" value="8.336106985100116" />
+      <entry key="S30" value="11.456789107646292" />
+      <entry key="S60" value="12.966346831708275" />
+      <entry key="M2" value="13.906891563118073" />
+      <entry key="M5" value="14.542864397070089" />
+      <entry key="M10" value="14.76797511901227" />
+      <entry key="M15" value="14.844537643889481" />
+      <entry key="M30" value="14.921876519149183" />
+      <entry key="H1" value="14.960839664493516" />
+      <entry key="H2" value="14.980395118251685" />
+      <entry key="H4" value="14.990191372455028" />
+      <entry key="D1" value="14.998364368788167" />
+      <entry key="W1" value="14.999766317329142" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3K9BIHKuyJsJr94mgPAMiCyQwJT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/edenhebron/Desktop/laguna-view-detox/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="npm.Next.js: server-side">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="Next.js: server-side" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6791454-aab4-4ba5-81e6-53a890a2aa02" name="Changes" comment="" />
+      <created>1790959821323</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1790959821323</updated>
+      <workItem from="1790959822330" duration="391000" />
+      <workItem from="1790960379646" duration="178000" />
+      <workItem from="1790962476926" duration="37000" />
+      <workItem from="1790962827462" duration="104000" />
+      <workItem from="1790969306720" duration="348000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update Monica Olivares' role to Clinical Operations Director in team data and related content">
+      <option name="closed" value="true" />
+      <created>1790959918924</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1790959918924</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update Jacob Cameron's role to Program Director in team data and related content">
+      <option name="closed" value="true" />
+      <created>1790960170892</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1790960170892</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add external redirect mappings for third-party job board links">
+      <option name="closed" value="true" />
+      <created>1790969395082</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1790969395082</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update Monica Olivares' role to Clinical Operations Director in team data and related content" />
+    <MESSAGE value="Update Jacob Cameron's role to Program Director in team data and related content" />
+    <MESSAGE value="Add external redirect mappings for third-party job board links" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add external redirect mappings for third-party job board links" />
+  </component>
+</project>
