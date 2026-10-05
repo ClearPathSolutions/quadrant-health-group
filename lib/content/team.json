@@ -252,15 +252,6 @@
     "group": "Business Development"
   },
   {
-    "slug": "rachel-kessler",
-    "name": "Rachel Kessler",
-    "role": "Director of Strategic Partnership",
-    "credentials": "",
-    "bio": "With nearly seven years of experience in the treatment field, Rachel has worked in both admissions and business development. Her experience has given her a genuine passion for helping individuals and families navigate difficult moments and find the support and care they need.\n\nRachel believes that connection, compassion, and trust are at the heart of this work. Through her own experiences and the many people she has had the opportunity to work with, she has developed a deep understanding of how important it is to have someone who truly listens, cares, and helps guide you in the right direction.",
-    "image": "/images/team/rachel-kessler.jpg",
-    "group": "Business Development"
-  },
-  {
     "slug": "douglas-penny",
     "name": "Douglas Penny",
     "role": "VP of Business Development | West Coast",
@@ -276,6 +267,15 @@
     "credentials": "",
     "bio": "Mike Simmons serves as Vice President of Business Development for Quadrant Health Group, where he leads referral network expansion, admissions growth, and strategic partnerships.\nMike brings nearly a decade of experience in the behavioral health industry, with a strong track record in relationship-driven business development and patient acquisition. He began his career in alumni services, where he developed deep expertise in long-term engagement and referral pipeline development, which has translated into consistent admissions growth and strong industry relationships.\nIn his current role, Mike is responsible for expanding referral channels, strengthening provider relationships, and driving census growth across Quadrant’s East Coast locations. His ability to combine industry knowledge with a performance-driven approach to business development has been a key contributor to the platform’s growth and market positioning.\nMike plays a critical role in maintaining a sustainable and diversified admissions pipeline, supporting continued expansion and long-term value creation.",
     "image": "/images/team/mike-simmons.jpg",
+    "group": "Business Development"
+  },
+  {
+    "slug": "rachel-kessler",
+    "name": "Rachel Kessler",
+    "role": "Director of Strategic Partnership",
+    "credentials": "",
+    "bio": "With nearly seven years of experience in the treatment field, Rachel has worked in both admissions and business development. Her experience has given her a genuine passion for helping individuals and families navigate difficult moments and find the support and care they need.\n\nRachel believes that connection, compassion, and trust are at the heart of this work. Through her own experiences and the many people she has had the opportunity to work with, she has developed a deep understanding of how important it is to have someone who truly listens, cares, and helps guide you in the right direction.",
+    "image": "/images/team/rachel-kessler.jpg",
     "group": "Business Development"
   },
   {
