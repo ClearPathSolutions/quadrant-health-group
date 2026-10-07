@@ -27,7 +27,7 @@ export default function EditorialPolicyPage() {
         <div className="container">
           <div className={c.prose}>
             <p>
-              <em>Last reviewed: {new Date().getFullYear()}.</em> This policy
+              <em>Last reviewed: October 7, 2026.</em> This policy
               describes our editorial process. It is not medical advice, and it
               does not replace a conversation with a qualified clinician.
             </p>
