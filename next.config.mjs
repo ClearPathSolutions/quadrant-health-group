@@ -135,6 +135,14 @@ const redirectMap = [
       "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=e1094ba9-8b93-4f55-9dab-3102a4eaaa49&ccId=9200857813559_2&lang=en_US",
     statusCode: 302,
   },
+  // The careers page moved to /career-center; the old /careers URL now goes
+  // straight to the same ADP Career Center as /jobs. 302 for the same reason.
+  {
+    source: "/careers",
+    destination:
+      "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=e1094ba9-8b93-4f55-9dab-3102a4eaaa49&ccId=9200857813559_2&lang=en_US",
+    statusCode: 302,
+  },
 ];
 
 /** @type {import('next').NextConfig} */

@@ -18,13 +18,13 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  ...seo({ path: "/careers", title: TITLE, description: DESCRIPTION }),
+  ...seo({ path: "/career-center", title: TITLE, description: DESCRIPTION }),
 };
 
 export default function CareersPage() {
   return (
     <>
-      <JsonLd data={breadcrumbSchema([{ name: "Careers", path: "/careers" }])} />
+      <JsonLd data={breadcrumbSchema([{ name: "Careers", path: "/career-center" }])} />
       <PageHero
         crumb="Careers"
         eyebrow="Work with us"

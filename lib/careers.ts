@@ -121,7 +121,7 @@ const rank = (key: string) => {
   return i === -1 ? ORDER.length : i;
 };
 
-/** Every tile on /careers, in the client's order. */
+/** Every tile on /career-center, in the client's order. */
 export const careerTiles: CareerTile[] = [
   ...locations
     .filter((l) => !l.comingSoon && CC[l.slug])
