@@ -46,6 +46,27 @@ export function canonical(path = "/"): string {
   return clean ? `${site.url}/${clean}/` : `${site.url}/`;
 }
 
+/** Longest <title> before audit tools (and Google's SERP) start truncating. */
+const MAX_TITLE = 70;
+const BRAND_SUFFIX = ` | ${site.name}`;
+const TRAILING_BRAND = new RegExp(`\\s*[|\\-–—]\\s*${site.name}\\s*$`, "i");
+
+/** A title with any trailing "- Quadrant Health Group" / "| …" removed. */
+export function bareTitle(raw: string): string {
+  return raw.trim().replace(TRAILING_BRAND, "").trim() || site.name;
+}
+
+/**
+ * `title` metadata that stays within 70 characters: the layout template adds
+ * " | Quadrant Health Group" only when the whole title still fits; otherwise
+ * the page title is emitted on its own, so the descriptive words survive.
+ * Also keeps <title> from repeating the H1 verbatim where a suffix fits.
+ */
+export function fitTitle(raw: string): string | { absolute: string } {
+  const bare = bareTitle(raw);
+  return bare.length + BRAND_SUFFIX.length <= MAX_TITLE ? bare : { absolute: bare };
+}
+
 /**
  * Whether this deployment may be indexed (F-03, paired with T1.4 / V0092).
  *

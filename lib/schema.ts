@@ -63,7 +63,10 @@ export function locationSchema(loc: Location, detail?: LocationDetail) {
   const url = canonical(`/locations/${loc.slug}`);
   return {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
+    // MedicalClinic alongside MedicalBusiness: `availableService` is defined on
+    // MedicalClinic (and Hospital/Physician), not on plain MedicalBusiness, so
+    // validators reported every location page as a markup error.
+    "@type": ["MedicalBusiness", "MedicalClinic"],
     "@id": `${url}#facility`,
     name: loc.name,
     url,
@@ -98,16 +101,12 @@ export function locationSchema(loc: Location, detail?: LocationDetail) {
 /** One staff member. Emitted on each `/team/<slug>` page. */
 export function personSchema(m: TeamMember) {
   const url = canonical(`/team/${m.slug}`);
-  // Physician carries more weight than Person, so the test stays conservative:
-  // a stated clinical credential, or a role that is explicitly a physician one.
-  // The 30 corporate records imported from the bio doc carry no `credentials`
-  // value, so credentials alone would have mistyped the medical lead.
-  const isPhysician =
-    /\b(MD|DO|PsyD)\b/.test(m.credentials || "") ||
-    /\b(physician|medical director|medical oversight)\b/i.test(m.role || "");
+  // Always Person. schema.org's Physician is an organisation type (a subtype
+  // of MedicalOrganization), so jobTitle / worksFor on it are invalid and the
+  // medical lead's bio was the one page reported with markup errors.
   return {
     "@context": "https://schema.org",
-    "@type": isPhysician ? "Physician" : "Person",
+    "@type": "Person",
     "@id": `${url}#person`,
     name: m.name,
     url,
@@ -127,7 +126,8 @@ export function articleSchema(post: Post) {
     "@type": "Article",
     "@id": `${url}#article`,
     headline: post.title,
-    description: post.excerpt,
+    // Never an empty string: a Clarion post can arrive without an excerpt.
+    description: post.excerpt?.trim() || post.title,
     url,
     mainEntityOfPage: url,
     datePublished: post.date,
@@ -163,9 +163,9 @@ export function treatmentSchema(t: Treatment) {
     url,
     description: t.metaDescription || t.intro.slice(0, 200),
     ...(t.image ? { image: abs(t.image) } : {}),
-    ...(t.category === "addiction"
-      ? { possibleTreatment: { "@id": `${site.url}/#organization` } }
-      : { provider: { "@id": `${site.url}/#organization` } }),
+    // No `provider` on MedicalTherapy (schema.org does not define it there)
+    // and no `possibleTreatment` pointing at the organisation (it expects a
+    // MedicalTherapy). Both were reported as structured-data errors.
   };
 }
 

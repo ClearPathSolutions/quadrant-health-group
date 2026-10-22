@@ -75,7 +75,6 @@ const redirectMap = [
   { source: "/team/laura-conners", destination: "/about/meet-the-team/", statusCode: 301 },
   { source: "/team/danielle-foreman", destination: "/about/meet-the-team/", statusCode: 301 },
   { source: "/team/deanna-koester", destination: "/about/meet-the-team/", statusCode: 301 },
-  { source: "/team/julie-mitchell", destination: "/about/meet-the-team/", statusCode: 301 },
   { source: "/team/dylan-kuzinski", destination: "/about/meet-the-team/", statusCode: 301 },
   { source: "/team/dr-shaun-hutton", destination: "/about/meet-the-team/", statusCode: 301 },
   { source: "/team/april-blair", destination: "/about/meet-the-team/", statusCode: 301 },

@@ -86,15 +86,19 @@ export default function Footer() {
           <div className={styles.social}>
             <a href={site.social.facebook} aria-label="Facebook" target="_blank" rel="noopener noreferrer">
               <Icon name="facebook" size={20} />
+              <span className="sr-only">Facebook</span>
             </a>
             <a href={site.social.instagram} aria-label="Instagram" target="_blank" rel="noopener noreferrer">
               <Icon name="instagram" size={20} />
+              <span className="sr-only">Instagram</span>
             </a>
             <a href={site.social.linkedin} aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
               <Icon name="linkedin" size={20} />
+              <span className="sr-only">LinkedIn</span>
             </a>
             <a href={site.social.youtube} aria-label="YouTube" target="_blank" rel="noopener noreferrer">
               <Icon name="youtube" size={20} />
+              <span className="sr-only">YouTube</span>
             </a>
           </div>
         </div>

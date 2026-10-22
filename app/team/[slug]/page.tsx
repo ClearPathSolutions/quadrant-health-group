@@ -5,7 +5,7 @@ import AvatarPlaceholder from "@/components/AvatarPlaceholder";
 import { notFound } from "next/navigation";
 import Icon from "@/components/Icon";
 import { getTeamMember, team } from "@/lib/content";
-import { site, seo } from "@/lib/site";
+import { site, seo, fitTitle } from "@/lib/site";
 import JsonLd from "@/components/JsonLd";
 import { personSchema, breadcrumbSchema } from "@/lib/schema";
 import b from "./bio.module.css";
@@ -22,7 +22,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const title = `${m.name}${m.role ? ` — ${m.role}` : ""}`;
   const description = m.bio.slice(0, 160);
   return {
-    title,
+    title: fitTitle(title),
     description,
     ...seo({
       path: `/team/${m.slug}`,

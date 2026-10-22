@@ -52,7 +52,7 @@ export default function SmsTermsPage() {
             <p>
               Mobile information is never shared or sold to third parties for
               marketing purposes. See our{" "}
-              <a href="/privacy-policy">Privacy Policy</a> for details.
+              <a href="/privacy-policy/">Privacy Policy</a> for details.
             </p>
           </div>
         </div>

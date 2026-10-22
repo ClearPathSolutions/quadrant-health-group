@@ -13,8 +13,8 @@ import {
   readingTime,
   readingTimeFromHtml,
 } from "@/lib/content";
-import { getClarionPost, getClarionPosts } from "@/lib/clarion";
-import { site, seo } from "@/lib/site";
+import { finaliseBodyHtml, getClarionPost, getClarionPosts, summariseHtml } from "@/lib/clarion";
+import { site, seo, fitTitle, bareTitle } from "@/lib/site";
 import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import a from "../article.module.css";
 
@@ -33,15 +33,23 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const post = getPost(params.slug) || (await getClarionPost(params.slug));
   if (!post) return {};
+  // A Clarion post can arrive with no excerpt; summarise its body rather than
+  // ship a page without a meta description.
+  const description =
+    post.excerpt?.trim() ||
+    ("bodyHtml" in post && typeof post.bodyHtml === "string"
+      ? summariseHtml(post.bodyHtml)
+      : summariseHtml(post.sections.map((s) => s.body).join(" ")));
   return {
-    // F-07 — article headlines are self-contained and five of the seven already
-    // name the brand, so the layout template rendered it twice.
-    title: { absolute: post.title },
-    description: post.excerpt,
+    // F-07 — several headlines already end in the brand, so it is stripped and
+    // re-added by the template only when the whole title fits in 70 characters
+    // (which also stops <title> from repeating the H1 word for word).
+    title: fitTitle(post.title),
+    description: description || undefined,
     ...seo({
       path: `/blog/${post.slug}`,
-      title: post.title,
-      description: post.excerpt,
+      title: bareTitle(post.title),
+      description,
       type: "article",
       images: post.image ? [post.image] : undefined,
     }),
@@ -55,9 +63,21 @@ export default async function PostPage({ params }: { params: { slug: string } })
   const post = getPost(params.slug) || clarionPost;
   if (!post) notFound();
 
-  const related = (await getAllPosts())
-    .filter((p) => p.slug !== post.slug)
-    .slice(0, 3);
+  const all = await getAllPosts();
+  // Neighbours in the archive (next two, previous one, wrapping) rather than
+  // the newest three everywhere, so every post is linked from other posts and
+  // not only from /blog.
+  const at = all.findIndex((p) => p.slug === post.slug);
+  const related = [1, 2, -1]
+    .map((offset) => all[(at + offset + all.length) % all.length])
+    .filter((p, i, arr) => p && p.slug !== post.slug && arr.findIndex((q) => q.slug === p.slug) === i);
+  // Only check blog links against the post list when Clarion actually answered.
+  const knownSlugs = all.some((p) => p.source === "clarion")
+    ? new Set(all.map((p) => p.slug))
+    : new Set<string>();
+  const bodyHtml = clarionPost
+    ? finaliseBodyHtml(clarionPost.bodyHtml, { title: post.title, knownSlugs })
+    : "";
 
   return (
     <>
@@ -116,7 +136,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
               // Clarion posts arrive as sanitized HTML from Clarion's API.
               <section
                 className={a.block}
-                dangerouslySetInnerHTML={{ __html: clarionPost.bodyHtml }}
+                dangerouslySetInnerHTML={{ __html: bodyHtml }}
               />
             ) : (
               // Native posts render through Prose so they pick up the heading

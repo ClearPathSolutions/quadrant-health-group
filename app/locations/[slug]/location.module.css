@@ -155,3 +155,25 @@
   font-size: 0.88rem;
   color: var(--slate);
 }
+
+/* Sister-facility cross-links */
+.otherLocations {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.6rem 1.5rem;
+}
+.otherLocations a {
+  font-weight: 600;
+  text-decoration: none;
+}
+.otherLocations a:hover {
+  text-decoration: underline;
+}
+.otherLocations span {
+  font-weight: 400;
+  opacity: 0.75;
+}

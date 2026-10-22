@@ -4,7 +4,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import Icon from "@/components/Icon";
 import LeadForm from "@/components/LeadForm";
-import { locations, site, seo } from "@/lib/site";
+import { locations, site, seo, fitTitle } from "@/lib/site";
 import { getLocationDetail } from "@/lib/content";
 import JsonLd from "@/components/JsonLd";
 import { locationSchema, breadcrumbSchema } from "@/lib/schema";
@@ -22,7 +22,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   if (!loc) return {};
   const description = detail?.metaDescription || loc.blurb;
   return {
-    title: `${loc.name} — ${loc.city}, ${loc.state}`,
+    title: fitTitle(`${loc.name} — ${loc.city}, ${loc.state}`),
     description,
     ...seo({
       path: `/locations/${loc.slug}`,
@@ -186,6 +186,28 @@ export default function LocationDetail({ params }: { params: { slug: string } })
           </div>
         </section>
       ) : null}
+
+      {/* Sister facilities — cross-links so each location page is reachable
+          from more than the /locations index. */}
+      <section className="section-tight">
+        <div className="container">
+          <div className="section-head center">
+            <span className="eyebrow">Across the network</span>
+            <h2>Other Quadrant Health Group locations</h2>
+          </div>
+          <ul className={d.otherLocations}>
+            {detailable
+              .filter((l) => l.slug !== loc.slug)
+              .map((l) => (
+                <li key={l.slug}>
+                  <Link href={`/locations/${l.slug}`}>
+                    {l.name} <span>— {l.city}, {l.state}</span>
+                  </Link>
+                </li>
+              ))}
+          </ul>
+        </div>
+      </section>
 
       {/* Contact form */}
       <section className="section bg-soft">
