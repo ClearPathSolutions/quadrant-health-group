@@ -87,6 +87,20 @@ const redirectMap = [
   { source: "/team/amanda-daniels", destination: "/about/meet-the-team/", statusCode: 301 },
   { source: "/team/jennifer-penny", destination: "/about/meet-the-team/", statusCode: 301 },
 
+  // SEO 86e3ptqxw — old WordPress URLs that still 404 after the rebuild (Wayback CDX 2025+,
+  // tested against www on 2026-10-26). Six more staff profiles from the same CR-04 set, so
+  // they go to the team index like the others.
+  { source: "/team/adrian-diaz", destination: "/about/meet-the-team/", statusCode: 301 },
+  { source: "/team/david-goodgame", destination: "/about/meet-the-team/", statusCode: 301 },
+  { source: "/team/eric-stutes", destination: "/about/meet-the-team/", statusCode: 301 },
+  { source: "/team/janee-young", destination: "/about/meet-the-team/", statusCode: 301 },
+  { source: "/team/preshas-gibson", destination: "/about/meet-the-team/", statusCode: 301 },
+  { source: "/team/sue-harrison", destination: "/about/meet-the-team/", statusCode: 301 },
+  // WordPress archives. The blog category and the two WP author archives (/author/j, /author/qdev
+  // are staff accounts, not people the site profiles) all list posts, so they go to the blog index.
+  { source: "/category/blog/:path*", destination: "/blog/", statusCode: 301 },
+  { source: "/author/:name", destination: "/blog/", statusCode: 301 },
+
   // T4.4 — V0090 probed /locations/des-moines-wellness-center; this build uses
   // the shorter form, matching /locations/fort-worth-wellness. Redirect so the
   // slug the audit named does not dead-end.
