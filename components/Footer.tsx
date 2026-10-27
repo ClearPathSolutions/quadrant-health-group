@@ -149,8 +149,8 @@ export default function Footer() {
           <nav className={styles.legal} aria-label="Legal">
             <Link href="/privacy-policy">Privacy Policy</Link>
             <Link href="/notice-of-privacy-practices">Notice of Privacy Practices</Link>
+            <Link href="/sms-terms">SMS Terms</Link>
             <Link href="/editorial-policy">Editorial Policy</Link>
-            <Link href="/sms-terms">SMS Terms &amp; Conditions</Link>
             <Link href="/contact">Contact</Link>
           </nav>
         </div>
