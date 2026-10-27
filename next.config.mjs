@@ -139,6 +139,10 @@ const redirectMap = [
   { source: "/2026/01/16/detox-vs-residential-vs-php-vs-iop-how-to-choose-the-right-level-of-addiction-treatment", destination: "/blog/detox-vs-residential-vs-php-vs-iop-how-to-choose-the-right-level-of-addiction-treatment/", statusCode: 301 },
   { source: "/2025/12/13/holiday-relapse-risk-why-december-is-the-most-dangerous-time-for-addiction", destination: "/blog/holiday-relapse-risk-why-december-is-the-most-dangerous-time-for-addiction/", statusCode: 301 },
 
+  // The compliance officer's Website Disclaimer is now part of the standardized
+  // Terms of Service; the old URL goes there.
+  { source: "/website-disclaimer", destination: "/terms-of-service/", statusCode: 301 },
+
   // Shareable short link to the network-wide ADP Career Center — the same
   // centre as CAREERS_ALL in lib/careers.ts. 302, not 301: the destination is
   // a third-party URL the client may change, and browsers cache a 301 forever.

@@ -23,6 +23,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/notice-of-privacy-practices",
     "/editorial-policy",
     "/sms-terms",
+    "/terms-of-service",
   ];
   const dynamic = [
     // T1.2 — the seven pages ported back from production.

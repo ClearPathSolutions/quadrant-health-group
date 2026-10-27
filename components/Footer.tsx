@@ -151,6 +151,7 @@ export default function Footer() {
             <Link href="/notice-of-privacy-practices">Notice of Privacy Practices</Link>
             <Link href="/sms-terms">SMS Terms</Link>
             <Link href="/editorial-policy">Editorial Policy</Link>
+            <Link href="/terms-of-service">Terms of Service</Link>
             <Link href="/contact">Contact</Link>
           </nav>
         </div>
