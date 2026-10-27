@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { site, seo } from "@/lib/site";
 import c from "../content.module.css";
@@ -53,6 +54,17 @@ export default function PrivacyPage() {
               We treat all health-related information as strictly confidential and
               apply administrative, technical, and physical safeguards designed to
               protect it. We never sell your personal information.
+            </p>
+
+            <h2>Protected health information</h2>
+            <p>
+              Health information we receive or create while coordinating your admission
+              or verifying your benefits is protected health information under the Health
+              Insurance Portability and Accountability Act (HIPAA) and, for substance use
+              disorder treatment records, 42 C.F.R. Part 2. How we may use and disclose
+              that information, and your rights to access, amend, and restrict your
+              records, are described in our{" "}
+              <Link href="/notice-of-privacy-practices">Notice of Privacy Practices</Link>.
             </p>
 
             <h2>Your choices</h2>
