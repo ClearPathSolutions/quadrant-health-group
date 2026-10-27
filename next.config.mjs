@@ -7,6 +7,9 @@
  * the remaining 16 production pairs into this same array.
  */
 const redirectMap = [
+  // The HIPAA notice briefly lived at its own URL (2026-10-27) before being
+  // folded into the privacy policy page.
+  { source: "/notice-of-privacy-practices", destination: "/privacy-policy/#notice-of-privacy-practices", statusCode: 301 },
   // T3.1 — name corrected to the spelling used in her own bio and the bio doc.
   { source: "/team/monica-olivires", destination: "/team/monica-olivares/", statusCode: 301 },
   // T3.8 — the record was always Alicia Joslin's; only the URL carried another
