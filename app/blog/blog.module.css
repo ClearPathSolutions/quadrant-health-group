@@ -22,7 +22,8 @@
   transform: translateY(-4px);
 }
 .featureMedia {
-  aspect-ratio: 3 / 2;
+  /* Clarion covers are 1200x630 with text near the edges; match that shape so none is cropped. */
+  aspect-ratio: 1200 / 630;
   overflow: hidden;
   background: var(--bg-soft-2);
   height: 100%;
@@ -53,7 +54,8 @@
   overflow: hidden;
 }
 .cardMedia {
-  aspect-ratio: 3 / 2;
+  /* Clarion covers are 1200x630 with text near the edges; match that shape so none is cropped. */
+  aspect-ratio: 1200 / 630;
   overflow: hidden;
   background: var(--bg-soft-2);
 }
