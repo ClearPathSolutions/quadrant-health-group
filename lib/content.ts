@@ -63,9 +63,9 @@ export const TEAM_GROUP_ORDER = [
   "Corporate Leadership Team",
   "Human Resources",
   "Business Development",
-  // Alumni Services sits between business development and admissions. This
-  // array — not the order of records in team.json — drives the section order.
-  "Alumni Services",
+  // Alumni & Family Services sits between business development and admissions.
+  // This array — not the order of records in team.json — drives the section order.
+  "Alumni & Family Services",
   "Admissions & Client Care",
 ];
 

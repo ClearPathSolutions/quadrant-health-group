@@ -144,15 +144,6 @@
     "group": "Corporate Leadership Team"
   },
   {
-    "slug": "casey-hyatt",
-    "name": "Casey Hyatt",
-    "role": "Director of Family Services",
-    "credentials": "",
-    "bio": "Casey Hyatt brings 15 years of experience in the behavioral health field, clinical expertise, and a personal connection to recovery to his role as Director of Family Services at Quadrant Health Group. A Nashville, Tennessee native, Casey previously served as Director of Alumni Services for ten years, leading a team of eight peer professionals and coordinating 62 annual alumni and community recovery events to strengthen engagement, connection, and support beyond treatment. He holds a Master of Arts in Counseling from the Hazelden Betty Ford Graduate School and has extensive experience facilitating groups and utilizing multiple clinical approaches, with an emphasis on substance use disorders, mental health, experiential modalities, and Internal Family Systems (IFS).\nWith 18 years in recovery, Casey understands the importance of connection, accountability, and continued growth throughout the recovery journey. In his current role, he works collaboratively with clinical teams across Quadrant Health Group to strengthen team dynamics, streamline services, and expand support for families navigating the challenges of addiction and mental health. Casey is passionate about helping families build healthier relationships, improve communication, and develop the tools needed to support long-term recovery while prioritizing their own well-being. His professional experience and personal perspective reflect his commitment to creating stronger support systems for individuals, families, and the broader recovery community.",
-    "image": "/images/team/casey-hyatt.jpg",
-    "group": "Corporate Leadership Team"
-  },
-  {
     "slug": "chelsea-stelmach",
     "name": "Chelsea Stelmach",
     "role": "Director of Marketing",
@@ -356,7 +347,7 @@
     "role": "Director of Admissions",
     "credentials": "",
     "bio": "As Admissions Director at Quadrant Health Group, he brings over 10 years of professional experience in behavioral healthcare and a deep commitment to helping individuals and families navigate the treatment process with compassion, understanding, and support. He recognizes that seeking help for addiction is often one of life's most challenging decisions and strives to make the admissions experience as seamless and reassuring as possible.\nHis passion for helping others is rooted in his own recovery journey. Having overcome more than a decade of addiction and celebrated 12 years of sobriety through the principles of Alcoholics Anonymous and the 12 Steps, he brings a unique perspective and firsthand understanding of the challenges and triumphs of recovery. His personal experiences allow him to connect with individuals and families on a meaningful level, offering genuine empathy, guidance, and hope.\nOriginally from Trenton, New Jersey, he is dedicated to connecting those in need with appropriate treatment resources and helping them take the first steps toward lasting recovery and a healthier, more fulfilling future.",
-    "image": "/images/team/photo-coming-soon.png",
+    "image": "/images/team/robert-spady.jpg",
     "group": "Admissions & Client Care"
   },
   {
@@ -537,7 +528,16 @@
     "credentials": "",
     "bio": "Lexie Zeller is a dedicated alumni relations professional with experience developing and growing alumni engagement programs that foster lifelong connections and meaningful involvement. With a strong background in relationship management, program development, and strategic planning, Lexie is passionate about creating alumni experiences that inspire connection, mentorship, and continued support. As National Alumni Director, she is leading the development of a nationwide alumni program focused on building an engaged network that empowers alumni to stay connected, give back, and make a lasting impact in their own recovery communities.",
     "image": "/images/team/lexie-zeller.jpg",
-    "group": "Alumni Services"
+    "group": "Alumni & Family Services"
+  },
+  {
+    "slug": "casey-hyatt",
+    "name": "Casey Hyatt",
+    "role": "Director of Family Services",
+    "credentials": "",
+    "bio": "Casey Hyatt brings 15 years of experience in the behavioral health field, clinical expertise, and a personal connection to recovery to his role as Director of Family Services at Quadrant Health Group. A Nashville, Tennessee native, Casey previously served as Director of Alumni Services for ten years, leading a team of eight peer professionals and coordinating 62 annual alumni and community recovery events to strengthen engagement, connection, and support beyond treatment. He holds a Master of Arts in Counseling from the Hazelden Betty Ford Graduate School and has extensive experience facilitating groups and utilizing multiple clinical approaches, with an emphasis on substance use disorders, mental health, experiential modalities, and Internal Family Systems (IFS).\nWith 18 years in recovery, Casey understands the importance of connection, accountability, and continued growth throughout the recovery journey. In his current role, he works collaboratively with clinical teams across Quadrant Health Group to strengthen team dynamics, streamline services, and expand support for families navigating the challenges of addiction and mental health. Casey is passionate about helping families build healthier relationships, improve communication, and develop the tools needed to support long-term recovery while prioritizing their own well-being. His professional experience and personal perspective reflect his commitment to creating stronger support systems for individuals, families, and the broader recovery community.",
+    "image": "/images/team/casey-hyatt.jpg",
+    "group": "Alumni & Family Services"
   },
   {
     "slug": "bj-thome",
@@ -546,7 +546,7 @@
     "credentials": "",
     "bio": "BJ Thome serves as the Alumni Coordinator for Quadrant Health Group’s California facilities, where his purpose is to ensure that no one feels they have to walk the road of recovery alone. His passion for this work is deeply personal. Having experienced the struggles of addiction firsthand, BJ understands both the courage it takes to begin recovery and the importance of continued support long after treatment ends.\nBJ focuses on building genuine, trusting relationships with clients while they are still in treatment, helping establish a sense of connection and community before they transition back into everyday life. He believes recovery does not end at discharge—and neither should the support. His goal is for every client to know they have somewhere to turn, people who understand, and a community that continues to stand behind them.\nDrawing from his own lived experience, BJ is passionate about meeting people where they are without judgment and reminding them that their story does not have to end where addiction once took them. He strives to make every person he encounters feel seen, heard, valued, and welcomed.\nFor BJ, alumni coordination is about more than building a program. It is about creating lasting connection, belonging, and purpose while helping individuals stay engaged in a recovery community that genuinely wants to see them succeed.",
     "image": "/images/team/bj-thome.jpg",
-    "group": "Alumni Services"
+    "group": "Alumni & Family Services"
   },
   {
     "slug": "julie-mitchell",
@@ -555,7 +555,7 @@
     "credentials": "",
     "bio": "Julie Mitchell is passionate about supporting individuals as they continue their recovery journey beyond treatment, helping alumni build meaningful connections, strengthen their support systems, and maintain long-term wellness. As Alumni Coordinator, she is dedicated to fostering a strong recovery community where individuals feel encouraged, supported, and empowered to thrive in their everyday lives.\nJulie earned her Bachelor of Science in Psychology from the New York Institute of Technology and her Master of Arts in Addiction Counseling from the Hazelden Betty Ford Graduate School of Addiction Studies, a nationally recognized leader in addiction treatment education. Her background in behavioral health provides her with a deep understanding of the challenges and triumphs individuals experience throughout the recovery process.\nIn her role, Julie develops and coordinates alumni programming, recovery events, peer support initiatives, and ongoing outreach designed to help former clients stay connected long after completing treatment. She believes that lasting recovery is strengthened through community, accountability, and meaningful relationships, and she is committed to creating opportunities for alumni to celebrate milestones, share experiences, and support one another.\nJulie approaches every interaction with compassion, authenticity, and respect, recognizing that each recovery journey is unique. She strives to create an inclusive and welcoming environment where alumni feel valued, inspired, and confident as they continue building lives rooted in purpose, resilience, and hope.",
     "image": "/images/team/julie-mitchell.jpg",
-    "group": "Alumni Services"
+    "group": "Alumni & Family Services"
   },
   {
     "slug": "jacob-doss",
@@ -564,7 +564,7 @@
     "credentials": "",
     "bio": "Jacob Doss serves as the Alumni Coordinator for Quadrant Health Group’s Texas facilities, supporting both Dallas Detox Center and Fort Worth Wellness Center. His role focuses on helping clients stay connected to the support, relationships, and sense of community they begin building during treatment.\nJacob brings a personal understanding of mental health, addiction, treatment, and recovery to his work, allowing him to connect with clients in a genuine and relatable way. By building relationships while clients are still in residential treatment, he helps make the transition into alumni support feel more natural and ensures they know that support does not end at discharge.\nThrough alumni outreach, events, continued communication, and community engagement, Jacob works to create a strong and welcoming alumni network across both Texas locations. His goal is to make sure clients leave treatment knowing they are still part of a community—one they can stay connected to, contribute to, and continue growing alongside long after discharge.",
     "image": "/images/team/jacob-doss.jpg",
-    "group": "Alumni Services"
+    "group": "Alumni & Family Services"
   },
   {
     "slug": "zachary-walter",
@@ -573,7 +573,7 @@
     "credentials": "",
     "bio": "Zachary Walter brings both professional experience in behavioral health and a personal connection to recovery to his role as Alumni Coordinator at Seaside Wellness Palm Beach. His background supporting individuals throughout the recovery process has shaped a compassionate approach rooted in dignity, empathy, accountability, and respect. He is also Ocean Lifeguard Certified, reflecting his ability to remain calm, prepared, and focused in high-pressure situations.\nZachary’s own recovery journey has given him a strong appreciation for the importance of staying connected and involved within the recovery community. As Alumni Coordinator, he is passionate about creating opportunities for alumni to stay engaged, support one another, and continue building a strong foundation in recovery. For Zachary, recovery is about more than completing treatment, it’s about continuing to grow, stay connected, and build a meaningful life alongside a supportive community.",
     "image": "/images/team/zachary-walter.jpg",
-    "group": "Alumni Services"
+    "group": "Alumni & Family Services"
   },
   {
     "slug": "lindsay-arndorfer",
@@ -582,6 +582,6 @@
     "credentials": "",
     "bio": "Lindsay Arndorfer is passionate about building genuine relationships and helping people feel connected and supported. As Alumni Coordinator, she works to create opportunities for alumni to stay connected to one another and to the recovery community long after treatment ends.\nLindsay brings more than 15 years of experience in relationship-focused roles across leadership, education, and technology. Most recently, she worked in a middle school supporting students with complex emotional and behavioral needs. That experience strengthened her interest in mental health and substance use and reinforced something that has been a common thread throughout her career: relationships matter, and people do better when they feel like they have someone in their corner.\nLindsay is currently pursuing her Master of Social Work at Grand View University with a clinical focus. Her move into behavioral health has been shaped by a desire to better understand people, their experiences, and the environments and relationships that influence their lives.\nAs Alumni Coordinator, Lindsay will develop events, programming, outreach, and other ways for alumni to stay involved and connected. She believes recovery is about more than what happens during treatment—it’s also about building relationships, finding community, and creating a life that feels meaningful moving forward.",
     "image": "/images/team/lindsay-arndorfer.jpg",
-    "group": "Alumni Services"
+    "group": "Alumni & Family Services"
   }
 ]
