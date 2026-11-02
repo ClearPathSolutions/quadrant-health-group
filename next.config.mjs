@@ -14,6 +14,9 @@ const redirectMap = [
   { source: "/team/trevor-amador", destination: "/team/alicia-joslin/", statusCode: 301 },
   // T3.5 — four people absent from the client's bio doc, which is the roster.
   { source: "/team/karen-pettit", destination: "/about/meet-the-team/", statusCode: 301 },
+  { source: "/team/cai-von-rumohr", destination: "/about/meet-the-team/", statusCode: 301 },
+  { source: "/team/john-jurman", destination: "/about/meet-the-team/", statusCode: 301 },
+  { source: "/team/vinny-turiello", destination: "/about/meet-the-team/", statusCode: 301 },
   { source: "/team/tami-distefano", destination: "/about/meet-the-team/", statusCode: 301 },
   { source: "/team/denise-edwards", destination: "/about/meet-the-team/", statusCode: 301 },
   { source: "/team/nastasya-aracena", destination: "/about/meet-the-team/", statusCode: 301 },
