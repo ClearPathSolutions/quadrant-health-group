@@ -126,24 +126,6 @@
     "group": "Corporate Leadership Team"
   },
   {
-    "slug": "chelsea-stelmach",
-    "name": "Chelsea Stelmach",
-    "role": "Director of Marketing",
-    "credentials": "",
-    "bio": "Chelsea Stelmach is the Director of Marketing at Quadrant Health Group, where she leads the organization's branding, digital marketing, communications, and public relations initiatives. With more than a decade of experience in behavioral healthcare marketing, she is passionate about building trusted brands, sharing meaningful stories, and connecting individuals and families with quality mental health and addiction treatment resources. Chelsea combines creative strategy with a patient-first approach to ensure every communication reflects the compassion, integrity, and excellence that define Quadrant Health Group.",
-    "image": "/images/team/chelsea-stelmach.jpg",
-    "group": "Corporate Leadership Team"
-  },
-  {
-    "slug": "anom-grant",
-    "name": "Anom Grant",
-    "role": "IT Director",
-    "credentials": "",
-    "bio": "As an IT Director with over a decade of experience, I bring a distinctive approach to technology leadership. My background in Psychology isn't just a detail; it's the very foundation of my career transition into IT. I firmly believe that technology should empower, not complicate, the human experience at work. This unique perspective drives me to transform tech landscapes, focusing on efficiency and innovation by ensuring IT initiatives truly align with business goals and build robust, scalable systems that enhance both organizational growth and overall user well-being.\nMy core strengths lie in dynamic team leadership, strategic project management, and comprehensive system optimizations. I consistently apply these skills to refine our technological infrastructure and streamline workflows. This ensures our IT operations are not only resilient and reliable but also directly contribute to achieving the organization's strategic objectives, making technology a true enabler. Moving forward, I'm passionate about leveraging my expertise to deepen organizational efficiency in ways that genuinely uplift both our internal teams and our valued clients. My aim is to implement tech solutions that optimize performance while simultaneously fostering a seamless, intuitive, and highly productive experience for everyone. I'm always eager to connect with fellow leaders to explore how thoughtful IT strategy can spark innovation and significantly boost user satisfaction.",
-    "image": "/images/team/anom-grant.jpg",
-    "group": "Corporate Leadership Team"
-  },
-  {
     "slug": "mary-multz",
     "name": "Mary Multz",
     "role": "Director of Clinical Analytics",
@@ -159,6 +141,33 @@
     "credentials": "",
     "bio": "Dana Barnes serves as the Director of Clinical Quality, bringing over a decade of experience in the behavioral health field. Her well-rounded clinical background spans multiple levels of leadership, beginning as a therapist and progressing to roles including Executive Clinical Director. She is trained in Eye Movement Desensitization and Reprocessing (EMDR) and Accelerated Resolution Therapy (ART), further strengthening her expertise in evidence-based approaches to trauma treatment. Her clinical experience has shaped her understanding of effective, compassionate, and clinically sound treatment practices. This diverse experience has provided Dana with a comprehensive understanding of clinical operations, quality standards, and the key components of effective clinical auditing.\n\nThroughout her career, Dana has leveraged her clinical expertise and leadership experience to support clinical teams in strengthening documentation practices, improving compliance, and enhancing overall quality of care. Her ability to bridge clinical practice with quality and regulatory expectations allows her to identify opportunities for improvement while supporting clinicians and leadership in implementing sustainable, effective solutions.\n\nDana is passionate about promoting clinical excellence, maintaining high standards of documentation, and fostering a culture of continuous quality improvement within behavioral health organizations. She is committed to ensuring that strong clinical practices, thorough documentation, and quality standards work together to support positive outcomes for the individuals and communities served.",
     "image": "/images/team/dana-barnes.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "casey-hyatt",
+    "name": "Casey Hyatt",
+    "role": "Director of Family Services",
+    "credentials": "",
+    "bio": "Casey Hyatt brings 15 years of experience in the behavioral health field, clinical expertise, and a personal connection to recovery to his role as Director of Family Services at Quadrant Health Group. A Nashville, Tennessee native, Casey previously served as Director of Alumni Services for ten years, leading a team of eight peer professionals and coordinating 62 annual alumni and community recovery events to strengthen engagement, connection, and support beyond treatment. He holds a Master of Arts in Counseling from the Hazelden Betty Ford Graduate School and has extensive experience facilitating groups and utilizing multiple clinical approaches, with an emphasis on substance use disorders, mental health, experiential modalities, and Internal Family Systems (IFS).\nWith 18 years in recovery, Casey understands the importance of connection, accountability, and continued growth throughout the recovery journey. In his current role, he works collaboratively with clinical teams across Quadrant Health Group to strengthen team dynamics, streamline services, and expand support for families navigating the challenges of addiction and mental health. Casey is passionate about helping families build healthier relationships, improve communication, and develop the tools needed to support long-term recovery while prioritizing their own well-being. His professional experience and personal perspective reflect his commitment to creating stronger support systems for individuals, families, and the broader recovery community.",
+    "image": "/images/team/casey-hyatt.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "chelsea-stelmach",
+    "name": "Chelsea Stelmach",
+    "role": "Director of Marketing",
+    "credentials": "",
+    "bio": "Chelsea Stelmach is the Director of Marketing at Quadrant Health Group, where she leads the organization's branding, digital marketing, communications, and public relations initiatives. With more than a decade of experience in behavioral healthcare marketing, she is passionate about building trusted brands, sharing meaningful stories, and connecting individuals and families with quality mental health and addiction treatment resources. Chelsea combines creative strategy with a patient-first approach to ensure every communication reflects the compassion, integrity, and excellence that define Quadrant Health Group.",
+    "image": "/images/team/chelsea-stelmach.jpg",
+    "group": "Corporate Leadership Team"
+  },
+  {
+    "slug": "anom-grant",
+    "name": "Anom Grant",
+    "role": "IT Director",
+    "credentials": "",
+    "bio": "As an IT Director with over a decade of experience, I bring a distinctive approach to technology leadership. My background in Psychology isn't just a detail; it's the very foundation of my career transition into IT. I firmly believe that technology should empower, not complicate, the human experience at work. This unique perspective drives me to transform tech landscapes, focusing on efficiency and innovation by ensuring IT initiatives truly align with business goals and build robust, scalable systems that enhance both organizational growth and overall user well-being.\nMy core strengths lie in dynamic team leadership, strategic project management, and comprehensive system optimizations. I consistently apply these skills to refine our technological infrastructure and streamline workflows. This ensures our IT operations are not only resilient and reliable but also directly contribute to achieving the organization's strategic objectives, making technology a true enabler. Moving forward, I'm passionate about leveraging my expertise to deepen organizational efficiency in ways that genuinely uplift both our internal teams and our valued clients. My aim is to implement tech solutions that optimize performance while simultaneously fostering a seamless, intuitive, and highly productive experience for everyone. I'm always eager to connect with fellow leaders to explore how thoughtful IT strategy can spark innovation and significantly boost user satisfaction.",
+    "image": "/images/team/anom-grant.jpg",
     "group": "Corporate Leadership Team"
   },
   {
