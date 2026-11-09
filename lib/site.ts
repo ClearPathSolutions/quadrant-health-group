@@ -406,7 +406,7 @@ export const locations: Location[] = [
     blurb:
       "Just outside the heart of Dallas, our state-of-the-art facility provides a full continuum of care including detox, residential treatment, and holistic therapies.",
     // CR-09 — client removed Virtual IOP from Dallas.
-    care: ["Detox", "Residential", "Dual Diagnosis"],
+    care: ["Detox", "Residential", "Mental Health Inpatient", "Dual Diagnosis", "Aftercare"],
     website: "https://dallasdetoxcenter.com",
   },
   {
@@ -425,7 +425,7 @@ export const locations: Location[] = [
     // Scraped from fortworthwellness.org: their own nav lists Detox,
     // Residential Mental Health, Dual Diagnosis and Aftercare Planning. Ours
     // claimed only two of the four.
-    care: ["Detox", "Mental Health Inpatient", "Dual Diagnosis", "Aftercare"],
+    care: ["Detox", "Dual Diagnosis", "Aftercare"],
     website: "https://fortworthwellness.org",
   },
   {
