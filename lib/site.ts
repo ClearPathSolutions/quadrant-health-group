@@ -433,7 +433,7 @@ export const locations: Location[] = [
     name: "Seaside Wellness of Palm Beach",
     city: "West Palm Beach",
     state: "FL",
-    region: "Florida",
+    region: "East Coast",
     image: "/images/locations/unframed/seaside.jpg",
     hasCard: true,
     blurb:
@@ -447,7 +447,7 @@ export const locations: Location[] = [
     name: "Wellness Recovery Center of New Jersey",
     city: "West Windsor",
     state: "NJ",
-    region: "New Jersey",
+    region: "East Coast",
     image: "/images/locations/unframed/wellness-nj.jpg",
     hasCard: true,
     blurb:
@@ -463,7 +463,7 @@ export const locations: Location[] = [
     // Moines suburb. Brand name keeps "Des Moines"; the city follows their site.
     city: "Johnston",
     state: "IA",
-    region: "Iowa",
+    region: "Midwest",
     // T8.3b — was aerial-2.jpg, a Texas ranch property standing in for an Iowa
     // facility. This is the real Des Moines Wellness Center exterior.
     image: "/images/locations/des-moines.jpg",
@@ -492,7 +492,7 @@ export const locations: Location[] = [
     name: "The Ohio Recovery Collective",
     city: "Steubenville",
     state: "OH",
-    region: "Ohio",
+    region: "Midwest",
     image: "/images/locations/ohio-recovery-collective-group-room.jpg",
     hasCard: false,
     blurb:
@@ -541,7 +541,7 @@ export const locations: Location[] = [
     // "Private ranch campus" predated having a real city.
     city: "Franklin",
     state: "KY",
-    region: "Kentucky",
+    region: "Midwest",
     image: "/images/locations/wellness-ranch-kentucky.jpg",
     hasCard: false,
     blurb:

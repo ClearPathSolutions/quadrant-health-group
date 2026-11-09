@@ -18,17 +18,24 @@ export const metadata: Metadata = {
   }),
 };
 
-// Any region missing from this list is silently dropped from the page, so it
-// must be extended whenever a location in a new state is added.
 // Regions render in this order; any region not listed is silently dropped, so a
-// new location needs its region added here as well as in lib/site.ts.
-const order = ["California", "Texas", "Florida", "New Jersey", "Iowa", "Ohio", "Kentucky"];
+// location in a new region needs that region added here as well as in lib/site.ts.
+const order = ["California", "Texas", "Midwest", "East Coast"];
+
+// Within a multi-state region, centers are grouped by state in this order.
+const stateOrder = ["CA", "TX", "OH", "IA", "KY", "NJ", "FL"];
+const stateRank = (s: string) => {
+  const i = stateOrder.indexOf(s);
+  return i === -1 ? stateOrder.length : i;
+};
 
 export default function LocationsPage() {
   const byRegion = order
     .map((region) => ({
       region,
-      items: locations.filter((l) => l.region === region),
+      items: locations
+        .filter((l) => l.region === region)
+        .sort((a, b) => stateRank(a.state) - stateRank(b.state)),
     }))
     .filter((g) => g.items.length);
 
