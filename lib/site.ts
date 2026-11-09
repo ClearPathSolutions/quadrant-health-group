@@ -477,7 +477,7 @@ export const locations: Location[] = [
     blurb:
       "Des Moines Wellness Center provides a full continuum of care including medical detox, inpatient residential treatment, and flexible PHP/IOP programs — specialising in dual diagnosis, treating addiction and co-occurring mental health conditions together in a trauma-informed environment.",
     // CR-11 — client added mental health inpatient.
-    care: ["Detox", "Residential", "Mental Health Inpatient", "PHP", "IOP", "Dual Diagnosis", "Aftercare"],
+    care: ["Detox", "Residential", "Mental Health Inpatient", "Dual Diagnosis", "Aftercare", "Virtual"],
     website: "https://desmoinesrecovery.com",
   },
   {
@@ -497,7 +497,7 @@ export const locations: Location[] = [
     hasCard: false,
     blurb:
       "At The Ohio Recovery Collective, compassionate, evidence-based outpatient care meets you where you are — with flexible PHP, IOP and virtual programming built around your life.",
-    care: ["PHP", "IOP", "Outpatient", "Virtual"],
+    care: ["PHP", "IOP", "Outpatient", "Virtual", "Mental Health PHP", "Mental Health Outpatient", "Aftercare"],
     website: "https://theohiorc.com",
     // Client 2026-08-21: Ohio takes its own line rather than the network number.
     phone: "(888) 270-1642",
@@ -552,6 +552,7 @@ export const locations: Location[] = [
       "Mental Health Inpatient",
       "Dual Diagnosis",
       "Aftercare",
+      "Virtual",
     ],
     website: "https://wellnessranchky.com",
   },
