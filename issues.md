@@ -1721,7 +1721,7 @@ Thirty have finished bio copy in the doc and can be published now:
 | Leadership | Sal Rabie | Chief Financial Officer | 1671 ch |
 | Leadership | Colin McBride | Chief Revenue Officer | 1134 ch |
 | Leadership | Dr. Pamela Tambini | Medical Oversight | 2667 ch |
-| Leadership | Catherine Alpaugh | Executive VP of Administration | 776 ch |
+| Leadership | Catherine Alpaugh | Chief Marketing Officer | 776 ch |
 | Leadership | Jessica Dalton | Executive VP of Operations | 1428 ch |
 | Leadership | Riley Monahan | Executive VP of Clinical Services | 573 ch |
 | Leadership | Chelsea Stelmach | Director of Marketing | 619 ch |
@@ -1926,7 +1926,7 @@ need.** The rest are waiting on copy the client still owes.
 | Admissions | Ashley Watts | Patient Advocate | `ashley-watts.jpg` | awaiting copy |
 | BD/Alumni | Ben Kolb | President of Business Development | `ben-kolb.jpg` | ready |
 | Admissions | Cai Von Rumohr | Admissions Manager | `cai-von-rumohr.jpg` | awaiting copy |
-| Leadership | Catherine Alpaugh | Executive VP of Administration | `catherine-alpaugh.jpg` | ready |
+| Leadership | Catherine Alpaugh | Chief Marketing Officer | `catherine-alpaugh.jpg` | ready |
 | Leadership | Chelsea Stelmach | Director of Marketing | `chelsea-stelmach.jpg` | ready |
 | Leadership | Colin McBride | Chief Revenue Officer | `colin-mcbride.jpg` | ready |
 | Leadership | Danielle Gorman | Executive Coordinator | `danielle-gorman.jpg` | ready |
