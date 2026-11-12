@@ -6,7 +6,7 @@
 // directly (server-to-server, so no CORS concern) and are cached by Next's
 // fetch cache for a short window.
 import "server-only";
-import type { Post } from "./content";
+import { DEFAULT_AUTHOR, resolveReviewer, type Post } from "./content";
 
 const CLARION_API = process.env.CLARION_API || "https://api.clarionlabs.ai";
 const CLARION_SITE_KEY =
@@ -27,6 +27,10 @@ type ClarionFeedPost = {
   cover_image_url: string | null;
   author_name?: string;
   published_at: string;
+  // Sent by the single-post endpoint (the feed currently omits them).
+  medically_reviewed_by?: string | null;
+  medically_reviewed_by_credentials?: string | null;
+  medically_reviewed_by_url?: string | null;
 };
 
 type ClarionFullPost = ClarionFeedPost & { body_html: string };
@@ -49,6 +53,14 @@ function feedToPost(p: ClarionFeedPost): Post & { source: "clarion" } {
     // A single empty section keeps readingTime()/section maps from throwing.
     sections: [],
     source: "clarion",
+    author: p.author_name?.trim() || DEFAULT_AUTHOR,
+    // Every post carries a reviewer: Clarion's fields where set, the site
+    // default for each one that is missing.
+    reviewer: resolveReviewer({
+      name: p.medically_reviewed_by,
+      credentials: p.medically_reviewed_by_credentials,
+      url: p.medically_reviewed_by_url,
+    }),
   };
 }
 
@@ -110,7 +122,9 @@ function stripNofollow(attrs: string): string {
  * - /blog/<slug> links to a post this site does not publish (Clarion shares
  *   posts across the group's sites) go to the blog index instead;
  * - external citations keep noopener/noreferrer but lose nofollow;
- * - images with no alt attribute get the post title as alt text.
+ * - images with no alt attribute get the post title as alt text;
+ * - a "Medically reviewed by" paragraph in the body is dropped, since the
+ *   article header already shows the reviewer.
  *
  * An empty `knownSlugs` (feed unreachable) leaves blog links untouched.
  */
@@ -144,7 +158,9 @@ export function finaliseBodyHtml(
   });
 
   const safeTitle = title.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
-  return withLinks.replace(/<img\b([^>]*?)(\s*\/?)>/gi, (full: string, attrs: string, close: string) =>
+  return withLinks
+    .replace(/<p\b[^>]*>(?:(?!<\/p>)[\s\S])*?medically reviewed by(?:(?!<\/p>)[\s\S])*<\/p>/gi, "")
+    .replace(/<img\b([^>]*?)(\s*\/?)>/gi, (full: string, attrs: string, close: string) =>
     /\salt\s*=/i.test(attrs) ? full : `<img${attrs} alt="${safeTitle}"${close}>`,
   );
 }

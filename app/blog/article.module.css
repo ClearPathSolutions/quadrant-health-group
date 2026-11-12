@@ -41,6 +41,30 @@
   font-size: clamp(1.05rem, 1.6vw, 1.2rem);
   color: rgba(255, 255, 255, 0.85);
 }
+.byline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+.byline a {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.4);
+  text-underline-offset: 2px;
+}
+.byline a:hover {
+  color: var(--blue-bright);
+  text-decoration-color: currentColor;
+}
+.bylineSep {
+  color: rgba(255, 255, 255, 0.4);
+}
 
 .hero {
   max-width: 900px;

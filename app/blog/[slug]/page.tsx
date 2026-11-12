@@ -12,6 +12,9 @@ import {
   formatDate,
   readingTime,
   readingTimeFromHtml,
+  DEFAULT_AUTHOR,
+  DEFAULT_REVIEWER,
+  reviewerLink,
 } from "@/lib/content";
 import { finaliseBodyHtml, getClarionPost, getClarionPosts, summariseHtml } from "@/lib/clarion";
 import { site, seo, fitTitle, bareTitle } from "@/lib/site";
@@ -78,6 +81,11 @@ export default async function PostPage({ params }: { params: { slug: string } })
   const bodyHtml = clarionPost
     ? finaliseBodyHtml(clarionPost.bodyHtml, { title: post.title, knownSlugs })
     : "";
+  // Every post names its author and medical reviewer (defaults filled in by
+  // the post accessors); a reviewer profile on this site links same-tab.
+  const author = post.author || DEFAULT_AUTHOR;
+  const reviewer = post.reviewer ?? DEFAULT_REVIEWER;
+  const reviewerHref = reviewerLink(reviewer);
 
   return (
     <>
@@ -110,6 +118,23 @@ export default async function PostPage({ params }: { params: { slug: string } })
             </div>
             <h1 className={a.title}>{post.title}</h1>
             {post.excerpt && <p className={a.lede}>{post.excerpt}</p>}
+            <p className={a.byline}>
+              <span>Written by {author}</span>
+              <span className={a.bylineSep} aria-hidden>·</span>
+              <span>
+                Medically reviewed by{" "}
+                {reviewerHref.path ? (
+                  <Link href={reviewerHref.path}>{reviewer.name}</Link>
+                ) : (
+                  <a href={reviewerHref.href} target="_blank" rel="noopener noreferrer">
+                    {reviewer.name}
+                  </a>
+                )}
+                {reviewer.credentials ? `, ${reviewer.credentials}` : ""}
+              </span>
+              <span className={a.bylineSep} aria-hidden>·</span>
+              <Link href="/editorial-policy/">Editorial policy</Link>
+            </p>
           </div>
         </header>
 

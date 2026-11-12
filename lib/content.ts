@@ -4,6 +4,7 @@ import postsData from "./content/posts.json";
 import treatmentsData from "./content/treatments.json";
 import locationDetailsData from "./content/locationDetails.json";
 import pagesData from "./content/pages.json";
+import { canonical, site } from "./site";
 
 export type Section = {
   heading: string;
@@ -100,7 +101,62 @@ export type Post = {
   // "native" = built from the scraped JSON; "clarion" = managed in Clarion and
   // fetched at request time. Absent on the raw JSON, defaulted where read.
   source?: "native" | "clarion";
+  // Byline. Absent on the raw JSON; every accessor fills them (native posts
+  // always get the defaults below, Clarion posts per field).
+  author?: string;
+  reviewer?: Reviewer;
 };
+
+export type Reviewer = { name: string; credentials: string; url: string };
+
+/** Author shown on posts that don't name one (all native posts). */
+export const DEFAULT_AUTHOR = "Quadrant Health Group Editorial Team";
+
+/**
+ * Medical reviewer for every blog post, past and future (client instruction):
+ * a post shows the reviewer Clarion sends, and each missing field falls back
+ * to this default individually. Native posts always get the default.
+ */
+export const DEFAULT_REVIEWER: Reviewer = {
+  name: "Dr. Pamela Tambini",
+  credentials: "M.D.",
+  url: canonical("/team/pamela-tambini"),
+};
+
+const clean = (v: string | null | undefined) => (typeof v === "string" ? v.trim() : "");
+
+export function resolveReviewer(raw?: {
+  name?: string | null;
+  credentials?: string | null;
+  url?: string | null;
+}): Reviewer {
+  return {
+    name: clean(raw?.name) || DEFAULT_REVIEWER.name,
+    credentials: clean(raw?.credentials) || DEFAULT_REVIEWER.credentials,
+    url: clean(raw?.url) || DEFAULT_REVIEWER.url,
+  };
+}
+
+const OWN_HOST = new URL(site.url).hostname.replace(/^www\./, "");
+
+/**
+ * Where the reviewer's name links to. A profile on this site (either host,
+ * with or without a trailing slash) becomes a same-tab internal path in the
+ * site's trailing-slash form, and its schema URL sits on the canonical www
+ * host so it matches the Person @id the team page emits.
+ */
+export function reviewerLink(r: Reviewer): { path: string | null; href: string } {
+  let u: URL;
+  try {
+    u = new URL(r.url, site.url);
+  } catch {
+    return { path: null, href: r.url };
+  }
+  if (u.hostname.replace(/^www\./, "") !== OWN_HOST) return { path: null, href: u.href };
+  const segs = u.pathname.split("/").filter(Boolean);
+  const path = segs.length ? `/${segs.join("/")}/` : "/";
+  return { path, href: canonical(path) };
+}
 
 export type TreatmentCategory = "addiction" | "level" | "modality";
 export type Treatment = {
@@ -149,7 +205,11 @@ export const pages = pagesData as ContentPage[];
 export const getPage = (slug: string) => pages.find((p) => p.slug === slug);
 
 export const team = teamData as TeamMember[];
-export const posts = postsData as Post[];
+export const posts: Post[] = (postsData as Post[]).map((p) => ({
+  ...p,
+  author: DEFAULT_AUTHOR,
+  reviewer: DEFAULT_REVIEWER,
+}));
 export const treatments = treatmentsData as Treatment[];
 export const locationDetails = locationDetailsData as Record<string, LocationDetail>;
 

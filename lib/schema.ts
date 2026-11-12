@@ -11,6 +11,7 @@
  * trailing-slash form settled by T1.1, matching the canonical and og:url tags.
  */
 import { canonical, site, type Location } from "./site";
+import { DEFAULT_AUTHOR, DEFAULT_REVIEWER, reviewerLink } from "./content";
 import type { Faq, LocationDetail, Post, TeamMember, Treatment } from "./content";
 
 const abs = (path: string | null | undefined) =>
@@ -118,23 +119,51 @@ export function personSchema(m: TeamMember) {
   };
 }
 
-/** One article. Emitted on each `/blog/<slug>` page. */
+/**
+ * One article. Emitted on each `/blog/<slug>` page: a MedicalWebPage carrying
+ * the medical review, with the BlogPosting as its main entity. Every post has
+ * a reviewer (see resolveReviewer), so reviewedBy is always present; there is
+ * no review-date field, so lastReviewed is omitted.
+ */
 export function articleSchema(post: Post) {
   const url = canonical(`/blog/${post.slug}`);
+  const reviewer = post.reviewer ?? DEFAULT_REVIEWER;
+  const { href: reviewerUrl } = reviewerLink(reviewer);
   return {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "@id": `${url}#article`,
-    headline: post.title,
-    // Never an empty string: a Clarion post can arrive without an excerpt.
-    description: post.excerpt?.trim() || post.title,
-    url,
-    mainEntityOfPage: url,
-    datePublished: post.date,
-    dateModified: post.date,
-    ...(post.image ? { image: abs(post.image) } : {}),
-    author: { "@id": `${site.url}/#organization` },
-    publisher: { "@id": `${site.url}/#organization` },
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        "@id": `${url}#webpage`,
+        url,
+        name: post.title,
+        reviewedBy: {
+          "@type": "Person",
+          // Same @id as personSchema() on the reviewer's team page.
+          "@id": `${reviewerUrl}#person`,
+          url: reviewerUrl,
+          name: reviewer.name,
+          honorificSuffix: reviewer.credentials,
+        },
+        publisher: { "@id": `${site.url}/#organization` },
+      },
+      {
+        "@type": "BlogPosting",
+        "@id": `${url}#article`,
+        headline: post.title,
+        // Never an empty string: a Clarion post can arrive without an excerpt.
+        description: post.excerpt?.trim() || post.title,
+        url,
+        mainEntityOfPage: { "@id": `${url}#webpage` },
+        datePublished: post.date,
+        dateModified: post.date,
+        ...(post.image ? { image: abs(post.image) } : {}),
+        // Matches the visible "Written by" line; the editorial team has no
+        // profile page of its own.
+        author: { "@type": "Organization", name: post.author || DEFAULT_AUTHOR },
+        publisher: { "@id": `${site.url}/#organization` },
+      },
+    ],
   };
 }
 
