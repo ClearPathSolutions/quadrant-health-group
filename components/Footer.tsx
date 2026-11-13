@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Icon from "./Icon";
-import { site } from "@/lib/site";
+import { site, locations } from "@/lib/site";
 import styles from "./Footer.module.css";
 
 const columns = [
@@ -37,6 +37,8 @@ const columns = [
     ],
   },
 ];
+
+const licensed = locations.filter((l) => l.license);
 
 export default function Footer() {
   // F-11 — was hardcoded to 2026. This is a server component rendered at build
@@ -140,6 +142,26 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      {licensed.length > 0 && (
+        <div className={styles.licensing}>
+          <div className="container">
+            <h3 className={styles.licTitle}>California Facility Licensing</h3>
+            <p className={styles.licIntro}>
+              Licensed by the State of California Department of Health Care
+              Services (DHCS).
+            </p>
+            <ul className={styles.licList}>
+              {licensed.map((l) => (
+                <li key={l.slug}>
+                  <span className={styles.licName}>{l.name}</span>
+                  <span>DHCS License #{l.license}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
 
       <div className={styles.bottom}>
         <div className={`container ${styles.bottomInner}`}>

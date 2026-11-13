@@ -320,11 +320,19 @@ export type Location = {
    * the workbook flags the fix as unsafe until V0109 is corrected.
    */
   websiteHold?: string;
+  /**
+   * State licence number, as printed on the facility's own site. California
+   * facilities are listed with their DHCS licence in the footer so the parent
+   * site discloses licensing clearly and conspicuously (client request
+   * 2026-11-13).
+   */
+  license?: string;
 };
 
 export const locations: Location[] = [
   {
     slug: "laguna-view-detox",
+    license: "300024AP",
     name: "Laguna View Detox",
     city: "Laguna Beach",
     state: "CA",
@@ -338,6 +346,7 @@ export const locations: Location[] = [
   },
   {
     slug: "ocean-coast-recovery",
+    license: "300423AP",
     name: "Ocean Coast Recovery Center",
     city: "Costa Mesa",
     state: "CA",
@@ -355,6 +364,7 @@ export const locations: Location[] = [
   },
   {
     slug: "hillside-mission-recovery",
+    license: "300427AP",
     name: "Hillside Mission Recovery",
     city: "Mission Viejo",
     state: "CA",
@@ -368,6 +378,7 @@ export const locations: Location[] = [
   },
   {
     slug: "marina-harbor-detox",
+    license: "380106BP",
     name: "Marina Harbor Detox",
     city: "San Francisco",
     state: "CA",
@@ -381,6 +392,7 @@ export const locations: Location[] = [
   },
   {
     slug: "wellness-detox-la",
+    license: "191425AP",
     name: "Wellness Detox of LA",
     // wellnessdetoxla.com gives 625 E Phillips Blvd, Pomona, CA 91766 — roughly
     // 30 miles east of Los Angeles. Brand name keeps "LA"; the city follows
