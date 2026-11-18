@@ -20,6 +20,7 @@ const redirectMap = [
   { source: "/team/tami-distefano", destination: "/about/meet-the-team/", statusCode: 301 },
   { source: "/team/denise-edwards", destination: "/about/meet-the-team/", statusCode: 301 },
   { source: "/team/nastasya-aracena", destination: "/about/meet-the-team/", statusCode: 301 },
+  { source: "/team/cristina-turiello", destination: "/about/meet-the-team/", statusCode: 301 },
   // CR-04 — facility-level staff are no longer published on the parent site;
   // each facility's own site owns its team. These 66 pages were live and in
   // the sitemap, so they redirect to the team index rather than 404. The index is
