@@ -143,13 +143,11 @@ export default async function PostPage({ params }: { params: { slug: string } })
             <div className={a.hero}>
               <Image
                 src={post.image}
-                alt={post.title}
+                alt={post.imageAlt || post.title}
                 width={1200}
                 height={700}
                 priority
                 sizes="(max-width: 900px) 100vw, 900px"
-                // Clarion covers are remote; skip the optimizer (no host allowlist).
-                unoptimized={post.source === "clarion"}
               />
             </div>
           </div>
@@ -197,7 +195,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
                 <Link key={p.slug} href={`/blog/${p.slug}`} className={`card card-hover ${a.relCard}`}>
                   {p.image && (
                     <div className={a.relMedia}>
-                      <Image src={p.image} alt={p.title} width={600} height={400} sizes="(max-width: 620px) 100vw, 33vw" unoptimized={p.source === "clarion"} />
+                      <Image src={p.image} alt={p.imageAlt || p.title} width={600} height={400} sizes="(max-width: 620px) 100vw, 33vw" />
                     </div>
                   )}
                   <div className={a.relBody}>
