@@ -97,6 +97,8 @@ export type Post = {
   date: string;
   excerpt: string;
   image: string | null;
+  /** Alt text for `image`: the Clarion author's when set. Callers use `imageAlt || title`. */
+  imageAlt?: string;
   sections: Section[];
   // "native" = built from the scraped JSON; "clarion" = managed in Clarion and
   // fetched at request time. Absent on the raw JSON, defaulted where read.

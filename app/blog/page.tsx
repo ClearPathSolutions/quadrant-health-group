@@ -39,15 +39,12 @@ export default async function BlogPage() {
                 {feature.image && (
                   <Image
                     src={feature.image}
-                    alt={feature.title}
+                    alt={feature.imageAlt || feature.title}
                     width={1200}
                     height={800}
                     className={s.img}
                     sizes="(max-width: 900px) 100vw, 55vw"
                     priority
-                    // Clarion cover images are remote (any host); skip Next's
-                    // optimizer so they aren't blocked by remotePatterns.
-                    unoptimized={feature.source === "clarion"}
                   />
                 )}
               </div>
@@ -74,12 +71,11 @@ export default async function BlogPage() {
                   {p.image && (
                     <Image
                       src={p.image}
-                      alt={p.title}
+                      alt={p.imageAlt || p.title}
                       width={600}
                       height={400}
                       className={s.img}
                       sizes="(max-width: 620px) 100vw, (max-width: 960px) 50vw, 33vw"
-                      unoptimized={p.source === "clarion"}
                     />
                   )}
                 </div>

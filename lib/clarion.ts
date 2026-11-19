@@ -17,6 +17,30 @@ const CLARION_SITE_KEY =
 const BROWSER_UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36";
 
+/**
+ * Blog images on this site's own domain. Clarion hands out
+ * `https://api.clarionlabs.ai/blog/public/image/<key>` (or, once it is told this
+ * site proxies images, `https://www.quadranthealthgroup.com/blog-images/<key>`);
+ * both become `/blog-images/<key>`, which next.config.mjs rewrites to Clarion's
+ * bytes route. The address a visitor, Google Images or a social card sees is
+ * this site's; the bytes are the same, with no redirect.
+ */
+const IMAGE_PATH = "/blog-images";
+const CLARION_IMAGE = `${CLARION_API.replace(/\/$/, "")}/blog/public/image/`;
+const PUBLIC_CLARION_IMAGE = "https://api.clarionlabs.ai/blog/public/image/";
+const OWN_IMAGE = /^https:\/\/(?:www\.)?quadranthealthgroup\.com(?=\/blog-images\/)/;
+
+export function onSiteImage(src: string): string {
+  for (const base of [CLARION_IMAGE, PUBLIC_CLARION_IMAGE]) {
+    if (src.startsWith(base)) return `${IMAGE_PATH}/${src.slice(base.length)}`;
+  }
+  return src.replace(OWN_IMAGE, "");
+}
+
+function onSiteImages(html: string): string {
+  return [CLARION_IMAGE, PUBLIC_CLARION_IMAGE].reduce((h, base) => h.split(base).join(`${IMAGE_PATH}/`), html);
+}
+
 // Revalidate the feed roughly every 5 minutes.
 const REVALIDATE_SECONDS = 300;
 
@@ -25,6 +49,7 @@ type ClarionFeedPost = {
   title: string;
   excerpt: string;
   cover_image_url: string | null;
+  cover_image_alt?: string | null;
   author_name?: string;
   published_at: string;
   // Sent by the single-post endpoint (the feed currently omits them).
@@ -48,7 +73,8 @@ function feedToPost(p: ClarionFeedPost): Post & { source: "clarion" } {
     // Normalize to the YYYY-MM-DD prefix the native posts use.
     date: (p.published_at || "").slice(0, 10),
     excerpt: p.excerpt || "",
-    image: p.cover_image_url || null,
+    image: p.cover_image_url ? onSiteImage(p.cover_image_url) : null,
+    imageAlt: p.cover_image_alt?.trim() || undefined,
     // No structured sections for Clarion posts — the HTML body is the content.
     // A single empty section keeps readingTime()/section maps from throwing.
     sections: [],
@@ -98,7 +124,7 @@ export async function getClarionPost(slug: string): Promise<ClarionPost | null> 
       | ClarionFullPost
       | { error: string };
     if (!("body_html" in data) || !data.slug) return null;
-    return { ...feedToPost(data), bodyHtml: data.body_html };
+    return { ...feedToPost(data), bodyHtml: onSiteImages(data.body_html) };
   } catch {
     return null;
   }
