@@ -15,6 +15,8 @@
  * click that started it can be hours old.
  */
 
+import { latestReferrer, rememberReferrer } from "./latest-referrer";
+
 const STORE_KEY = "qhg.attribution.first_touch.v1";
 const TTL_MS = 30 * 24 * 60 * 60 * 1000; // 30 days, matching CTM's own cookie
 
@@ -97,6 +99,7 @@ function externalReferrer(): string {
  */
 export function captureFirstTouch(): void {
   if (typeof window === "undefined") return;
+  rememberReferrer();
 
   const params = currentParams();
 
@@ -345,7 +348,7 @@ export function leadAttribution(): LeadAttribution {
     landing_page_url:
       ft?.landing_page_url ??
       (typeof window === "undefined" ? "" : window.location.href),
-    referrer: ft?.referrer || null,
+    referrer: latestReferrer() ?? (ft?.referrer || null),
     utm: utmFrom(p),
     gclid: gclidFrom(p),
     ctm_visitor_sid: ctmSessionId(),
