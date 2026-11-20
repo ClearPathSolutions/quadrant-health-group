@@ -140,6 +140,14 @@
   margin-top: 0.35rem;
   font-size: 0.92rem;
 }
+.licIntro a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.licIntro a:hover {
+  text-decoration-thickness: 2px;
+}
 .licList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));

@@ -148,8 +148,15 @@ export default function Footer() {
           <div className="container">
             <h3 className={styles.licTitle}>California Facility Licensing</h3>
             <p className={styles.licIntro}>
-              Licensed by the State of California Department of Health Care
-              Services (DHCS).
+              Licensed by the{" "}
+              <a
+                href="https://www.dhcs.ca.gov/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                State of California Department of Health Care Services (DHCS)
+              </a>
+              .
             </p>
             <ul className={styles.licList}>
               {licensed.map((l) => (
