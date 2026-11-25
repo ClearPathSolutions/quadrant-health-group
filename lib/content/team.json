@@ -360,6 +360,24 @@
     "group": "Admissions & Client Care"
   },
   {
+    "slug": "tori-bartle",
+    "name": "Tori Bartle",
+    "role": "Director of Client Care",
+    "credentials": "",
+    "bio": "Victoria Bartle has spent over a decade working in the behavioral health and substance use disorder treatment field, with experience spanning admissions, patient care, facility operations, regulatory compliance, and executive leadership. Her diverse professional background has given her a comprehensive understanding of the treatment process and the many roles that contribute to providing quality care.\nAs Director of Client Care, Victoria works collaboratively with admissions, clinical, medical, and operational teams to support the coordination of care across facilities, with an emphasis on individualized treatment and the unique needs of each patient.\nOriginally from the Philadelphia, PA area, Victoria relocated to begin her own recovery journey and now calls South Florida home. Inspired by both her personal recovery and her family’s experiences with addiction, she brings a deeply empathetic perspective to her work. She believes that quality care extends beyond direct patient interactions and that compassion, dignity, and respect should be reflected in every aspect of the treatment process.\nRegardless of the role she holds, Victoria’s guiding principle remains the same: to advocate for the kind of care she once sought for her own loved ones.",
+    "image": "/images/team/tori-bartle.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
+    "slug": "tim-foley",
+    "name": "Tim Foley",
+    "role": "Client Care & Performance Coordinator",
+    "credentials": "",
+    "bio": "Tim is a dedicated and compassionate Client Care & Performance Coordinator with over seven years of experience in addiction treatment and behavioral health. With a strong background in program development, client engagement, and team leadership, he is committed to enhancing the overall client experience and supporting high-quality, patient-centered care.\nHolding a bachelor’s degree in behavioral science, Tim brings expertise in program evaluation, performance improvement, and staff development. Known for his empathetic approach and attention to detail, he works to optimize processes, strengthen client satisfaction, and ensure individuals receive the support and resources needed for lasting recovery.",
+    "image": "/images/team/tim-foley.jpg",
+    "group": "Admissions & Client Care"
+  },
+  {
     "slug": "jacob-stevenson",
     "name": "Jacob Stevenson",
     "role": "Director of Client Engagement",
